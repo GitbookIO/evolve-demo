@@ -1,6 +1,8 @@
 ---
+description: >-
+  Official SDKs for Node, Python, Go, and Ruby — plus community-maintained
+  libraries.
 icon: cubes
-description: Official SDKs for Node, Python, Go, and Ruby — plus community-maintained libraries.
 ---
 
 # SDKs
@@ -9,7 +11,7 @@ Evolve maintains four official SDKs. They cover every endpoint, ship in idiomati
 
 ## Official SDKs
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-node-js" style="color:$primary;">:node-js:</i></h3></td><td><strong>Node</strong></td><td><code>@evolve/node</code></td><td></td></tr><tr><td><h3><i class="fa-python" style="color:$primary;">:python:</i></h3></td><td><strong>Python</strong></td><td><code>evolve</code> on PyPI</td><td></td></tr><tr><td><h3><i class="fa-golang" style="color:$primary;">:golang:</i></h3></td><td><strong>Go</strong></td><td><code>github.com/evolve-pay/evolve-go</code></td><td></td></tr><tr><td><h3><i class="fa-gem" style="color:$primary;">:gem:</i></h3></td><td><strong>Ruby</strong></td><td><code>evolve</code> on RubyGems</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-node-js" style="color:$primary;">:node-js:</i></h4></td><td><strong>Node</strong></td><td><code>@evolve/node</code></td><td></td></tr><tr><td><h4><i class="fa-python" style="color:$primary;">:python:</i></h4></td><td><strong>Python</strong></td><td><code>evolve</code> on PyPI</td><td></td></tr><tr><td><h4><i class="fa-golang" style="color:$primary;">:golang:</i></h4></td><td><strong>Go</strong></td><td><code>github.com/evolve-pay/evolve-go</code></td><td></td></tr><tr><td><h4><i class="fa-gem" style="color:$primary;">:gem:</i></h4></td><td><strong>Ruby</strong></td><td><code>evolve</code> on RubyGems</td><td></td></tr></tbody></table>
 
 ## Install
 
@@ -56,7 +58,7 @@ Requires Ruby 3.0+. Thread-safe; uses Net::HTTP with persistent connections.
 
 ## What each SDK gives you
 
-* **Full API coverage.** Every endpoint in [Payments](../payments-api/README.md), [Identity](../identity-api/README.md), and [Connect](../connect-api/README.md) has a typed method.
+* **Full API coverage.** Every endpoint in [Payments](../payments-api/), [Identity](../identity-api/), and [Connect](../connect-api/) has a typed method.
 * **Automatic retries** with exponential backoff for transient errors (5xx, 429, network errors).
 * **Idempotency** — the SDK auto-generates an idempotency key for write operations unless you provide one.
 * **Webhook signature verification** — `Evolve.Webhook.constructEvent` (or equivalent) handles HMAC verification.
@@ -66,10 +68,10 @@ Requires Ruby 3.0+. Thread-safe; uses Net::HTTP with persistent connections.
 
 The SDK tracks the API closely. Every API version has at least one matching SDK release.
 
-| API version | Node SDK | Python SDK | Go SDK | Ruby SDK |
-| --- | --- | --- | --- | --- |
-| `2026-01-15` (default) | `2.x` | `2.x` | `v2.x.x` | `2.x` |
-| `2025-07-01` | `1.x` | `1.x` | `v1.x.x` | `1.x` |
+| API version            | Node SDK | Python SDK | Go SDK   | Ruby SDK |
+| ---------------------- | -------- | ---------- | -------- | -------- |
+| `2026-01-15` (default) | `2.x`    | `2.x`      | `v2.x.x` | `2.x`    |
+| `2025-07-01`           | `1.x`    | `1.x`      | `v1.x.x` | `1.x`    |
 
 You can pin the API version in the SDK explicitly:
 

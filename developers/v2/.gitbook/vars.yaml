@@ -5,11 +5,10 @@ dashboard_test: https://dashboard.test.evolve.com
 docs_root: https://docs.evolve.com
 support_email: support@evolve.com
 status_page: https://status.evolve.com
-api_version: 2026-01-15
 variant: v2
 variant_status: stable
 default_rate_limit: 500
-node_pkg: "@evolve/node"
+node_pkg: '@evolve/node'
 python_pkg: evolve
 go_pkg: github.com/evolve-pay/evolve-go
 ruby_pkg: evolve

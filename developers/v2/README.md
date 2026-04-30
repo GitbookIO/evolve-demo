@@ -1,39 +1,56 @@
 ---
-icon: code
 description: Build on Evolve — APIs, SDKs, webhooks, and AI-agent access for every product.
+icon: code
 cover: .gitbook/assets/developers-cover.png
 coverY: 0
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # Developers
 
-Build with Evolve. The Developers space is the source of truth for APIs, SDKs, webhooks, and the agent integrations across all three products — [Payments](../products/payments/README.md), [Identity](../products/identity/README.md), and [Connect](../products/connect/README.md).
+Build with Evolve. The Developers space is the source of truth for APIs, SDKs, webhooks, and the agent integrations across all three products — [Payments](../products/payments/), [Identity](../products/identity/), and [Connect](../products/connect/).
 
 {% hint style="info" %}
 **Looking for product workflows and concepts?** Those live in the product spaces — this space is the technical reference.
 {% endhint %}
 
-<p><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button></p>
+<button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
 
-<p><button type="button" class="button secondary" data-action="ask" data-query="How do I make my first API call?" data-icon="rocket">Quickstart</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I authenticate?" data-icon="key">Auth</button> <button type="button" class="button secondary" data-action="ask" data-query="Which SDK should I use?" data-icon="cubes">SDKs</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I verify a webhook signature?" data-icon="bolt">Webhooks</button></p>
+<button type="button" class="button secondary" data-action="ask" data-query="How do I make my first API call?" data-icon="rocket">Quickstart</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I authenticate?" data-icon="key">Auth</button> <button type="button" class="button secondary" data-action="ask" data-query="Which SDK should I use?" data-icon="cubes">SDKs</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I verify a webhook signature?" data-icon="bolt">Webhooks</button>
 
 ## Pick your path
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-rocket" style="color:$primary;">:rocket:</i></h3></td><td><strong>Quickstart</strong></td><td>Make your first API call in under five minutes.</td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><h3><i class="fa-key" style="color:$primary;">:key:</i></h3></td><td><strong>Authentication</strong></td><td>Keys, scopes, and signature verification.</td><td><a href="getting-started/authentication.md">authentication.md</a></td></tr><tr><td><h3><i class="fa-cubes" style="color:$primary;">:cubes:</i></h3></td><td><strong>SDKs</strong></td><td>Node, Python, Go, Ruby — official and idiomatic.</td><td><a href="getting-started/sdks.md">sdks.md</a></td></tr><tr><td><h3><i class="fa-list-ul" style="color:$primary;">:list-ul:</i></h3></td><td><strong>Conventions</strong></td><td>Errors, idempotency, pagination, rate limits.</td><td><a href="getting-started/conventions.md">conventions.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-rocket" style="color:$primary;">:rocket:</i></h4></td><td><strong>Quickstart</strong></td><td>Make your first API call in under five minutes.</td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><h4><i class="fa-key" style="color:$primary;">:key:</i></h4></td><td><strong>Authentication</strong></td><td>Keys, scopes, and signature verification.</td><td><a href="getting-started/authentication.md">authentication.md</a></td></tr><tr><td><h4><i class="fa-cubes" style="color:$primary;">:cubes:</i></h4></td><td><strong>SDKs</strong></td><td>Node, Python, Go, Ruby — official and idiomatic.</td><td><a href="getting-started/sdks.md">sdks.md</a></td></tr><tr><td><h4><i class="fa-list-ul" style="color:$primary;">:list-ul:</i></h4></td><td><strong>Conventions</strong></td><td>Errors, idempotency, pagination, rate limits.</td><td><a href="getting-started/conventions.md">conventions.md</a></td></tr></tbody></table>
 
 ## API references
 
 Each product has its own auto-generated reference. Endpoints, parameters, response shapes, and an interactive **Test it** panel for every operation.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h3></td><td><strong>Payments API</strong></td><td>Charges, refunds, payouts, balance.</td><td><a href="payments-api/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-id-card" style="color:$primary;">:id-card:</i></h3></td><td><strong>Identity API</strong></td><td>Verification sessions, documents, bank checks.</td><td><a href="identity-api/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i></h3></td><td><strong>Connect API</strong></td><td>Connected accounts, transfers, checkout sessions.</td><td><a href="connect-api/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-bolt" style="color:$primary;">:bolt:</i></h3></td><td><strong>Webhooks</strong></td><td>Event catalog and signature verification.</td><td><a href="webhooks/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h4></td><td><strong>Payments API</strong></td><td>Charges, refunds, payouts, balance.</td><td><a href="payments-api/">payments-api</a></td></tr><tr><td><h4><i class="fa-id-card" style="color:$primary;">:id-card:</i></h4></td><td><strong>Identity API</strong></td><td>Verification sessions, documents, bank checks.</td><td><a href="identity-api/">identity-api</a></td></tr><tr><td><h4><i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i></h4></td><td><strong>Connect API</strong></td><td>Connected accounts, transfers, checkout sessions.</td><td><a href="connect-api/">connect-api</a></td></tr><tr><td><h4><i class="fa-bolt" style="color:$primary;">:bolt:</i></h4></td><td><strong>Webhooks</strong></td><td>Event catalog and signature verification.</td><td><a href="webhooks/">webhooks</a></td></tr></tbody></table>
 
 ## For AI agents
 
-Evolve publishes structured indexes for AI agents and code copilots — `llms.txt` and `llms-full.txt` — so an agent landing on these docs can navigate efficiently or load the whole content set into context. We also expose Evolve itself as an [MCP server](mcp/README.md) so an agent can call the API directly during a session.
+Evolve publishes structured indexes for AI agents and code copilots — `llms.txt` and `llms-full.txt` — so an agent landing on these docs can navigate efficiently or load the whole content set into context. We also expose Evolve itself as an [MCP server](mcp/) so an agent can call the API directly during a session.
 
-<p><a href="getting-started/for-ai-agents.md" class="button secondary">Agent integration guide</a> <a href="mcp/README.md" class="button secondary">MCP server</a></p>
+<a href="getting-started/for-ai-agents.md" class="button secondary">Agent integration guide</a> <a href="mcp/" class="button secondary">MCP server</a>
 
 ## Synced with GitHub
 
@@ -45,28 +62,24 @@ A short version of what's covered in detail under [Conventions](getting-started/
 
 {% columns %}
 {% column width="50%" %}
-
-### <i class="fa-globe" style="color:$primary;">:globe:</i> Base URLs
+#### <i class="fa-globe" style="color:$primary;">:globe:</i> Base URLs
 
 * Live: <code class="expression">space.vars.api_live</code>
 * Test: <code class="expression">space.vars.api_test</code>
 
-### <i class="fa-tag" style="color:$primary;">:tag:</i> Versioning
+#### <i class="fa-tag" style="color:$primary;">:tag:</i> Versioning
 
 Date-pinned via the `Evolve-Version` header. Default: <code class="expression">space.vars.api_version</code>. Major shape changes ship as variants — `v1`, `v2`, `v3`.
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### <i class="fa-list" style="color:$primary;">:list:</i> Pagination
+#### <i class="fa-list" style="color:$primary;">:list:</i> Pagination
 
 Cursor-based. 100 per page default, 1000 max. `has_more` and `next_cursor` on every list.
 
-### <i class="fa-gauge-high" style="color:$primary;">:gauge-high:</i> Rate limits
+#### <i class="fa-gauge-high" style="color:$primary;">:gauge-high:</i> Rate limits
 
 500 requests/second on Growth, custom on Enterprise. `X-RateLimit-*` headers on every response.
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -74,22 +87,18 @@ Cursor-based. 100 per page default, 1000 max. `has_more` and `next_cursor` on ev
 
 {% columns %}
 {% column width="50%" %}
-
-### Talk to support
+#### Talk to support
 
 For account-specific questions, integration help, or production incidents, open a ticket from the dashboard.
 
-<p><a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a></p>
-
+<a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a>
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### Status and changelog
+#### Status and changelog
 
 Real-time platform status and the running list of API changes.
 
-<p><a href="https://status.evolve.com" class="button secondary">Status page</a> <a href="../changelog/README.md" class="button secondary">Changelog</a></p>
-
+<a href="https://status.evolve.com" class="button secondary">Status page</a> <a href="../changelog/" class="button secondary">Changelog</a>
 {% endcolumn %}
 {% endcolumns %}

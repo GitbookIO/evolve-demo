@@ -1,9 +1,11 @@
 ---
+description: >-
+  How Evolve sends events to your endpoints, how to verify them, and how to
+  handle failures.
 icon: bolt
-description: How Evolve sends events to your endpoints, how to verify them, and how to handle failures.
 ---
 
-# Webhooks
+# Overview
 
 Webhooks let Evolve push events to your servers as they happen — a charge succeeded, a verification finished, a dispute opened. Most production integrations rely on webhooks rather than polling, because polling at the granularity needed for payments hits the rate limits fast.
 
@@ -38,41 +40,33 @@ Every event has the same outer shape — `id`, `type`, `data.object` — regardl
 
 {% stepper %}
 {% step %}
-
-### Add the endpoint
+#### Add the endpoint
 
 In the dashboard, **Developers → Webhooks → Add endpoint**. Enter your URL and pick the events to subscribe to. For local testing, expose `localhost` with [ngrok](https://ngrok.com) or similar.
-
 {% endstep %}
 
 {% step %}
-
-### Save the signing secret
+#### Save the signing secret
 
 Each endpoint has its own signing secret (prefix `whsec_`). Copy it and add it to your environment as `EVOLVE_WEBHOOK_SECRET`.
-
 {% endstep %}
 
 {% step %}
-
-### Verify the signature
+#### Verify the signature
 
 In your handler, verify the `Evolve-Signature` header before parsing the body. See [Verifying signatures](verifying-signatures.md) for code in every supported language.
-
 {% endstep %}
 
 {% step %}
-
-### Respond with 2xx
+#### Respond with 2xx
 
 Evolve treats any `2xx` as a successful delivery. Anything else is retried — see [Retries and replay](retries-and-replay.md).
-
 {% endstep %}
 {% endstepper %}
 
 ## What's in the rest of the section
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-shield-halved" style="color:$primary;">:shield-halved:</i></h3></td><td><strong>Verifying signatures</strong></td><td>Per-language signature verification.</td><td><a href="verifying-signatures.md">verifying-signatures.md</a></td></tr><tr><td><h3><i class="fa-list" style="color:$primary;">:list:</i></h3></td><td><strong>Event catalog</strong></td><td>Every event type Evolve emits, with payload examples.</td><td><a href="event-catalog.md">event-catalog.md</a></td></tr><tr><td><h3><i class="fa-rotate" style="color:$primary;">:rotate:</i></h3></td><td><strong>Retries and replay</strong></td><td>Retry behavior and how to replay missed events.</td><td><a href="retries-and-replay.md">retries-and-replay.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-shield-halved" style="color:$primary;">:shield-halved:</i></h4></td><td><strong>Verifying signatures</strong></td><td>Per-language signature verification.</td><td><a href="verifying-signatures.md">verifying-signatures.md</a></td></tr><tr><td><h4><i class="fa-list" style="color:$primary;">:list:</i></h4></td><td><strong>Event catalog</strong></td><td>Every event type Evolve emits, with payload examples.</td><td><a href="event-catalog.md">event-catalog.md</a></td></tr><tr><td><h4><i class="fa-rotate" style="color:$primary;">:rotate:</i></h4></td><td><strong>Retries and replay</strong></td><td>Retry behavior and how to replay missed events.</td><td><a href="retries-and-replay.md">retries-and-replay.md</a></td></tr></tbody></table>
 
 ## Best practices
 

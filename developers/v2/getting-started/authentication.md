@@ -1,6 +1,6 @@
 ---
-icon: key
 description: API keys, scopes, and how Evolve authenticates every request.
+icon: key
 ---
 
 # Authentication
@@ -11,17 +11,17 @@ Evolve uses bearer-token authentication. Every request includes an `Authorizatio
 Authorization: Bearer sk_live_4gT8m...
 ```
 
-Keys are issued and rotated from the [dashboard](<code class="expression">space.vars.dashboard_live</code>) under **Developers → API keys**. We recommend rotating production keys every 90 days.
+Keys are issued and rotated from the \[dashboard]\(<code class="expression">space.vars.dashboard_live</code>) under **Developers → API keys**. We recommend rotating production keys every 90 days.
 
 ## Key types
 
-| Key | Prefix | Use it for | Safe to expose? |
-| --- | --- | --- | --- |
-| Live secret | `sk_live_` | Server-side production calls | No |
-| Live publishable | `pk_live_` | Client-side payment session creation | Yes |
-| Test secret | `sk_test_` | Server-side test calls | No |
-| Test publishable | `pk_test_` | Client-side test integrations | Yes |
-| Restricted | `rk_live_` / `rk_test_` | Scoped server keys (read-only, refund-only, etc.) | No |
+| Key              | Prefix                  | Use it for                                        | Safe to expose? |
+| ---------------- | ----------------------- | ------------------------------------------------- | --------------- |
+| Live secret      | `sk_live_`              | Server-side production calls                      | No              |
+| Live publishable | `pk_live_`              | Client-side payment session creation              | Yes             |
+| Test secret      | `sk_test_`              | Server-side test calls                            | No              |
+| Test publishable | `pk_test_`              | Client-side test integrations                     | Yes             |
+| Restricted       | `rk_live_` / `rk_test_` | Scoped server keys (read-only, refund-only, etc.) | No              |
 
 ## Setting the key in each SDK
 
@@ -80,12 +80,12 @@ If you need to grant a third party (BI tool, internal microservice, on-call dash
 
 Common restricted-key shapes:
 
-| Shape | Use case |
-| --- | --- |
-| Read-only | BI exports, monitoring dashboards |
-| Refunds only | Customer-support tooling |
+| Shape             | Use case                                   |
+| ----------------- | ------------------------------------------ |
+| Read-only         | BI exports, monitoring dashboards          |
+| Refunds only      | Customer-support tooling                   |
 | Connect read-only | Per-platform reporting on Connect activity |
-| Webhooks only | Dedicated event-handler service |
+| Webhooks only     | Dedicated event-handler service            |
 
 ## API versioning
 
@@ -95,7 +95,7 @@ Evolve uses **dated versioning** via the `Evolve-Version` header. The default ve
 Evolve-Version: 2026-01-15
 ```
 
-Major shape changes (resources renamed, fields removed) ship as **variants** rather than new dates — see [Payments API → Overview](../payments-api/README.md) for `v1`, `v2`, and `v3`.
+Major shape changes (resources renamed, fields removed) ship as **variants** rather than new dates — see [Payments API → Overview](../payments-api/) for `v1`, `v2`, and `v3`.
 
 If you don't send the header, your account-default version is used. We recommend pinning explicitly in production code.
 
@@ -115,27 +115,21 @@ You can rotate any secret key without downtime:
 
 {% stepper %}
 {% step %}
-
-### Generate a new key
+#### Generate a new key
 
 In the dashboard, click **Roll** next to the key. The new key becomes active immediately. The old key keeps working for 24 hours so you can deploy at your own pace.
-
 {% endstep %}
 
 {% step %}
-
-### Deploy the new key
+#### Deploy the new key
 
 Update your environment configuration and redeploy. Verify by making a test call against the live API.
-
 {% endstep %}
 
 {% step %}
-
-### Revoke the old key
+#### Revoke the old key
 
 Once you've confirmed the new key is in place everywhere, click **Revoke**. Any further requests with the old key will fail with `401 unauthorized`.
-
 {% endstep %}
 {% endstepper %}
 

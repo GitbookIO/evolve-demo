@@ -1,6 +1,8 @@
 ---
+description: >-
+  Make your first API call to Evolve in five minutes — in your language of
+  choice.
 icon: rocket
-description: Make your first API call to Evolve in five minutes — in your language of choice.
 ---
 
 # Quickstart
@@ -184,30 +186,24 @@ Most production integrations react to webhook events rather than polling.
 
 {% stepper %}
 {% step %}
-
-### Add an endpoint
+#### Add an endpoint
 
 In the dashboard, **Developers → Webhooks → Add endpoint**. For local testing, use a tool like [ngrok](https://ngrok.com) to expose `localhost`. Subscribe to `charge.succeeded` and `charge.failed` to start.
-
 {% endstep %}
 
 {% step %}
-
-### Verify the signature
+#### Verify the signature
 
 Every event Evolve sends is HMAC-signed. Verify the signature before acting on it — see [Verifying signatures](../webhooks/verifying-signatures.md).
-
 {% endstep %}
 
 {% step %}
-
-### Replay events
+#### Replay events
 
 Webhooks fail; that's normal. The dashboard's webhook log shows every delivery and lets you replay any event with one click. See [Retries and replay](../webhooks/retries-and-replay.md).
-
 {% endstep %}
 {% endstepper %}
 
 ## What's next
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-key" style="color:$primary;">:key:</i></h3></td><td><strong>Auth deep dive</strong></td><td>Restricted keys, signature verification, rotation.</td><td><a href="authentication.md">authentication.md</a></td></tr><tr><td><h3><i class="fa-list-ul" style="color:$primary;">:list-ul:</i></h3></td><td><strong>Conventions</strong></td><td>Errors, idempotency, pagination, rate limits.</td><td><a href="conventions.md">conventions.md</a></td></tr><tr><td><h3><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h3></td><td><strong>Payments API</strong></td><td>Full reference for charges, refunds, payouts.</td><td><a href="../payments-api/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-key" style="color:$primary;">:key:</i></h4></td><td><strong>Auth deep dive</strong></td><td>Restricted keys, signature verification, rotation.</td><td><a href="authentication.md">authentication.md</a></td></tr><tr><td><h4><i class="fa-list-ul" style="color:$primary;">:list-ul:</i></h4></td><td><strong>Conventions</strong></td><td>Errors, idempotency, pagination, rate limits.</td><td><a href="conventions.md">conventions.md</a></td></tr><tr><td><h4><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h4></td><td><strong>Payments API</strong></td><td>Full reference for charges, refunds, payouts.</td><td><a href="../payments-api/">payments-api</a></td></tr></tbody></table>

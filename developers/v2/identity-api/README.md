@@ -1,15 +1,15 @@
 ---
-icon: id-card
 description: Verification sessions, documents, bank checks, and business verification.
+icon: id-card
 ---
 
-# Identity API
+# Overview
 
 The Identity API runs the full verification stack — document review, selfie liveness, bank account verification, and business KYB. The full reference lives at [Reference](reference.md), auto-generated from the OpenAPI spec.
 
 ## Resources
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-id-card" style="color:$primary;">:id-card:</i></h3></td><td><strong>Verification sessions</strong></td><td>Top-level resource — one per identity, bank, or business verification.</td><td><a href="reference.md#verification-sessions">reference.md</a></td></tr><tr><td><h3><i class="fa-file-magnifying-glass" style="color:$primary;">:file-magnifying-glass:</i></h3></td><td><strong>Documents</strong></td><td>Captured documents and their per-check results.</td><td><a href="reference.md#documents">reference.md</a></td></tr><tr><td><h3><i class="fa-building-columns" style="color:$primary;">:building-columns:</i></h3></td><td><strong>Bank verifications</strong></td><td>Plaid-instant or micro-deposits flow records.</td><td><a href="reference.md#bank-verifications">reference.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-id-card" style="color:$primary;">:id-card:</i></h4></td><td><strong>Verification sessions</strong></td><td>Top-level resource — one per identity, bank, or business verification.</td><td><a href="reference.md#verification-sessions">#verification-sessions</a></td></tr><tr><td><h4><i class="fa-file-magnifying-glass" style="color:$primary;">:file-magnifying-glass:</i></h4></td><td><strong>Documents</strong></td><td>Captured documents and their per-check results.</td><td><a href="reference.md#documents">#documents</a></td></tr><tr><td><h4><i class="fa-building-columns" style="color:$primary;">:building-columns:</i></h4></td><td><strong>Bank verifications</strong></td><td>Plaid-instant or micro-deposits flow records.</td><td><a href="reference.md#bank-verifications">#bank-verifications</a></td></tr></tbody></table>
 
 ## How a verification flows
 
@@ -68,8 +68,8 @@ curl https://api.evolve.com/v2/verification_sessions \
 
 ## Conceptual background
 
-For the product-side concepts — when to verify, which method to pick, what the customer sees — see the [Identity product space](../../../products/identity/README.md).
+For the product-side concepts — when to verify, which method to pick, what the customer sees — see the [Identity product space](../../../products/identity/).
 
 ## Try it
 
-<p><a href="reference.md" class="button primary">Open the reference</a></p>
+<a href="reference.md" class="button primary">Open the reference</a>

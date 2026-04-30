@@ -13,7 +13,18 @@
 ## Payments API
 
 * [Overview](payments-api/README.md)
-* [Reference](payments-api/reference.md)
+* [Reference](payments-api/reference/README.md)
+  * ```yaml
+    type: builtin:openapi
+    props:
+      models: true
+      downloadLink: true
+    dependencies:
+      spec:
+        ref:
+          kind: openapi
+          spec: evolve-payments-v2
+    ```
 
 ## Identity API
 

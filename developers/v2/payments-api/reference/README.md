@@ -1,6 +1,6 @@
 ---
-icon: book-open
 description: Auto-generated reference for every endpoint in the Payments API.
+icon: book-open
 ---
 
 # Reference
@@ -15,12 +15,12 @@ This page is **auto-generated** from our OpenAPI specification at `../../openapi
 
 Operations are grouped by tag. The spec file uses these tags, each with a `x-page-title`, `x-page-icon`, and `x-page-description`:
 
-| Tag | Page title | Icon |
-| --- | --- | --- |
-| `charges` | Charges | `credit-card` |
-| `refunds` | Refunds | `rotate-left` |
-| `payouts` | Payouts | `money-bill-transfer` |
-| `balance` | Balance | `scale-balanced` |
+| Tag       | Page title | Icon                  |
+| --------- | ---------- | --------------------- |
+| `charges` | Charges    | `credit-card`         |
+| `refunds` | Refunds    | `rotate-left`         |
+| `payouts` | Payouts    | `money-bill-transfer` |
+| `balance` | Balance    | `scale-balanced`      |
 
 When the OpenAPI block is rendered, each tag becomes a top-level section under this page with the operations listed in spec order.
 
@@ -81,6 +81,6 @@ The rendered reference has the full schema documentation expanded in-line, with 
 
 ## Related
 
-* [Overview](README.md) — what's in v2, what changed since v1, what's coming in v3.
-* [Conventions](../getting-started/conventions.md) — what's true across every operation.
-* [Webhooks → Event catalog](../webhooks/event-catalog.md) — the events Payments emits.
+* [Overview](../) — what's in v2, what changed since v1, what's coming in v3.
+* [Conventions](../../getting-started/conventions.md) — what's true across every operation.
+* [Webhooks → Event catalog](../../webhooks/event-catalog.md) — the events Payments emits.

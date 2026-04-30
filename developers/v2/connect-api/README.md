@@ -1,15 +1,17 @@
 ---
+description: >-
+  Connected accounts, transfers, and checkout sessions for marketplace
+  platforms.
 icon: circles-overlap
-description: Connected accounts, transfers, and checkout sessions for marketplace platforms.
 ---
 
-# Connect API
+# Overview
 
 The Connect API extends Payments with the platform-specific resources — connected accounts (sellers), transfers (moving funds to sellers), and checkout sessions (taking payments on a seller's behalf). The full reference lives at [Reference](reference.md).
 
 ## Resources
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-store" style="color:$primary;">:store:</i></h3></td><td><strong>Connected accounts</strong></td><td>The sellers on your platform. One per seller.</td><td><a href="reference.md#connected-accounts">reference.md</a></td></tr><tr><td><h3><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h3></td><td><strong>Transfers</strong></td><td>Move funds from platform balance to a connected account.</td><td><a href="reference.md#transfers">reference.md</a></td></tr><tr><td><h3><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h3></td><td><strong>Checkout sessions</strong></td><td>Hosted or embedded checkout for a Connect payment.</td><td><a href="reference.md#checkout-sessions">reference.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-store" style="color:$primary;">:store:</i></h4></td><td><strong>Connected accounts</strong></td><td>The sellers on your platform. One per seller.</td><td><a href="reference.md#connected-accounts">#connected-accounts</a></td></tr><tr><td><h4><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h4></td><td><strong>Transfers</strong></td><td>Move funds from platform balance to a connected account.</td><td><a href="reference.md#transfers">#transfers</a></td></tr><tr><td><h4><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h4></td><td><strong>Checkout sessions</strong></td><td>Hosted or embedded checkout for a Connect payment.</td><td><a href="reference.md#checkout-sessions">#checkout-sessions</a></td></tr></tbody></table>
 
 ## A minimal flow
 
@@ -42,17 +44,17 @@ That charges the buyer $100, transfers $98 to the seller's connected account, an
 
 Two patterns for routing a payment to a seller:
 
-| Pattern | When to use |
-| --- | --- |
-| **Direct charge** | The seller is the merchant of record. Set `Evolve-Account: acct_*` header on the charge. The seller's statement descriptor appears on the buyer's card statement. |
+| Pattern                | When to use                                                                                                                                                                                                               |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Direct charge**      | The seller is the merchant of record. Set `Evolve-Account: acct_*` header on the charge. The seller's statement descriptor appears on the buyer's card statement.                                                         |
 | **Destination charge** | The platform is the merchant of record. Charge happens on the platform; a transfer moves the funds to the connected account. The platform's descriptor appears on the buyer's statement. Most Connect platforms use this. |
 
 Choose at the platform level by setting your default in **Connect → Settings → Charge type** in the dashboard. Override per checkout session if needed.
 
 ## Conceptual background
 
-For the product-side concepts — onboarding flow, payout scheduling, dispute routing, refund splits — see the [Connect product space](../../../products/connect/README.md).
+For the product-side concepts — onboarding flow, payout scheduling, dispute routing, refund splits — see the [Connect product space](../../../products/connect/).
 
 ## Try it
 
-<p><a href="reference.md" class="button primary">Open the reference</a></p>
+<a href="reference.md" class="button primary">Open the reference</a>
