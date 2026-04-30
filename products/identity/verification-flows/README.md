@@ -39,7 +39,7 @@ Evolve groups these into a **verification bundle** so they appear as a single on
 
 ## What's gated by plan
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Starter** — identity verification only. To add bank or business verification, [upgrade your plan](https://evolve.com/pricing).
@@ -47,7 +47,7 @@ Evolve groups these into a **verification bundle** so they appear as a single on
 
 {% endif %}
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Growth** — identity and bank verification are enabled. Business verification is an Enterprise feature.
@@ -55,7 +55,7 @@ Evolve groups these into a **verification bundle** so they appear as a single on
 
 {% endif %}
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise** — all flows enabled, including watchlist and PEP screening on identity verification.

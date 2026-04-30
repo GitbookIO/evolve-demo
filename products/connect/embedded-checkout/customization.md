@@ -29,7 +29,7 @@ Settings live in **Connect → Branding** in the dashboard. Changes apply immedi
 
 By default, all sellers on your platform use the platform's branding. For sellers with strong brands of their own — established stores on a marketplace, B2B sellers under enterprise contracts — you can let them override:
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise** — full per-seller branding (including custom domains and per-seller CSS) is available. Configure in **Connect → Branding → Per-seller overrides**.
@@ -37,7 +37,7 @@ By default, all sellers on your platform use the platform's branding. For seller
 
 {% endif %}
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Growth** — per-seller logo and brand color overrides are available. Custom fonts and CSS require Enterprise.

@@ -38,7 +38,7 @@ Not every dispute is a fraud claim. The reason code on the dispute matters — i
 
 ## Response window
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="info" %}
 **Enterprise customers** can configure a dispute alerts integration with Verifi or Ethoca. When enabled, you can resolve a fraud claim by issuing a pre-emptive refund within 72 hours and avoid the chargeback entirely. Talk to your account team to set this up.

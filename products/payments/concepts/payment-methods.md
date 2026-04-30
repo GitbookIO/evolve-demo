@@ -9,7 +9,7 @@ Evolve supports cards, bank rails, and direct-debit schemes. The methods availab
 
 ## Methods by plan
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Starter.** Card payments only, in USD. To accept ACH, debit, or international rails, [upgrade to Growth](https://evolve.com/pricing).
@@ -17,7 +17,7 @@ Evolve supports cards, bank rails, and direct-debit schemes. The methods availab
 
 {% endif %}
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Growth.** Cards, ACH, and debit are enabled. Wires, SEPA, and BACS are Enterprise features — talk to your account team if you need them.
@@ -25,7 +25,7 @@ Evolve supports cards, bank rails, and direct-debit schemes. The methods availab
 
 {% endif %}
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise.** All methods listed below are enabled, including international rails. Multi-currency settlement is on by default.

@@ -22,7 +22,7 @@ flowchart LR
 
 ## Payout schedule by plan
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="clock" %}
 **Starter:** Payouts arrive **T+3 business days** after capture. There's no faster option on this plan.
@@ -30,7 +30,7 @@ flowchart LR
 
 {% endif %}
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="clock" %}
 **Growth:** Payouts arrive **T+2 business days** after capture. Same-day payouts are available as an Enterprise add-on.
@@ -38,7 +38,7 @@ flowchart LR
 
 {% endif %}
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="clock" %}
 **Enterprise:** Default schedule is **T+1 business day**. Same-day payouts are available for an additional 0.4% per transfer — turn it on under **Settings → Payouts**.
@@ -67,7 +67,7 @@ The settlement file shows each line item by ID so you can match it back to the o
 
 If you accept multiple currencies, Evolve maintains a separate balance and payout schedule per currency. You can hold balances and pay out to bank accounts denominated in the same currency, or convert at settlement time at the daily wholesale rate plus 0.5%.
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="info" %}
 Enterprise customers can negotiate the FX margin and configure per-entity payout accounts. Contact your account team.

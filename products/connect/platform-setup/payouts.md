@@ -41,7 +41,7 @@ When the schedule runs, the seller's full positive balance pays out — minus an
 
 Some platforms hold a percentage of the seller's balance for a rolling window — common in marketplaces with high dispute exposure or platforms launching with new sellers.
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="info" %}
 **Enterprise customers** can configure per-seller reserves with custom rules — e.g. "5% rolling reserve for new sellers, dropping to 0% after 90 days." Set in **Connect → Settings → Reserves**.
@@ -67,7 +67,7 @@ For platforms where seller cash flow really matters — gig-economy apps, instan
 
 On-demand payouts cost an extra 1% of the payout amount, charged to the seller (or absorbed by the platform — your call). They land in the seller's bank within minutes if the bank supports RTP/FedNow, otherwise within hours.
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="bolt" %}
 **Enterprise customers** can configure on-demand payouts and decide whether the fee is paid by the seller, the platform, or split. Configure in **Connect → Settings → Instant payouts**.

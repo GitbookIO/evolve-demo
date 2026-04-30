@@ -60,7 +60,7 @@ Live-mode webhooks are signed with a separate signing secret. Update your webhoo
 
 ## Volume limits
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Growth** — up to **100 connected accounts** in live mode. Test mode is unlimited. To go beyond 100, [upgrade to Enterprise](mailto:support@evolve.com).
@@ -68,7 +68,7 @@ Live-mode webhooks are signed with a separate signing secret. Update your webhoo
 
 {% endif %}
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise** — unlimited connected accounts in both environments.

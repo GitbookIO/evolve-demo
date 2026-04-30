@@ -9,7 +9,7 @@ Business verification — KYB, "know your business" — confirms three things ab
 
 You'll need it if you run a marketplace and onboard sellers, you operate a B2B platform that pays out to vendors, you sell to other businesses on credit, or any time you process payments on behalf of a third party.
 
-{% if visitor.claims.plan !== "enterprise" %}
+{% if visitor.claims.unsigned.plan !== "enterprise" %}
 
 {% hint style="warning" icon="lock" %}
 **Business verification is an Enterprise feature.** It requires the data partnerships and compliance review processes only available on the Enterprise plan. [Talk to your account team](mailto:support@evolve.com) if you're considering it.

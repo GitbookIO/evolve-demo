@@ -9,7 +9,7 @@ Bank account verification proves the customer owns the account they've handed yo
 
 Evolve supports two methods. **Plaid instant** is faster (one tap) but only works for banks Plaid covers. **Micro-deposits** work for any US bank account but take 1–2 business days.
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="warning" icon="lock" %}
 **Bank account verification is a Growth and Enterprise feature.** Starter accounts can verify identities but not bank accounts.

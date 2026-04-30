@@ -21,7 +21,7 @@ Evolve Identity verifies the people and businesses you transact with — through
 
 ## Start here
 
-{% if visitor.claims.persona === "isobel" %}
+{% if visitor.claims.unsigned.persona === "new" %}
 
 {% hint style="info" icon="hand-wave" %}
 **Not sure what verification you need?** Most teams start with **identity verification** (document + selfie) for individual customers, and add bank verification when they accept ACH. The [Verification flows overview](verification-flows/README.md) has a quick decision tree.
@@ -29,7 +29,7 @@ Evolve Identity verifies the people and businesses you transact with — through
 
 {% endif %}
 
-{% if visitor.claims.persona === "katy" %}
+{% if visitor.claims.unsigned.persona === "existing" %}
 
 {% hint style="info" icon="arrows-left-right" %}
 **Coming from Stripe Identity?** Most flows map directly. Document + selfie is equivalent, watchlist screening replaces Stripe's network-block list, and bank verification works the same with Plaid. See the [Stripe migration guide](../../guides/tutorials/migrating-from-stripe.md#identity).
@@ -37,7 +37,7 @@ Evolve Identity verifies the people and businesses you transact with — through
 
 {% endif %}
 
-{% if visitor.claims.persona === "harry" %}
+{% if visitor.claims.unsigned.persona === "prospect" %}
 
 {% hint style="info" icon="store" %}
 **Selling on Shopify?** Shopify handles basic checkout fraud signals on its own — but if you take ACH, accept high-value orders, or sell age-restricted products, you'll want to layer Evolve Identity on top. See the [Shopify integration guide](../../guides/integrations/shopify.md#identity-checks).
@@ -45,7 +45,7 @@ Evolve Identity verifies the people and businesses you transact with — through
 
 {% endif %}
 
-{% if visitor.claims.persona === "jared" %}
+{% if visitor.claims.unsigned.persona === "partner" %}
 
 {% hint style="info" icon="building" %}
 **Setting up enterprise compliance?** Watchlist screening, PEP screening, and ongoing monitoring are Enterprise-only features. The [Compliance section](compliance/audit-logs.md) covers audit trails and regional requirements.

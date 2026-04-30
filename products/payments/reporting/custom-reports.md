@@ -7,7 +7,7 @@ description: Build your own views on top of Evolve's data — without writing SQ
 
 Custom reports let you build views beyond the [standard reports](standard-reports.md) — different breakdowns, different filters, different chart types — and save them for your team. They run against the same underlying data, so they're always consistent with what shows up in finance reports.
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="warning" icon="lock" %}
 **Custom reports are a Growth and Enterprise feature.** Starter accounts get full access to standard reports and can save filtered views, but can't build new chart types from scratch.

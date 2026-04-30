@@ -57,7 +57,7 @@ Both reports are exportable via [scheduled exports](../../payments/reporting/sha
 
 ## Plan considerations
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Growth** — up to 100 connected accounts. The full Connect feature set is available, with the volume cap as the only differentiator from Enterprise.
@@ -65,7 +65,7 @@ Both reports are exportable via [scheduled exports](../../payments/reporting/sha
 
 {% endif %}
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise** — unlimited accounts, plus white-label embedded checkout, custom onboarding workflows, and consolidated KYC across all sellers. Talk to your account team for the platform-launch playbook.

@@ -9,7 +9,7 @@ Evolve's pricing has three components: a per-transaction fee, a small set of fea
 
 ## Your plan
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Starter.** Card payments, USD only, T+3 payouts. Volume cap is **$50,000/month** — you'll get an email when you cross 80%, and we'll automatically suggest a Growth upgrade.
@@ -17,7 +17,7 @@ Evolve's pricing has three components: a per-transaction fee, a small set of fea
 
 {% endif %}
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Growth.** Cards, ACH, debit, and four-currency support. T+2 payouts. Volume cap is **$1,000,000/month**.
@@ -25,7 +25,7 @@ Evolve's pricing has three components: a per-transaction fee, a small set of fea
 
 {% endif %}
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise.** Custom pricing, all rails, all currencies, T+1 default with same-day available. Volume is uncapped.
@@ -101,7 +101,7 @@ Included up to 50 saved reports per workspace. Above that, $50/month per additio
 
 For Enterprise customers on a custom contract, your negotiated rates are the source of truth. The table above shows the standard published pricing — if your contract overrides any line, what's in the contract applies. You can always see your effective rates in **Settings → Billing**.
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 <p><a href="https://dashboard.evolve.com/settings/billing" class="button primary">View your contracted rates</a></p>
 

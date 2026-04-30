@@ -9,7 +9,7 @@ Most card payments can take more than one path to the issuer. Smart routing pick
 
 For most teams, smart routing recovers 1–3% of payments that would otherwise be declined — without any code changes on your end.
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="warning" icon="lock" %}
 **Smart routing is a Growth and Enterprise feature.** Starter accounts use a single default acquirer per region. To enable smart routing, [upgrade your plan](https://evolve.com/pricing).

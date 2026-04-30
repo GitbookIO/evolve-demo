@@ -21,7 +21,7 @@ Evolve Payments handles the work between a customer's "pay" click and the money 
 
 ## Start here
 
-{% if visitor.claims.persona === "isobel" %}
+{% if visitor.claims.unsigned.persona === "new" %}
 
 {% hint style="info" icon="hand-wave" %}
 **New to Evolve?** Welcome. The Quickstart below takes about five minutes and ends with a real test charge in your dashboard. You don't need to write any code yet — the dashboard works on its own.
@@ -29,7 +29,7 @@ Evolve Payments handles the work between a customer's "pay" click and the money 
 
 {% endif %}
 
-{% if visitor.claims.persona === "katy" %}
+{% if visitor.claims.unsigned.persona === "existing" %}
 
 {% hint style="info" icon="arrows-left-right" %}
 **Migrating from Stripe?** Most of our APIs map cleanly. Start with the [Stripe migration guide](../../guides/tutorials/migrating-from-stripe.md) — it covers field mapping, webhook differences, and how to run both processors in parallel during cutover.
@@ -37,7 +37,7 @@ Evolve Payments handles the work between a customer's "pay" click and the money 
 
 {% endif %}
 
-{% if visitor.claims.persona === "harry" %}
+{% if visitor.claims.unsigned.persona === "prospect" %}
 
 {% hint style="info" icon="store" %}
 **Evaluating Evolve for Shopify?** Our [Shopify integration guide](../../guides/integrations/shopify.md) covers setup, supported payment methods by region, and how Evolve handles refunds initiated from the Shopify admin. You can run it against a test store today.
@@ -45,7 +45,7 @@ Evolve Payments handles the work between a customer's "pay" click and the money 
 
 {% endif %}
 
-{% if visitor.claims.persona === "jared" %}
+{% if visitor.claims.unsigned.persona === "partner" %}
 
 {% hint style="info" icon="building" %}
 **Setting up enterprise features?** Smart routing, network selection, and failover are documented under [Accept payments](accept-payments/README.md). For SSO, audit logs, and account hierarchy, see your account team or the [Enterprise admin guide](../../guides/tutorials/enterprise-admin-setup.md).

@@ -17,7 +17,7 @@ Once your basic flow is in production, these controls help you push the approval
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-route" style="color:$primary;">:route:</i></h3></td><td><strong>Smart routing</strong></td><td>Pick the route most likely to approve. <em>Growth+</em></td><td><a href="smart-routing.md">smart-routing.md</a></td></tr><tr><td><h3><i class="fa-arrows-spin" style="color:$primary;">:arrows-spin:</i></h3></td><td><strong>Failover and retries</strong></td><td>Re-route around acquirer outages. <em>Enterprise</em></td><td><a href="failover.md">failover.md</a></td></tr></tbody></table>
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="arrow-up-right-from-square" %}
 **Smart routing and failover are Growth and Enterprise features.** They're listed here so you can plan for them — see [pricing](https://evolve.com/pricing) when you're ready to upgrade.

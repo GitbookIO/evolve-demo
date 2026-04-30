@@ -7,7 +7,7 @@ description: Stay up when an acquirer or network goes down.
 
 Card-acquiring infrastructure is reliable, but it isn't perfect. Once or twice a year, a major acquirer or network has a partial outage — sometimes for an hour, occasionally for most of a day. Failover gives Evolve permission to route around an outage automatically, so your customers keep paying through it.
 
-{% if visitor.claims.plan !== "enterprise" %}
+{% if visitor.claims.unsigned.plan !== "enterprise" %}
 
 {% hint style="warning" icon="lock" %}
 **Failover is an Enterprise feature.** It requires multiple active acquirer agreements, which most non-Enterprise customers don't maintain. If you're considering it, [talk to your account team](mailto:support@evolve.com).

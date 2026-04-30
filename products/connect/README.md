@@ -23,7 +23,7 @@ It's built on top of [Payments](../payments/README.md) — your platform uses th
 
 ## Start here
 
-{% if visitor.claims.persona === "isobel" %}
+{% if visitor.claims.unsigned.persona === "new" %}
 
 {% hint style="info" icon="hand-wave" %}
 **New to Connect?** If you're not building a marketplace or platform that takes payments on behalf of others, you probably want plain [Payments](../payments/README.md) instead. The [Quickstart](quickstart/onboard-your-first-seller.md) below assumes you do — start there if so.
@@ -31,7 +31,7 @@ It's built on top of [Payments](../payments/README.md) — your platform uses th
 
 {% endif %}
 
-{% if visitor.claims.persona === "katy" %}
+{% if visitor.claims.unsigned.persona === "existing" %}
 
 {% hint style="info" icon="arrows-left-right" %}
 **Coming from Stripe Connect?** Most concepts map cleanly. Connected accounts, application fees, and transfers all work the same. Express, Standard, and Custom account types are unified into a single configurable account model — see [Onboarding sellers](platform-setup/onboarding-sellers.md).
@@ -39,7 +39,7 @@ It's built on top of [Payments](../payments/README.md) — your platform uses th
 
 {% endif %}
 
-{% if visitor.claims.persona === "harry" %}
+{% if visitor.claims.unsigned.persona === "prospect" %}
 
 {% hint style="info" icon="store" %}
 **Selling on Shopify?** You don't need Connect — Shopify is the platform here, not you. Connect is for *building* a platform like Shopify, not for selling on one. Stick with [Payments](../payments/README.md).
@@ -47,7 +47,7 @@ It's built on top of [Payments](../payments/README.md) — your platform uses th
 
 {% endif %}
 
-{% if visitor.claims.persona === "jared" %}
+{% if visitor.claims.unsigned.persona === "partner" %}
 
 {% hint style="info" icon="building" %}
 **Setting up enterprise platform features?** White-label embedded checkout, custom seller onboarding flows, and consolidated KYC/KYB across all sellers are the Enterprise-tier capabilities. See [Platform setup](platform-setup/README.md).
@@ -98,7 +98,7 @@ Connect is built on top of Payments — most of the concepts there apply unchang
 
 ## Plan availability
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="warning" icon="lock" %}
 **Connect is a Growth and Enterprise feature.** Starter accounts can take payments for themselves but can't onboard third-party sellers. [Talk to your account team](mailto:support@evolve.com) when you're ready to upgrade.

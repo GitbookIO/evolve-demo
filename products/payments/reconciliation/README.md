@@ -33,7 +33,7 @@ Your finance team's job each day is to take the settlement file, match it to the
 
 ## Who does what
 
-{% if visitor.claims.persona === "jared" %}
+{% if visitor.claims.unsigned.persona === "partner" %}
 
 {% hint style="info" icon="building" %}
 **Setting up Enterprise reconciliation?** You probably want **scheduled exports** to your data warehouse, not manual CSV downloads. See [Sharing and scheduled exports](../reporting/sharing-exports.md) for the SFTP and S3 push options.

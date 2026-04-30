@@ -29,7 +29,7 @@ There is no merge or migration step — test and live are fully separate.
 
 ## Fees
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Starter** — identity verifications cost **$1.50 each**. Bank verification, KYB, and watchlist screening aren't available on Starter.
@@ -37,7 +37,7 @@ There is no merge or migration step — test and live are fully separate.
 
 {% endif %}
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="layer-group" %}
 **You're on Growth** — identity verifications cost **$1.20 each**. Bank verification (Plaid) is **$2.50**, micro-deposits are **$0.80**.
@@ -45,7 +45,7 @@ There is no merge or migration step — test and live are fully separate.
 
 {% endif %}
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise** — pricing is per your contract. The standard published rates below show defaults; your effective rates are visible in **Settings → Billing**.

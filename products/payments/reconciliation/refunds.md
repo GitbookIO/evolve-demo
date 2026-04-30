@@ -9,7 +9,7 @@ A refund returns funds to the original card or bank account the customer paid wi
 
 ## Refund window by plan
 
-{% if visitor.claims.plan === "starter" %}
+{% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="clock-rotate-left" %}
 **You're on Starter** — you can refund a payment up to **60 days** after it was captured. After that, the only option is a manual ACH or wire from your own account.
@@ -17,7 +17,7 @@ A refund returns funds to the original card or bank account the customer paid wi
 
 {% endif %}
 
-{% if visitor.claims.plan === "growth" %}
+{% if visitor.claims.unsigned.plan === "growth" %}
 
 {% hint style="info" icon="clock-rotate-left" %}
 **You're on Growth** — you can refund a payment up to **90 days** after it was captured. After that, the only option is a manual ACH or wire from your own account.
@@ -25,7 +25,7 @@ A refund returns funds to the original card or bank account the customer paid wi
 
 {% endif %}
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="success" icon="clock-rotate-left" %}
 **You're on Enterprise** — you can refund a payment up to **180 days** after it was captured. Beyond that, your account team can arrange a one-off out-of-band refund.

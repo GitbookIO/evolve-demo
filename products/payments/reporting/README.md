@@ -7,7 +7,7 @@ icon: chart-line
 
 Everything that happens in Evolve is queryable. Reports turn raw events into the views your team actually looks at — daily revenue, top customers, decline reasons, dispute rates, the lift from smart routing. They're available in the dashboard, exportable to CSV, and pushable to your data warehouse.
 
-{% if visitor.claims.persona === "jared" %}
+{% if visitor.claims.unsigned.persona === "partner" %}
 
 {% hint style="info" icon="building" %}
 **Setting up reporting at the enterprise level?** You'll likely want **scheduled exports** to your warehouse so your BI tool is the source of truth, not the dashboard. Skip ahead to [Sharing and scheduled exports](sharing-exports.md).
@@ -15,7 +15,7 @@ Everything that happens in Evolve is queryable. Reports turn raw events into the
 
 {% endif %}
 
-{% if visitor.claims.persona === "isobel" %}
+{% if visitor.claims.unsigned.persona === "new" %}
 
 {% hint style="info" icon="hand-wave" %}
 **New to Evolve?** The fastest way to get a feel for what's possible is to open [Standard reports](standard-reports.md) — they're already populated with your test-mode activity.

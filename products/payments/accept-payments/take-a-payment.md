@@ -20,7 +20,7 @@ Evolve gives you four channels to accept payments. They share the same backend â
 | **Embedded Elements** | Branded checkout flows where the URL must stay yours | Medium | Full UI control around our fields |
 | **Direct API** | Mobile apps, custom POS, complex marketplaces | High | Total |
 
-{% if visitor.claims.persona === "harry" %}
+{% if visitor.claims.unsigned.persona === "prospect" %}
 
 {% hint style="info" icon="store" %}
 **Selling on Shopify or another commerce platform?** You won't need any of these directly â€” install [Evolve for Shopify](../../../guides/integrations/shopify.md) and the platform handles the channel choice for you.

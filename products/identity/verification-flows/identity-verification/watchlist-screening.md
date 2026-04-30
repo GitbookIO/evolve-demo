@@ -19,7 +19,7 @@ Watchlist screening checks an identity against four kinds of list:
 
 It's run on top of an identity verification — the document and selfie checks confirm the person is who they say, and the watchlist check decides whether you're allowed to do business with them.
 
-{% if visitor.claims.plan !== "enterprise" %}
+{% if visitor.claims.unsigned.plan !== "enterprise" %}
 
 {% hint style="warning" icon="lock" %}
 **Watchlist screening is Enterprise-only.** It requires the data partnerships and ongoing-monitoring infrastructure available only on the Enterprise plan. [Talk to your account team](mailto:support@evolve.com).

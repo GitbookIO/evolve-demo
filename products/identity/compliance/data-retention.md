@@ -42,7 +42,7 @@ In **Settings → Identity → Retention**, you can set per-data-type retention 
 | Extracted data | 1 year to 10 years | 7 years |
 | Audit logs | 7 years (locked) | 7 years |
 
-{% if visitor.claims.plan === "enterprise" %}
+{% if visitor.claims.unsigned.plan === "enterprise" %}
 
 {% hint style="info" %}
 **Enterprise-specific:** you can also configure per-region retention to match local rules (e.g. shorter retention for EU residents under GDPR, longer for regulated US verticals). Set these under **Settings → Identity → Regional retention**.
