@@ -1,4 +1,5 @@
 ---
+icon: money-bill-transfer
 description: How captured funds become a payout in your bank account.
 ---
 
@@ -8,12 +9,15 @@ A captured charge isn't yet money in your bank — it's a balance on your Evolve
 
 ## The flow
 
-```
-charge.captured  →  available balance  →  settlement (daily)  →  payout (per schedule)
+```mermaid
+flowchart LR
+    A[Captured] --> B[Available balance]
+    B --> C[Daily settlement]
+    C --> D[Payout to bank]
 ```
 
 * **Available balance** updates in real time. You can see it in the dashboard or query `GET /v1/balance`.
-* **Settlement** runs once a day at {{ space.vars.settlement_time_utc }}. It bundles all captures, refunds, fees, and dispute deductions into a single net amount and produces a [settlement file](../reconciliation/settlement-files.md).
+* **Settlement** runs once a day at <code class="expression">space.vars.settlement_time_utc</code>. It bundles all captures, refunds, fees, and dispute deductions into a single net amount and produces a [settlement file](../reconciliation/settlement-files.md).
 * **Payouts** are initiated from the settlement file on your plan's schedule.
 
 ## Payout schedule by plan

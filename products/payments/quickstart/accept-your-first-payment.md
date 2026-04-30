@@ -1,4 +1,5 @@
 ---
+icon: rocket
 description: Take your first test payment from the dashboard — no integration required.
 ---
 
@@ -15,7 +16,7 @@ This walkthrough uses test mode. Test charges are real, but no money moves and n
 
 ### Open the test dashboard
 
-Sign in to [{{ space.vars.dashboard_test }}]({{ space.vars.dashboard_test }}). If you've just created your account, you'll land in test mode by default — you can tell by the **Test** badge in the top bar.
+Sign in to <a href="https://dashboard.test.evolve.com"><code class="expression">space.vars.dashboard_test</code></a>. If you've just created your account, you'll land in test mode by default — you can tell by the **Test** badge in the top bar.
 
 <figure><img src="../.gitbook/assets/dashboard-test-badge.png" alt="The Evolve dashboard showing a Test mode badge in the header"><figcaption><p>Look for the Test badge in the top bar.</p></figcaption></figure>
 
@@ -73,7 +74,7 @@ From the charge page, click **Refund**. You can refund the full amount or a part
 
 ## What's next?
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Switch to live mode</strong></td><td>What changes when you flip the switch.</td><td><a href="test-and-live-mode.md">test-and-live-mode.md</a></td></tr><tr><td><strong>Take payments at scale</strong></td><td>Beyond payment links: Checkout, Elements, the API.</td><td><a href="../accept-payments/take-a-payment.md">take-a-payment.md</a></td></tr><tr><td><strong>Set up a webhook</strong></td><td>React to payment events automatically.</td><td><a href="../../../developers/webhooks/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-toggle-on" style="color:$primary;">:toggle-on:</i></h3></td><td><strong>Switch to live mode</strong></td><td>What changes when you flip the switch.</td><td><a href="test-and-live-mode.md">test-and-live-mode.md</a></td></tr><tr><td><h3><i class="fa-circle-dollar-to-slot" style="color:$primary;">:circle-dollar-to-slot:</i></h3></td><td><strong>Take payments at scale</strong></td><td>Beyond payment links: Checkout, Elements, the API.</td><td><a href="../accept-payments/take-a-payment.md">take-a-payment.md</a></td></tr><tr><td><h3><i class="fa-bolt" style="color:$primary;">:bolt:</i></h3></td><td><strong>Set up a webhook</strong></td><td>React to payment events automatically.</td><td><a href="../../../developers/webhooks/README.md">README.md</a></td></tr></tbody></table>
 
 {% hint style="info" %}
 **Building an integration?** Developers / [Payments API quickstart](../../../developers/payments-api/README.md) covers the same flow with code samples in cURL, Node, Python, Go, and Ruby.

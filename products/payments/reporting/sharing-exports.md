@@ -1,4 +1,5 @@
 ---
+icon: share-nodes
 description: Push reports and settlement files to email, Slack, SFTP, or cloud storage on a schedule.
 ---
 
@@ -66,7 +67,7 @@ The first export runs on the next scheduled tick. You can also trigger an immedi
 The most common scheduled export setup:
 
 * **Source:** the settlement file (one CSV per day).
-* **Cadence:** every day after the {{ space.vars.settlement_time_utc }} cut-off.
+* **Cadence:** every day after the <code class="expression">space.vars.settlement_time_utc</code> cut-off.
 * **Destination:** SFTP or S3 in your finance environment.
 * **Format:** CSV, UTF-8, with a header row.
 

@@ -1,4 +1,5 @@
 ---
+icon: file-export
 description: Pipe Evolve data into your data warehouse, BI tool, or accounting system.
 ---
 
@@ -10,7 +11,7 @@ For most businesses, the dashboard is enough — you build reports, save the vie
 
 Three categories of pre-built integration:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Data warehouses</strong></td><td>Snowflake, BigQuery, Redshift, Databricks.</td><td></td></tr><tr><td><strong>BI tools</strong></td><td>Looker, Tableau, Mode, Metabase.</td><td></td></tr><tr><td><strong>Accounting</strong></td><td>QuickBooks, NetSuite, Xero.</td><td><a href="../../../guides/integrations/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-warehouse" style="color:$primary;">:warehouse:</i></h3></td><td><strong>Data warehouses</strong></td><td>Snowflake, BigQuery, Redshift, Databricks.</td><td></td></tr><tr><td><h3><i class="fa-chart-pie" style="color:$primary;">:chart-pie:</i></h3></td><td><strong>BI tools</strong></td><td>Looker, Tableau, Mode, Metabase.</td><td></td></tr><tr><td><h3><i class="fa-calculator" style="color:$primary;">:calculator:</i></h3></td><td><strong>Accounting</strong></td><td>QuickBooks, NetSuite, Xero.</td><td><a href="../../../guides/integrations/README.md">README.md</a></td></tr></tbody></table>
 
 If your tool isn't listed, you can also:
 

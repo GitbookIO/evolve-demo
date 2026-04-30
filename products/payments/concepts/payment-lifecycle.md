@@ -1,4 +1,5 @@
 ---
+icon: arrows-rotate
 description: The states a payment moves through, and how the dashboard surfaces each one.
 ---
 
@@ -11,21 +12,14 @@ The most important distinction to understand is between **authorized** (the issu
 ## The states
 
 ```mermaid
-stateDiagram-v2
-    [*] --> pending: payment created
-    pending --> authorized: issuer approves
-    pending --> failed: issuer declines
-    authorized --> captured: capture (auto or manual)
-    authorized --> voided: void within 7 days
-    captured --> refunded: refund issued
-    captured --> disputed: cardholder disputes
-    disputed --> won: evidence accepted
-    disputed --> lost: evidence rejected
-    refunded --> [*]
-    failed --> [*]
-    voided --> [*]
-    won --> [*]
-    lost --> [*]
+flowchart LR
+    Pending --> Authorized --> Captured
+    Pending -.->|declined| Failed
+    Authorized -.->|voided| Voided
+    Captured -.->|refund| Refunded
+    Captured -.->|disputed| Disputed
+    Disputed -.-> Won
+    Disputed -.-> Lost
 ```
 
 | State | What it means | Funds impact | Dashboard badge |
@@ -56,7 +50,7 @@ Authorizations expire silently. There's no email or webhook for an expired auth.
 
 Three places to track lifecycle events:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Dashboard timeline</strong></td><td>Visual history per payment.</td><td></td></tr><tr><td><strong>Webhooks</strong></td><td>Push events to your own systems.</td><td><a href="../../../developers/webhooks/README.md">README.md</a></td></tr><tr><td><strong>Reports</strong></td><td>Aggregate state counts over time.</td><td><a href="../reporting/standard-reports.md">standard-reports.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-list-timeline" style="color:$primary;">:list-timeline:</i></h3></td><td><strong>Dashboard timeline</strong></td><td>Visual history per payment.</td><td></td></tr><tr><td><h3><i class="fa-bolt" style="color:$primary;">:bolt:</i></h3></td><td><strong>Webhooks</strong></td><td>Push events to your own systems.</td><td><a href="../../../developers/webhooks/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-chart-bar" style="color:$primary;">:chart-bar:</i></h3></td><td><strong>Reports</strong></td><td>Aggregate state counts over time.</td><td><a href="../reporting/standard-reports.md">standard-reports.md</a></td></tr></tbody></table>
 
 ## Related
 

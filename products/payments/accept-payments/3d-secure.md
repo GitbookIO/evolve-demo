@@ -1,4 +1,5 @@
 ---
+icon: shield-halved
 description: When 3-D Secure is required, when it's optional but worth it, and how Evolve handles it.
 ---
 

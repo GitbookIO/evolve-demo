@@ -25,7 +25,7 @@ Everything that happens in Evolve is queryable. Reports turn raw events into the
 
 ## What reports give you
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Standard reports</strong></td><td>Pre-built views finance and ops use every day.</td><td><a href="standard-reports.md">standard-reports.md</a></td></tr><tr><td><strong>Custom reports</strong></td><td>Build your own views on top of the same data.</td><td><a href="custom-reports.md">custom-reports.md</a></td></tr><tr><td><strong>Exporting to BI tools</strong></td><td>Push to Looker, Tableau, your warehouse.</td><td><a href="exporting.md">exporting.md</a></td></tr><tr><td><strong>Sharing and scheduled exports</strong></td><td>Email distributions, SFTP and S3 pushes.</td><td><a href="sharing-exports.md">sharing-exports.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-chart-bar" style="color:$primary;">:chart-bar:</i></h3></td><td><strong>Standard reports</strong></td><td>Pre-built views finance and ops use every day.</td><td><a href="standard-reports.md">standard-reports.md</a></td></tr><tr><td><h3><i class="fa-sliders" style="color:$primary;">:sliders:</i></h3></td><td><strong>Custom reports</strong></td><td>Build your own views on top of the same data.</td><td><a href="custom-reports.md">custom-reports.md</a></td></tr><tr><td><h3><i class="fa-file-export" style="color:$primary;">:file-export:</i></h3></td><td><strong>Exporting to BI tools</strong></td><td>Push to Looker, Tableau, your warehouse.</td><td><a href="exporting.md">exporting.md</a></td></tr><tr><td><h3><i class="fa-share-nodes" style="color:$primary;">:share-nodes:</i></h3></td><td><strong>Sharing and scheduled exports</strong></td><td>Email distributions, SFTP and S3 pushes.</td><td><a href="sharing-exports.md">sharing-exports.md</a></td></tr></tbody></table>
 
 ## What you can answer
 
@@ -45,7 +45,7 @@ A few examples of what falls out of the standard reports:
 
 * **Dashboard charts** update in near-real-time — typically a few seconds behind the underlying event.
 * **Daily reports** (revenue, methods, declines) cut over at midnight in your account's timezone, set in **Settings → Account → Timezone**.
-* **Settlement-anchored reports** (anything tied to a specific payout) close at the daily settlement cut-off, {{ space.vars.settlement_time_utc }}.
+* **Settlement-anchored reports** (anything tied to a specific payout) close at the daily settlement cut-off, <code class="expression">space.vars.settlement_time_utc</code>.
 * **Custom reports** run on demand; saved views can be scheduled to refresh and email/post to a destination.
 
 ## Permissions

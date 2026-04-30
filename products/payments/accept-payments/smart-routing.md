@@ -1,4 +1,5 @@
 ---
+icon: route
 description: Pick the route most likely to approve each payment — automatically.
 ---
 

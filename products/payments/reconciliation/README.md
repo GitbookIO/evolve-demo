@@ -11,19 +11,19 @@ Reconciliation is the daily work of matching what's in your bank account against
 
 Three things end up in your settlement, and all three need to balance:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Settlement files</strong></td><td>Daily CSV of every captured payment, fee, and adjustment.</td><td><a href="settlement-files.md">settlement-files.md</a></td></tr><tr><td><strong>Refunds</strong></td><td>How refunds appear and reduce your payout.</td><td><a href="refunds.md">refunds.md</a></td></tr><tr><td><strong>Disputes and chargebacks</strong></td><td>Withheld funds, evidence, and outcomes.</td><td><a href="disputes.md">disputes.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-file-csv" style="color:$primary;">:file-csv:</i></h3></td><td><strong>Settlement files</strong></td><td>Daily CSV of every captured payment, fee, and adjustment.</td><td><a href="settlement-files.md">settlement-files.md</a></td></tr><tr><td><h3><i class="fa-rotate-left" style="color:$primary;">:rotate-left:</i></h3></td><td><strong>Refunds</strong></td><td>How refunds appear and reduce your payout.</td><td><a href="refunds.md">refunds.md</a></td></tr><tr><td><h3><i class="fa-gavel" style="color:$primary;">:gavel:</i></h3></td><td><strong>Disputes and chargebacks</strong></td><td>Withheld funds, evidence, and outcomes.</td><td><a href="disputes.md">disputes.md</a></td></tr></tbody></table>
 
 ## The daily rhythm
 
 ```mermaid
 flowchart LR
-    A["Captures<br>(throughout the day)"] --> B["Settlement cut-off<br>{{ space.vars.settlement_time_utc }}"]
+    A["Captures<br>(throughout the day)"] --> B["Settlement cut-off<br>06:00 UTC"]
     B --> C[Settlement file generated]
     C --> D[Payout initiated]
     D --> E[Funds in your bank<br>per plan schedule]
 ```
 
-Every day at {{ space.vars.settlement_time_utc }}, Evolve closes the books on the previous business day and produces:
+Every day at <code class="expression">space.vars.settlement_time_utc</code>, Evolve closes the books on the previous business day and produces:
 
 * A **settlement file** (CSV) listing every payment, refund, fee, and adjustment that contributed to that day's balance.
 * A **payout** to your linked bank account, equal to the net amount on the file.

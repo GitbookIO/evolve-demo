@@ -1,4 +1,5 @@
 ---
+icon: bookmark
 description: Charge the same customer again later — for subscriptions, repeat orders, or one-tap checkouts.
 ---
 

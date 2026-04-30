@@ -1,4 +1,5 @@
 ---
+icon: chart-bar
 description: The pre-built reports finance and ops teams use every day.
 ---
 

@@ -1,4 +1,5 @@
 ---
+icon: gavel
 description: When a customer disputes a charge, what happens, and how to fight back.
 ---
 

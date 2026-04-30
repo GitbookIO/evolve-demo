@@ -1,4 +1,5 @@
 ---
+icon: sliders
 description: Build your own views on top of Evolve's data — without writing SQL.
 ---
 
@@ -18,7 +19,7 @@ Custom reports let you build views beyond the [standard reports](standard-report
 
 Three kinds of report, each backed by a different builder:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Time series</strong></td><td>A metric over time, optionally split by a dimension.</td><td></td></tr><tr><td><strong>Cohort</strong></td><td>Customer groups followed forward in time.</td><td></td></tr><tr><td><strong>Pivot</strong></td><td>Two-dimensional table, one metric per cell.</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-chart-line" style="color:$primary;">:chart-line:</i></h3></td><td><strong>Time series</strong></td><td>A metric over time, optionally split by a dimension.</td><td></td></tr><tr><td><h3><i class="fa-users-line" style="color:$primary;">:users-line:</i></h3></td><td><strong>Cohort</strong></td><td>Customer groups followed forward in time.</td><td></td></tr><tr><td><h3><i class="fa-table-cells" style="color:$primary;">:table-cells:</i></h3></td><td><strong>Pivot</strong></td><td>Two-dimensional table, one metric per cell.</td><td></td></tr></tbody></table>
 
 ## Building a time-series report
 

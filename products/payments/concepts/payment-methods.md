@@ -1,4 +1,5 @@
 ---
+icon: wallet
 description: Which payment methods Evolve supports, and which ones are available on your plan.
 ---
 

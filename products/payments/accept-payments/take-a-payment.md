@@ -1,4 +1,5 @@
 ---
+icon: circle-dollar-to-slot
 description: The four ways to accept a payment, and which one is right for your situation.
 ---
 
@@ -8,7 +9,7 @@ Evolve gives you four channels to accept payments. They share the same backend â
 
 ## Pick a channel
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Payment links</strong></td><td>One URL per payment or product. No code at all.</td><td></td></tr><tr><td><strong>Hosted Checkout</strong></td><td>Redirect to an Evolve-hosted checkout page. ~10 lines of code.</td><td></td></tr><tr><td><strong>Embedded Elements</strong></td><td>Drop-in card and bank fields in your own page. Custom UI.</td><td></td></tr><tr><td><strong>Direct API</strong></td><td>Full control. PCI scope is your responsibility.</td><td><a href="../../../developers/payments-api/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-link" style="color:$primary;">:link:</i></h3></td><td><strong>Payment links</strong></td><td>One URL per payment or product. No code at all.</td><td></td></tr><tr><td><h3><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h3></td><td><strong>Hosted Checkout</strong></td><td>Redirect to an Evolve-hosted checkout page. ~10 lines of code.</td><td></td></tr><tr><td><h3><i class="fa-puzzle-piece" style="color:$primary;">:puzzle-piece:</i></h3></td><td><strong>Embedded Elements</strong></td><td>Drop-in card and bank fields in your own page. Custom UI.</td><td></td></tr><tr><td><h3><i class="fa-code" style="color:$primary;">:code:</i></h3></td><td><strong>Direct API</strong></td><td>Full control. PCI scope is your responsibility.</td><td><a href="../../../developers/payments-api/README.md">README.md</a></td></tr></tbody></table>
 
 ## When to use which
 

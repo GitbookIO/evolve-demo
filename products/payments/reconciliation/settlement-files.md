@@ -1,10 +1,11 @@
 ---
+icon: file-csv
 description: The daily CSV that explains every cent moving in and out of your account.
 ---
 
 # Settlement files
 
-Every business day at {{ space.vars.settlement_time_utc }}, Evolve produces a CSV that lists every payment, refund, fee, dispute deduction, and adjustment that affected your balance during the previous day. The file is the source of truth — what's on it equals exactly what shows up in your bank account on payout day.
+Every business day at <code class="expression">space.vars.settlement_time_utc</code>, Evolve produces a CSV that lists every payment, refund, fee, dispute deduction, and adjustment that affected your balance during the previous day. The file is the source of truth — what's on it equals exactly what shows up in your bank account on payout day.
 
 ## Where to find it
 

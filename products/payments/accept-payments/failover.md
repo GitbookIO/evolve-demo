@@ -1,4 +1,5 @@
 ---
+icon: arrows-spin
 description: Stay up when an acquirer or network goes down.
 ---
 
@@ -9,7 +10,7 @@ Card-acquiring infrastructure is reliable, but it isn't perfect. Once or twice a
 {% if visitor.claims.plan !== "enterprise" %}
 
 {% hint style="warning" icon="lock" %}
-**Failover is an Enterprise feature.** It requires multiple active acquirer agreements, which most non-Enterprise customers don't maintain. If you're considering it, [talk to your account team](mailto:{{ space.vars.support_email }}).
+**Failover is an Enterprise feature.** It requires multiple active acquirer agreements, which most non-Enterprise customers don't maintain. If you're considering it, [talk to your account team](mailto:support@evolve.com).
 {% endhint %}
 
 {% endif %}
@@ -73,4 +74,4 @@ You can simulate a failover from **Settings → Routing → Test failover** in t
 
 * [Smart routing](smart-routing.md) — picking the best route in normal conditions.
 * [Routing report](../reporting/standard-reports.md#routing-report) — seeing failover activity over time.
-* [Status page]({{ space.vars.status_page }}) — Evolve's own platform availability.
+* [Status page](https://status.evolve.com) — Evolve's own platform availability.

@@ -3,6 +3,8 @@ icon: credit-card
 description: Route, reconcile, and report on every payment.
 cover: .gitbook/assets/payments-cover.png
 coverY: 0
+layout:
+  width: wide
 ---
 
 # Payments
@@ -51,7 +53,7 @@ Evolve Payments handles the work between a customer's "pay" click and the money 
 
 {% endif %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Quickstart</strong></td><td>Take your first test payment in five minutes.</td><td><a href="quickstart/accept-your-first-payment.md">accept-your-first-payment.md</a></td></tr><tr><td><strong>Concepts</strong></td><td>How payments move through Evolve.</td><td><a href="concepts/payment-lifecycle.md">payment-lifecycle.md</a></td></tr><tr><td><strong>Accept payments</strong></td><td>Charges, saved methods, 3-D Secure, routing.</td><td><a href="accept-payments/README.md">README.md</a></td></tr><tr><td><strong>Reconciliation</strong></td><td>Settlement files, refunds, disputes.</td><td><a href="reconciliation/README.md">README.md</a></td></tr><tr><td><strong>Reporting</strong></td><td>Daily reports, exports, finance webhooks.</td><td><a href="reporting/README.md">README.md</a></td></tr><tr><td><strong>API reference</strong></td><td>Endpoints, SDKs, and try-it.</td><td><a href="../../developers/payments-api/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-rocket" style="color:$primary;">:rocket:</i></h3></td><td><strong>Quickstart</strong></td><td>Take your first test payment in five minutes.</td><td><a href="quickstart/accept-your-first-payment.md">accept-your-first-payment.md</a></td></tr><tr><td><h3><i class="fa-book-open" style="color:$primary;">:book-open:</i></h3></td><td><strong>Concepts</strong></td><td>How payments move through Evolve.</td><td><a href="concepts/payment-lifecycle.md">payment-lifecycle.md</a></td></tr><tr><td><h3><i class="fa-bolt" style="color:$primary;">:bolt:</i></h3></td><td><strong>Accept payments</strong></td><td>Charges, saved methods, 3-D Secure, routing.</td><td><a href="accept-payments/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-scale-balanced" style="color:$primary;">:scale-balanced:</i></h3></td><td><strong>Reconciliation</strong></td><td>Settlement files, refunds, disputes.</td><td><a href="reconciliation/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-chart-line" style="color:$primary;">:chart-line:</i></h3></td><td><strong>Reporting</strong></td><td>Daily reports, exports, and finance pushes.</td><td><a href="reporting/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-code" style="color:$primary;">:code:</i></h3></td><td><strong>API reference</strong></td><td>Endpoints, SDKs, and try-it.</td><td><a href="../../developers/payments-api/README.md">README.md</a></td></tr></tbody></table>
 
 ## What's new
 
@@ -70,7 +72,7 @@ The biggest recent shipments — see the full [changelog](../../changelog/README
 
 For account-specific questions, billing, or production incidents, contact your account team or open a ticket from the dashboard.
 
-<p><a href="{{ space.vars.dashboard_live }}/support" class="button primary">Open a ticket</a></p>
+<p><a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a></p>
 
 {% endcolumn %}
 

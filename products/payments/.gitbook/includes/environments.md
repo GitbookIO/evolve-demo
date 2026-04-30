@@ -6,7 +6,7 @@ Evolve has two fully separate environments. They share no data — keys, custome
 
 | Environment | API base URL | Dashboard | Key prefix |
 | --- | --- | --- | --- |
-| Test | `{{ space.vars.api_test }}` | `{{ space.vars.dashboard_test }}` | `sk_test_` / `pk_test_` |
-| Live | `{{ space.vars.api_live }}` | `{{ space.vars.dashboard_live }}` | `sk_live_` / `pk_live_` |
+| Test | <code class="expression">space.vars.api_test</code> | <code class="expression">space.vars.dashboard_test</code> | `sk_test_` / `pk_test_` |
+| Live | <code class="expression">space.vars.api_live</code> | <code class="expression">space.vars.dashboard_live</code> | `sk_live_` / `pk_live_` |
 
 Test mode accepts only test card numbers (see [Create a charge](../../accept-payments/create-a-charge.md#test-cards)). No money moves, and no webhooks fire to anything other than test endpoints.

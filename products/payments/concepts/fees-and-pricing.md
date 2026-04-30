@@ -1,4 +1,5 @@
 ---
+icon: receipt
 description: What each plan costs, what's included, and how fees show up in your settlements.
 ---
 
@@ -102,6 +103,6 @@ For Enterprise customers on a custom contract, your negotiated rates are the sou
 
 {% if visitor.claims.plan === "enterprise" %}
 
-<p><a href="{{ space.vars.dashboard_live }}/settings/billing" class="button primary">View your contracted rates</a></p>
+<p><a href="https://dashboard.evolve.com/settings/billing" class="button primary">View your contracted rates</a></p>
 
 {% endif %}
