@@ -17,7 +17,7 @@ Evolve Payments handles the work between a customer's "pay" click and the money 
 
 <p><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button></p>
 
-<p><button type="button" class="button secondary" data-action="ask" data-query="How do I accept my first payment?" data-icon="rocket">How do I accept my first payment?</button> <button type="button" class="button secondary" data-action="ask" data-query="What's in a settlement file?" data-icon="file-csv">What's in a settlement file?</button> <button type="button" class="button secondary" data-action="ask" data-query="When do I need 3-D Secure?" data-icon="shield-halved">When do I need 3-D Secure?</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I route around card declines?" data-icon="route">How do I route around card declines?</button></p>
+<p><button type="button" class="button secondary" data-action="ask" data-query="How do I accept my first payment?" data-icon="rocket">First payment</button> <button type="button" class="button secondary" data-action="ask" data-query="What's in a settlement file?" data-icon="file-csv">Settlement files</button> <button type="button" class="button secondary" data-action="ask" data-query="When do I need 3-D Secure?" data-icon="shield-halved">3-D Secure</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I route around card declines?" data-icon="route">Smart routing</button></p>
 
 ## Start here
 
