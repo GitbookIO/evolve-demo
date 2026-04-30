@@ -23,7 +23,7 @@ The default version date for v3 is <code class="expression">space.vars.api_versi
 
 The v3 reference covers every operation. The most-used endpoints:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h3></td><td><strong>Payments</strong></td><td>Renamed from "Charges". Same lifecycle, new name.</td><td><a href="reference.md#payments">reference.md</a></td></tr><tr><td><h3><i class="fa-rotate-left" style="color:$primary;">:rotate-left:</i></h3></td><td><strong>Refunds</strong></td><td>Now reference <code>payment</code> instead of <code>charge</code>.</td><td><a href="reference.md#refunds">reference.md</a></td></tr><tr><td><h3><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h3></td><td><strong>Payouts</strong></td><td>Same as v2.</td><td><a href="reference.md#payouts">reference.md</a></td></tr><tr><td><h3><i class="fa-scale-balanced" style="color:$primary;">:scale-balanced:</i></h3></td><td><strong>Balance</strong></td><td>Same as v2, plus per-currency holds.</td><td><a href="reference.md#balance">reference.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h3></td><td><strong>Payments</strong></td><td>Renamed from "Charges". Same lifecycle, new name.</td><td><a href="reference/README.md">reference/README.md</a></td></tr><tr><td><h3><i class="fa-rotate-left" style="color:$primary;">:rotate-left:</i></h3></td><td><strong>Refunds</strong></td><td>Now reference <code>payment</code> instead of <code>charge</code>.</td><td><a href="reference/README.md">reference/README.md</a></td></tr><tr><td><h3><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h3></td><td><strong>Payouts</strong></td><td>Same as v2.</td><td><a href="reference/README.md">reference/README.md</a></td></tr><tr><td><h3><i class="fa-scale-balanced" style="color:$primary;">:scale-balanced:</i></h3></td><td><strong>Balance</strong></td><td>Same as v2, plus per-currency holds.</td><td><a href="reference/README.md">reference/README.md</a></td></tr></tbody></table>
 
 ## What's new in v3
 
@@ -84,6 +84,6 @@ v3 is targeting graduation to stable around **mid-2026**. We're not committing t
 
 ## Try it
 
-Every operation in the [Reference](reference.md) has a **Test it** panel. Drop in your test API key, edit the request, and run it against test mode without leaving the docs.
+Every operation in the [Reference](reference/README.md) has a **Test it** panel. Drop in your test API key, edit the request, and run it against test mode without leaving the docs.
 
-<p><a href="reference.md" class="button primary">Open the reference</a></p>
+<p><a href="reference/README.md" class="button primary">Open the reference</a></p>

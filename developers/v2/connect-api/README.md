@@ -7,11 +7,11 @@ icon: circles-overlap
 
 # Overview
 
-The Connect API extends Payments with the platform-specific resources — connected accounts (sellers), transfers (moving funds to sellers), and checkout sessions (taking payments on a seller's behalf). The full reference lives at [Reference](reference.md).
+The Connect API extends Payments with the platform-specific resources — connected accounts (sellers), transfers (moving funds to sellers), and checkout sessions (taking payments on a seller's behalf). The full reference lives at [Reference](reference/README.md).
 
 ## Resources
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-store" style="color:$primary;">:store:</i></h4></td><td><strong>Connected accounts</strong></td><td>The sellers on your platform. One per seller.</td><td><a href="reference.md#connected-accounts">#connected-accounts</a></td></tr><tr><td><h4><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h4></td><td><strong>Transfers</strong></td><td>Move funds from platform balance to a connected account.</td><td><a href="reference.md#transfers">#transfers</a></td></tr><tr><td><h4><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h4></td><td><strong>Checkout sessions</strong></td><td>Hosted or embedded checkout for a Connect payment.</td><td><a href="reference.md#checkout-sessions">#checkout-sessions</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-store" style="color:$primary;">:store:</i></h4></td><td><strong>Connected accounts</strong></td><td>The sellers on your platform. One per seller.</td><td><a href="reference/README.md">#connected-accounts</a></td></tr><tr><td><h4><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h4></td><td><strong>Transfers</strong></td><td>Move funds from platform balance to a connected account.</td><td><a href="reference/README.md">#transfers</a></td></tr><tr><td><h4><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h4></td><td><strong>Checkout sessions</strong></td><td>Hosted or embedded checkout for a Connect payment.</td><td><a href="reference/README.md">#checkout-sessions</a></td></tr></tbody></table>
 
 ## A minimal flow
 
@@ -57,4 +57,4 @@ For the product-side concepts — onboarding flow, payout scheduling, dispute ro
 
 ## Try it
 
-<a href="reference.md" class="button primary">Open the reference</a>
+<a href="reference/README.md" class="button primary">Open the reference</a>
