@@ -47,13 +47,13 @@ Take payments, verify customers, and run a marketplace — all on one platform. 
 
 This site is a demo of GitBook's enterprise features applied to a fictional fintech, **Evolve**. It shows what a real customer-facing docs site looks like end-to-end — adaptive content, OpenAPI variants, the AI Assistant with Connections, change-request workflows, hidden pages with public/authenticated flips, and more.
 
-{% if visitor.claims.unsigned.persona == false %}
+{% if !visitor.claims.unsigned.persona %}
 Try a persona to see adaptive content in action across the site:
 
 <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new&#x26;visitor.plan=starter" class="button secondary" data-icon="seedling">New user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing&#x26;visitor.plan=growth" class="button secondary" data-icon="rocket">Migrator</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a>
 {% endif %}
 
-{% if visitor.claims.unsigned.persona != false %}
+{% if visitor.claims.unsigned.persona %}
 <i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are currently <code class="expression">visitor.claims.unsigned.persona === "prospect" ? "a prospect user exploring the product" : visitor.claims.unsigned.persona === "new" ? "a new user" : visitor.claims.unsigned.persona === "existing" ? "an existing user" : visitor.claims.unsigned.persona === "partner" ? "a partner" : ""</code><code class="expression">visitor.claims.unsigned.plan ? ` on the ${visitor.claims.unsigned.plan.charAt(0).toUpperCase() + visitor.claims.unsigned.plan.slice(1)} plan` : ""</code>. [<mark style="color:$primary;">Reset</mark>](https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=)
 {% endif %}
 
@@ -78,7 +78,7 @@ Try a persona to see adaptive content in action across the site:
 
 
 
-{% if visitor.claims.unsigned.persona != false %}
+{% if visitor.claims.unsigned.persona %}
 
 
 ***
@@ -230,7 +230,7 @@ Our biggest recent releases
 
 ## Partner with Evolve
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h4><i class="fa-handshake" style="color:$primary;">:handshake:</i> Become a partner</h4></td><td>Solution, implementation, and technology partners earn revenue share, get co-marketing support, and a direct line to your partner success manager.</td><td><a href="https://gitbook.com/enterprise" class="button primary">Apply to the program</a> <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/R0VawBV5xcQ4exP2PlWS/" class="button secondary">Learn more</a></td></tr><tr><td><h4><i class="fa-key" style="color:$primary;">:key:</i> Already a partner?</h4></td><td>Sign in to the partner portal for deal registration, marketing resources, training, and support.</td><td><a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;plan=enterprise" class="button primary">Sign in</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/partners?visitor.persona=partner&#x26;plan=enterprise" class="button secondary">Open the portal</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h4><i class="fa-handshake" style="color:$primary;">:handshake:</i> Become a partner</h4></td><td>Solution, implementation, and technology partners earn revenue share, get co-marketing support, and a direct line to your partner success manager.</td><td><a href="https://gitbook.com/enterprise" class="button primary">Apply to the program</a> <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/R0VawBV5xcQ4exP2PlWS/" class="button secondary">Learn more</a></td></tr><tr><td><h4><i class="fa-key" style="color:$primary;">:key:</i> Already a partner?</h4></td><td>Sign in to the partner portal for deal registration, marketing resources, training, and support.</td><td><a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button primary">Sign in</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/partners?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button secondary">Open the portal</a></td></tr></tbody></table>
 
 ## Get help
 
