@@ -13,7 +13,7 @@ layout:
 
 The Help Center is a curated set of focused answers to the questions our customers ask most. The Assistant pulls answers from this site, our [community forum](https://gitbook.com), and the [Evolve YouTube channel](https://gitbook.com) — so for most questions, asking the Assistant is faster than browsing.
 
-{% hint style="info" icon="gitbook" %}
+{% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This space demonstrates **Connections**: the Assistant uses external sources (a fake community forum and YouTube channel) alongside the docs to answer questions. Each FAQ page is structured for **AI retrieval** — H2-style question headings, focused answers, no preamble — so the Assistant can return a clean excerpt rather than a wall of text.

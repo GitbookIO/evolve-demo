@@ -11,7 +11,7 @@ layout:
 
 Build with Evolve. The Developers space is the source of truth for APIs, SDKs, webhooks, and the agent integrations across all three products — [Payments](../products/payments/README.md), [Identity](../products/identity/README.md), and [Connect](../products/connect/README.md).
 
-{% hint style="info" icon="gitbook" %}
+{% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This space demonstrates **variants** — three Git-Synced spaces (`v1`, `v2`, `v3`) appear as a single dropdown in the top bar. Switch between them to see how the Payments API differs across versions. The Reference pages are **auto-rendered from OpenAPI specs** in `developers/openapi/v1/`. Code samples on the Quickstart and Authentication pages use the **tabs block** for Node, Python, Go, Ruby, and cURL.

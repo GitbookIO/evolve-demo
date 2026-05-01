@@ -11,7 +11,7 @@ layout:
 
 Evolve Payments handles the work between a customer's "pay" click and the money landing in your account — card and bank-rail processing, network routing, 3-D Secure, settlement, and reporting. This space covers everything from the first test charge to enterprise routing rules.
 
-{% hint style="info" icon="gitbook" %}
+{% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This space is the deepest in the demo and shows off three GitBook features: **adaptive content** (hints and entire blocks change with the visitor), **space variables** (URLs and constants pulled from `vars.yaml`), and **synced blocks** (the test/live environments table is reused across all three product spaces).

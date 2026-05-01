@@ -13,7 +13,7 @@ layout:
 
 Hands-on walkthroughs for the workflows we get the most questions about. Each tutorial follows the same structure — short intro, video walkthrough, stepper with the actual build, common pitfalls, and pointers to what's next.
 
-{% hint style="info" icon="gitbook" %}
+{% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 Every tutorial in this section uses the same **content template** — frontmatter, intro, prerequisites hint, video embed, stepper, common-pitfalls expandables, what's-next cards. That consistency is intentional: it makes the structure scannable for repeat readers, and easier for the team to author new ones.

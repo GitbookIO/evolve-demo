@@ -9,7 +9,7 @@ layout:
     visible: false
 ---
 
-{% hint style="info" icon="gitbook" %}
+{% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This space demonstrates the public/authenticated **flip**: anonymous visitors see the partner pitch below; authenticated partners see a portal home in the same place. The flip is driven by adaptive content on `visitor.claims.unsigned.persona`. Try it:

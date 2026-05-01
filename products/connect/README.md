@@ -13,7 +13,7 @@ Evolve Connect is the platform layer of Evolve Payments. If you operate a market
 
 It's built on top of [Payments](../payments/README.md) — your platform uses the same API, the same dashboard, and the same settlement of fees. The Connect-specific concepts on top are <i class="fa-store" style="color:$primary;">:store:</i> connected accounts (your sellers), <i class="fa-percent" style="color:$primary;">:percent:</i> application fees (your cut), and <i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i> transfers (moving funds to seller accounts).
 
-{% hint style="info" icon="gitbook" %}
+{% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This space demonstrates **synced blocks reused from Payments** — the test/live environments table on [Test mode and live mode](quickstart/test-and-live-mode.md) is the same block used in the Payments and Identity spaces. It also leans on **inline icons** and **column blocks** for visual layout (see the "Where Connect fits" section below).

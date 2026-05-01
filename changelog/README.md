@@ -23,7 +23,7 @@ layout:
 
 Everything we've shipped across Evolve in the last six months. Filter by product tag using the controls in the top right of the timeline.
 
-{% hint style="info" icon="gitbook" %}
+{% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This page is a single **Updates block** — a timeline of dated entries with **tags** (defined in `.gitbook/tags.yaml`). The four tags here are `payments`, `identity`, `connect`, `platform`; multi-tagged entries get all their tags. **RSS** is auto-generated for the page.
