@@ -19,7 +19,7 @@ Hands-on walkthroughs for the workflows we get the most questions about. Each tu
 
 <p><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button></p>
 
-<p><button type="button" class="button secondary" data-action="ask" data-query="How do I take my first payment?" data-icon="rocket">First payment</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I migrate from Stripe?" data-icon="arrows-left-right">Migrate from Stripe</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I onboard sellers on a marketplace?" data-icon="user-plus">Onboard sellers</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I prevent chargebacks?" data-icon="shield-halved">Prevent chargebacks</button></p>
+<p><button type="button" class="button secondary" data-action="ask" data-query="How do I take my first payment?" data-icon="rocket">First payment</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I migrate from Stripe?" data-icon="arrows-left-right">Stripe migration</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I onboard sellers on a marketplace?" data-icon="user-plus">Onboard sellers</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I prevent chargebacks?" data-icon="shield-halved">Prevent chargebacks</button></p>
 
 ## Build common payment flows
 
