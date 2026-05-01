@@ -61,7 +61,7 @@ On Growth, the same warnings fire at 80% and 95% of $1M; there's no hard cap, bu
 
 When you take a payment, Evolve charges you the processing fee. When you refund it, the fee stays — you've paid the network and that fee isn't recoverable. The refund goes through at no additional cost from Evolve, but the original processing fee on the payment becomes a sunk cost.
 
-This isn't unique to Evolve — every major processor works this way. See the [community thread on refund cost accounting](https://community.evolve.com/t/refund-fee-accounting) for how teams typically book this.
+This isn't unique to Evolve — every major processor works this way. See the [community thread on refund cost accounting](https://gitbook.com) for how teams typically book this.
 
 ## Why was my account flagged for risk review?
 
@@ -71,6 +71,6 @@ Most risk reviews resolve within 2 business days with no action from you. If we 
 
 ## Where can I find more answers?
 
-* [Community forum: Billing & invoices](https://community.evolve.com/c/billing)
-* [YouTube: Pricing explained](https://youtube.com/@evolvepay/pricing-explained)
+* [Community forum: Billing & invoices](https://gitbook.com)
+* [YouTube: Pricing explained](https://gitbook.com)
 * [Payments → Fees and pricing](../../products/payments/concepts/fees-and-pricing.md)

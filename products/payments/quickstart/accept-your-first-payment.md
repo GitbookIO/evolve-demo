@@ -16,7 +16,7 @@ This walkthrough uses test mode. Test charges are real, but no money moves and n
 
 ### Open the test dashboard
 
-Sign in to <a href="https://dashboard.test.evolve.com"><code class="expression">space.vars.dashboard_test</code></a>. If you've just created your account, you'll land in test mode by default — you can tell by the **Test** badge in the top bar.
+Sign in to <a href="https://gitbook.com"><code class="expression">space.vars.dashboard_test</code></a>. If you've just created your account, you'll land in test mode by default — you can tell by the **Test** badge in the top bar.
 
 <figure><img src="../.gitbook/assets/dashboard-test-badge.png" alt="The Evolve dashboard showing a Test mode badge in the header"><figcaption><p>Look for the Test badge in the top bar.</p></figcaption></figure>
 

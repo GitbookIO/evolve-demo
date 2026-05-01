@@ -9,7 +9,7 @@ description: Sales enablement, technical deep-dives, and partner certification.
 {% if visitor.claims.unsigned.persona !== "partner" %}
 
 {% hint style="warning" icon="lock" %}
-**This page is for active Evolve partners.** [Sign in to the partner portal](https://login.evolve.com) to access training. Not yet a partner? [Apply to the program](README.md).
+**This page is for active Evolve partners.** [Sign in to the partner portal](https://gitbook.com) to access training. Not yet a partner? [Apply to the program](README.md).
 {% endhint %}
 
 {% endif %}
@@ -26,7 +26,7 @@ Three certifications, free for active partners:
 
 Certifications are valid for 12 months and renew with a 1-hour update course covering the year's changes.
 
-<p><a href="https://learn.evolve.com" class="button primary">Open the learning portal</a></p>
+<p><a href="https://gitbook.com" class="button primary">Open the learning portal</a></p>
 
 ## Self-paced courses
 
@@ -63,7 +63,7 @@ Past sessions:
 
 The full library has 200+ hours of recordings going back 3 years.
 
-<p><a href="https://learn.evolve.com/recordings" class="button secondary">Browse the library</a></p>
+<p><a href="https://gitbook.com" class="button secondary">Browse the library</a></p>
 
 ## Sales enablement kit
 

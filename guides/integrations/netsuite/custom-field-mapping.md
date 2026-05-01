@@ -95,7 +95,7 @@ The test entry is reversed automatically after 24 hours so it doesn't pollute yo
 
 ## Last reviewed
 
-Last reviewed in early 2026. Mapping options expand as NetSuite ships new custom-segment features. Suggest updates via [the docs repo](https://github.com/evolve-pay/docs).
+Last reviewed in early 2026. Mapping options expand as NetSuite ships new custom-segment features. Suggest updates via [the docs repo](https://github.com/GitbookIO/evolve-demo).
 
 ## Related
 

@@ -101,7 +101,7 @@ For Connect platforms with international sellers, multi-currency on is almost al
 
 ## Last reviewed
 
-Last reviewed in early 2026. Mapping conventions occasionally update with new QuickBooks releases; track changes via the [docs repo](https://github.com/evolve-pay/docs).
+Last reviewed in early 2026. Mapping conventions occasionally update with new QuickBooks releases; track changes via the [docs repo](https://github.com/GitbookIO/evolve-demo).
 
 ## Related
 

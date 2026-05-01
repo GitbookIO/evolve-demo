@@ -68,7 +68,7 @@ The mapping between Slack users and Evolve dashboard users is automatic when the
 
 ## Last reviewed
 
-This page was last reviewed in early 2026. Doc updates flow through change requests in the [evolve-pay/docs repo](https://github.com/evolve-pay/docs) — open one if anything here is out of date.
+This page was last reviewed in early 2026. Doc updates flow through change requests in the [evolve-pay/docs repo](https://github.com/GitbookIO/evolve-demo) — open one if anything here is out of date.
 
 ## Related
 

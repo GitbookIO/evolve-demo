@@ -110,7 +110,7 @@ Most teams use Plaid first with micro-deposits as fallback — covered automatic
 
 ## Where can I find more answers?
 
-* [Community forum: Identity & verification](https://community.evolve.com/c/identity)
-* [YouTube: Identity walkthroughs](https://youtube.com/@evolvepay/identity-playlist)
+* [Community forum: Identity & verification](https://gitbook.com)
+* [YouTube: Identity walkthroughs](https://gitbook.com)
 * [Identity product space](../../products/identity/README.md)
 * [Tutorials: Verify customers and businesses](../tutorials/README.md#verify-customers-and-businesses)

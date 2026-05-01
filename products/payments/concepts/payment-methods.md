@@ -12,7 +12,7 @@ Evolve supports cards, bank rails, and direct-debit schemes. The methods availab
 {% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="layer-group" %}
-**You're on Starter.** Card payments only, in USD. To accept ACH, debit, or international rails, [upgrade to Growth](https://evolve.com/pricing).
+**You're on Starter.** Card payments only, in USD. To accept ACH, debit, or international rails, [upgrade to Growth](https://gitbook.com).
 {% endhint %}
 
 {% endif %}

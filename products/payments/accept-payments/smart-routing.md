@@ -12,7 +12,7 @@ For most teams, smart routing recovers 1–3% of payments that would otherwise b
 {% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="warning" icon="lock" %}
-**Smart routing is a Growth and Enterprise feature.** Starter accounts use a single default acquirer per region. To enable smart routing, [upgrade your plan](https://evolve.com/pricing).
+**Smart routing is a Growth and Enterprise feature.** Starter accounts use a single default acquirer per region. To enable smart routing, [upgrade your plan](https://gitbook.com).
 {% endhint %}
 
 {% endif %}

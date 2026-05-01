@@ -11,6 +11,12 @@ layout:
 
 Evolve Identity verifies the people and businesses you transact with — through document review, biometric selfie checks, bank account verification, and business records (KYB). It's the same platform as Payments, with the same dashboard, the same auth, and the same settlement of fees.
 
+{% hint style="info" icon="gitbook" %}
+**A note from GitBook**
+
+This space demonstrates **nested page groups** — the Verification flows section has parent pages (Identity verification, Bank account verification, Business verification) each with their own subpages. It also includes a **hidden page**: [Watchlist screening](verification-flows/identity-verification/watchlist-screening.md) doesn't appear in the sidebar nav but is accessible via direct link. The same adaptive-content patterns from Payments apply here too — try `?persona=partner` to see Enterprise-specific content.
+{% endhint %}
+
 {% hint style="info" %}
 **Looking for the API reference?** Endpoints, parameters, and SDK examples live in [Developers / Identity API](../../developers/identity-api/README.md). This space focuses on concepts and workflows.
 {% endhint %}
@@ -70,7 +76,7 @@ Evolve Identity verifies the people and businesses you transact with — through
 
 For account-specific questions, compliance reviews, or production incidents, contact your account team or open a ticket from the dashboard.
 
-<p><a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a></p>
+<p><a href="https://gitbook.com" class="button primary">Open a ticket</a></p>
 
 {% endcolumn %}
 

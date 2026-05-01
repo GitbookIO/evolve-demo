@@ -9,7 +9,7 @@ description: Register a deal, track its status, see your protection windows.
 {% if visitor.claims.unsigned.persona !== "partner" %}
 
 {% hint style="warning" icon="lock" %}
-**This page is for active Evolve partners.** [Sign in to the partner portal](https://login.evolve.com) to access deal registration. Not yet a partner? [Apply to the program](README.md).
+**This page is for active Evolve partners.** [Sign in to the partner portal](https://gitbook.com) to access deal registration. Not yet a partner? [Apply to the program](README.md).
 {% endhint %}
 
 {% endif %}
@@ -20,7 +20,7 @@ Registering deals early protects your commission for the duration of the deal cy
 
 ## Register a new deal
 
-<p><a href="https://partners.evolve.com/deals/new" class="button primary">Open registration form</a></p>
+<p><a href="https://gitbook.com" class="button primary">Open registration form</a></p>
 
 The form takes about 3 minutes. You'll need:
 

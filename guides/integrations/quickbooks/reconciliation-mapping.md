@@ -85,7 +85,7 @@ The whole process for a typical month is 15–30 minutes for an accountant famil
 
 ## Last reviewed
 
-Reviewed in early 2026. Mapping options expand occasionally with new QuickBooks features; suggest changes via [the docs repo](https://github.com/evolve-pay/docs).
+Reviewed in early 2026. Mapping options expand occasionally with new QuickBooks features; suggest changes via [the docs repo](https://github.com/GitbookIO/evolve-demo).
 
 ## Related
 

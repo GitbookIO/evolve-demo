@@ -98,7 +98,7 @@ The pause is per-channel and per-user; admins can also pause workspace-wide via 
 
 ## Last reviewed
 
-Reviewed in early 2026, with quarterly updates as new alert types ship. Suggest an alert type via [a change request on the docs repo](https://github.com/evolve-pay/docs).
+Reviewed in early 2026, with quarterly updates as new alert types ship. Suggest an alert type via [a change request on the docs repo](https://github.com/GitbookIO/evolve-demo).
 
 ## Related
 

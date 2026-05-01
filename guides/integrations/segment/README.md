@@ -79,7 +79,7 @@ For the highest-volume mappings (every charge), Segment's per-MTU pricing can ad
 
 ## Last reviewed
 
-Last reviewed in early 2026. Segment's event spec is occasionally updated; submit changes via the [docs repo](https://github.com/evolve-pay/docs).
+Last reviewed in early 2026. Segment's event spec is occasionally updated; submit changes via the [docs repo](https://github.com/GitbookIO/evolve-demo).
 
 ## Related
 

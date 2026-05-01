@@ -13,7 +13,7 @@ You don't need a production account or any prior payments experience to follow a
 
 ## Prerequisites
 
-* A test API key from [https://dashboard.test.evolve.com](https://dashboard.test.evolve.com) → **Developers → API keys**. It starts with `sk_test_`.
+* A test API key from [https://dashboard.test.evolve.com](https://gitbook.com) → **Developers → API keys**. It starts with `sk_test_`.
 * Your language's package manager set up (`npm`, `pip`, `go get`, or `gem`).
 
 {% hint style="warning" %}
@@ -178,7 +178,7 @@ A successful response looks like:
 
 ## 3. Verify it landed
 
-Open [https://dashboard.test.evolve.com/payments](https://dashboard.test.evolve.com/payments). Your charge should be at the top of the list. Click it to see the request that created it, the timeline, and the webhook deliveries.
+Open [https://dashboard.test.evolve.com/payments](https://gitbook.com). Your charge should be at the top of the list. Click it to see the request that created it, the timeline, and the webhook deliveries.
 
 ## 4. Receive a webhook
 

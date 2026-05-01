@@ -87,7 +87,7 @@ Set the default in **Connect → Settings → Dispute policy**, override per-sel
 
 Bank account became invalid — closed, frozen, name mismatch, or wrong details. The dashboard shows the bank's reason code. The amount returns to the seller's balance; they update the bank account in their portal and the next scheduled payout includes the failed amount.
 
-Three failed payouts in a row auto-pause the seller until you intervene. See the [community thread on payout-failure recovery](https://community.evolve.com/t/payout-failure-recovery) for the typical playbook.
+Three failed payouts in a row auto-pause the seller until you intervene. See the [community thread on payout-failure recovery](https://gitbook.com) for the typical playbook.
 
 ## Can I have a seller in a country my platform doesn't operate in?
 
@@ -104,7 +104,7 @@ Most Connect platforms use destination charges — buyers see a consistent platf
 
 ## Where can I find more answers?
 
-* [Community forum: Connect & marketplaces](https://community.evolve.com/c/connect)
-* [YouTube: Connect playlist](https://youtube.com/@evolvepay/connect-playlist)
+* [Community forum: Connect & marketplaces](https://gitbook.com)
+* [YouTube: Connect playlist](https://gitbook.com)
 * [Connect product space](../../products/connect/README.md)
 * [Tutorials: Run a marketplace with Connect](../tutorials/README.md#run-a-marketplace-with-connect)

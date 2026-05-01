@@ -11,7 +11,7 @@ Evolve uses bearer-token authentication. Every request includes an `Authorizatio
 Authorization: Bearer sk_live_4gT8m...
 ```
 
-Keys are issued and rotated from the [dashboard](https://dashboard.evolve.com) under **Developers → API keys**. We recommend rotating production keys every 90 days.
+Keys are issued and rotated from the [dashboard](https://gitbook.com) under **Developers → API keys**. We recommend rotating production keys every 90 days.
 
 ## Key types
 

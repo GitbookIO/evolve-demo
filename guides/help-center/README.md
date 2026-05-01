@@ -11,7 +11,13 @@ layout:
 
 # Help Center
 
-The Help Center is a curated set of focused answers to the questions our customers ask most. The Assistant pulls answers from this site, our [community forum](https://community.evolve.com), and the [Evolve YouTube channel](https://youtube.com/@evolvepay) — so for most questions, asking the Assistant is faster than browsing.
+The Help Center is a curated set of focused answers to the questions our customers ask most. The Assistant pulls answers from this site, our [community forum](https://gitbook.com), and the [Evolve YouTube channel](https://gitbook.com) — so for most questions, asking the Assistant is faster than browsing.
+
+{% hint style="info" icon="gitbook" %}
+**A note from GitBook**
+
+This space demonstrates **Connections**: the Assistant uses external sources (a fake community forum and YouTube channel) alongside the docs to answer questions. Each FAQ page is structured for **AI retrieval** — H2-style question headings, focused answers, no preamble — so the Assistant can return a clean excerpt rather than a wall of text.
+{% endhint %}
 
 ## Ask anything
 
@@ -20,7 +26,7 @@ The Help Center is a curated set of focused answers to the questions our custome
 <p><button type="button" class="button secondary" data-action="ask" data-query="How do I rotate an API key?" data-icon="key">API keys</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I change my pricing plan?" data-icon="file-invoice-dollar">Plan changes</button> <button type="button" class="button secondary" data-action="ask" data-query="Why is my webhook not firing?" data-icon="bolt">Webhooks</button> <button type="button" class="button secondary" data-action="ask" data-query="Why was my customer's card declined?" data-icon="circle-xmark">Card declines</button></p>
 
 {% hint style="info" %}
-**Where the Assistant looks.** When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](../../products/payments/README.md), the [Developer docs](../../developers/v2/README.md), our [community forum](https://community.evolve.com), and the [YouTube channel](https://youtube.com/@evolvepay). It cites whichever sources it pulled from in the answer.
+**Where the Assistant looks.** When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](../../products/payments/README.md), the [Developer docs](../../developers/v2/README.md), our [community forum](https://gitbook.com), and the [YouTube channel](https://gitbook.com). It cites whichever sources it pulled from in the answer.
 {% endhint %}
 
 ## Browse by topic
@@ -36,7 +42,7 @@ The Help Center is a curated set of focused answers to the questions our custome
 
 Real-time discussion with other Evolve customers and our team. Most product questions have a thread.
 
-<p><a href="https://community.evolve.com" class="button secondary">Visit the forum</a></p>
+<p><a href="https://gitbook.com" class="button secondary">Visit the forum</a></p>
 
 {% endcolumn %}
 
@@ -46,7 +52,7 @@ Real-time discussion with other Evolve customers and our team. Most product ques
 
 Walkthroughs, deep-dives, monthly product updates. Subscribe for new releases.
 
-<p><a href="https://youtube.com/@evolvepay" class="button secondary">Watch on YouTube</a></p>
+<p><a href="https://gitbook.com" class="button secondary">Watch on YouTube</a></p>
 
 {% endcolumn %}
 
@@ -56,11 +62,11 @@ Walkthroughs, deep-dives, monthly product updates. Subscribe for new releases.
 
 For account-specific issues or production incidents, the support team is your fastest path.
 
-<p><a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a></p>
+<p><a href="https://gitbook.com" class="button primary">Open a ticket</a></p>
 
 {% endcolumn %}
 {% endcolumns %}
 
 ## Status
 
-If something across Evolve isn't working, check [status.evolve.com](https://status.evolve.com) before opening a ticket. We post updates there for any platform-wide issue within a few minutes of detection.
+If something across Evolve isn't working, check [status.evolve.com](https://gitbook.com) before opening a ticket. We post updates there for any platform-wide issue within a few minutes of detection.

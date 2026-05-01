@@ -102,4 +102,4 @@ Each Evolve resource carries a `metadata` object — arbitrary key/value pairs y
 
 ## Last reviewed
 
-Last reviewed in early 2026. The trigger and action catalog is updated as new Evolve features ship; suggest additions via [change request on the docs repo](https://github.com/evolve-pay/docs).
+Last reviewed in early 2026. The trigger and action catalog is updated as new Evolve features ship; suggest additions via [change request on the docs repo](https://github.com/GitbookIO/evolve-demo).

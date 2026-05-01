@@ -74,4 +74,4 @@ You can simulate a failover from **Settings → Routing → Test failover** in t
 
 * [Smart routing](smart-routing.md) — picking the best route in normal conditions.
 * [Routing report](../reporting/standard-reports.md#routing-report) — seeing failover activity over time.
-* [Status page](https://status.evolve.com) — Evolve's own platform availability.
+* [Status page](https://gitbook.com) — Evolve's own platform availability.

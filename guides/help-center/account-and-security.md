@@ -31,13 +31,13 @@ SSO is available on Growth and Enterprise. In **Settings → Security → SSO**,
 
 After SSO is enabled, password-based logins are disabled for everyone except break-glass admins (you can configure this).
 
-For SCIM (auto-provisioning team members from your IdP), see the [community forum thread on SCIM setup](https://community.evolve.com/t/scim-setup-guide).
+For SCIM (auto-provisioning team members from your IdP), see the [community forum thread on SCIM setup](https://gitbook.com).
 
 ## How do I rotate an API key?
 
 In **Developers → API keys**, click **Roll** next to the key. The new key is active immediately; the old one keeps working for 24 hours so you can deploy without downtime. Revoke the old one once you've confirmed the new one is in place.
 
-For incident response (suspected leakage), revoke immediately rather than rolling — anyone with the old key loses access at once. See the [video walkthrough on YouTube](https://youtube.com/@evolvepay/key-rotation-walkthrough) for the full incident-response flow.
+For incident response (suspected leakage), revoke immediately rather than rolling — anyone with the old key loses access at once. See the [video walkthrough on YouTube](https://gitbook.com) for the full incident-response flow.
 
 ## What does Evolve do if a key leaks publicly?
 
@@ -77,7 +77,7 @@ Account data is retained per your retention policy (default 7 years for complian
 
 ## Where can I find more answers?
 
-* [Community forum: Account & access](https://community.evolve.com/c/account-access)
-* [YouTube: Security best practices](https://youtube.com/@evolvepay/security-best-practices)
+* [Community forum: Account & access](https://gitbook.com)
+* [YouTube: Security best practices](https://gitbook.com)
 * [Developer docs: Authentication](../../developers/v2/getting-started/authentication.md)
 * [Identity compliance: Audit logs](../../products/identity/compliance/audit-logs.md)

@@ -84,7 +84,7 @@ For most well-trodden integration patterns, the [Tutorials](../tutorials/README.
 
 ## Where can I find more answers?
 
-* [Community forum: Getting started](https://community.evolve.com/c/getting-started)
-* [YouTube: Onboarding walkthrough](https://youtube.com/@evolvepay/onboarding-walkthrough)
+* [Community forum: Getting started](https://gitbook.com)
+* [YouTube: Onboarding walkthrough](https://gitbook.com)
 * [Tutorials](../tutorials/README.md) — end-to-end builds for common workflows.
 * [Developers Quickstart](../../developers/v2/getting-started/quickstart.md) — five-minute API integration.

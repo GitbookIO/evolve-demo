@@ -10,7 +10,7 @@ By the end of this tutorial you'll have a working checkout flow — a buyer clic
 This is the right starting point if you've never integrated payments before, or if you're prototyping a new flow.
 
 {% hint style="info" %}
-**Prerequisites.** A test API key from [dashboard.test.evolve.com](https://dashboard.test.evolve.com), a server that can accept HTTPS requests, and either Node or Python on your machine. If you don't have a server yet, [ngrok](https://ngrok.com) plus a tiny Express app is fine.
+**Prerequisites.** A test API key from [dashboard.test.evolve.com](https://gitbook.com), a server that can accept HTTPS requests, and either Node or Python on your machine. If you don't have a server yet, [ngrok](https://ngrok.com) plus a tiny Express app is fine.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=55oOB-lsQKY" %}

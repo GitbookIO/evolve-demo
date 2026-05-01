@@ -9,13 +9,23 @@ layout:
     visible: false
 ---
 
+{% hint style="info" icon="gitbook" %}
+**A note from GitBook**
+
+This space demonstrates the public/authenticated **flip**: anonymous visitors see the partner pitch below; authenticated partners see a portal home in the same place. The flip is driven by adaptive content on `visitor.claims.unsigned.persona`. Try it:
+
+<p><a href="?" class="button secondary">View as public</a> <a href="?persona=partner" class="button secondary">View as a signed-in partner</a></p>
+
+Once you flip into partner mode, the linked portal pages (deal registration, marketing resources, etc.) become accessible. They're **hidden pages** — not in the public sidebar nav, but reachable via direct link or from the portal home.
+{% endhint %}
+
 {% if visitor.claims.unsigned.persona !== "partner" %}
 
 # Partner with Evolve
 
 Whether you build software for businesses, implement payments for clients, or operate a marketplace platform, Evolve has a partner program that fits — with revenue share, co-marketing, and dedicated support.
 
-<p><a href="https://evolve.com/partners/apply" class="button primary">Apply to become a partner</a> <a href="https://login.evolve.com" class="button secondary">Sign in to the partner portal</a></p>
+<p><a href="https://gitbook.com" class="button primary">Apply to become a partner</a> <a href="https://gitbook.com" class="button secondary">Sign in to the partner portal</a></p>
 
 ## Why partner with Evolve
 
@@ -141,7 +151,7 @@ A percentage of net Evolve revenue from referred customers — typically 10–25
 
 ## Apply
 
-<p><a href="https://evolve.com/partners/apply" class="button primary">Start your application</a> <a href="mailto:partners@evolve.com" class="button secondary">Email the partner team</a></p>
+<p><a href="https://gitbook.com" class="button primary">Start your application</a> <a href="mailto:partners@evolve.com" class="button secondary">Email the partner team</a></p>
 
 {% endif %}
 
@@ -151,7 +161,7 @@ A percentage of net Evolve revenue from referred customers — typically 10–25
 
 Welcome back. Here's what's new and where to find what you need.
 
-<p><a href="deal-registration.md" class="button primary">Register a new deal</a> <a href="https://evolve-partners.slack.com" class="button secondary">Open partner Slack</a></p>
+<p><a href="deal-registration.md" class="button primary">Register a new deal</a> <a href="https://gitbook.com" class="button secondary">Open partner Slack</a></p>
 
 ## Quick links
 
@@ -200,7 +210,7 @@ Direct line to the person on our team who knows your account.
 
 Technical and sales discussion with other Evolve partners and our team.
 
-<p><a href="https://evolve-partners.slack.com" class="button secondary">Open Slack</a></p>
+<p><a href="https://gitbook.com" class="button secondary">Open Slack</a></p>
 
 {% endcolumn %}
 {% endcolumns %}

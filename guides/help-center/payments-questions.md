@@ -17,7 +17,7 @@ The decline reason is on the charge timeline as `decline_code`. The most common 
 | `do_not_honor` | Generic decline; bank doesn't say why | Sometimes worth retrying after 24h |
 | `lost_card` / `stolen_card` | Card flagged as compromised | Don't retry — fraud signal |
 
-For a deeper dive, see the [community thread on decline-code triage](https://community.evolve.com/t/decline-code-triage).
+For a deeper dive, see the [community thread on decline-code triage](https://gitbook.com).
 
 ## When do my funds become available for payout?
 
@@ -57,7 +57,7 @@ Five things to check, in order:
 4. **Signature verification passing?** Most-cited cause: body parsed before verification.
 5. **Live vs test mode mismatch?** Test-mode events only fire to test-mode endpoints, and vice versa.
 
-The [Verifying signatures page](../../developers/v2/webhooks/verifying-signatures.md) has the full debugging checklist. Watch the [YouTube webhook-debugging walkthrough](https://youtube.com/@evolvepay/webhook-debugging) for the live-troubleshooting flow.
+The [Verifying signatures page](../../developers/v2/webhooks/verifying-signatures.md) has the full debugging checklist. Watch the [YouTube webhook-debugging walkthrough](https://gitbook.com) for the live-troubleshooting flow.
 
 ## What's the difference between authorize and capture?
 
@@ -118,7 +118,7 @@ For most teams, **By rule** with a high-value threshold is the right default. Th
 
 ## Where can I find more answers?
 
-* [Community forum: Payments](https://community.evolve.com/c/payments)
-* [YouTube: Payments deep-dives](https://youtube.com/@evolvepay/payments-playlist)
+* [Community forum: Payments](https://gitbook.com)
+* [YouTube: Payments deep-dives](https://gitbook.com)
 * [Payments product space](../../products/payments/README.md)
 * [Tutorials: Build common payment flows](../tutorials/README.md#build-common-payment-flows)

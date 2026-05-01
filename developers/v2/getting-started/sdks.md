@@ -110,10 +110,10 @@ Evolve.api_version = "2026-01-15"
 
 All four SDKs are open source under the MIT license:
 
-* [evolve-pay/evolve-node](https://github.com/evolve-pay/evolve-node)
-* [evolve-pay/evolve-python](https://github.com/evolve-pay/evolve-python)
-* [evolve-pay/evolve-go](https://github.com/evolve-pay/evolve-go)
-* [evolve-pay/evolve-ruby](https://github.com/evolve-pay/evolve-ruby)
+* [evolve-pay/evolve-node](https://github.com/GitbookIO/evolve-demo)
+* [evolve-pay/evolve-python](https://github.com/GitbookIO/evolve-demo)
+* [evolve-pay/evolve-go](https://github.com/GitbookIO/evolve-demo)
+* [evolve-pay/evolve-ruby](https://github.com/GitbookIO/evolve-demo)
 
 PRs welcome. For bigger changes, open an issue first to align on direction.
 
@@ -132,8 +132,8 @@ For anything not in this list, the API is plain HTTPS + JSON — `curl` and your
 
 Mobile-specific SDKs (iOS, Android, React Native) are part of the [Payments → Embedded Elements](../../../products/payments/accept-payments/take-a-payment.md) story rather than the server SDK story. They're shipped from a separate repo:
 
-* [`evolve-pay/evolve-ios`](https://github.com/evolve-pay/evolve-ios) — Swift, supports iOS 15+.
-* [`evolve-pay/evolve-android`](https://github.com/evolve-pay/evolve-android) — Kotlin, supports Android 8+.
-* [`evolve-pay/evolve-react-native`](https://github.com/evolve-pay/evolve-react-native) — TypeScript wrapper around both.
+* [`evolve-pay/evolve-ios`](https://github.com/GitbookIO/evolve-demo) — Swift, supports iOS 15+.
+* [`evolve-pay/evolve-android`](https://github.com/GitbookIO/evolve-demo) — Kotlin, supports Android 8+.
+* [`evolve-pay/evolve-react-native`](https://github.com/GitbookIO/evolve-demo) — TypeScript wrapper around both.
 
 These handle PCI-scope-reducing card collection on the client. Don't use a server SDK from a mobile app — it'd require shipping a secret key.

@@ -103,6 +103,6 @@ For Enterprise customers on a custom contract, your negotiated rates are the sou
 
 {% if visitor.claims.unsigned.plan === "enterprise" %}
 
-<p><a href="https://dashboard.evolve.com/settings/billing" class="button primary">View your contracted rates</a></p>
+<p><a href="https://gitbook.com" class="button primary">View your contracted rates</a></p>
 
 {% endif %}

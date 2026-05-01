@@ -123,7 +123,7 @@ When metrics on Evolve match or beat Stripe (usually within a week or two), flip
 
 ### Reconcile the cutover month
 
-In the month after cutover, your accounting will see two sets of settlement files — Stripe for the early-month charges and Evolve for the later-month charges. The [Stripe-to-Evolve reconciliation script](https://github.com/evolve-pay/migration-tools) on GitHub combines them into a unified format your bookkeeper can import.
+In the month after cutover, your accounting will see two sets of settlement files — Stripe for the early-month charges and Evolve for the later-month charges. The [Stripe-to-Evolve reconciliation script](https://github.com/GitbookIO/evolve-demo) on GitHub combines them into a unified format your bookkeeper can import.
 
 {% endstep %}
 {% endstepper %}

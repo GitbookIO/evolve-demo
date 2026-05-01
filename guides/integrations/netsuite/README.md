@@ -94,7 +94,7 @@ For matching existing customers, the bundle uses email as the default key. For B
 
 ## Last reviewed
 
-Reviewed in early 2026. NetSuite bundle releases happen quarterly; release notes go through [change requests on the docs repo](https://github.com/evolve-pay/docs).
+Reviewed in early 2026. NetSuite bundle releases happen quarterly; release notes go through [change requests on the docs repo](https://github.com/GitbookIO/evolve-demo).
 
 ## Related
 

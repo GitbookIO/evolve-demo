@@ -13,8 +13,8 @@ We follow the [llms.txt convention](https://llmstxt.org). Two files at the docs 
 
 | File | Contents | Best for |
 | --- | --- | --- |
-| [https://docs.evolve.com/llms.txt](https://docs.evolve.com/llms.txt) | Title, description, and a curated list of links to every section of the docs. | Agents that need a map of the docs to navigate by. |
-| [https://docs.evolve.com/llms-full.txt](https://docs.evolve.com/llms-full.txt) | The complete content of every public page concatenated into one file. | Agents that want the full docs in their context window. |
+| [https://docs.evolve.com/llms.txt](https://gitbook.com) | Title, description, and a curated list of links to every section of the docs. | Agents that need a map of the docs to navigate by. |
+| [https://docs.evolve.com/llms-full.txt](https://gitbook.com) | The complete content of every public page concatenated into one file. | Agents that want the full docs in their context window. |
 
 Both are auto-generated from the same content as the rendered docs site, and refreshed on every publish. Cache for at most an hour.
 
@@ -26,9 +26,9 @@ Both are auto-generated from the same content as the rendered docs site, and ref
 > The Evolve API lets you accept payments, verify identities, and run a marketplace platform.
 
 ## API references
-- [Payments API](https://docs.evolve.com/developers/payments-api): charges, refunds, payouts
-- [Identity API](https://docs.evolve.com/developers/identity-api): document and bank verification
-- [Connect API](https://docs.evolve.com/developers/connect-api): connected accounts, transfers
+- [Payments API](https://gitbook.com): charges, refunds, payouts
+- [Identity API](https://gitbook.com): document and bank verification
+- [Connect API](https://gitbook.com): connected accounts, transfers
 - ...
 ```
 

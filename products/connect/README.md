@@ -13,13 +13,15 @@ Evolve Connect is the platform layer of Evolve Payments. If you operate a market
 
 It's built on top of [Payments](../payments/README.md) — your platform uses the same API, the same dashboard, and the same settlement of fees. The Connect-specific concepts on top are <i class="fa-store" style="color:$primary;">:store:</i> connected accounts (your sellers), <i class="fa-percent" style="color:$primary;">:percent:</i> application fees (your cut), and <i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i> transfers (moving funds to seller accounts).
 
+{% hint style="info" icon="gitbook" %}
+**A note from GitBook**
+
+This space demonstrates **synced blocks reused from Payments** — the test/live environments table on [Test mode and live mode](quickstart/test-and-live-mode.md) is the same block used in the Payments and Identity spaces. It also leans on **inline icons** and **column blocks** for visual layout (see the "Where Connect fits" section below).
+{% endhint %}
+
 {% hint style="info" %}
 **Looking for the API reference?** Endpoints, parameters, and SDK examples live in [Developers / Connect API](../../developers/connect-api/README.md). This space focuses on concepts and workflows.
 {% endhint %}
-
-<p><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button></p>
-
-<p><button type="button" class="button secondary" data-action="ask" data-query="How do I onboard my first seller?" data-icon="user-plus">First seller</button> <button type="button" class="button secondary" data-action="ask" data-query="How do application fees work?" data-icon="percent">Application fees</button> <button type="button" class="button secondary" data-action="ask" data-query="Hosted vs embedded checkout — which one?" data-icon="window-maximize">Hosted vs embedded</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I pay out to my sellers?" data-icon="money-bill-transfer">Payouts</button></p>
 
 ## Start here
 
@@ -125,7 +127,7 @@ Connect is built on top of Payments — most of the concepts there apply unchang
 
 For account-specific questions, billing, or production incidents, contact your account team or open a ticket from the dashboard.
 
-<p><a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a></p>
+<p><a href="https://gitbook.com" class="button primary">Open a ticket</a></p>
 
 {% endcolumn %}
 

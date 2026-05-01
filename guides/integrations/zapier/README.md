@@ -86,7 +86,7 @@ A handful of patterns worth copying:
 
 ## Last reviewed
 
-Last reviewed in early 2026. Zapier's catalog of supported triggers and actions is occasionally updated; suggest additions via [change request](https://github.com/evolve-pay/docs).
+Last reviewed in early 2026. Zapier's catalog of supported triggers and actions is occasionally updated; suggest additions via [change request](https://github.com/GitbookIO/evolve-demo).
 
 ## Related
 

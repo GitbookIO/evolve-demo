@@ -20,7 +20,7 @@ Once your basic flow is in production, these controls help you push the approval
 {% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="arrow-up-right-from-square" %}
-**Smart routing and failover are Growth and Enterprise features.** They're listed here so you can plan for them — see [pricing](https://evolve.com/pricing) when you're ready to upgrade.
+**Smart routing and failover are Growth and Enterprise features.** They're listed here so you can plan for them — see [pricing](https://gitbook.com) when you're ready to upgrade.
 {% endhint %}
 
 {% endif %}

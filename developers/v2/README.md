@@ -28,13 +28,15 @@ layout:
 
 Build with Evolve. The Developers space is the source of truth for APIs, SDKs, webhooks, and the agent integrations across all three products — [Payments](../products/payments/), [Identity](../products/identity/), and [Connect](../products/connect/).
 
+{% hint style="info" icon="gitbook" %}
+**A note from GitBook**
+
+This space demonstrates **variants** — three Git-Synced spaces (`v1`, `v2`, `v3`) appear as a single dropdown in the top bar. Switch between them to see how the Payments API differs across versions. The Reference pages are **auto-rendered from OpenAPI specs** in `developers/openapi/v2/`. Code samples on the Quickstart and Authentication pages use the **tabs block** for Node, Python, Go, Ruby, and cURL.
+{% endhint %}
+
 {% hint style="info" %}
 **Looking for product workflows and concepts?** Those live in the product spaces — this space is the technical reference.
 {% endhint %}
-
-<button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
-
-<button type="button" class="button secondary" data-action="ask" data-query="How do I make my first API call?" data-icon="rocket">Quickstart</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I authenticate?" data-icon="key">Auth</button> <button type="button" class="button secondary" data-action="ask" data-query="Which SDK should I use?" data-icon="cubes">SDKs</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I verify a webhook signature?" data-icon="bolt">Webhooks</button>
 
 ## Pick your path
 
@@ -54,7 +56,7 @@ Evolve publishes structured indexes for AI agents and code copilots — `llms.tx
 
 ## Synced with GitHub
 
-These docs are bidirectionally synced with the [evolve-pay/docs](https://github.com/evolve-pay/docs) repository. Edits in the GitBook editor flow back to GitHub as commits; changes pushed to the repo (including PRs from contributors) propagate to the published docs after merge. Contribute via PR or via the **Edit in GitHub** badge in the page header.
+These docs are bidirectionally synced with the [evolve-pay/docs](https://github.com/GitbookIO/evolve-demo) repository. Edits in the GitBook editor flow back to GitHub as commits; changes pushed to the repo (including PRs from contributors) propagate to the published docs after merge. Contribute via PR or via the **Edit in GitHub** badge in the page header.
 
 ## Conventions at a glance
 
@@ -91,7 +93,7 @@ Cursor-based. 100 per page default, 1000 max. `has_more` and `next_cursor` on ev
 
 For account-specific questions, integration help, or production incidents, open a ticket from the dashboard.
 
-<a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a>
+<a href="https://gitbook.com" class="button primary">Open a ticket</a>
 {% endcolumn %}
 
 {% column width="50%" %}
@@ -99,6 +101,6 @@ For account-specific questions, integration help, or production incidents, open 
 
 Real-time platform status and the running list of API changes.
 
-<a href="https://status.evolve.com" class="button secondary">Status page</a> <a href="../changelog/" class="button secondary">Changelog</a>
+<a href="https://gitbook.com" class="button secondary">Status page</a> <a href="../changelog/" class="button secondary">Changelog</a>
 {% endcolumn %}
 {% endcolumns %}

@@ -16,7 +16,7 @@ This walkthrough uses test mode. Test sellers, test payments, and test payouts a
 
 ### Open the test dashboard
 
-Sign in to <a href="https://dashboard.test.evolve.com"><code class="expression">space.vars.dashboard_test</code></a> and click into **Connect** in the left sidebar.
+Sign in to <a href="https://gitbook.com"><code class="expression">space.vars.dashboard_test</code></a> and click into **Connect** in the left sidebar.
 
 {% endstep %}
 

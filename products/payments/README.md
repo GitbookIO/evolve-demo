@@ -11,6 +11,18 @@ layout:
 
 Evolve Payments handles the work between a customer's "pay" click and the money landing in your account — card and bank-rail processing, network routing, 3-D Secure, settlement, and reporting. This space covers everything from the first test charge to enterprise routing rules.
 
+{% hint style="info" icon="gitbook" %}
+**A note from GitBook**
+
+This space is the deepest in the demo and shows off three GitBook features: **adaptive content** (hints and entire blocks change with the visitor), **space variables** (URLs and constants pulled from `vars.yaml`), and **synced blocks** (the test/live environments table is reused across all three product spaces).
+
+Try a persona to see adaptive content in action:
+
+<p><a href="?persona=new" class="button secondary">As a new user</a> <a href="?persona=existing" class="button secondary">As an existing customer</a> <a href="?persona=prospect" class="button secondary">As a prospect</a> <a href="?persona=partner" class="button secondary">As a partner</a></p>
+
+Or stack with `?plan=starter`, `?plan=growth`, or `?plan=enterprise` for plan-tier-gated content.
+{% endhint %}
+
 {% hint style="info" %}
 **Looking for the API reference?** Endpoints, parameters, and SDK examples live in [Developers / Payments API](../../developers/payments-api/README.md). This space focuses on concepts and workflows.
 {% endhint %}
@@ -72,7 +84,7 @@ The biggest recent shipments — see the full [changelog](../../changelog/README
 
 For account-specific questions, billing, or production incidents, contact your account team or open a ticket from the dashboard.
 
-<p><a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a></p>
+<p><a href="https://gitbook.com" class="button primary">Open a ticket</a></p>
 
 {% endcolumn %}
 

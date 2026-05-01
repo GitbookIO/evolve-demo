@@ -9,7 +9,7 @@ description: Direct line to your partner success manager, escalation paths, and 
 {% if visitor.claims.unsigned.persona !== "partner" %}
 
 {% hint style="warning" icon="lock" %}
-**This page is for active Evolve partners.** [Sign in to the partner portal](https://login.evolve.com) to access partner support contacts. Not yet a partner? [Apply to the program](README.md).
+**This page is for active Evolve partners.** [Sign in to the partner portal](https://gitbook.com) to access partner support contacts. Not yet a partner? [Apply to the program](README.md).
 {% endhint %}
 
 {% endif %}
@@ -40,7 +40,7 @@ The Evolve partner Slack workspace has channels for:
 * `#announcements` — Evolve product updates aimed at the partner audience.
 * Per-partner private channels with your PSM and a few of our team.
 
-<p><a href="https://evolve-partners.slack.com" class="button primary">Open the workspace</a></p>
+<p><a href="https://gitbook.com" class="button primary">Open the workspace</a></p>
 
 ## Escalation paths
 
@@ -76,9 +76,9 @@ For partner-program-level issues that need a higher altitude. Each partner with 
 
 When one of your referred customers has a production issue that needs urgent attention:
 
-1. **First**: have the customer open a support ticket via the standard [<code class="expression">space.vars.dashboard_live</code>/support](https://dashboard.evolve.com/support) flow.
+1. **First**: have the customer open a support ticket via the standard [<code class="expression">space.vars.dashboard_live</code>/support](https://gitbook.com) flow.
 2. If the issue is critical (production-impacting, security, etc.), Slack-DM your PSM with the ticket number — they'll route to the right team and get a real-time update for you.
-3. For incidents affecting multiple customers, [<code class="expression">space.vars.status_page</code>](https://status.evolve.com) is the canonical source.
+3. For incidents affecting multiple customers, [<code class="expression">space.vars.status_page</code>](https://gitbook.com) is the canonical source.
 
 Don't message your PSM with non-urgent customer questions — those should flow through the standard support channel so they're tracked.
 
@@ -97,7 +97,7 @@ Office hours are recorded; recordings live in [Training → Recordings](training
 
 ## Status and incidents
 
-Platform status: [<code class="expression">space.vars.status_page</code>](https://status.evolve.com).
+Platform status: [<code class="expression">space.vars.status_page</code>](https://gitbook.com).
 
 For incidents affecting your customers specifically, your PSM will reach out within 30 minutes of incident detection. Subscribe to status-page updates via email or RSS for the firehose.
 

@@ -77,7 +77,7 @@ If you only want a subset of events (e.g. only `charge.succeeded`), filter at th
 
 ## Last reviewed
 
-Last reviewed in early 2026. The mapping is stable; new events are added as new Evolve features ship — those go through change requests on the [docs repo](https://github.com/evolve-pay/docs).
+Last reviewed in early 2026. The mapping is stable; new events are added as new Evolve features ship — those go through change requests on the [docs repo](https://github.com/GitbookIO/evolve-demo).
 
 ## Related
 

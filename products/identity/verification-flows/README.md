@@ -42,7 +42,7 @@ Evolve groups these into a **verification bundle** so they appear as a single on
 {% if visitor.claims.unsigned.plan === "starter" %}
 
 {% hint style="info" icon="layer-group" %}
-**You're on Starter** — identity verification only. To add bank or business verification, [upgrade your plan](https://evolve.com/pricing).
+**You're on Starter** — identity verification only. To add bank or business verification, [upgrade your plan](https://gitbook.com).
 {% endhint %}
 
 {% endif %}

@@ -13,13 +13,17 @@ layout:
 
 Hands-on walkthroughs for the workflows we get the most questions about. Each tutorial follows the same structure — short intro, video walkthrough, stepper with the actual build, common pitfalls, and pointers to what's next.
 
+{% hint style="info" icon="gitbook" %}
+**A note from GitBook**
+
+Every tutorial in this section uses the same **content template** — frontmatter, intro, prerequisites hint, video embed, stepper, common-pitfalls expandables, what's-next cards. That consistency is intentional: it makes the structure scannable for repeat readers, and easier for the team to author new ones.
+
+The blocks demoed across these pages: **stepper**, **tabs** (multi-language code samples), **expandable**, **embed** (the YouTube video), **hint**, and **cards**.
+{% endhint %}
+
 {% hint style="info" %}
 **Looking for conceptual material?** The product spaces — [Payments](../../products/payments/README.md), [Identity](../../products/identity/README.md), [Connect](../../products/connect/README.md) — cover the underlying mechanics and dashboard workflows. Tutorials cover end-to-end builds that combine multiple features.
 {% endhint %}
-
-<p><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button></p>
-
-<p><button type="button" class="button secondary" data-action="ask" data-query="How do I take my first payment?" data-icon="rocket">First payment</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I migrate from Stripe?" data-icon="arrows-left-right">Stripe migration</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I onboard sellers on a marketplace?" data-icon="user-plus">Onboard sellers</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I prevent chargebacks?" data-icon="shield-halved">Prevent chargebacks</button></p>
 
 ## Build common payment flows
 
@@ -48,7 +52,7 @@ Platform and marketplace patterns. Heaviest on Connect, with reaches into Identi
 
 For account-specific questions, integration help, or production incidents, open a ticket from the dashboard.
 
-<p><a href="https://dashboard.evolve.com/support" class="button primary">Open a ticket</a></p>
+<p><a href="https://gitbook.com" class="button primary">Open a ticket</a></p>
 
 {% endcolumn %}
 

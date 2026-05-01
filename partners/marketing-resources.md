@@ -9,7 +9,7 @@ description: Logos, brand kit, case studies, co-marketing templates.
 {% if visitor.claims.unsigned.persona !== "partner" %}
 
 {% hint style="warning" icon="lock" %}
-**This page is for active Evolve partners.** [Sign in to the partner portal](https://login.evolve.com) to access marketing resources. Not yet a partner? [Apply to the program](README.md).
+**This page is for active Evolve partners.** [Sign in to the partner portal](https://gitbook.com) to access marketing resources. Not yet a partner? [Apply to the program](README.md).
 {% endhint %}
 
 {% endif %}
@@ -22,7 +22,7 @@ Brand assets, co-marketing templates, and case studies you can use in your own s
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-image" style="color:$primary;">:image:</i></h3></td><td><strong>Logo pack</strong></td><td>SVG, PNG, EPS in light and dark variants. Use guidelines included.</td><td></td></tr><tr><td><h3><i class="fa-palette" style="color:$primary;">:palette:</i></h3></td><td><strong>Brand kit</strong></td><td>Colors, typography, spacing rules. Figma library included.</td><td></td></tr><tr><td><h3><i class="fa-handshake" style="color:$primary;">:handshake:</i></h3></td><td><strong>Co-branded templates</strong></td><td>One-pagers, slide decks, case-study templates. Editable PowerPoint and Keynote.</td><td></td></tr></tbody></table>
 
-<p><a href="https://partners.evolve.com/assets" class="button primary">Download asset pack</a></p>
+<p><a href="https://gitbook.com" class="button primary">Download asset pack</a></p>
 
 ## Case studies
 

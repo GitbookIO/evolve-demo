@@ -23,8 +23,14 @@ layout:
 
 Everything we've shipped across Evolve in the last six months. Filter by product tag using the controls in the top right of the timeline.
 
+{% hint style="info" icon="gitbook" %}
+**A note from GitBook**
+
+This page is a single **Updates block** — a timeline of dated entries with **tags** (defined in `.gitbook/tags.yaml`). The four tags here are `payments`, `identity`, `connect`, `platform`; multi-tagged entries get all their tags. **RSS** is auto-generated for the page.
+{% endhint %}
+
 {% hint style="info" %}
-**Subscribe.** New entries land roughly weekly. Subscribe via [RSS](https://docs.evolve.com/changelog/feed.xml) or follow [@evolvepay](https://twitter.com/evolvepay) for major releases.
+**Subscribe.** New entries land roughly weekly. Subscribe via [RSS](https://gitbook.com) or follow [@evolvepay](https://gitbook.com) for major releases.
 {% endhint %}
 
 {% updates format="full" %}
@@ -194,7 +200,7 @@ The `message` field on declined charges is now consistent across all SDKs (previ
 {% update date="2025-12-19" tags="platform" %}
 ## Year-end maintenance window
 
-A scheduled 30-minute maintenance window on December 23, 02:00 UTC. No expected downtime; a brief reduction in async processing capacity. See [<code class="expression">space.vars.status_page</code>](https://status.evolve.com) for live updates.
+A scheduled 30-minute maintenance window on December 23, 02:00 UTC. No expected downtime; a brief reduction in async processing capacity. See [<code class="expression">space.vars.status_page</code>](https://gitbook.com) for live updates.
 {% endupdate %}
 
 {% update date="2025-12-15" tags="connect" %}
@@ -254,6 +260,6 @@ The `setup_future_usage` field on Checkout sessions now supports `on_session` (o
 
 ## Older releases
 
-For releases before November 2025, the [archive](https://docs.evolve.com/changelog/archive) covers the prior 24 months. Major releases are also tagged on our [GitHub repo](https://github.com/evolve-pay/evolve-node/releases) for the SDK side.
+For releases before November 2025, the [archive](https://gitbook.com) covers the prior 24 months. Major releases are also tagged on our [GitHub repo](https://github.com/GitbookIO/evolve-demo) for the SDK side.
 
-For platform incidents and maintenance windows, the [status page](https://status.evolve.com) maintains a separate incident log.
+For platform incidents and maintenance windows, the [status page](https://gitbook.com) maintains a separate incident log.
