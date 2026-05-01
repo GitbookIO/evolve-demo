@@ -2,11 +2,6 @@
 title: Persona Switcher
 ---
 
-{% hint style="success" icon="gitbook" %}
-**A note from GitBook**
-
-This site is a demo of GitBook's enterprise features applied to a fictional fintech, **Evolve**. It shows what a real customer-facing docs site looks like end-to-end — adaptive content, OpenAPI variants, the AI Assistant with Connections, change-request workflows, hidden pages with public/authenticated flips, and more.
-
 {% if !visitor.claims.unsigned.persona %}
 Try a persona to see adaptive content in action across the site:
 
@@ -32,4 +27,3 @@ Try a persona to see adaptive content in action across the site:
 {% if visitor.claims.unsigned.persona === "partner" %}
 <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new&#x26;plan=starter" class="button secondary" data-icon="arrow-right-to-bracket">New user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing&#x26;visitor.plan=growth" class="button secondary" data-icon="rocket">Migrator</a> <a class="button primary" data-icon="handshake-angle">Partner</a>
 {% endif %}
-{% endhint %}
