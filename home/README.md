@@ -70,7 +70,7 @@ Try a persona to see adaptive content in action across the site:
 {% endif %}
 
 {% if visitor.claims.unsigned.persona %}
-<i class="fa-circle-info" style="color:$info;">:circle-info:</i> <mark style="color:$info;">You are currently</mark> <code class="expression">visitor.claims.unsigned.persona === "prospect" ? "a prospect" : visitor.claims.unsigned.persona === "new" ? "a new user" : visitor.claims.unsigned.persona === "existing" ? "an existing user" : visitor.claims.unsigned.persona === "partner" ? "a partner" : ""</code> <mark style="color:$info;">on the</mark> <code class="expression">visitor.claims.unsigned.plan.charAt(0).toUpperCase() + visitor.claims.unsigned.plan.slice(1)</code> <mark style="color:$info;">plan.</mark>
+<i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are currently <code class="expression">visitor.claims.unsigned.persona === "prospect" ? "a prospect" : visitor.claims.unsigned.persona === "new" ? "a new user" : visitor.claims.unsigned.persona === "existing" ? "an existing user" : visitor.claims.unsigned.persona === "partner" ? "a partner" : ""</code><code class="expression">visitor.claims.unsigned.plan ? ` on the ${visitor.claims.unsigned.plan.charAt(0).toUpperCase() + visitor.claims.unsigned.plan.slice(1)} plan` : ""</code>.
 {% endif %}
 {% endhint %}
 
