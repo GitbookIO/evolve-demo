@@ -13,50 +13,47 @@
 ## Payments API
 
 * [Overview](payments-api/README.md)
-* [Reference](payments-api/reference/README.md)
-  * ```yaml
-    type: builtin:openapi
-    props:
-      models: true
-      downloadLink: true
-    dependencies:
-      spec:
-        ref:
-          kind: openapi
-          spec: evolve-payments-v2
-    ```
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: true
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: evolve-payments-v2
+  ```
 
 ## Identity API
 
 * [Overview](identity-api/README.md)
-* [Reference](identity-api/reference/README.md)
-  * ```yaml
-    type: builtin:openapi
-    props:
-      models: true
-      downloadLink: true
-    dependencies:
-      spec:
-        ref:
-          kind: openapi
-          spec: evolve-identity-v2
-    ```
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: true
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: evolve-identity-v2
+  ```
 
 ## Connect API
 
 * [Overview](connect-api/README.md)
-* [Reference](connect-api/reference/README.md)
-  * ```yaml
-    type: builtin:openapi
-    props:
-      models: true
-      downloadLink: true
-    dependencies:
-      spec:
-        ref:
-          kind: openapi
-          spec: evolve-connect-v2
-    ```
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: false
+    downloadLink: true
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: evolve-connect-v2
+  ```
 
 ## Webhooks
 

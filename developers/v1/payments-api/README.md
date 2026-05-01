@@ -5,7 +5,7 @@ description: The legacy v1 Payments API — deprecated, sunset 2026-12-31.
 
 # Payments API
 
-This is the **v1 Payments API** — the original Evolve API that's been deprecated since 2025-07. New integrations should not use it. Existing integrations should migrate to v2 before the sunset date.
+This is the **v1 Payments API** — the original Evolve API that's been deprecated since 2025-07. New integrations should not use it. Existing integrations should migrate to v2 before the sunset date. The operation reference is auto-generated and listed below this page in the sidebar.
 
 {% hint style="warning" icon="triangle-exclamation" %}
 **v1 is deprecated.** It will be sunset on **<code class="expression">space.vars.variant_sunset</code>**. After that date, every v1 endpoint returns `410 Gone`. Use the variant dropdown to switch to **v2** (stable, recommended).
@@ -21,9 +21,11 @@ The default version date for v1 is <code class="expression">space.vars.api_versi
 
 ## Resources
 
-The v1 reference covers the original surface. The most-used endpoints:
+The v1 surface is source-prefixed:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h3></td><td><strong>Charges</strong></td><td>Source-prefixed: <code>POST /sources/charge</code>.</td><td><a href="reference/README.md">reference/README.md</a></td></tr><tr><td><h3><i class="fa-rotate-left" style="color:$primary;">:rotate-left:</i></h3></td><td><strong>Refunds</strong></td><td>Refunds against a charge.</td><td><a href="reference/README.md">reference/README.md</a></td></tr><tr><td><h3><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h3></td><td><strong>Payouts</strong></td><td>List, retrieve.</td><td><a href="reference/README.md">reference/README.md</a></td></tr></tbody></table>
+* **Charges** — `POST /sources/charge` (deprecated), `GET /charges/{id}`.
+* **Refunds** — `POST /sources/refund` against a charge.
+* **Payouts** — list, retrieve.
 
 ## What's different from v2
 
@@ -46,7 +48,7 @@ Most teams migrate in 2–4 days of engineering time. The [v1 → v2 migration g
 
 You can run v1 and v2 in parallel during cutover — both will accept production traffic until 2026-12-31.
 
-<p><a href="../../../guides/tutorials/migrate-payments-v1-to-v2.md" class="button primary">Migration guide</a> <a href="reference/README.md" class="button secondary">v1 reference</a></p>
+<p><a href="../../../guides/tutorials/migrate-payments-v1-to-v2.md" class="button primary">Migration guide</a></p>
 
 ## Support during sunset
 

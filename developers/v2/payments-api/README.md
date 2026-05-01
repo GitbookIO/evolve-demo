@@ -5,7 +5,7 @@ icon: credit-card
 
 # Overview
 
-The Payments API is the workhorse of Evolve — taking money, refunding money, and moving it to your bank. The full reference (every endpoint, every parameter) is auto-generated from our OpenAPI spec and lives at [Reference](reference/).
+The Payments API is the workhorse of Evolve — taking money, refunding money, and moving it to your bank. The operation reference is auto-generated and listed below this page in the sidebar.
 
 {% hint style="success" icon="circle-check" %}
 **You're viewing v2 — the stable default.** Use the variant dropdown in the top bar to switch to **v1** (deprecated) or **v3** (preview).
@@ -21,9 +21,10 @@ The default version date for v2 is <code class="expression">space.vars.api_versi
 
 ## Resources
 
-The reference covers every operation. The high-level groupings:
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h4></td><td><strong>Charges</strong></td><td>Create, capture, void, retrieve, list.</td><td><a href="reference/#charges">#charges</a></td></tr><tr><td><h4><i class="fa-rotate-left" style="color:$primary;">:rotate-left:</i></h4></td><td><strong>Refunds</strong></td><td>Full and partial refunds against a charge.</td><td><a href="reference/#refunds">#refunds</a></td></tr><tr><td><h4><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h4></td><td><strong>Payouts</strong></td><td>List, retrieve. Schedule is configured in the dashboard.</td><td><a href="reference/#payouts">#payouts</a></td></tr><tr><td><h4><i class="fa-scale-balanced" style="color:$primary;">:scale-balanced:</i></h4></td><td><strong>Balance</strong></td><td>Available, pending, and reserved balances per currency.</td><td><a href="reference/#balance">#balance</a></td></tr></tbody></table>
+* **Charges** — create, capture, void, retrieve, list.
+* **Refunds** — full and partial refunds against a charge.
+* **Payouts** — list and retrieve. Schedule is configured in the dashboard.
+* **Balance** — available, pending, and reserved balances per currency.
 
 ## What changed since v1
 
@@ -50,9 +51,3 @@ When v3 graduates to stable, we'll publish a migration tool. For now, treat v3 a
 ## Conceptual background
 
 For the product-side concepts behind these endpoints — what a charge actually does, how settlement timing works, when 3-D Secure applies — see the [Payments product space](../../../products/payments/). It's the right complement to the API reference.
-
-## Try it
-
-Every operation in the [Reference](reference/) has a **Test it** panel. Drop in your test API key, edit the request, and run it against test mode without leaving the docs.
-
-<a href="reference/" class="button primary">Open the reference</a>

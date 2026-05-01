@@ -1,15 +1,17 @@
 ---
-description: Verification sessions, documents, bank checks, and business verification.
 icon: id-card
+description: Verification sessions, documents, bank checks, and business verification.
 ---
 
-# Overview
+# Identity API
 
-The Identity API runs the full verification stack — document review, selfie liveness, bank account verification, and business KYB. The full reference lives at [Reference](reference/README.md), auto-generated from the OpenAPI spec.
+The Identity API runs the full verification stack — document review, selfie liveness, bank account verification, and business KYB. The operation reference is auto-generated and listed below this page in the sidebar.
 
 ## Resources
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-id-card" style="color:$primary;">:id-card:</i></h4></td><td><strong>Verification sessions</strong></td><td>Top-level resource — one per identity, bank, or business verification.</td><td><a href="reference/README.md">#verification-sessions</a></td></tr><tr><td><h4><i class="fa-file-magnifying-glass" style="color:$primary;">:file-magnifying-glass:</i></h4></td><td><strong>Documents</strong></td><td>Captured documents and their per-check results.</td><td><a href="reference/README.md">#documents</a></td></tr><tr><td><h4><i class="fa-building-columns" style="color:$primary;">:building-columns:</i></h4></td><td><strong>Bank verifications</strong></td><td>Plaid-instant or micro-deposits flow records.</td><td><a href="reference/README.md">#bank-verifications</a></td></tr></tbody></table>
+* **Verification sessions** — top-level resource, one per identity, bank, or business verification.
+* **Documents** — captured documents and their per-check results.
+* **Bank verifications** — Plaid-instant or micro-deposits flow records.
 
 ## How a verification flows
 
@@ -24,9 +26,9 @@ flowchart LR
 1. **Your server creates a session** — pass `type` (identity/bank/business) and `customer`. Get back a session record with a `url` to send the customer to.
 2. **Customer completes the hosted flow** — Evolve handles all the capture and review.
 3. **Webhook fires when complete** — `verification_session.verified`, `.failed`, or `.manual_review`. See [Event catalog](../webhooks/event-catalog.md).
-4. **You retrieve the result** — `GET /verification_sessions/:id` returns the full check breakdown.
+4. **You retrieve the result** — the full check breakdown is on the session.
 
-You can also drive the flow programmatically — submit documents, run individual checks, override decisions. See the [Reference](reference/README.md) for those endpoints.
+You can also drive the flow programmatically — submit documents, run individual checks, override decisions. Those operations are in the auto-generated reference.
 
 ## A minimal example
 
@@ -68,8 +70,4 @@ curl https://api.evolve.com/v2/verification_sessions \
 
 ## Conceptual background
 
-For the product-side concepts — when to verify, which method to pick, what the customer sees — see the [Identity product space](../../../products/identity/).
-
-## Try it
-
-<a href="reference/README.md" class="button primary">Open the reference</a>
+For the product-side concepts — when to verify, which method to pick, what the customer sees — see the [Identity product space](../../../products/identity/README.md).

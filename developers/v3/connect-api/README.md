@@ -5,11 +5,13 @@ description: Connected accounts, transfers, and checkout sessions for marketplac
 
 # Connect API
 
-The Connect API extends Payments with the platform-specific resources — connected accounts (sellers), transfers (moving funds to sellers), and checkout sessions (taking payments on a seller's behalf). The full reference lives at [Reference](reference/README.md).
+The Connect API extends Payments with the platform-specific resources — connected accounts (sellers), transfers (moving funds to sellers), and checkout sessions (taking payments on a seller's behalf). The operation reference is auto-generated and listed below this page in the sidebar.
 
 ## Resources
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-store" style="color:$primary;">:store:</i></h3></td><td><strong>Connected accounts</strong></td><td>The sellers on your platform. One per seller.</td><td><a href="reference/README.md">reference/README.md</a></td></tr><tr><td><h3><i class="fa-money-bill-transfer" style="color:$primary;">:money-bill-transfer:</i></h3></td><td><strong>Transfers</strong></td><td>Move funds from platform balance to a connected account.</td><td><a href="reference/README.md">reference/README.md</a></td></tr><tr><td><h3><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h3></td><td><strong>Checkout sessions</strong></td><td>Hosted or embedded checkout for a Connect payment.</td><td><a href="reference/README.md">reference/README.md</a></td></tr></tbody></table>
+* **Connected accounts** — the sellers on your platform. One per seller.
+* **Transfers** — move funds from your platform balance to a connected account.
+* **Checkout sessions** — hosted or embedded checkout for a Connect payment.
 
 ## A minimal flow
 
@@ -52,7 +54,3 @@ Choose at the platform level by setting your default in **Connect → Settings �
 ## Conceptual background
 
 For the product-side concepts — onboarding flow, payout scheduling, dispute routing, refund splits — see the [Connect product space](../../../products/connect/README.md).
-
-## Try it
-
-<p><a href="reference/README.md" class="button primary">Open the reference</a></p>
