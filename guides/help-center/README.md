@@ -11,7 +11,7 @@ layout:
 
 # Help Center
 
-The Help Center is a curated set of focused answers to the questions our customers ask most. The Assistant pulls answers from this site, our [community forum](<code class="expression">space.vars.community_forum</code>), and the [Evolve YouTube channel](<code class="expression">space.vars.youtube_channel</code>) — so for most questions, asking the Assistant is faster than browsing.
+The Help Center is a curated set of focused answers to the questions our customers ask most. The Assistant pulls answers from this site, our [community forum](https://community.evolve.com), and the [Evolve YouTube channel](https://youtube.com/@evolvepay) — so for most questions, asking the Assistant is faster than browsing.
 
 ## Ask anything
 
@@ -20,7 +20,7 @@ The Help Center is a curated set of focused answers to the questions our custome
 <p><button type="button" class="button secondary" data-action="ask" data-query="How do I rotate an API key?" data-icon="key">API keys</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I change my pricing plan?" data-icon="file-invoice-dollar">Plan changes</button> <button type="button" class="button secondary" data-action="ask" data-query="Why is my webhook not firing?" data-icon="bolt">Webhooks</button> <button type="button" class="button secondary" data-action="ask" data-query="Why was my customer's card declined?" data-icon="circle-xmark">Card declines</button></p>
 
 {% hint style="info" %}
-**Where the Assistant looks.** When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](../../products/payments/README.md), the [Developer docs](../../developers/v2/README.md), our [community forum](<code class="expression">space.vars.community_forum</code>), and the [YouTube channel](<code class="expression">space.vars.youtube_channel</code>). It cites whichever sources it pulled from in the answer.
+**Where the Assistant looks.** When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](../../products/payments/README.md), the [Developer docs](../../developers/v2/README.md), our [community forum](https://community.evolve.com), and the [YouTube channel](https://youtube.com/@evolvepay). It cites whichever sources it pulled from in the answer.
 {% endhint %}
 
 ## Browse by topic
@@ -63,4 +63,4 @@ For account-specific issues or production incidents, the support team is your fa
 
 ## Status
 
-If something across Evolve isn't working, check [<code class="expression">space.vars.status_page</code>](<code class="expression">space.vars.status_page</code>) before opening a ticket. We post updates there for any platform-wide issue within a few minutes of detection.
+If something across Evolve isn't working, check [status.evolve.com](https://status.evolve.com) before opening a ticket. We post updates there for any platform-wide issue within a few minutes of detection.
