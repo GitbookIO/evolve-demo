@@ -28,20 +28,12 @@ layout:
 
 # Welcome to Evolve
 
+{% columns %}
+{% column width="50%" %}
 Take payments, verify customers, and run a marketplace — all on one platform. Evolve is the financial infrastructure for modern businesses, used by thousands of teams from early-stage startups to global enterprises.
+{% endcolumn %}
 
-## Ask anything
-
-<button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
-
-<button type="button" class="button secondary" data-action="ask" data-query="How do I take my first payment?" data-icon="rocket">First payment</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I verify a customer&#x27;s identity?" data-icon="id-card">Verification</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I onboard sellers on a marketplace?" data-icon="circles-overlap">Marketplace</button> <button type="button" class="button secondary" data-action="ask" data-query="How is Evolve different from Stripe?" data-icon="arrows-left-right">vs Stripe</button>
-
-
-
-***
-
-
-
+{% column width="50%" %}
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
@@ -73,6 +65,20 @@ Try a persona to see adaptive content in action across the site:
 <i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are currently <code class="expression">visitor.claims.unsigned.persona === "prospect" ? "a prospect user exploring the product" : visitor.claims.unsigned.persona === "new" ? "a new user" : visitor.claims.unsigned.persona === "existing" ? "an existing user" : visitor.claims.unsigned.persona === "partner" ? "a partner" : ""</code><code class="expression">visitor.claims.unsigned.plan ? ` on the ${visitor.claims.unsigned.plan.charAt(0).toUpperCase() + visitor.claims.unsigned.plan.slice(1)} plan` : ""</code>.
 {% endif %}
 {% endhint %}
+{% endcolumn %}
+{% endcolumns %}
+
+
+
+<button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
+
+<button type="button" class="button secondary" data-action="ask" data-query="How do I take my first payment?" data-icon="rocket">First payment</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I verify a customer&#x27;s identity?" data-icon="id-card">Verification</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I onboard sellers on a marketplace?" data-icon="circles-overlap">Marketplace</button> <button type="button" class="button secondary" data-action="ask" data-query="How is Evolve different from Stripe?" data-icon="arrows-left-right">vs Stripe</button>
+
+
+
+***
+
+
 
 {% if visitor.claims.unsigned.persona %}
 ## <i class="fa-sparkle" style="color:$info;">:sparkle:</i> Picked for you
@@ -80,7 +86,7 @@ Try a persona to see adaptive content in action across the site:
 
 {% if visitor.claims.unsigned.persona === "prospect" %}
 {% hint style="info" icon="store" %}
-**Evaluating Evolve?** Use the resources below to get an overview of how to get started. The [Help Center](../guides/help-center/) answers the questions most prospects ask — . For a deeper look, the [Payments product space](../products/payments/) covers the full feature set without the API noise.
+**Evaluating Evolve?** Use the resources below to get an overview of how to get started.
 {% endhint %}
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-wallet" style="color:$primary;">:wallet:</i></h4></td><td><strong>Payment methods</strong></td><td>Which payment methods Evolve supports, and which ones are available on each plan.</td><td><a href="https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/payment-methods">Payment methods</a></td></tr><tr><td><h4><i class="fa-life-ring" style="color:$primary;">:life-ring:</i></h4></td><td><strong>Help Center</strong></td><td>Frequently-asked questiosn about pricing, going live, and supported countries</td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/NA4Ikc8fQtsXC5U53xJu/">Troubleshooting</a></td></tr><tr><td><h4><i class="fa-receipt" style="color:$primary;">:receipt:</i></h4></td><td><strong>Fees and pricing</strong></td><td>What each plan costs, what's included, and how fees show up in your settlements.</td><td><a href="https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/fees-and-pricing">Fees and pricing</a></td></tr></tbody></table>
