@@ -7,7 +7,9 @@ description: What each plan costs, what's included, and how fees show up in your
 
 Evolve's pricing has three components: a per-transaction fee, a small set of feature add-ons, and an optional same-day payout fee. There are no monthly minimums, no setup fees, and no card-network surcharges — what's listed here is what you pay.
 
+{% if visitor.claims.unsigned.plan %}
 ## Your plan
+{% endif %}
 
 {% if visitor.claims.unsigned.plan === "starter" %}
 
