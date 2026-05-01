@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Migrating Stripe Customers to Evolve — gotchas to watch for? — Evolve Community</title>
+<meta name="description" content="Thread on the practical gotchas of migrating Stripe Customer and PaymentMethod objects into Evolve — field mapping, network tokens, and what doesn't transfer.">
+<meta name="author" content="rachel_eng">
+<meta property="article:published_time" content="2026-03-28">
+<meta name="keywords" content="stripe, migration, customers, payment methods">
+</head>
+<body>
+<article>
+<header>
+<h1>Migrating Stripe Customers to Evolve — gotchas to watch for?</h1>
+<p>Posted by <strong>rachel_eng</strong> — March 28, 2026 — 22 replies</p>
+</header>
+<section class="post original">
+<p>About to start a Stripe → Evolve migration with ~400k Customer records and active subscriptions. Field mapping I think I have, but I'm worried about the things we won't notice until it's too late. What are the surprises?</p>
+</section>
+<section class="post reply accepted">
+<header><strong>tom.k</strong> — March 28, 2026 — accepted answer</header>
+<p>Three big ones from our migration of ~250k customers last year:</p>
+<ol>
+<li><strong>Network tokens don't transfer.</strong> Stripe's network tokens are scoped to Stripe's BIN sponsorship; Evolve's are scoped to ours. You'll re-tokenize on first charge, which works fine but means the first attempt has slightly higher friction. Run the parallel-charge pattern for 2 billing cycles and you'll be fine.</li>
+<li><strong>Mandate text matters.</strong> If your Stripe Customer object has a stored mandate, transfer it as part of the import — Evolve respects PSD2 mandate continuity if the mandate text and timestamp are preserved. We missed this on the first batch and got a wave of fresh SCA challenges.</li>
+<li><strong>Payment-method metadata.</strong> Stripe stores some PM metadata (last_used, fingerprint) that Evolve regenerates on its side. If you have business logic depending on those exact values, plan for them to differ. Fingerprints in particular use a different hashing approach.</li>
+</ol>
+<p>The migrate-from-stripe tutorial in the Evolve Tutorials space covers the parallel-run pattern in detail. Worth a read before you cut over.</p>
+</section>
+<section class="post reply">
+<header><strong>devon</strong> — March 30, 2026</header>
+<p>+1 to network tokens. We saw a 2.1% bump in soft declines for the first 3 days post-migration, which then settled down once renewal mandates kicked in.</p>
+</section>
+</article>
+</body>
+</html>

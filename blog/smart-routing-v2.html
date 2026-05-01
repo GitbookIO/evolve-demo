@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart routing v2: how we lifted approval rates 1–3% — Evolve Blog</title>
+<meta name="description" content="A look under the hood at Smart routing v2 — per-network success-rate optimization that lifts approval rates without code changes.">
+<meta name="author" content="Lena Park, Staff Engineer, Payments">
+<meta property="article:published_time" content="2026-04-29">
+<meta name="keywords" content="smart routing, payments, approval rates, network optimization">
+</head>
+<body>
+<article>
+<header>
+<h1>Smart routing v2: how we lifted approval rates 1–3%</h1>
+<p>By Lena Park, Staff Engineer, Payments — April 29, 2026</p>
+</header>
+<p>The dirty secret of card processing is that the same charge — same card, same amount, same merchant — gets approved by one acquirer and declined by another, all the time. Smart routing v1 picked an acquirer based on geography and currency. Smart routing v2 picks based on per-card-type historical approval rates, network token availability, and transaction shape — and falls back to a secondary acquirer on soft declines without the customer noticing.</p>
+<p>Across the beta cohort we saw a 1–3% lift in approval rates, with the largest gains on subscription renewals and high-value B2B charges. There's nothing for customers to integrate — Smart routing is on by default for accounts where it's eligible. To customize routing rules or opt out, see <strong>Settings → Routing</strong> in the dashboard.</p>
+</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Per-seller payout stuck in "pending" — what now? — Evolve Community</title>
+<meta name="description" content="Help thread on diagnosing a Connect payout stuck in pending status — verification holds, payout schedule, and the typical causes.">
+<meta name="author" content="lina_mp">
+<meta property="article:published_time" content="2026-04-18">
+<meta name="keywords" content="connect, payouts, marketplace, troubleshooting">
+</head>
+<body>
+<article>
+<header>
+<h1>Per-seller payout stuck in "pending" — what now?</h1>
+<p>Posted by <strong>lina_mp</strong> — April 18, 2026 — 6 replies</p>
+</header>
+<section class="post original">
+<p>A few of our sellers have payouts that have been "pending" for ~5 days. The usual cycle is 2 days. Anything I should be checking?</p>
+</section>
+<section class="post reply accepted">
+<header><strong>marcus.t — Evolve team</strong> — April 18, 2026 — accepted answer</header>
+<p>Top three causes when this comes up:</p>
+<ul>
+<li><strong>Verification hold.</strong> The seller's KYB or identity check went into manual review. Visible under the seller's account page in your platform dashboard. Fix: complete the manual review or contact the seller for missing docs.</li>
+<li><strong>Bank account mismatch.</strong> The connected bank account name doesn't match the verified business name. Bank rejects the transfer; we retry once, then surface the error. Check audit log for the rejection event.</li>
+<li><strong>Payout schedule changed.</strong> If the seller's payout schedule was modified mid-cycle, the existing pending payout reschedules to the new cadence. Look at the payout's <code>arrival_date</code> in the API.</li>
+</ul>
+<p>If none of those apply, drop the payout ID into a support ticket and the on-call team can dig.</p>
+</section>
+</article>
+</body>
+</html>

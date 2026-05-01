@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KYB beneficial-ownership: handling LLCs owned by trusts? — Evolve Community</title>
+<meta name="description" content="Help thread on collecting beneficial-ownership info when a verified business is owned by trusts, holding companies, or other complex structures.">
+<meta name="author" content="alex_compliance">
+<meta property="article:published_time" content="2026-04-22">
+<meta name="keywords" content="kyb, beneficial-ownership, compliance, business-verification">
+</head>
+<body>
+<article>
+<header>
+<h1>KYB beneficial-ownership: handling LLCs owned by trusts?</h1>
+<p>Posted by <strong>alex_compliance</strong> — April 22, 2026 — 8 replies</p>
+</header>
+<section class="post original">
+<p>We're verifying a business where the parent LLC is owned by a revocable trust. Evolve's beneficial-ownership flow keeps asking for individuals — but the legal owner is the trust. How are others handling this?</p>
+</section>
+<section class="post reply accepted">
+<header><strong>jamie.k — Evolve team</strong> — April 22, 2026 — accepted answer</header>
+<p>Switch the verification flow into the "complex structure" path: in the API, set <code>ownership_structure: "complex"</code> when creating the business verification session. That unlocks fields for trust beneficiaries, settlors, and trustees, plus an option to upload the trust deed for our manual reviewers.</p>
+<p>For trusts specifically, FinCEN/equivalent regulators want disclosure of trustees plus beneficiaries with ≥25% beneficial interest, not the trust as a legal entity. So the flow asks for individuals at one layer up. The Identity docs / KYB / Complex structures page covers the field mapping.</p>
+</section>
+<section class="post reply">
+<header><strong>alex_compliance</strong> — April 23, 2026</header>
+<p>That worked. Worth flagging that the dashboard UI still defaults to the simple flow for new sellers — would be great if it auto-detected based on the entity type. Filed feedback.</p>
+</section>
+</article>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Why we made Identity its own product, not a Payments feature — Evolve Blog</title>
+<meta name="description" content="The case for splitting identity verification out of Payments — and what we learned about KYB, bank verification, and watchlist screening along the way.">
+<meta name="author" content="Devon Reilly, Product Lead, Identity">
+<meta property="article:published_time" content="2026-03-14">
+<meta name="keywords" content="identity, KYB, verification, product strategy">
+</head>
+<body>
+<article>
+<header>
+<h1>Why we made Identity its own product, not a Payments feature</h1>
+<p>By Devon Reilly, Product Lead, Identity — March 14, 2026</p>
+</header>
+<p>For two years, identity verification was a sub-feature of Payments. It worked, but every customer ran into the same wall: the workflows for KYB, bank account verification, and watchlist screening are different enough from card acceptance that they don't fit cleanly under "payments." Marketplaces especially needed identity workflows on people who weren't paying us yet — onboarding sellers, verifying business owners, ongoing compliance monitoring.</p>
+<p>Splitting Identity into its own product let us model the right primitives — verification sessions, decision events, retention policies — instead of jamming them into Payments-shaped objects. The dashboard, billing, and SDKs are still shared. But the docs, the conceptual model, and the team are now separate. Most teams adopting Connect adopt Identity at the same time; we made that simpler too.</p>
+</article>
+</body>
+</html>

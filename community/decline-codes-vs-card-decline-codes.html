@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Difference between decline_code and code on a failed charge? — Evolve Community</title>
+<meta name="description" content="Clarification on the difference between Evolve's `code` and `decline_code` fields on a failed charge.">
+<meta name="author" content="andre_s">
+<meta property="article:published_time" content="2026-03-19">
+<meta name="keywords" content="declines, error handling, charges">
+</head>
+<body>
+<article>
+<header>
+<h1>Difference between <code>decline_code</code> and <code>code</code> on a failed charge?</h1>
+<p>Posted by <strong>andre_s</strong> — March 19, 2026 — 11 replies</p>
+</header>
+<section class="post original">
+<p>Failed charge object has both <code>code</code> ("card_declined") and <code>decline_code</code> ("insufficient_funds"). Which one should I be branching on in my error handler?</p>
+</section>
+<section class="post reply accepted">
+<header><strong>priya.s — Evolve team</strong> — March 19, 2026 — accepted answer</header>
+<p>Both, depending on what you're doing.</p>
+<ul>
+<li><code>code</code> is Evolve's high-level error category. There are about a dozen — <code>card_declined</code>, <code>authentication_required</code>, <code>processing_error</code>, etc. Stable across networks. Use this for branching to user-facing UI ("your card was declined" vs "please complete authentication").</li>
+<li><code>decline_code</code> is the network's specific reason — there are hundreds. Use this for retry decisions (don't retry on <code>stolen_card</code>, do retry on <code>processing_error</code>) and for analytics.</li>
+</ul>
+<p>Don't branch user-facing flow on <code>decline_code</code> — the names aren't fully stable across networks and locales, and there are too many. The <code>message</code> field is also for display purposes only; don't parse it.</p>
+</section>
+</article>
+</body>
+</html>

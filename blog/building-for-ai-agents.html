@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Building docs and APIs for AI agents, not just humans — Evolve Blog</title>
+<meta name="description" content="How we restructured Evolve's docs and developer tooling for the agents that now read them — llms.txt, MCP, and structured retrieval.">
+<meta name="author" content="Akshaya Chandramouli, Developer Relations">
+<meta property="article:published_time" content="2025-12-19">
+<meta name="keywords" content="ai, agents, llms.txt, mcp, developer experience">
+</head>
+<body>
+<article>
+<header>
+<h1>Building docs and APIs for AI agents, not just humans</h1>
+<p>By Akshaya Chandramouli, Developer Relations — December 19, 2025</p>
+</header>
+<p>Roughly 40% of the reads on our developer docs now come from AI agents and code copilots, not humans. That's both a forcing function and a feature: the agents are the same ones helping our customers integrate Evolve, so making docs they can navigate is making developers happier downstream. We started by publishing <code>llms.txt</code> and <code>llms-full.txt</code> on the developer site so an agent landing on the docs has a structured map of the content; we then exposed Evolve itself as an MCP server, so agents can call the API directly during a session rather than re-implementing what the SDK already does.</p>
+<p>The biggest thing we changed wasn't infrastructure — it was content shape. Headings as questions. Short, declarative answers. Code examples copy-pasteable without modification. No "as you can see above"-style references that break when an excerpt gets pulled out of context. We're still figuring out the right pattern for richer formats (diagrams, interactive examples) but the basics get us a long way.</p>
+</article>
+</body>
+</html>

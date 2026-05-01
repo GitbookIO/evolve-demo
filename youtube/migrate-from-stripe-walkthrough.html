@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Migrate from Stripe to Evolve in a weekend (live build) — Evolve YouTube</title>
+<meta name="description" content="Live build: a real Stripe-to-Evolve migration end-to-end — field mapping, parallel-run pattern, and the cutover checklist, with the things that actually went wrong.">
+<meta name="author" content="Evolve">
+<meta property="video:duration" content="28:31">
+<meta property="og:type" content="video.other">
+<meta property="article:published_time" content="2026-02-04">
+<meta name="keywords" content="stripe, migration, parallel-run, cutover">
+</head>
+<body>
+<article>
+<header>
+<h1>Migrate from Stripe to Evolve in a weekend (live build)</h1>
+<p>Channel: <strong>Evolve</strong> · Duration: 28:31 · Published: February 4, 2026 · 41,392 views</p>
+</header>
+<section class="description">
+<p>An unedited migration from Stripe to Evolve, with all the things that actually went wrong on the first try. We cover field mapping, network token re-tokenization, mandate continuity, and the parallel-run pattern that lets you cut over without taking your production payments offline. By the end you'll have a checklist you can apply to your own migration.</p>
+</section>
+<section class="chapters">
+<h2>Chapters</h2>
+<ul>
+<li>0:00 — Why we're doing this live (and what to expect)</li>
+<li>2:18 — Field mapping: Customer, PaymentMethod, Subscription, Charge</li>
+<li>7:42 — Re-tokenization on first charge (the 2-day soft-decline bump)</li>
+<li>12:10 — Mandate continuity: don't trigger fresh SCA challenges</li>
+<li>16:55 — Parallel-run pattern: charge both sides, reconcile, swap</li>
+<li>22:08 — The cutover: webhook switch, DNS, and the rollback plan</li>
+<li>26:30 — Post-migration: what to monitor for the first 7 days</li>
+</ul>
+</section>
+<section class="transcript">
+<h2>Transcript highlights</h2>
+<p>"…the parallel-run pattern is the safety net. You charge through both Stripe and Evolve for two billing cycles, reconcile that the totals match, and only then flip the source-of-truth. It costs you double processing fees for those cycles but you can roll back at any point in the first 60 days without losing data…"</p>
+<p>"…network tokens don't transfer. We re-tokenize on first charge, and you'll see a small bump in soft declines for ~48 hours. By day 3 it's settled. Don't panic-roll-back unless declines exceed your normal envelope…"</p>
+</section>
+</article>
+</body>
+</html>

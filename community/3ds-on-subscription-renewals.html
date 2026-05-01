@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Best way to handle 3-D Secure on subscription renewals? — Evolve Community</title>
+<meta name="description" content="Community thread on whether to require 3-D Secure on recurring charges and how to handle the SCA exemption flow on subscription renewals.">
+<meta name="author" content="dan_b">
+<meta property="article:published_time" content="2026-04-12">
+<meta name="keywords" content="3d-secure, subscriptions, sca, renewals">
+</head>
+<body>
+<article>
+<header>
+<h1>Best way to handle 3-D Secure on subscription renewals?</h1>
+<p>Posted by <strong>dan_b</strong> — April 12, 2026 — 14 replies</p>
+</header>
+<section class="post original">
+<p>We're running monthly subscriptions and seeing a chunk of renewals fail because issuers are challenging them with 3DS. The customer isn't actively in the flow — they're not in front of the app — so the challenge times out and the charge declines. Anyone solved this elegantly?</p>
+</section>
+<section class="post reply accepted">
+<header><strong>maria.s — Evolve team</strong> — April 12, 2026 — accepted answer</header>
+<p>The pattern that works: collect the card with <code>setup_future_usage: off_session</code> on the initial Checkout session. That stores the SCA challenge result as a mandate, and on subsequent charges Evolve presents the mandate to the issuer instead of triggering a fresh challenge. Most EU/UK issuers accept the mandate as proof of customer agreement under PSD2's MIT exemption. We see challenge rates drop from ~12% to under 1% after this flip. Doc reference: Identity verification flows / Saved payment methods.</p>
+</section>
+<section class="post reply">
+<header><strong>dan_b</strong> — April 13, 2026</header>
+<p>That fixed it. Combined with retry-on-soft-decline our renewal success rate went from 91% to 97.4%. Thanks Maria.</p>
+</section>
+</article>
+</body>
+</html>
