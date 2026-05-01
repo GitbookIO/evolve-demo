@@ -42,13 +42,9 @@ Take payments, verify customers, and run a marketplace — all on one platform. 
 {% endcolumn %}
 
 {% column width="50%" %}
-Test
+{% include ".gitbook/includes/persona-switcher.md" %}
 {% endcolumn %}
 {% endcolumns %}
-
-
-
-{% include ".gitbook/includes/persona-switcher.md" %}
 
 
 
