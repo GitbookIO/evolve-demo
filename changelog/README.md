@@ -2,7 +2,7 @@
 description: Product updates across Payments, Identity, Connect, and the platform.
 icon: clock-rotate-left
 layout:
-  width: default
+  width: wide
   title:
     visible: true
   description:
