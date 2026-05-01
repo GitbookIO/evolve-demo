@@ -17,7 +17,7 @@ layout:
   tableOfContents:
     visible: false
   outline:
-    visible: true
+    visible: false
   pagination:
     visible: true
   metadata:
@@ -78,11 +78,13 @@ Try a persona to see adaptive content in action across the site:
 
 
 
+{% if visitor.claims.unsigned.persona !== null %}
+
+
 ***
 
 
 
-{% if visitor.claims.unsigned.persona %}
 ## <i class="fa-sparkle" style="color:$info;">:sparkle:</i> Picked for you
 {% endif %}
 
@@ -112,9 +114,21 @@ Try a persona to see adaptive content in action across the site:
 {% endhint %}
 {% endif %}
 
+
+
+
+
+***
+
+
+
+
+
 ## Three products, one platform
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h4></td><td><strong>Payments</strong></td><td>Accept card and bank-rail payments. Smart routing, 3-D Secure, settlement, reporting.</td><td><a href="../products/payments/">payments</a></td></tr><tr><td><h4><i class="fa-id-card" style="color:$primary;">:id-card:</i></h4></td><td><strong>Identity</strong></td><td>Verify customers and businesses. Document review, selfie liveness, bank verification, KYB.</td><td><a href="../products/identity/">identity</a></td></tr><tr><td><h4><i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i></h4></td><td><strong>Connect</strong></td><td>Embed payments in your platform. Onboard sellers, split payments, run a marketplace.</td><td><a href="../products/connect/">connect</a></td></tr></tbody></table>
+
+
 
 ## For developers
 
@@ -154,60 +168,70 @@ llms.txt, MCP server, agent best practices.
 {% endcolumn %}
 {% endcolumns %}
 
+
+
+
+
 ## Learn and explore
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-graduation-cap" style="color:$primary;">:graduation-cap:</i></h4></td><td><strong>Tutorials</strong></td><td>Step-by-step builds for common workflows. 15 tutorials with video walkthroughs.</td><td><a href="../guides/tutorials/">tutorials</a></td></tr><tr><td><h4><i class="fa-life-ring" style="color:$primary;">:life-ring:</i></h4></td><td><strong>Help Center</strong></td><td>Focused answers to common questions. The Assistant pulls from here, the forum, and YouTube.</td><td><a href="../guides/help-center/">help-center</a></td></tr><tr><td><h4><i class="fa-puzzle-piece" style="color:$primary;">:puzzle-piece:</i></h4></td><td><strong>Integrations</strong></td><td>Slack, Zapier, Segment, QuickBooks, NetSuite — and more in active development.</td><td><a href="../guides/integrations/">integrations</a></td></tr><tr><td><h4><i class="fa-clock-rotate-left" style="color:$primary;">:clock-rotate-left:</i></h4></td><td><strong>Changelog</strong></td><td>Six months of product updates, filterable by Payments, Identity, Connect, or Platform.</td><td><a href="../changelog/">changelog</a></td></tr></tbody></table>
-
-## What's new
-
-The biggest recent shipments — see the full [changelog](../changelog/) for the back-catalog.
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-route" style="color:$primary;">:route:</i></h4></td><td><strong>Smart routing v2</strong></td><td>Per-network success-rate optimization. 1–3% lift in approval rate, no code changes.</td><td><a href="../products/payments/accept-payments/smart-routing.md">smart-routing.md</a></td></tr><tr><td><h4><i class="fa-flask" style="color:$primary;">:flask:</i></h4></td><td><strong>Payments API v3-beta</strong></td><td>Renamed Payment object, capture_method enum, 30-day auth, multi-currency capture.</td><td><a href="../developers/v2/payments-api/">payments-api</a></td></tr><tr><td><h4><i class="fa-face-smile" style="color:$primary;">:face-smile:</i></h4></td><td><strong>Selfie liveness 2.0</strong></td><td>Passive liveness — no head turns. Lifts completion rates by ~12%.</td><td><a href="../products/identity/verification-flows/identity-verification/selfie-and-liveness.md">selfie-and-liveness.md</a></td></tr></tbody></table>
-
-## Partner with us
-
 {% columns %}
-{% column width="50%" %}
-#### <i class="fa-handshake" style="color:$primary;">:handshake:</i> Become a partner
+{% column width="66.66666666666666%" %}
+### <i class="fa-compass" style="color:$primary;">:compass:</i> Guides
 
-Solution, implementation, and technology partners earn revenue share, get co-marketing support, and a direct line to your partner success manager.
+Everything you need to get the most out of the Evolve platform.
 
-<a href="https://gitbook.com" class="button primary">Apply to the program</a> <a href="../partners/" class="button secondary">Learn more</a>
+<details open>
+
+<summary><i class="fa-graduation-cap" style="color:$primary;">:graduation-cap:</i> <strong>Tutorials</strong></summary>
+
+Step-by-step builds for common workflows. 15 tutorials with video walkthroughs.
+
+<a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Nankrp40VchJsUblU6h6/" class="button secondary">Start building</a>
+
+</details>
+
+<details open>
+
+<summary><i class="fa-graduation-cap" style="color:$primary;">:graduation-cap:</i> <strong>Help Center</strong></summary>
+
+Focused answers to common questions. The Assistant pulls from here, the forum, and YouTube.
+
+<button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">How can we help?</button><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/NA4Ikc8fQtsXC5U53xJu/" class="button secondary">View all</a>
+
+</details>
+
+<details open>
+
+<summary><i class="fa-puzzle-piece" style="color:$primary;">:puzzle-piece:</i> <strong>Integration guides</strong></summary>
+
+Slack, Zapier, Segment, QuickBooks, NetSuite — and more in active development.
+
+<a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/MBT3EDUK7DzXmR0k9cje/" class="button secondary">Browse integrations</a>
+
+</details>
 {% endcolumn %}
 
-{% column width="50%" %}
-#### <i class="fa-key" style="color:$primary;">:key:</i> Already a partner?
+{% column width="33.33333333333334%" %}
+## <i class="fa-clock-rotate-left">:clock-rotate-left:</i> What's new
 
-Sign in to the partner portal for deal registration, marketing resources, training, and support.
+Our biggest recent releases
 
-<a href="https://gitbook.com" class="button primary">Sign in</a> <a href="../partners/" class="button secondary">Open the portal</a>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-route" style="color:$primary;">:route:</i></h4></td><td><strong>Smart routing v2</strong></td><td>Per-network success-rate optimization. 1–3% lift in approval rate, no code changes.</td><td><a href="https://app.gitbook.com/s/ErQsbFsgm6eg9BApdmPl/#smart-routing-v2">Changelog #Smart routing v2</a></td></tr><tr><td><h4><i class="fa-flask" style="color:$primary;">:flask:</i></h4></td><td><strong>Payments API v3-beta</strong></td><td>Renamed Payment object, capture_method enum, 30-day auth, multi-currency capture.</td><td><a href="https://app.gitbook.com/s/ErQsbFsgm6eg9BApdmPl/#payments-api-v3-beta-available">Changelog #Payments API v3-beta available</a></td></tr><tr><td><h4><i class="fa-face-smile" style="color:$primary;">:face-smile:</i></h4></td><td><strong>Selfie liveness 2.0</strong></td><td>Passive liveness — no head turns. Lifts completion rates by ~12%.</td><td><a href="https://app.gitbook.com/s/ErQsbFsgm6eg9BApdmPl/#selfie-liveness-2.0">Changelog #Selfie liveness 2.0</a></td></tr></tbody></table>
+
+<a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/ErQsbFsgm6eg9BApdmPl/" class="button secondary" data-icon="clock-rotate-left">View complete changelog</a>
 {% endcolumn %}
 {% endcolumns %}
+
+
+
+***
+
+
+
+## Partner with Evolve
+
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h4><i class="fa-handshake" style="color:$primary;">:handshake:</i> Become a partner</h4></td><td>Solution, implementation, and technology partners earn revenue share, get co-marketing support, and a direct line to your partner success manager.</td><td><a href="https://gitbook.com/enterprise" class="button primary">Apply to the program</a> <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/R0VawBV5xcQ4exP2PlWS/" class="button secondary">Learn more</a></td></tr><tr><td><h4><i class="fa-key" style="color:$primary;">:key:</i> Already a partner?</h4></td><td>Sign in to the partner portal for deal registration, marketing resources, training, and support.</td><td><a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;plan=enterprise" class="button primary">Sign in</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/partners?visitor.persona=partner&#x26;plan=enterprise" class="button secondary">Open the portal</a></td></tr></tbody></table>
 
 ## Get help
 
-{% columns %}
-{% column width="33%" %}
-#### <i class="fa-headset" style="color:$primary;">:headset:</i> Talk to support
-
-For account-specific questions, integration help, or production incidents, open a ticket from your dashboard.
-
-<a href="https://gitbook.com" class="button primary">Open a ticket</a>
-{% endcolumn %}
-
-{% column width="33%" %}
-#### <i class="fa-circle-check" style="color:$primary;">:circle-check:</i> Platform status
-
-Real-time status of every Evolve service. Subscribe via email or RSS for incident updates.
-
-<a href="https://gitbook.com" class="button secondary">View status</a>
-{% endcolumn %}
-
-{% column width="33%" %}
-#### <i class="fa-comments" style="color:$primary;">:comments:</i> Community
-
-Real-time discussion with other Evolve customers and our team. Most product questions have a thread.
-
-<a href="https://gitbook.com" class="button secondary">Join the forum</a>
-{% endcolumn %}
-{% endcolumns %}
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h4><i class="fa-headset" style="color:$primary;">:headset:</i> Talk to support</h4></td><td>For account-specific questions, integration help, or production incidents, open a ticket by starting a chat below.</td><td><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">How can we help?</button></td></tr><tr><td><h4><i class="fa-circle-check" style="color:$primary;">:circle-check:</i> Platform status</h4></td><td>Real-time status of every Evolve service. Subscribe via email or RSS for incident updates.</td><td><a href="https://gitbook.com" class="button secondary">View status</a></td></tr><tr><td><h4><i class="fa-comments" style="color:$primary;">:comments:</i> Community</h4></td><td>Real-time discussion with other Evolve customers and our team. Most product questions have a thread.</td><td><a href="https://gitbook.com" class="button secondary">Join the forum</a></td></tr></tbody></table>
