@@ -87,7 +87,7 @@ Try a persona to see adaptive content in action across the site:
 **Evaluating Evolve?** Use the resources below to get an overview of how to get started.
 {% endhint %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><i class="fa-wallet" style="color:$primary;">:wallet:</i></td><td><strong>Payment methods</strong></td><td>Which payment methods Evolve supports, and which ones are available on each plan.</td><td><a href="https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/payment-methods">Payment methods</a></td></tr><tr><td><i class="fa-life-ring" style="color:$primary;">:life-ring:</i></td><td><strong>Help Center</strong></td><td>Frequently-asked questiosn about pricing, going live, and supported countries</td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/NA4Ikc8fQtsXC5U53xJu/">Troubleshooting</a></td></tr><tr><td><i class="fa-receipt" style="color:$primary;">:receipt:</i></td><td><strong>Fees and pricing</strong></td><td>What each plan costs, what's included, and how fees show up in your settlements.</td><td><a href="https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/fees-and-pricing">Fees and pricing</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-wallet" style="color:$primary;">:wallet:</i></h4></td><td><h4><strong>Payment methods</strong></h4></td><td>Which payment methods Evolve supports, and which ones are available on each plan.</td><td><a href="https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/payment-methods">Payment methods</a></td></tr><tr><td><h4><i class="fa-life-ring" style="color:$primary;">:life-ring:</i></h4></td><td><h4><strong>Help Center</strong></h4></td><td>Frequently-asked questiosn about pricing, going live, and supported countries</td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/NA4Ikc8fQtsXC5U53xJu/">Troubleshooting</a></td></tr><tr><td><h4><i class="fa-receipt" style="color:$primary;">:receipt:</i></h4></td><td><h4><strong>Fees and pricing</strong></h4></td><td>What each plan costs, what's included, and how fees show up in your settlements.</td><td><a href="https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/fees-and-pricing">Fees and pricing</a></td></tr></tbody></table>
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "new" %}
@@ -109,10 +109,6 @@ Try a persona to see adaptive content in action across the site:
 {% endif %}
 
 ***
-
-
-
-{% include ".gitbook/includes/persona-switcher.md" %}
 
 
 
