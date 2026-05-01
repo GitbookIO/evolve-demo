@@ -11,23 +11,25 @@ layout:
 
 # Help Center
 
+{% columns %}
+{% column width="50%" %}
 The Help Center is a curated set of focused answers to the questions our customers ask most. The Assistant pulls answers from this site, our [community forum](https://gitbook.com), and the [Evolve YouTube channel](https://gitbook.com) — so for most questions, asking the Assistant is faster than browsing.
 
+<button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
+
+<button type="button" class="button secondary" data-action="ask" data-query="How do I rotate an API key?" data-icon="key">API keys</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I change my pricing plan?" data-icon="file-invoice-dollar">Plan changes</button> <button type="button" class="button secondary" data-action="ask" data-query="Why is my webhook not firing?" data-icon="bolt">Webhooks</button> <button type="button" class="button secondary" data-action="ask" data-query="Why was my customer's card declined?" data-icon="circle-xmark">Card declines</button>
+{% endcolumn %}
+
+{% column width="50%" %}
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This space demonstrates **Connections**: the Assistant uses external sources (a fake community forum and YouTube channel) alongside the docs to answer questions. Each FAQ page is structured for **AI retrieval** — H2-style question headings, focused answers, no preamble — so the Assistant can return a clean excerpt rather than a wall of text.
+
+When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), the [Developer docs](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/), our [community forum](https://gitbook.com), and the [YouTube channel](https://gitbook.com). It cites whichever sources it pulled from in the answer.
 {% endhint %}
-
-## Ask anything
-
-<p><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button></p>
-
-<p><button type="button" class="button secondary" data-action="ask" data-query="How do I rotate an API key?" data-icon="key">API keys</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I change my pricing plan?" data-icon="file-invoice-dollar">Plan changes</button> <button type="button" class="button secondary" data-action="ask" data-query="Why is my webhook not firing?" data-icon="bolt">Webhooks</button> <button type="button" class="button secondary" data-action="ask" data-query="Why was my customer's card declined?" data-icon="circle-xmark">Card declines</button></p>
-
-{% hint style="info" %}
-**Where the Assistant looks.** When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), the [Developer docs](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/), our [community forum](https://gitbook.com), and the [YouTube channel](https://gitbook.com). It cites whichever sources it pulled from in the answer.
-{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
 ## Browse by topic
 

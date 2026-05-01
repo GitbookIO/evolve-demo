@@ -21,17 +21,21 @@ layout:
 
 # Changelog
 
+{% columns %}
+{% column width="50%" %}
 Everything we've shipped across Evolve in the last six months. Filter by product tag using the controls in the top right of the timeline.
 
+New entries land roughly weekly. Subscribe via [RSS](https://gitbook.com) or follow [@evolvepay](https://gitbook.com) for major releases.
+{% endcolumn %}
+
+{% column width="50%" %}
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This page is a single **Updates block** — a timeline of dated entries with **tags** (defined in `.gitbook/tags.yaml`). The four tags here are `payments`, `identity`, `connect`, `platform`; multi-tagged entries get all their tags. **RSS** is auto-generated for the page.
 {% endhint %}
-
-{% hint style="info" %}
-**Subscribe.** New entries land roughly weekly. Subscribe via [RSS](https://gitbook.com) or follow [@evolvepay](https://gitbook.com) for major releases.
-{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
 {% updates format="full" %}
 {% update date="2026-04-29" tags="payments" %}

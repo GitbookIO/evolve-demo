@@ -11,13 +11,19 @@ layout:
 
 # Integrations
 
+{% columns %}
+{% column width="50%" %}
 Evolve plugs into the tools your team already uses. Five officially-supported integrations cover the four jobs most teams need first — alerts, automation, customer-data routing, and accounting.
+{% endcolumn %}
 
+{% column width="50%" %}
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 Each integration is its own **page group** (Slack, Zapier, Segment, QuickBooks, NetSuite). Doc updates flow through **change requests** on GitHub — see the [evolve-pay/docs repo](https://github.com/GitbookIO/evolve-demo) for open PRs and the "Coming soon" section below for integrations being designed in the open right now.
 {% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
 ## Featured: Slack
 

@@ -11,8 +11,14 @@ layout:
 
 # Tutorials
 
+{% columns %}
+{% column width="50%" %}
 Hands-on walkthroughs for the workflows we get the most questions about. Each tutorial follows the same structure — short intro, video walkthrough, stepper with the actual build, common pitfalls, and pointers to what's next.
 
+**Looking for conceptual material?** The product spaces — [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), [Identity](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/), [Connect](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/) — cover the underlying mechanics and dashboard workflows. Tutorials cover end-to-end builds that combine multiple features.
+{% endcolumn %}
+
+{% column width="50%" %}
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
@@ -20,10 +26,8 @@ Every tutorial in this section uses the same **content template** — frontmatte
 
 The blocks demoed across these pages: **stepper**, **tabs** (multi-language code samples), **expandable**, **embed** (the YouTube video), **hint**, and **cards**.
 {% endhint %}
-
-{% hint style="info" %}
-**Looking for conceptual material?** The product spaces — [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), [Identity](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/), [Connect](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/) — cover the underlying mechanics and dashboard workflows. Tutorials cover end-to-end builds that combine multiple features.
-{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
 ## Build common payment flows
 

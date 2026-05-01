@@ -26,17 +26,21 @@ layout:
 
 # Developers
 
+{% columns %}
+{% column width="50%" %}
 Build with Evolve. The Developers space is the source of truth for APIs, SDKs, webhooks, and the agent integrations across all three products — [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), [Identity](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/), and [Connect](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/).
 
+**Looking for product workflows and concepts?** Those live in the product spaces — this space is the technical reference.
+{% endcolumn %}
+
+{% column width="50%" %}
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
 This space demonstrates **variants** — three Git-Synced spaces (`v1`, `v2`, `v3`) appear as a single dropdown in the top bar. Switch between them to see how the Payments API differs across versions. The Reference pages are **auto-rendered from OpenAPI specs** in `developers/openapi/v2/`. Code samples on the Quickstart and Authentication pages use the **tabs block** for Node, Python, Go, Ruby, and cURL.
 {% endhint %}
-
-{% hint style="info" %}
-**Looking for product workflows and concepts?** Those live in the product spaces — this space is the technical reference.
-{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
 ## Pick your path
 
@@ -62,28 +66,7 @@ These docs are bidirectionally synced with the [evolve-pay/docs](https://github.
 
 A short version of what's covered in detail under [Conventions](getting-started/conventions.md):
 
-{% columns %}
-{% column width="50%" %}
-#### <i class="fa-globe" style="color:$primary;">:globe:</i> Base URLs
-
-* Live: <code class="expression">space.vars.api_live</code>
-* Test: <code class="expression">space.vars.api_test</code>
-
-#### <i class="fa-tag" style="color:$primary;">:tag:</i> Versioning
-
-Date-pinned via the `Evolve-Version` header. Default: <code class="expression">space.vars.api_version</code>. Major shape changes ship as variants — `v1`, `v2`, `v3`.
-{% endcolumn %}
-
-{% column width="50%" %}
-#### <i class="fa-list" style="color:$primary;">:list:</i> Pagination
-
-Cursor-based. 100 per page default, 1000 max. `has_more` and `next_cursor` on every list.
-
-#### <i class="fa-gauge-high" style="color:$primary;">:gauge-high:</i> Rate limits
-
-500 requests/second on Growth, custom on Enterprise. `X-RateLimit-*` headers on every response.
-{% endcolumn %}
-{% endcolumns %}
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><h3><i class="fa-globe" style="color:$primary;">:globe:</i> <strong>Base URLs</strong></h3></td><td>Live: <code class="expression">space.vars.api_live</code><br>Test: <code class="expression">space.vars.api_test</code></td></tr><tr><td><h3><i class="fa-tag" style="color:$primary;">:tag:</i> <strong>Versioning</strong></h3></td><td>Date-pinned via the <code>Evolve-Version</code> header. Default: <code class="expression">space.vars.api_version</code>. Major shape changes ship as variants — <code>v1</code>, <code>v2</code>, <code>v3</code>.</td></tr><tr><td><h3><i class="fa-list" style="color:$primary;">:list:</i> <strong>Pagination</strong></h3></td><td>Cursor-based. 100 per page default, 1000 max. <code>has_more</code> and <code>next_cursor</code> on every list.</td></tr><tr><td><h3><i class="fa-gauge-high" style="color:$primary;">:gauge-high:</i> <strong>Rate limits</strong></h3></td><td>500 requests/second on Growth, custom on Enterprise. <code>X-RateLimit-*</code> headers on every response.</td></tr></tbody></table>
 
 ## Get help
 
