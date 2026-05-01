@@ -51,11 +51,43 @@ This site is a demo of GitBook's enterprise features applied to a fictional fint
 
 Try a persona to see adaptive content in action across the site:
 
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+{% if !visitor.claims.unsigned.persona %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a>
+{% endif %}
+
+{% if visitor.claims.unsigned.persona === "prospect" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button primary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+{% endif %}
+
+{% if visitor.claims.unsigned.persona === "new" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button primary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+{% endif %}
+
+{% if visitor.claims.unsigned.persona === "existing" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button primary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+{% endif %}
+
+{% if visitor.claims.unsigned.persona === "partner" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button primary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+{% endif %}
 
 Stack it with a organisation plan
 
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button secondary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button secondary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button secondary" data-icon="building">Enterprise</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=" class="button secondary" data-icon="trash-can"></a>
+{% if !visitor.claims.unsigned.plan %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button secondary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button secondary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button secondary" data-icon="building">Enterprise</a>&#x20;
+{% endif %}
+
+{% if visitor.claims.unsigned.plan === "starter" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button primary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button secondary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button secondary" data-icon="building">Enterprise</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=" class="button secondary" data-icon="trash-can"></a>
+{% endif %}
+
+{% if visitor.claims.unsigned.plan === "growth" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button secondary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button primary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button secondary" data-icon="building">Enterprise</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=" class="button secondary" data-icon="trash-can"></a>
+{% endif %}
+
+{% if visitor.claims.unsigned.plan === "enterprise" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button secondary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button secondary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button primary" data-icon="building">Enterprise</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=" class="button secondary" data-icon="trash-can"></a>
+{% endif %}
 {% endhint %}
 
 {% if visitor.claims.unsigned.persona === "new" %}
