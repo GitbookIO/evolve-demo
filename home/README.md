@@ -49,62 +49,48 @@ Take payments, verify customers, and run a marketplace — all on one platform. 
 
 This site is a demo of GitBook's enterprise features applied to a fictional fintech, **Evolve**. It shows what a real customer-facing docs site looks like end-to-end — adaptive content, OpenAPI variants, the AI Assistant with Connections, change-request workflows, hidden pages with public/authenticated flips, and more.
 
+{% if !visitor.claims.unsigned.persona %}
 Try a persona to see adaptive content in action across the site:
 
-{% if !visitor.claims.unsigned.persona %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a>
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new&#x26;plan=starter" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing&#x26;plan=growth" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a> <a class="button secondary" data-icon="trash-can"></a>
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "prospect" %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button primary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+<a class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new&#x26;plan=starter" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing&#x26;plan=growth" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "new" %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button primary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing&#x26;plan=growth" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "existing" %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button primary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new&#x26;plan=starter" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "partner" %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing" class="button secondary" data-icon="user">Existing user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner" class="button primary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
+<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new&#x26;plan=starter" class="button secondary" data-icon="arrow-right-to-bracket">New sign-up</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing&#x26;plan=growth" class="button secondary" data-icon="user">Existing user</a> <a class="button secondary" data-icon="handshake-angle">Partner</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=" class="button secondary" data-icon="trash-can"></a>
 {% endif %}
 
-Stack it with a organisation plan
-
-{% if !visitor.claims.unsigned.plan %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button secondary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button secondary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button secondary" data-icon="building">Enterprise</a>&#x20;
-{% endif %}
-
-{% if visitor.claims.unsigned.plan === "starter" %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button primary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button secondary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button secondary" data-icon="building">Enterprise</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=" class="button secondary" data-icon="trash-can"></a>
-{% endif %}
-
-{% if visitor.claims.unsigned.plan === "growth" %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button secondary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button primary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button secondary" data-icon="building">Enterprise</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=" class="button secondary" data-icon="trash-can"></a>
-{% endif %}
-
-{% if visitor.claims.unsigned.plan === "enterprise" %}
-<a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=starter" class="button secondary" data-icon="seedling">Starter</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=growth" class="button secondary" data-icon="rocket">Growth</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=enterprise" class="button primary" data-icon="building">Enterprise</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.plan=" class="button secondary" data-icon="trash-can"></a>
+{% if visitor.claims.unsigned.persona %}
+<i class="fa-circle-info" style="color:$info;">:circle-info:</i> <mark style="color:$info;">You are currently</mark> <code class="expression">visitor.claims.unsigned.persona === "prospect" ? "a prospect" : visitor.claims.unsigned.persona === "new" ? "a new user" : visitor.claims.unsigned.persona === "existing" ? "an existing user" : visitor.claims.unsigned.persona === "partner" ? "a partner" : ""</code> <mark style="color:$info;">on the</mark> <code class="expression">visitor.claims.unsigned.plan.charAt(0).toUpperCase() + visitor.claims.unsigned.plan.slice(1)</code> <mark style="color:$info;">plan.</mark>
 {% endif %}
 {% endhint %}
 
+{% if visitor.claims.unsigned.persona === "prospect" %}
+{% hint style="info" icon="store" %}
+**Evaluating Evolve?** The [Help Center](../guides/help-center/) answers the questions most prospects ask — pricing, going live, supported countries. For a deeper look, the [Payments product space](../products/payments/) covers the full feature set without the API noise.
+{% endhint %}
+{% endif %}
+
 {% if visitor.claims.unsigned.persona === "new" %}
 {% hint style="info" icon="hand-wave" %}
-**Welcome.** If you've just signed up, the [Payments quickstart](../products/payments/quickstart/accept-your-first-payment.md) gets you to a real test charge in five minutes — no code required. From there, the [tutorials](../guides/tutorials/) cover the most-asked-about workflows.
+**Welcome to Evolve.** If you've just signed up, the [Payments quickstart](../products/payments/quickstart/accept-your-first-payment.md) gets you to a real test charge in five minutes — no code required. From there, the [tutorials](../guides/tutorials/) cover the most-asked-about workflows.
 {% endhint %}
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "existing" %}
 {% hint style="info" icon="arrows-left-right" %}
 **Migrating from Stripe?** Most concepts map cleanly. Start with the [Stripe migration tutorial](../guides/tutorials/payment-flows/migrate-from-stripe.md) — it covers field mapping, the parallel-run pattern, and the cutover checklist. Most teams complete migration in 2–6 weeks.
-{% endhint %}
-{% endif %}
-
-{% if visitor.claims.unsigned.persona === "prospect" %}
-{% hint style="info" icon="store" %}
-**Evaluating Evolve?** The [Help Center](../guides/help-center/) answers the questions most prospects ask — pricing, going live, supported countries. For a deeper look, the [Payments product space](../products/payments/) covers the full feature set without the API noise.
 {% endhint %}
 {% endif %}
 
@@ -158,7 +144,7 @@ llms.txt, MCP server, agent best practices.
 
 ## Learn and explore
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-graduation-cap" style="color:$primary;">:graduation-cap:</i></h4></td><td><strong>Tutorials</strong></td><td>Step-by-step builds for common workflows. 15 tutorials with video walkthroughs.</td><td><a href="../guides/tutorials/">tutorials</a></td></tr><tr><td><h4><i class="fa-life-ring" style="color:$primary;">:life-ring:</i></h4></td><td><strong>Help Center</strong></td><td>Focused answers to common questions. The Assistant pulls from here, the forum, and YouTube.</td><td><a href="../guides/help-center/">help-center</a></td></tr><tr><td><h4><i class="fa-puzzle-piece" style="color:$primary;">:puzzle-piece:</i></h4></td><td><strong>Integrations</strong></td><td>Slack, Zapier, Segment, QuickBooks, NetSuite — and more in active development.</td><td><a href="../guides/integrations/">integrations</a></td></tr><tr><td><h4><i class="fa-clock-rotate-left" style="color:$primary;">:clock-rotate-left:</i></h4></td><td><strong>Changelog</strong></td><td>Six months of product updates, filterable by Payments, Identity, Connect, or Platform.</td><td><a href="../changelog/">changelog</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-graduation-cap" style="color:$primary;">:graduation-cap:</i></h4></td><td><strong>Tutorials</strong></td><td>Step-by-step builds for common workflows. 15 tutorials with video walkthroughs.</td><td><a href="../guides/tutorials/">tutorials</a></td></tr><tr><td><h4><i class="fa-life-ring" style="color:$primary;">:life-ring:</i></h4></td><td><strong>Help Center</strong></td><td>Focused answers to common questions. The Assistant pulls from here, the forum, and YouTube.</td><td><a href="../guides/help-center/">help-center</a></td></tr><tr><td><h4><i class="fa-puzzle-piece" style="color:$primary;">:puzzle-piece:</i></h4></td><td><strong>Integrations</strong></td><td>Slack, Zapier, Segment, QuickBooks, NetSuite — and more in active development.</td><td><a href="../guides/integrations/">integrations</a></td></tr><tr><td><h4><i class="fa-clock-rotate-left" style="color:$primary;">:clock-rotate-left:</i></h4></td><td><strong>Changelog</strong></td><td>Six months of product updates, filterable by Payments, Identity, Connect, or Platform.</td><td><a href="../changelog/">changelog</a></td></tr></tbody></table>
 
 ## What's new
 
