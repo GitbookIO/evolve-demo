@@ -47,13 +47,13 @@ Take payments, verify customers, and run a marketplace — all on one platform. 
 
 This site is a demo of GitBook's enterprise features applied to a fictional fintech, **Evolve**. It shows what a real customer-facing docs site looks like end-to-end — adaptive content, OpenAPI variants, the AI Assistant with Connections, change-request workflows, hidden pages with public/authenticated flips, and more.
 
-{% if !visitor.claims.unsigned.persona %}
+{% if visitor.claims.unsigned.persona == false %}
 Try a persona to see adaptive content in action across the site:
 
 <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=new&#x26;visitor.plan=starter" class="button secondary" data-icon="seedling">New user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=existing&#x26;visitor.plan=growth" class="button secondary" data-icon="rocket">Migrator</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a>
 {% endif %}
 
-{% if visitor.claims.unsigned.persona !== null %}
+{% if visitor.claims.unsigned.persona != false %}
 <i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are currently <code class="expression">visitor.claims.unsigned.persona === "prospect" ? "a prospect user exploring the product" : visitor.claims.unsigned.persona === "new" ? "a new user" : visitor.claims.unsigned.persona === "existing" ? "an existing user" : visitor.claims.unsigned.persona === "partner" ? "a partner" : ""</code><code class="expression">visitor.claims.unsigned.plan ? ` on the ${visitor.claims.unsigned.plan.charAt(0).toUpperCase() + visitor.claims.unsigned.plan.slice(1)} plan` : ""</code>. [<mark style="color:$primary;">Reset</mark>](https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=)
 {% endif %}
 
@@ -78,7 +78,7 @@ Try a persona to see adaptive content in action across the site:
 
 
 
-{% if visitor.claims.unsigned.persona !== null %}
+{% if visitor.claims.unsigned.persona != false %}
 
 
 ***
@@ -140,7 +140,7 @@ API references, SDKs, and the agent integrations across all three products. Pick
 
 Make your first API call in five minutes.
 
-[Quickstart →](../developers/v2/getting-started/quickstart.md)
+<a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Si95BtOt1VRLWjT7A67V/" class="button primary">Quickstart</a>
 {% endcolumn %}
 
 {% column width="25%" %}
@@ -148,7 +148,7 @@ Make your first API call in five minutes.
 
 Keys, restricted scopes, signature verification.
 
-[Authentication →](../developers/v2/getting-started/authentication.md)
+<a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Si95BtOt1VRLWjT7A67V/" class="button secondary">Authenticated</a>
 {% endcolumn %}
 
 {% column width="25%" %}
@@ -156,7 +156,7 @@ Keys, restricted scopes, signature verification.
 
 Node, Python, Go, Ruby — official and idiomatic.
 
-[SDKs →](../developers/v2/getting-started/sdks.md)
+<a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Si95BtOt1VRLWjT7A67V/" class="button secondary">SDKs</a>
 {% endcolumn %}
 
 {% column width="25%" %}
@@ -164,7 +164,7 @@ Node, Python, Go, Ruby — official and idiomatic.
 
 llms.txt, MCP server, agent best practices.
 
-[For AI agents →](../developers/v2/getting-started/for-ai-agents.md)
+<a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Si95BtOt1VRLWjT7A67V/" class="button secondary">For AI agents</a>
 {% endcolumn %}
 {% endcolumns %}
 
