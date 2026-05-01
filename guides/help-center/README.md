@@ -13,7 +13,7 @@ layout:
 
 {% columns %}
 {% column width="50%" %}
-The Help Center is a curated set of focused answers to the questions our customers ask most. The Assistant pulls answers from this site, our [community forum](https://gitbook.com), and the [Evolve YouTube channel](https://gitbook.com) — so for most questions, asking the Assistant is faster than browsing.
+The Help Center is a curated set of focused answers to the questions our customers ask most. The Assistant pulls answers from this site, our [community forum](https://gitbookio.github.io/evolve-demo/connections/community/), [YouTube channel](https://gitbookio.github.io/evolve-demo/connections/youtube/), and [engineering blog](https://gitbookio.github.io/evolve-demo/connections/blog/) — so for most questions, asking the Assistant is faster than browsing.
 
 <button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
 
@@ -24,9 +24,11 @@ The Help Center is a curated set of focused answers to the questions our custome
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
-This space demonstrates **Connections**: the Assistant uses external sources (a fake community forum and YouTube channel) alongside the docs to answer questions. Each FAQ page is structured for **AI retrieval** — H2-style question headings, focused answers, no preamble — so the Assistant can return a clean excerpt rather than a wall of text.
+This space demonstrates **Connections**: the Assistant uses external sources (the [community forum](https://gitbookio.github.io/evolve-demo/connections/community/), [YouTube channel](https://gitbookio.github.io/evolve-demo/connections/youtube/), and [engineering blog](https://gitbookio.github.io/evolve-demo/connections/blog/)) alongside the docs to answer questions. Each FAQ page is structured for **AI retrieval** — H2-style question headings, focused answers, no preamble — so the Assistant can return a clean excerpt rather than a wall of text.
 
-When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), the [Developer docs](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/), our [community forum](https://gitbook.com), and the [YouTube channel](https://gitbook.com). It cites whichever sources it pulled from in the answer.
+Try a search that pulls across all sources:
+
+<button type="button" class="button secondary" data-action="search" data-query="Stripe migration gotchas" data-icon="magnifying-glass">Search "Stripe migration gotchas"</button>
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
@@ -44,7 +46,7 @@ When you ask a question, the Assistant searches across this Help Center, the [Ev
 
 Real-time discussion with other Evolve customers and our team. Most product questions have a thread.
 
-<p><a href="https://gitbook.com" class="button secondary">Visit the forum</a></p>
+<p><a href="https://gitbookio.github.io/evolve-demo/connections/community/" class="button secondary">Visit the forum</a></p>
 
 {% endcolumn %}
 
@@ -54,7 +56,7 @@ Real-time discussion with other Evolve customers and our team. Most product ques
 
 Walkthroughs, deep-dives, monthly product updates. Subscribe for new releases.
 
-<p><a href="https://gitbook.com" class="button secondary">Watch on YouTube</a></p>
+<p><a href="https://gitbookio.github.io/evolve-demo/connections/youtube/" class="button secondary">Watch on YouTube</a></p>
 
 {% endcolumn %}
 

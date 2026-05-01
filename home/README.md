@@ -77,7 +77,7 @@ Try a persona to see adaptive content in action across the site:
 {% if visitor.claims.unsigned.persona %}
 ***
 
-## <i class="fa-sparkle" style="color:$info;">:sparkle:</i> Picked for you
+## :sparkle: Picked for you
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "prospect" %}

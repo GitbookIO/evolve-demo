@@ -110,7 +110,7 @@ Most teams use Plaid first with micro-deposits as fallback — covered automatic
 
 ## Where can I find more answers?
 
-* [Community forum: Identity & verification](https://gitbook.com)
-* [YouTube: Identity walkthroughs](https://gitbook.com)
+* [Community: KYB beneficial-ownership](https://gitbookio.github.io/evolve-demo/connections/community/kyb-beneficial-ownership-edge-cases.html)
+* [YouTube: KYB end-to-end](https://gitbookio.github.io/evolve-demo/connections/youtube/kyb-end-to-end.html)
 * [Identity product space](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/)
 * [Tutorials: Verify customers and businesses](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/#verify-customers-and-businesses)

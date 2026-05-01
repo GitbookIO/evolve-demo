@@ -17,7 +17,7 @@ The decline reason is on the charge timeline as `decline_code`. The most common 
 | `do_not_honor` | Generic decline; bank doesn't say why | Sometimes worth retrying after 24h |
 | `lost_card` / `stolen_card` | Card flagged as compromised | Don't retry — fraud signal |
 
-For a deeper dive, see the [community thread on decline-code triage](https://gitbook.com).
+For a deeper dive, see the [community thread on decline-code triage](https://gitbookio.github.io/evolve-demo/connections/community/decline-codes-vs-card-decline-codes.html).
 
 ## When do my funds become available for payout?
 
@@ -57,7 +57,7 @@ Five things to check, in order:
 4. **Signature verification passing?** Most-cited cause: body parsed before verification.
 5. **Live vs test mode mismatch?** Test-mode events only fire to test-mode endpoints, and vice versa.
 
-The [Verifying signatures page](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/verifying-signatures) has the full debugging checklist. Watch the [YouTube webhook-debugging walkthrough](https://gitbook.com) for the live-troubleshooting flow.
+The [Verifying signatures page](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/verifying-signatures) has the full debugging checklist. Watch the [YouTube webhook-debugging walkthrough](https://gitbookio.github.io/evolve-demo/connections/youtube/webhooks-deep-dive.html) for the live-troubleshooting flow.
 
 ## What's the difference between authorize and capture?
 
@@ -118,7 +118,7 @@ For most teams, **By rule** with a high-value threshold is the right default. Th
 
 ## Where can I find more answers?
 
-* [Community forum: Payments](https://gitbook.com)
-* [YouTube: Payments deep-dives](https://gitbook.com)
+* [Community: Stripe migration gotchas](https://gitbookio.github.io/evolve-demo/connections/community/migrating-stripe-customers.html)
+* [YouTube: Smart routing explained](https://gitbookio.github.io/evolve-demo/connections/youtube/smart-routing-explained.html)
 * [Payments product space](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/)
 * [Tutorials: Build common payment flows](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/#build-common-payment-flows)

@@ -84,7 +84,7 @@ For most well-trodden integration patterns, the [Tutorials](https://app.gitbook.
 
 ## Where can I find more answers?
 
-* [Community forum: Getting started](https://gitbook.com)
-* [YouTube: Onboarding walkthrough](https://gitbook.com)
+* [Community forum](https://gitbookio.github.io/evolve-demo/connections/community/)
+* [YouTube: Set up Connect in 10 minutes](https://gitbookio.github.io/evolve-demo/connections/youtube/set-up-connect-in-10-minutes.html)
 * [Tutorials](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/) — end-to-end builds for common workflows.
 * [Developers Quickstart](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/quickstart) — five-minute API integration.
