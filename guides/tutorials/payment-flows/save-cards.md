@@ -10,7 +10,7 @@ By the end of this tutorial you'll have a flow that saves a customer's card on f
 This is the foundation for subscriptions, repeat-purchase flows, marketplaces, and "buy with one tap" UX.
 
 {% hint style="info" %}
-**Prerequisites.** [Accept a one-time payment](accept-one-time-payment.md) finished. Familiarity with the [Saved payment methods](../../../products/payments/accept-payments/saved-payment-methods.md) concept page helps.
+**Prerequisites.** [Accept a one-time payment](accept-one-time-payment.md) finished. Familiarity with the [Saved payment methods](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/accept-payments/saved-payment-methods) concept page helps.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=55oOB-lsQKY" %}

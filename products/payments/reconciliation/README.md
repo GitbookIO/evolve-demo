@@ -61,4 +61,4 @@ Configure roles in **Settings → Team → Roles**.
 
 ## Where this fits
 
-Reconciliation is downstream of [Accept payments](../accept-payments/README.md) (where the captures originate) and upstream of [Reporting](../reporting/README.md) (where you build longer-horizon views). If you're building an integration with QuickBooks, NetSuite, or your own data warehouse, see [Guides / Integrations](../../../guides/integrations/README.md).
+Reconciliation is downstream of [Accept payments](../accept-payments/README.md) (where the captures originate) and upstream of [Reporting](../reporting/README.md) (where you build longer-horizon views). If you're building an integration with QuickBooks, NetSuite, or your own data warehouse, see [Guides / Integrations](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/).

@@ -22,7 +22,7 @@ The blocks demoed across these pages: **stepper**, **tabs** (multi-language code
 {% endhint %}
 
 {% hint style="info" %}
-**Looking for conceptual material?** The product spaces — [Payments](../../products/payments/README.md), [Identity](../../products/identity/README.md), [Connect](../../products/connect/README.md) — cover the underlying mechanics and dashboard workflows. Tutorials cover end-to-end builds that combine multiple features.
+**Looking for conceptual material?** The product spaces — [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), [Identity](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/), [Connect](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/) — cover the underlying mechanics and dashboard workflows. Tutorials cover end-to-end builds that combine multiple features.
 {% endhint %}
 
 ## Build common payment flows

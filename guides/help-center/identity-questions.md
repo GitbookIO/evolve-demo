@@ -15,7 +15,7 @@ Three flows, picked by what you're verifying:
 | A bank account belongs to the customer | Bank account verification (Plaid or micro-deposits) |
 | A business and its owners | Business verification (KYB) |
 
-Most consumer products need only identity verification. ACH-accepting products add bank verification. Marketplaces and B2B platforms add KYB. The [decision tree](../../products/identity/verification-flows/README.md#a-decision-tree) shows it visually.
+Most consumer products need only identity verification. ACH-accepting products add bank verification. Marketplaces and B2B platforms add KYB. The [decision tree](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows#a-decision-tree) shows it visually.
 
 ## How long does verification take?
 
@@ -42,7 +42,7 @@ The reason code on the session timeline tells you. The most common ones:
 | `liveness_failed` | Spoof attempt detected | No retry — fraud |
 | `data_mismatch` | Typed data doesn't match document | Correct typed data |
 
-For the full code reference, see [Document review](../../products/identity/verification-flows/identity-verification/document-review.md).
+For the full code reference, see [Document review](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/identity-verification/document-review).
 
 ## What countries can I verify in?
 
@@ -60,7 +60,7 @@ Three patterns most teams use:
 2. **On a transaction over a threshold** — high-value implies higher trust requirements.
 3. **On a profile change** — address change to a different country, name change, etc.
 
-The [re-verification tutorial](../tutorials/verification/re-verification-trigger.md) covers the full implementation. For scheduled re-verification (every N months for regulated regimes), use the dashboard's scheduled re-verification feature instead of building it yourself.
+The [re-verification tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/verification/re-verification-trigger) covers the full implementation. For scheduled re-verification (every N months for regulated regimes), use the dashboard's scheduled re-verification feature instead of building it yourself.
 
 ## How long is verification data retained?
 
@@ -69,13 +69,13 @@ Two retention windows:
 * **Raw images** (document fronts, backs, selfies) — 30 days by default. Configurable from 1 day to 7 years in **Settings → Identity → Retention**.
 * **Extracted data and decisions** (name, DOB, document number, decision reason) — 7 years by default. Required by most regulatory regimes.
 
-For customer deletion requests under GDPR/CCPA, see [Data retention → Customer deletion requests](../../products/identity/compliance/data-retention.md#customer-deletion-requests).
+For customer deletion requests under GDPR/CCPA, see [Data retention → Customer deletion requests](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/compliance/data-retention#customer-deletion-requests).
 
 ## Can I see the verified data on the customer record?
 
 Yes, from **Identity → Sessions → [session]**. Verified PII (extracted name, DOB, address) shows in the session detail page. Be careful exposing this to other parts of your team — leakage of verified PII to the wrong dashboard view is the most-cited compliance issue we see.
 
-The [audit log](../../products/identity/compliance/audit-logs.md) records every PII view, with `pii.accessed` events tied to the team member.
+The [audit log](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/compliance/audit-logs) records every PII view, with `pii.accessed` events tied to the team member.
 
 ## What is watchlist screening, and do I need it?
 
@@ -88,7 +88,7 @@ You probably need it if:
 
 You probably don't need it for typical e-commerce or community products.
 
-Watchlist screening is Enterprise-only. See [Watchlist screening](../../products/identity/verification-flows/identity-verification/watchlist-screening.md).
+Watchlist screening is Enterprise-only. See [Watchlist screening](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/identity-verification/watchlist-screening).
 
 ## How does ongoing monitoring work?
 
@@ -106,11 +106,11 @@ Most teams suspend the entity pending a manual review. The cost is included with
 | Customer effort | Sign in to bank | Wait for deposits, type amounts |
 | Risk signals | Yes (balance, NSF history) | No |
 
-Most teams use Plaid first with micro-deposits as fallback — covered automatically when you set `method: "auto"`. Walked through in the [Plaid bank verification tutorial](../tutorials/verification/plaid-bank-verification.md).
+Most teams use Plaid first with micro-deposits as fallback — covered automatically when you set `method: "auto"`. Walked through in the [Plaid bank verification tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/verification/plaid-bank-verification).
 
 ## Where can I find more answers?
 
 * [Community forum: Identity & verification](https://gitbook.com)
 * [YouTube: Identity walkthroughs](https://gitbook.com)
-* [Identity product space](../../products/identity/README.md)
-* [Tutorials: Verify customers and businesses](../tutorials/README.md#verify-customers-and-businesses)
+* [Identity product space](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/)
+* [Tutorials: Verify customers and businesses](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/#verify-customers-and-businesses)

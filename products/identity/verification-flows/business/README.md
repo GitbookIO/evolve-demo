@@ -56,7 +56,7 @@ Two integration shapes:
 * **Hosted KYB form** — a single Evolve-hosted URL the business owner fills in. Best when the customer is human-in-the-loop. Most marketplaces use this.
 * **API-driven** — your code submits the business info and triggers each check separately. Best when you've already collected everything in your own onboarding flow.
 
-For the hosted flow, the URL is generated from **Identity → Business verifications → New** in the dashboard or via a single API call. For the API-driven path, see [Developers / Identity API → Business verifications](../../../../developers/identity-api/business.md).
+For the hosted flow, the URL is generated from **Identity → Business verifications → New** in the dashboard or via a single API call. For the API-driven path, see [Developers / Identity API → Business verifications](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/identity-api/business).
 
 ## Decisions
 

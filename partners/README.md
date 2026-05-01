@@ -54,7 +54,7 @@ You implement Evolve for clients. Earn referral fees on every client you bring o
 
 ### <i class="fa-circle-nodes" style="color:$primary;">:circle-nodes:</i> Technology Partners
 
-You build a complementary product (CRM, analytics, fraud detection). Get listed in our [integrations directory](../guides/integrations/README.md) and access early-look APIs.
+You build a complementary product (CRM, analytics, fraud detection). Get listed in our [integrations directory](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/) and access early-look APIs.
 
 {% endcolumn %}
 {% endcolumns %}

@@ -10,10 +10,10 @@ description: First setup, going live, integration help, and the steps every new 
 Three steps in order:
 
 1. **Verify your business** — answer the prompts in **Settings → Onboarding** to verify your business identity and link a bank account. Until this is done, you're stuck in test mode.
-2. **Run a test charge** — follow the [Quickstart](../../products/payments/quickstart/accept-your-first-payment.md). Five minutes, no integration required.
+2. **Run a test charge** — follow the [Quickstart](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/quickstart/accept-your-first-payment). Five minutes, no integration required.
 3. **Get your live keys** — once business verification passes, **Developers → API keys** has live `sk_live_` and `pk_live_` keys ready.
 
-After that, the [Tutorials](../tutorials/README.md) cover the most common integration patterns.
+After that, the [Tutorials](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/) cover the most common integration patterns.
 
 ## How long does business verification take?
 
@@ -45,13 +45,13 @@ For sellers in unsupported countries on a Connect platform, the path is usually 
 
 Copy the secret keys to a password manager or environment-variable store. Don't commit them to source control.
 
-For the full setup walkthrough, see the [Developers Quickstart](../../developers/v2/getting-started/quickstart.md).
+For the full setup walkthrough, see the [Developers Quickstart](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/quickstart).
 
 ## What's the fastest way to take my first payment?
 
-The [Accept your first payment](../../products/payments/quickstart/accept-your-first-payment.md) walkthrough takes about five minutes via the dashboard, with no code required. Create a payment link, share it, complete the test checkout — done.
+The [Accept your first payment](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/quickstart/accept-your-first-payment) walkthrough takes about five minutes via the dashboard, with no code required. Create a payment link, share it, complete the test checkout — done.
 
-For an integration-first start, the [Tutorials → Accept a one-time payment](../tutorials/payment-flows/accept-one-time-payment.md) covers building Checkout into your own site.
+For an integration-first start, the [Tutorials → Accept a one-time payment](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/payment-flows/accept-one-time-payment) covers building Checkout into your own site.
 
 ## How do I switch from test mode to live mode?
 
@@ -62,17 +62,17 @@ There's no migration step — test and live are fully separate. To go live:
 3. Replace `sk_test_*` with `sk_live_*` in your environment configuration.
 4. Update webhook endpoints to point at your production URL with the live signing secret.
 
-Test-mode data doesn't carry over. Most teams run a single $1 live charge as a smoke test before pointing real customers at the live key. See the [Test mode and live mode page](../../products/payments/quickstart/test-and-live-mode.md) for the full cutover checklist.
+Test-mode data doesn't carry over. Most teams run a single $1 live charge as a smoke test before pointing real customers at the live key. See the [Test mode and live mode page](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/quickstart/test-and-live-mode) for the full cutover checklist.
 
 ## Which SDK should I use?
 
 Evolve maintains four official SDKs: Node, Python, Go, Ruby. They're feature-equivalent — pick whatever your team uses. For mobile apps, see the iOS / Android / React Native libraries instead, which are built around card collection.
 
-The full list is on the [Developers SDKs page](../../developers/v2/getting-started/sdks.md).
+The full list is on the [Developers SDKs page](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/sdks).
 
 ## I'm migrating from another provider. Where do I start?
 
-For Stripe specifically, the [Migrate from Stripe tutorial](../tutorials/payment-flows/migrate-from-stripe.md) covers the field mapping, the parallel-run pattern, and the cutover checklist. For other providers, the same patterns apply — most concepts (charges, refunds, customers, subscriptions) map cleanly.
+For Stripe specifically, the [Migrate from Stripe tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/payment-flows/migrate-from-stripe) covers the field mapping, the parallel-run pattern, and the cutover checklist. For other providers, the same patterns apply — most concepts (charges, refunds, customers, subscriptions) map cleanly.
 
 For business-side migration of customer data and saved cards, contact your account team. Several import tools are available depending on the source provider.
 
@@ -80,11 +80,11 @@ For business-side migration of customer data and saved cards, contact your accou
 
 Yes — Enterprise customers get a solutions engineer assigned at signup. Growth customers can request integration support via **Settings → Get help → Integration support**; we'll respond within 1 business day.
 
-For most well-trodden integration patterns, the [Tutorials](../tutorials/README.md) cover the build end to end, including common pitfalls.
+For most well-trodden integration patterns, the [Tutorials](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/) cover the build end to end, including common pitfalls.
 
 ## Where can I find more answers?
 
 * [Community forum: Getting started](https://gitbook.com)
 * [YouTube: Onboarding walkthrough](https://gitbook.com)
-* [Tutorials](../tutorials/README.md) — end-to-end builds for common workflows.
-* [Developers Quickstart](../../developers/v2/getting-started/quickstart.md) — five-minute API integration.
+* [Tutorials](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/) — end-to-end builds for common workflows.
+* [Developers Quickstart](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/quickstart) — five-minute API integration.

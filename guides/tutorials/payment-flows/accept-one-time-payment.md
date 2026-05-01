@@ -176,7 +176,7 @@ Run your server, click **Pay**, complete the test checkout, and confirm:
 1. The charge appears in **Payments → All payments** within a few seconds.
 2. Your `success_url` fires with the session ID appended.
 3. Your webhook handler logs the `charge.succeeded` event.
-4. `fulfillOrder` runs once and only once (idempotency check on the event ID — see [Webhooks → Retries and replay](../../../developers/v2/webhooks/retries-and-replay.md)).
+4. `fulfillOrder` runs once and only once (idempotency check on the event ID — see [Webhooks → Retries and replay](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/retries-and-replay)).
 
 {% endstep %}
 {% endstepper %}
@@ -187,7 +187,7 @@ Run your server, click **Pay**, complete the test checkout, and confirm:
 
 <summary>"My webhook signature verification keeps failing"</summary>
 
-Almost always one of: body parsed before verification (use `express.raw` or equivalent), wrong signing secret (test vs live have different ones), or a proxy that's altering the body. See [Webhooks → Verifying signatures](../../../developers/v2/webhooks/verifying-signatures.md).
+Almost always one of: body parsed before verification (use `express.raw` or equivalent), wrong signing secret (test vs live have different ones), or a proxy that's altering the body. See [Webhooks → Verifying signatures](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/verifying-signatures).
 
 </details>
 

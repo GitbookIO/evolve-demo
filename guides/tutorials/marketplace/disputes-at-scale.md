@@ -10,7 +10,7 @@ By the end of this tutorial you'll have a multi-seller dispute management flow t
 This is one of the most operationally complex parts of running a marketplace at scale. The platform is the merchant of record for card-network purposes — meaning the platform's dispute rate is what the networks watch, regardless of which seller caused the dispute.
 
 {% hint style="info" %}
-**Prerequisites.** [Onboard sellers](onboard-sellers.md) and [Split payments](split-payments.md) finished. Read [Connect → Refunds and disputes](../../../products/connect/platform-setup/refunds-and-disputes.md) for the model.
+**Prerequisites.** [Onboard sellers](onboard-sellers.md) and [Split payments](split-payments.md) finished. Read [Connect → Refunds and disputes](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/platform-setup/refunds-and-disputes) for the model.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=55oOB-lsQKY" %}

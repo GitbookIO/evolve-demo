@@ -9,7 +9,7 @@ layout:
 
 # Developers
 
-Build with Evolve. The Developers space is the source of truth for APIs, SDKs, webhooks, and the agent integrations across all three products — [Payments](../products/payments/README.md), [Identity](../products/identity/README.md), and [Connect](../products/connect/README.md).
+Build with Evolve. The Developers space is the source of truth for APIs, SDKs, webhooks, and the agent integrations across all three products — [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), [Identity](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/), and [Connect](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/).
 
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
@@ -91,7 +91,7 @@ For account-specific questions, integration help, or production incidents, open 
 
 Real-time platform status and the running list of API changes.
 
-<p><a href="https://gitbook.com" class="button secondary">Status page</a> <a href="../changelog/README.md" class="button secondary">Changelog</a></p>
+<p><a href="https://gitbook.com" class="button secondary">Status page</a> <a href="https://app.gitbook.com/s/ErQsbFsgm6eg9BApdmPl/" class="button secondary">Changelog</a></p>
 
 {% endcolumn %}
 {% endcolumns %}

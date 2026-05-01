@@ -38,7 +38,7 @@ POST /v2/checkout_sessions
 }
 ```
 
-That charges the buyer $100, transfers $98 to the seller's connected account, and credits $2 to your platform balance. By default the card processing fee is netted from your application fee — see [Connect → Splitting payments](../../../products/connect/platform-setup/splitting-payments.md) for the full mechanics including pass-through fees.
+That charges the buyer $100, transfers $98 to the seller's connected account, and credits $2 to your platform balance. By default the card processing fee is netted from your application fee — see [Connect → Splitting payments](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/platform-setup/splitting-payments) for the full mechanics including pass-through fees.
 
 ## Direct charges vs destination charges
 
@@ -53,4 +53,4 @@ Choose at the platform level by setting your default in **Connect → Settings �
 
 ## Conceptual background
 
-For the product-side concepts — onboarding flow, payout scheduling, dispute routing, refund splits — see the [Connect product space](../../../products/connect/README.md).
+For the product-side concepts — onboarding flow, payout scheduling, dispute routing, refund splits — see the [Connect product space](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/).

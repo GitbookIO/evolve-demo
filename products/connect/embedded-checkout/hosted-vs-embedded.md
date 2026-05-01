@@ -134,7 +134,7 @@ This is the right choice for:
 * Highly customized B2B onboarding flows.
 * Platforms with PCI compliance teams who want every pixel under their control.
 
-Most platforms don't need this level of control and pay for it in engineering time. See [Developers / Connect API](../../../developers/connect-api/README.md) for the API reference.
+Most platforms don't need this level of control and pay for it in engineering time. See [Developers / Connect API](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/connect-api) for the API reference.
 
 ## Per-seller variation
 

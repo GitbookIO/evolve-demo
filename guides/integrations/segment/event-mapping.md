@@ -82,4 +82,4 @@ Last reviewed in early 2026. The mapping is stable; new events are added as new 
 ## Related
 
 * [Segment overview](README.md) — install and concepts.
-* [Webhooks event catalog](../../../developers/v2/webhooks/event-catalog.md) — the Evolve-side events.
+* [Webhooks event catalog](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/event-catalog) — the Evolve-side events.

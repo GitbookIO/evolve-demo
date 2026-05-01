@@ -65,4 +65,4 @@ Configure in **Settings → Team → Roles**.
 
 * [Settlement files](../reconciliation/settlement-files.md) — the source data for all finance reports.
 * [Smart routing](../accept-payments/smart-routing.md) — what the Routing report measures.
-* [Guides / Integrations](../../../guides/integrations/README.md) — pre-built connectors to QuickBooks, NetSuite, Looker, and more.
+* [Guides / Integrations](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/) — pre-built connectors to QuickBooks, NetSuite, Looker, and more.

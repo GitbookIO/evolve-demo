@@ -90,5 +90,5 @@ Reviewed in early 2026. Mapping options expand occasionally with new QuickBooks 
 ## Related
 
 * [QuickBooks overview](README.md) — install and concepts.
-* [Settlement files](../../../products/payments/reconciliation/settlement-files.md) — the source data this writes against.
+* [Settlement files](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/settlement-files) — the source data this writes against.
 * [NetSuite custom field mapping](../netsuite/custom-field-mapping.md) — equivalent for NetSuite customers.

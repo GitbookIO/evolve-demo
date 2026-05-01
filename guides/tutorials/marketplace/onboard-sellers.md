@@ -10,7 +10,7 @@ By the end of this tutorial you'll have a working seller onboarding flow — you
 This is the right starting point for any marketplace, B2B platform, or vertical SaaS that takes payments on behalf of customers.
 
 {% hint style="info" %}
-**Prerequisites.** A Growth or Enterprise account with Connect enabled. Test API keys. Read [Connect → Onboarding sellers](../../../products/connect/platform-setup/onboarding-sellers.md) for the conceptual model.
+**Prerequisites.** A Growth or Enterprise account with Connect enabled. Test API keys. Read [Connect → Onboarding sellers](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/platform-setup/onboarding-sellers) for the conceptual model.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=55oOB-lsQKY" %}

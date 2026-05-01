@@ -19,7 +19,7 @@ Three tiers, gating both feature access and pricing:
 | SSO | — | ✅ | ✅ |
 | Custom contracts | — | — | ✅ |
 
-For the full breakdown, see [Payments → Fees and pricing](../../products/payments/concepts/fees-and-pricing.md).
+For the full breakdown, see [Payments → Fees and pricing](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/fees-and-pricing).
 
 ## How do I see my current plan?
 
@@ -73,4 +73,4 @@ Most risk reviews resolve within 2 business days with no action from you. If we 
 
 * [Community forum: Billing & invoices](https://gitbook.com)
 * [YouTube: Pricing explained](https://gitbook.com)
-* [Payments → Fees and pricing](../../products/payments/concepts/fees-and-pricing.md)
+* [Payments → Fees and pricing](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/fees-and-pricing)

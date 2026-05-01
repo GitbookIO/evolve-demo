@@ -10,7 +10,7 @@ By the end of this tutorial you'll have a sign-up form that runs identity verifi
 This is the right pattern for any product where you need verified identity before high-value actions but don't want to lose customers at the front door.
 
 {% hint style="info" %}
-**Prerequisites.** A working sign-up flow in your app. Test API keys for Identity. Read [Identity verification](../../../products/identity/verification-flows/identity-verification/README.md) for the conceptual model.
+**Prerequisites.** A working sign-up flow in your app. Test API keys for Identity. Read [Identity verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/identity-verification) for the conceptual model.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=55oOB-lsQKY" %}

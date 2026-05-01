@@ -9,7 +9,7 @@ Evolve gives you four channels to accept payments. They share the same backend â
 
 ## Pick a channel
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-link" style="color:$primary;">:link:</i></h3></td><td><strong>Payment links</strong></td><td>One URL per payment or product. No code at all.</td><td></td></tr><tr><td><h3><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h3></td><td><strong>Hosted Checkout</strong></td><td>Redirect to an Evolve-hosted checkout page. ~10 lines of code.</td><td></td></tr><tr><td><h3><i class="fa-puzzle-piece" style="color:$primary;">:puzzle-piece:</i></h3></td><td><strong>Embedded Elements</strong></td><td>Drop-in card and bank fields in your own page. Custom UI.</td><td></td></tr><tr><td><h3><i class="fa-code" style="color:$primary;">:code:</i></h3></td><td><strong>Direct API</strong></td><td>Full control. PCI scope is your responsibility.</td><td><a href="../../../developers/payments-api/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-link" style="color:$primary;">:link:</i></h3></td><td><strong>Payment links</strong></td><td>One URL per payment or product. No code at all.</td><td></td></tr><tr><td><h3><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h3></td><td><strong>Hosted Checkout</strong></td><td>Redirect to an Evolve-hosted checkout page. ~10 lines of code.</td><td></td></tr><tr><td><h3><i class="fa-puzzle-piece" style="color:$primary;">:puzzle-piece:</i></h3></td><td><strong>Embedded Elements</strong></td><td>Drop-in card and bank fields in your own page. Custom UI.</td><td></td></tr><tr><td><h3><i class="fa-code" style="color:$primary;">:code:</i></h3></td><td><strong>Direct API</strong></td><td>Full control. PCI scope is your responsibility.</td><td><a href="https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/payments-api">README.md</a></td></tr></tbody></table>
 
 ## When to use which
 
@@ -23,7 +23,7 @@ Evolve gives you four channels to accept payments. They share the same backend â
 {% if visitor.claims.unsigned.persona === "prospect" %}
 
 {% hint style="info" icon="store" %}
-**Selling on Shopify or another commerce platform?** You won't need any of these directly â€” install [Evolve for Shopify](../../../guides/integrations/shopify.md) and the platform handles the channel choice for you.
+**Selling on Shopify or another commerce platform?** You won't need any of these directly â€” install [Evolve for Shopify](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/shopify) and the platform handles the channel choice for you.
 {% endhint %}
 
 {% endif %}
@@ -62,13 +62,13 @@ When the customer pays, the new payment appears in **All payments** and (if you 
 
 A redirect-based checkout you trigger from your site. You create a Checkout session on your server, redirect the customer, and Evolve sends them back when they're done.
 
-For the integration steps, see the [Hosted Checkout guide](../../../developers/payments-api/checkout.md).
+For the integration steps, see the [Hosted Checkout guide](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/payments-api/checkout).
 
 ## Walkthrough: embedded Elements
 
 Drop-in card and bank-account fields you can place inside your own page. The fields render in an iframe so the card data never touches your server â€” your PCI scope stays at SAQ A.
 
-For the integration steps, see the [Elements guide](../../../developers/payments-api/elements.md).
+For the integration steps, see the [Elements guide](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/payments-api/elements).
 
 ## What happens after a payment
 

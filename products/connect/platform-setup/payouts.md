@@ -134,10 +134,10 @@ Two payout reports under **Reports** when Connect is enabled:
 * **Platform payout summary** — daily/weekly/monthly aggregates of total payouts.
 * **Per-seller payout history** — drill-down per seller for support purposes.
 
-Both export to CSV and can be [scheduled](../../payments/reporting/sharing-exports.md).
+Both export to CSV and can be [scheduled](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reporting/sharing-exports).
 
 ## Related
 
 * [Splitting payments](splitting-payments.md) — how each transfer's amount is determined.
 * [Refunds and disputes](refunds-and-disputes.md) — how reversals affect payouts.
-* [Money movement (Payments)](../../payments/concepts/money-movement.md) — the underlying settlement engine.
+* [Money movement (Payments)](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/money-movement) — the underlying settlement engine.

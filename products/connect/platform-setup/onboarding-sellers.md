@@ -7,7 +7,7 @@ description: How a seller goes from "signed up to your platform" to "ready to ta
 
 Before a seller can take payments, Evolve has to know who they are — legal name, banking details, identity proof. This is the seller-onboarding flow, and it's the first place most platforms spend engineering effort on Connect.
 
-The flow uses [Identity verification](../../identity/verification-flows/README.md) under the hood — Connect adds the connected-account specifics on top. You don't build the verification logic; you decide what data to collect, who collects it (the seller in a hosted flow, your platform in a programmatic flow), and what happens when something fails.
+The flow uses [Identity verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows) under the hood — Connect adds the connected-account specifics on top. You don't build the verification logic; you decide what data to collect, who collects it (the seller in a hosted flow, your platform in a programmatic flow), and what happens when something fails.
 
 ## What gets collected
 
@@ -23,7 +23,7 @@ Every connected account requires:
 * Government ID number (SSN, EIN, or country equivalent).
 * Address.
 
-For businesses, plus [beneficial ownership](../../identity/verification-flows/business/beneficial-ownership.md) for owners ≥25%.
+For businesses, plus [beneficial ownership](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/business/beneficial-ownership) for owners ≥25%.
 
 {% endcolumn %}
 
@@ -33,7 +33,7 @@ For businesses, plus [beneficial ownership](../../identity/verification-flows/bu
 
 * Bank account for payouts.
 * Account holder name (must match the legal entity).
-* Verification — Plaid instant or micro-deposits ([details](../../identity/verification-flows/bank-account/README.md)).
+* Verification — Plaid instant or micro-deposits ([details](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account)).
 
 For non-US banks, plus tax forms (W-9 for US, W-8 for non-US).
 
@@ -94,7 +94,7 @@ Reasons: expired document, document tampering signal, selfie mismatch. The selle
 
 <summary>Bank verification fails</summary>
 
-Plaid couldn't reach the bank, or the customer entered wrong micro-deposit amounts. The flow falls back to the alternate method ([Plaid → micro-deposits](../../identity/verification-flows/bank-account/micro-deposits.md), or vice versa) automatically.
+Plaid couldn't reach the bank, or the customer entered wrong micro-deposit amounts. The flow falls back to the alternate method ([Plaid → micro-deposits](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account/micro-deposits), or vice versa) automatically.
 
 </details>
 
@@ -133,6 +133,6 @@ Bulk onboarding is usually a one-shot during platform launch or migration. Day-t
 ## Related
 
 * [Connect quickstart](../quickstart/onboard-your-first-seller.md) — walkthrough with a test seller.
-* [Identity verification](../../identity/verification-flows/identity-verification/README.md) — the verification engine behind onboarding.
-* [Bank account verification](../../identity/verification-flows/bank-account/README.md) — the bank-side details.
-* [Beneficial ownership](../../identity/verification-flows/business/beneficial-ownership.md) — for business sellers.
+* [Identity verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/identity-verification) — the verification engine behind onboarding.
+* [Bank account verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account) — the bank-side details.
+* [Beneficial ownership](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/business/beneficial-ownership) — for business sellers.

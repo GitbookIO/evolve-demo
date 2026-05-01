@@ -10,7 +10,7 @@ By the end of this tutorial you'll have a payment split system that takes a flat
 This is the platform-revenue side of Connect — your take rate is configured at session creation, the math is automatic, and reporting rolls up across all sellers.
 
 {% hint style="info" %}
-**Prerequisites.** [Onboard your first sellers](onboard-sellers.md) finished — you need at least one verified connected account to test against. Read [Connect → Splitting payments](../../../products/connect/platform-setup/splitting-payments.md) for the underlying model.
+**Prerequisites.** [Onboard your first sellers](onboard-sellers.md) finished — you need at least one verified connected account to test against. Read [Connect → Splitting payments](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/platform-setup/splitting-payments) for the underlying model.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=55oOB-lsQKY" %}

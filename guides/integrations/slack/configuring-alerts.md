@@ -103,4 +103,4 @@ Reviewed in early 2026, with quarterly updates as new alert types ship. Suggest 
 ## Related
 
 * [Slack overview](README.md) — install and slash commands.
-* [Webhooks event catalog](../../../developers/v2/webhooks/event-catalog.md) — the underlying event types these alerts surface.
+* [Webhooks event catalog](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/event-catalog) — the underlying event types these alerts surface.

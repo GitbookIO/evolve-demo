@@ -11,7 +11,7 @@ Most platforms have a default policy and override it case-by-case. This page cov
 
 ## Refunds
 
-Refunds on Connect work like [Payments refunds](../../payments/reconciliation/refunds.md), with one extra decision: how the refund is split between the platform and the seller.
+Refunds on Connect work like [Payments refunds](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/refunds), with one extra decision: how the refund is split between the platform and the seller.
 
 ### The default split
 
@@ -67,7 +67,7 @@ Disputes are more complicated than refunds because the timeline is longer (20+ d
 On Connect, the **platform is the merchant of record** for card-network purposes. This means:
 
 * Disputes are filed against the platform's merchant ID.
-* The platform's [dispute rate](../../payments/reconciliation/disputes.md) is what the network monitors.
+* The platform's [dispute rate](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/disputes) is what the network monitors.
 * Platform-level dispute thresholds (1.0% under most network rules) apply across all sellers' charges combined.
 
 A bad seller can drag down the platform's overall dispute rate, which is why most platforms care about dispute handling and seller risk management.
@@ -141,4 +141,4 @@ Sellers who haven't been told they're on the hook for disputes don't gather evid
 
 * [Splitting payments](splitting-payments.md) — how the original split affects the refund split.
 * [Payouts to sellers](payouts.md) — how disputes and refunds delay payouts.
-* [Disputes (Payments)](../../payments/reconciliation/disputes.md) — the underlying dispute mechanics.
+* [Disputes (Payments)](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/disputes) — the underlying dispute mechanics.

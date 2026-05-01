@@ -27,7 +27,7 @@ flowchart LR
 
 Each charge produces three financial movements on Evolve's side:
 
-1. **Authorization and capture** of the buyer's card — handled by [Payments](../../payments/concepts/payment-lifecycle.md).
+1. **Authorization and capture** of the buyer's card — handled by [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/payment-lifecycle).
 2. **Application fee** to the platform's Evolve balance.
 3. **Transfer** of the net amount to the seller's connected-account balance.
 
@@ -53,7 +53,7 @@ Two new report types appear in **Reports** when Connect is enabled:
 * **Per-seller report** — every charge, refund, fee, and payout for a specific seller. Useful for support and per-seller close-out.
 * **Application fees report** — total fees earned across all sellers, by day, by seller cohort, by transaction shape. This is your platform's revenue line.
 
-Both reports are exportable via [scheduled exports](../../payments/reporting/sharing-exports.md), the same way Payments reports are.
+Both reports are exportable via [scheduled exports](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reporting/sharing-exports), the same way Payments reports are.
 
 ## Plan considerations
 
@@ -76,5 +76,5 @@ Both reports are exportable via [scheduled exports](../../payments/reporting/sha
 ## Related
 
 * [Connect overview](../README.md) — high-level on what Connect is.
-* [Payments](../../payments/README.md) — Connect inherits everything from Payments.
-* [Identity verification](../../identity/verification-flows/README.md) — used for seller onboarding.
+* [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/) — Connect inherits everything from Payments.
+* [Identity verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows) — used for seller onboarding.

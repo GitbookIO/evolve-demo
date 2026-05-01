@@ -49,7 +49,7 @@ Auto-revocation can't be turned off. If you'd rather receive a warning without i
 
 The audit log is exportable from **Compliance → Audit log → Export**. Choose a date range, columns, and format (CSV or JSON). Exports under 10,000 rows generate immediately; larger exports email you when ready.
 
-For continuous export to your SIEM (Splunk, Datadog, etc.), the [reporting webhooks doc](../../developers/v2/webhooks/event-catalog.md) covers the per-event push pattern.
+For continuous export to your SIEM (Splunk, Datadog, etc.), the [reporting webhooks doc](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/event-catalog) covers the per-event push pattern.
 
 ## Can I require 2FA for all team members?
 
@@ -79,5 +79,5 @@ Account data is retained per your retention policy (default 7 years for complian
 
 * [Community forum: Account & access](https://gitbook.com)
 * [YouTube: Security best practices](https://gitbook.com)
-* [Developer docs: Authentication](../../developers/v2/getting-started/authentication.md)
-* [Identity compliance: Audit logs](../../products/identity/compliance/audit-logs.md)
+* [Developer docs: Authentication](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/authentication)
+* [Identity compliance: Audit logs](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/compliance/audit-logs)

@@ -49,7 +49,7 @@ Both methods generate a `bank_account.verified` webhook event when complete, wit
 
 ## Storing the result
 
-Once verified, the bank account is attached to a Customer record (see [Saved payment methods](../../../payments/accept-payments/saved-payment-methods.md) in Payments) and can be used for ACH debits or payouts without re-verification — until the customer's bank reissues credentials or you trigger a re-verification.
+Once verified, the bank account is attached to a Customer record (see [Saved payment methods](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/accept-payments/saved-payment-methods) in Payments) and can be used for ACH debits or payouts without re-verification — until the customer's bank reissues credentials or you trigger a re-verification.
 
 ## What's logged
 
@@ -59,4 +59,4 @@ Every bank account verification creates an entry in the [audit log](../../compli
 
 * [Plaid instant](plaid-instant.md) — setup and customer experience.
 * [Micro-deposits](micro-deposits.md) — what the customer sees, retry handling.
-* [Payments / Money movement](../../../payments/concepts/money-movement.md) — how verified bank accounts are used in ACH flows.
+* [Payments / Money movement](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/money-movement) — how verified bank accounts are used in ACH flows.

@@ -10,7 +10,7 @@ By the end of this tutorial you'll have a KYB flow that collects business info, 
 This is for marketplaces onboarding business sellers, B2B platforms paying out to vendors, and any team that needs to verify a corporate entity before processing payments on its behalf.
 
 {% hint style="info" %}
-**Prerequisites.** An Evolve Enterprise account (KYB is Enterprise-only). Test API keys. Familiarity with the [Business verification](../../../products/identity/verification-flows/business/README.md) concept.
+**Prerequisites.** An Evolve Enterprise account (KYB is Enterprise-only). Test API keys. Familiarity with the [Business verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/business) concept.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=55oOB-lsQKY" %}

@@ -70,4 +70,4 @@ curl https://api.evolve.com/v2/verification_sessions \
 
 ## Conceptual background
 
-For the product-side concepts — when to verify, which method to pick, what the customer sees — see the [Identity product space](../../../products/identity/README.md).
+For the product-side concepts — when to verify, which method to pick, what the customer sees — see the [Identity product space](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/).

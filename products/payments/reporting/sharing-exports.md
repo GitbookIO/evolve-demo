@@ -93,7 +93,7 @@ Emails are sent from `reports@evolve.com`. Make sure the recipients' mail server
 
 The Slack integration posts a summary message to a channel you've connected, with a CSV attachment for the underlying data. The message format is configurable — you can include the headline metric, a chart preview (as an image), and a link back to the dashboard.
 
-To connect Slack, install the [Evolve Slack app](../../../guides/integrations/slack.md). The same app can also post real-time alerts for things like dispute openings and large refunds.
+To connect Slack, install the [Evolve Slack app](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/slack). The same app can also post real-time alerts for things like dispute openings and large refunds.
 
 ## Webhooks for finance automation
 

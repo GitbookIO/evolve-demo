@@ -13,7 +13,7 @@ This is the right path when:
 * The tool you want to connect to is already in Zapier's catalog.
 * The volume is reasonable (Zapier's free tier covers 100 tasks/month; paid plans go up from there).
 
-For high-volume integrations, build directly against [webhooks](../../../developers/v2/webhooks/README.md) — Zapier's per-task pricing adds up fast.
+For high-volume integrations, build directly against [webhooks](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/) — Zapier's per-task pricing adds up fast.
 
 ## Connect Evolve in Zapier
 
@@ -22,7 +22,7 @@ For high-volume integrations, build directly against [webhooks](../../../develop
 
 ### Authenticate
 
-In Zapier, search for "Evolve" and click **Connect**. You'll be asked for your Evolve API key — paste a [restricted key](../../../developers/v2/getting-started/authentication.md#restricted-keys) scoped to read-only or to the specific operations the Zap will perform.
+In Zapier, search for "Evolve" and click **Connect**. You'll be asked for your Evolve API key — paste a [restricted key](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/authentication#restricted-keys) scoped to read-only or to the specific operations the Zap will perform.
 
 For most Zaps, **Read-only** is enough. For Zaps that create or refund charges, scope to the specific resources.
 
@@ -91,5 +91,5 @@ Last reviewed in early 2026. Zapier's catalog of supported triggers and actions 
 ## Related
 
 * [Triggers and actions](triggers-and-actions.md) — the full catalog.
-* [Webhooks](../../../developers/v2/webhooks/README.md) — for the engineering-driven path.
-* [Authentication → Restricted keys](../../../developers/v2/getting-started/authentication.md#restricted-keys) — the right key shape for Zapier.
+* [Webhooks](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/) — for the engineering-driven path.
+* [Authentication → Restricted keys](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/authentication#restricted-keys) — the right key shape for Zapier.

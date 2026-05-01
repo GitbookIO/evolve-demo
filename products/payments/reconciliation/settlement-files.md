@@ -110,5 +110,5 @@ If the file doesn't balance to zero, something is off — open a support ticket 
 ## Going further
 
 * Push files automatically to your data warehouse — see [Sharing and scheduled exports](../reporting/sharing-exports.md).
-* Build reconciliation into QuickBooks or NetSuite — see [Guides / Integrations](../../../guides/integrations/README.md).
+* Build reconciliation into QuickBooks or NetSuite — see [Guides / Integrations](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/).
 * For deeper analysis, the same data is available as queryable [Reports](../reporting/standard-reports.md).

@@ -5,61 +5,116 @@ cover: .gitbook/assets/identity-cover.png
 coverY: 0
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # Identity
 
+{% columns %}
+{% column %}
 Evolve Identity verifies the people and businesses you transact with — through document review, biometric selfie checks, bank account verification, and business records (KYB). It's the same platform as Payments, with the same dashboard, the same auth, and the same settlement of fees.
 
+<button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
+
+<button type="button" class="button secondary" data-action="ask" data-query="Which verification flow should I use?" data-icon="route">Which flow?</button> <button type="button" class="button secondary" data-action="ask" data-query="What documents are accepted in each country?" data-icon="passport">Documents</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I screen against watchlists?" data-icon="shield-halved">Screening</button>
+{% endcolumn %}
+
+{% column %}
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
-This space demonstrates **nested page groups** — the Verification flows section has parent pages (Identity verification, Bank account verification, Business verification) each with their own subpages. It also includes a **hidden page**: [Watchlist screening](verification-flows/identity-verification/watchlist-screening.md) doesn't appear in the sidebar nav but is accessible via direct link. The same adaptive-content patterns from Payments apply here too — try `?persona=partner` to see Enterprise-specific content.
-{% endhint %}
+This space demonstrates **nested page groups** — Verification flows has parent pages (Identity, Bank, Business) each with their own subpages. It also includes a **hidden page**: [Watchlist screening](verification-flows/identity-verification/watchlist-screening.md) doesn't appear in the sidebar nav but is accessible via direct link.
 
-{% hint style="info" %}
-**Looking for the API reference?** Endpoints, parameters, and SDK examples live in [Developers / Identity API](../../developers/identity-api/README.md). This space focuses on concepts and workflows.
-{% endhint %}
+{% if !visitor.claims.unsigned.persona %}
+Try a persona to see adaptive content in action across the site:
 
-<p><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button></p>
-
-<p><button type="button" class="button secondary" data-action="ask" data-query="Which verification flow should I use?" data-icon="route">Which flow?</button> <button type="button" class="button secondary" data-action="ask" data-query="How long does verification take?" data-icon="clock">Timing</button> <button type="button" class="button secondary" data-action="ask" data-query="What documents are accepted in each country?" data-icon="passport">Documents</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I screen against watchlists?" data-icon="shield-halved">Screening</button></p>
-
-## Start here
-
-{% if visitor.claims.unsigned.persona === "new" %}
-
-{% hint style="info" icon="hand-wave" %}
-**Not sure what verification you need?** Most teams start with **identity verification** (document + selfie) for individual customers, and add bank verification when they accept ACH. The [Verification flows overview](verification-flows/README.md) has a quick decision tree.
-{% endhint %}
-
+<a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=new&#x26;visitor.plan=starter" class="button secondary" data-icon="seedling">New user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=existing&#x26;visitor.plan=growth" class="button secondary" data-icon="rocket">Migrator</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a>
 {% endif %}
 
-{% if visitor.claims.unsigned.persona === "existing" %}
-
-{% hint style="info" icon="arrows-left-right" %}
-**Coming from Stripe Identity?** Most flows map directly. Document + selfie is equivalent, watchlist screening replaces Stripe's network-block list, and bank verification works the same with Plaid. See the [Stripe migration guide](../../guides/tutorials/migrating-from-stripe.md#identity).
-{% endhint %}
-
+{% if visitor.claims.unsigned.persona %}
+<i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are currently <code class="expression">visitor.claims.unsigned.persona === "prospect" ? "a prospect user exploring the product" : visitor.claims.unsigned.persona === "new" ? "a new user" : visitor.claims.unsigned.persona === "existing" ? "an existing user" : visitor.claims.unsigned.persona === "partner" ? "a partner" : ""</code><code class="expression">visitor.claims.unsigned.plan ? ` on the ${visitor.claims.unsigned.plan.charAt(0).toUpperCase() + visitor.claims.unsigned.plan.slice(1)} plan` : ""</code>. [<mark style="color:$primary;">Reset</mark>](https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=)
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "prospect" %}
+<a class="button primary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=new&#x26;visitor.plan=starter" class="button secondary" data-icon="arrow-right-to-bracket">New user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=existing&#x26;visitor.plan=growth" class="button secondary" data-icon="rocket">Migrator</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a>
+{% endif %}
 
-{% hint style="info" icon="store" %}
-**Selling on Shopify?** Shopify handles basic checkout fraud signals on its own — but if you take ACH, accept high-value orders, or sell age-restricted products, you'll want to layer Evolve Identity on top. See the [Shopify integration guide](../../guides/integrations/shopify.md#identity-checks).
-{% endhint %}
+{% if visitor.claims.unsigned.persona === "new" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a class="button primary" data-icon="arrow-right-to-bracket">New user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=existing&#x26;visitor.plan=growth" class="button secondary" data-icon="rocket">Migrator</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a>
+{% endif %}
 
+{% if visitor.claims.unsigned.persona === "existing" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=new&#x26;visitor.plan=starter" class="button secondary" data-icon="arrow-right-to-bracket">New user</a> <a class="button primary" data-icon="rocket">Migrator</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button secondary" data-icon="handshake-angle">Partner</a>
 {% endif %}
 
 {% if visitor.claims.unsigned.persona === "partner" %}
+<a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=prospect" class="button secondary" data-icon="bag-shopping">Prospect</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=new&#x26;visitor.plan=starter" class="button secondary" data-icon="arrow-right-to-bracket">New user</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/identity?visitor.persona=existing&#x26;visitor.plan=growth" class="button secondary" data-icon="rocket">Migrator</a> <a class="button primary" data-icon="handshake-angle">Partner</a>
+{% endif %}
+{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
-{% hint style="info" icon="building" %}
-**Setting up enterprise compliance?** Watchlist screening, PEP screening, and ongoing monitoring are Enterprise-only features. The [Compliance section](compliance/audit-logs.md) covers audit trails and regional requirements.
+***
+
+## <i class="fa-sparkle" style="color:$info;">:sparkle:</i> Picked for you
+
+{% if visitor.claims.unsigned.persona === "prospect" %}
+{% hint style="info" icon="store" %}
+**Evaluating Evolve Identity?** Get an overview of how the verification flows fit together.
 {% endhint %}
 
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-list-check" style="color:$primary;">:list-check:</i></h4></td><td><h4><strong>Verification flows</strong></h4></td><td>Identity, bank, and business verification — when to use which.</td><td><a href="verification-flows/README.md">verification-flows</a></td></tr><tr><td><h4><i class="fa-receipt" style="color:$primary;">:receipt:</i></h4></td><td><h4><strong>Per-verification pricing</strong></h4></td><td>What each flow costs across Starter, Growth, and Enterprise.</td><td><a href="quickstart/test-and-live-mode.md">test-and-live-mode</a></td></tr></tbody></table>
 {% endif %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-rocket" style="color:$primary;">:rocket:</i></h3></td><td><strong>Quickstart</strong></td><td>Run your first verification in five minutes.</td><td><a href="quickstart/run-your-first-verification.md">run-your-first-verification.md</a></td></tr><tr><td><h3><i class="fa-list-check" style="color:$primary;">:list-check:</i></h3></td><td><strong>Verification flows</strong></td><td>Identity, bank, and business verification — when to use which.</td><td><a href="verification-flows/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-scale-balanced" style="color:$primary;">:scale-balanced:</i></h3></td><td><strong>Compliance</strong></td><td>Audit logs, retention, regional requirements.</td><td><a href="compliance/audit-logs.md">audit-logs.md</a></td></tr><tr><td><h3><i class="fa-code" style="color:$primary;">:code:</i></h3></td><td><strong>API reference</strong></td><td>Endpoints, SDKs, and try-it.</td><td><a href="../../developers/identity-api/README.md">README.md</a></td></tr></tbody></table>
+{% if visitor.claims.unsigned.persona === "new" %}
+{% hint style="info" icon="hand-wave" %}
+**New to Identity?** Run a verification in five minutes — no integration required.
+{% endhint %}
+
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-rocket" style="color:$primary;">:rocket:</i></h4></td><td><h4><strong>Run your first verification</strong></h4></td><td>Send a verification link, complete it with test data, see the result land.</td><td><a href="quickstart/run-your-first-verification.md">run-your-first-verification</a></td></tr><tr><td><h4><i class="fa-id-card" style="color:$primary;">:id-card:</i></h4></td><td><strong>Identity verification flow</strong></td><td>Document + selfie liveness, configurable strictness.</td><td><a href="verification-flows/identity-verification/README.md">identity-verification</a></td></tr></tbody></table>
+{% endif %}
+
+{% if visitor.claims.unsigned.persona === "existing" %}
+{% hint style="info" icon="arrows-left-right" %}
+**Coming from Stripe Identity?** Most flows map directly — document + selfie, bank verification, and watchlist screening.
+{% endhint %}
+
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-arrows-left-right" style="color:$primary;">:arrows-left-right:</i></h4></td><td><h4><strong>Migrate from Stripe Identity</strong></h4></td><td>Field mapping, parallel-run pattern, and the cutover checklist.</td><td><a href="https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/payment-flows/migrate-from-stripe">migrate-from-stripe</a></td></tr><tr><td><h4><i class="fa-building-columns" style="color:$primary;">:building-columns:</i></h4></td><td><strong>Bank verification with Plaid</strong></td><td>Instant verification with micro-deposit fallback.</td><td><a href="verification-flows/bank-account/plaid-instant.md">plaid-instant</a></td></tr></tbody></table>
+{% endif %}
+
+{% if visitor.claims.unsigned.persona === "partner" %}
+{% hint style="info" icon="building" %}
+**Setting up enterprise compliance?** Watchlist screening, KYB, and ongoing monitoring are the Enterprise-tier capabilities.
+{% endhint %}
+
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-briefcase" style="color:$primary;">:briefcase:</i></h4></td><td><h4><strong>Business verification (KYB)</strong></h4></td><td>Beneficial ownership, sanctions screening, ongoing monitoring.</td><td><a href="verification-flows/business/README.md">business</a></td></tr><tr><td><h4><i class="fa-shield-halved" style="color:$primary;">:shield-halved:</i></h4></td><td><strong>Watchlist screening</strong></td><td>OFAC, UN, EU, UK HMT, PEP, and adverse media. Enterprise only.</td><td><a href="verification-flows/identity-verification/watchlist-screening.md">watchlist-screening</a></td></tr></tbody></table>
+{% endif %}
+
+{% if visitor.claims.unsigned.persona %}
+***
+{% endif %}
+
+{% if !visitor.claims.unsigned.persona %}
+## Get started
+{% endif %}
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-rocket" style="color:$primary;">:rocket:</i></h4></td><td><strong>Quickstart</strong></td><td>Run your first verification in five minutes.</td><td><a href="quickstart/run-your-first-verification.md">run-your-first-verification</a></td></tr><tr><td><h4><i class="fa-list-check" style="color:$primary;">:list-check:</i></h4></td><td><strong>Verification flows</strong></td><td>Identity, bank, and business verification — when to use which.</td><td><a href="verification-flows/README.md">verification-flows</a></td></tr><tr><td><h4><i class="fa-scale-balanced" style="color:$primary;">:scale-balanced:</i></h4></td><td><strong>Compliance</strong></td><td>Audit logs, retention, regional requirements.</td><td><a href="compliance/audit-logs.md">audit-logs</a></td></tr><tr><td><h4><i class="fa-code" style="color:$primary;">:code:</i></h4></td><td><strong>API reference</strong></td><td>Endpoints, SDKs, and try-it.</td><td><a href="https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/identity-api/">identity-api</a></td></tr></tbody></table>
 
 ## What's new
 
@@ -71,22 +126,18 @@ This space demonstrates **nested page groups** — the Verification flows sectio
 
 {% columns %}
 {% column width="50%" %}
-
-### Talk to support
+#### Talk to support
 
 For account-specific questions, compliance reviews, or production incidents, contact your account team or open a ticket from the dashboard.
 
-<p><a href="https://gitbook.com" class="button primary">Open a ticket</a></p>
-
+<a href="https://gitbook.com" class="button primary">Open a ticket</a>
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### Search the docs
+#### Search the docs
 
 Looking for something specific? The Assistant pulls answers from this site, the API reference, and the community forum.
 
-<p><button type="button" class="button secondary" data-action="search" data-icon="magnifying-glass">Search...</button></p>
-
+<button type="button" class="button secondary" data-action="search" data-icon="magnifying-glass">Search...</button>
 {% endcolumn %}
 {% endcolumns %}

@@ -103,4 +103,4 @@ If you'd rather not offer the fallback (e.g. you can't wait 1–2 days), turn it
 
 * [Micro-deposits](micro-deposits.md) — fallback when Plaid isn't available.
 * [Bank account verification](README.md) — parent flow.
-* [Payments / Money movement](../../../payments/concepts/money-movement.md) — using a verified account for ACH.
+* [Payments / Money movement](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/money-movement) — using a verified account for ACH.

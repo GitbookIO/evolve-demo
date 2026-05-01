@@ -100,7 +100,7 @@ For delivery dates, appointments, gift-card send dates.
 {% endcolumn %}
 {% endcolumns %}
 
-Custom field values land on the charge as metadata, visible in the dashboard, on receipts, in webhook payloads, and on the [settlement file](../../payments/reconciliation/settlement-files.md).
+Custom field values land on the charge as metadata, visible in the dashboard, on receipts, in webhook payloads, and on the [settlement file](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/settlement-files).
 
 ## Localization
 

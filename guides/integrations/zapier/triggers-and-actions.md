@@ -48,7 +48,7 @@ Triggers fire when something happens in Evolve. Each maps to a real-time webhook
 
 ## Actions
 
-Actions let other apps create things in Evolve. Use a [restricted key](../../../developers/v2/getting-started/authentication.md#restricted-keys) scoped to just the actions your Zap performs.
+Actions let other apps create things in Evolve. Use a [restricted key](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/authentication#restricted-keys) scoped to just the actions your Zap performs.
 
 ### Customer actions
 

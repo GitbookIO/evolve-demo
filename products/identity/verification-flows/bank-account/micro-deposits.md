@@ -107,4 +107,4 @@ The same data as Plaid — masked account number, routing, account type, account
 
 * [Plaid instant](plaid-instant.md) — the faster option when supported.
 * [Bank account verification](README.md) — parent flow.
-* [Payments / Money movement](../../../payments/concepts/money-movement.md) — using a verified account for ACH.
+* [Payments / Money movement](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/money-movement) — using a verified account for ACH.

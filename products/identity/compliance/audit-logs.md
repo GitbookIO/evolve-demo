@@ -101,7 +101,7 @@ The default view shows the last 30 days; you can go back as far as your retentio
 Three ways to get the log out:
 
 * **CSV download** from the dashboard, with current filters applied.
-* **Scheduled export** to SFTP, S3, or your data warehouse — same destinations as [Payments reporting](../../payments/reporting/sharing-exports.md).
+* **Scheduled export** to SFTP, S3, or your data warehouse — same destinations as [Payments reporting](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reporting/sharing-exports).
 * **API pull** for real-time integration into a SIEM (Splunk, Datadog, etc.).
 
 For SOC 2 and ISO 27001 audit support, the standard scheduled export — full log, daily, in CSV, to your auditor's SFTP — is the most common setup.
@@ -134,4 +134,4 @@ The dashboard surfaces "who looked at what" — every PII view is itself an audi
 
 * [Data retention](data-retention.md) — how long PII is kept; logs persist longer.
 * [Regional requirements](regional-requirements.md) — what regulators require to be in the log.
-* [Payments / Reporting](../../payments/reporting/sharing-exports.md) — schedule the same kind of export.
+* [Payments / Reporting](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reporting/sharing-exports) — schedule the same kind of export.

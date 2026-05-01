@@ -106,5 +106,5 @@ Last reviewed in early 2026. Mapping conventions occasionally update with new Qu
 ## Related
 
 * [Reconciliation mapping](reconciliation-mapping.md) — the detailed account-mapping options.
-* [Settlement files](../../../products/payments/reconciliation/settlement-files.md) — the source data the integration writes against.
+* [Settlement files](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/settlement-files) — the source data the integration writes against.
 * [NetSuite integration](../netsuite/README.md) — for higher-end accounting needs.

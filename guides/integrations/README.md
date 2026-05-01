@@ -64,4 +64,4 @@ In active development. Each is being designed in the open via a GitHub pull requ
 For tools not on this list, two paths:
 
 * **Zapier**, if your tool integrates with it. [Our Zapier integration](zapier/README.md) is the fastest path — no engineering required.
-* **Build your own**, against the [Webhooks API](../../developers/v2/webhooks/README.md). A few dozen lines of code wires Evolve to almost anything; the [tutorials](../tutorials/README.md) cover common patterns.
+* **Build your own**, against the [Webhooks API](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/). A few dozen lines of code wires Evolve to almost anything; the [tutorials](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/) cover common patterns.

@@ -62,7 +62,7 @@ There is no merge or migration step — test and live are fully separate.
 | Watchlist screening (initial) | — | — | $0.50 |
 | Watchlist screening (re-screen) | — | — | $0.10 |
 
-Verification fees appear on your settlement file as a separate line type `verification_fee`, alongside payment processing fees from [Payments](../../payments/reconciliation/settlement-files.md).
+Verification fees appear on your settlement file as a separate line type `verification_fee`, alongside payment processing fees from [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/settlement-files).
 
 ## Cutting over from test
 

@@ -82,7 +82,7 @@ A preview of the next major version of the Payments API. Highlights:
 
 v3-beta is preview-only. Don't run production traffic on it without coordinating with your account team. v2 stays the stable default; v3-beta will graduate when we've completed the beta-customer cohort.
 
-The variant dropdown in [Developers](../developers/v2/payments-api/) lets you flip between v1, v2, and v3 to compare.
+The variant dropdown in [Developers](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/payments-api/) lets you flip between v1, v2, and v3 to compare.
 {% endupdate %}
 
 {% update date="2026-03-26" tags="connect" %}
@@ -182,7 +182,7 @@ The 2.x lines of all four official SDKs are now stable, tracking the v2 Payments
 * Native async support in Node and Python.
 * Strict module boundaries in Go (per-resource packages).
 
-The 1.x lines are still maintained for the v1 Payments API; they reach end-of-life when v1 sunsets on 2026-12-31. See [Developers / SDKs](../developers/v2/getting-started/sdks.md).
+The 1.x lines are still maintained for the v1 Payments API; they reach end-of-life when v1 sunsets on 2026-12-31. See [Developers / SDKs](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/getting-started/sdks).
 {% endupdate %}
 
 {% update date="2026-01-08" tags="identity" %}

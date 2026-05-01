@@ -39,7 +39,7 @@ The most consequential differences if you're reading v1 docs by accident:
 
 ## Migrating to v2
 
-Most teams migrate in 2–4 days of engineering time. The [v1 → v2 migration guide](../../../guides/tutorials/migrate-payments-v1-to-v2.md) covers:
+Most teams migrate in 2–4 days of engineering time. The [v1 → v2 migration guide](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/migrate-payments-v1-to-v2) covers:
 
 * Endpoint renaming.
 * Webhook handler updates (SHA-1 → SHA-256).
@@ -48,7 +48,7 @@ Most teams migrate in 2–4 days of engineering time. The [v1 → v2 migration g
 
 You can run v1 and v2 in parallel during cutover — both will accept production traffic until 2026-12-31.
 
-<p><a href="../../../guides/tutorials/migrate-payments-v1-to-v2.md" class="button primary">Migration guide</a></p>
+<p><a href="https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/migrate-payments-v1-to-v2" class="button primary">Migration guide</a></p>
 
 ## Support during sunset
 

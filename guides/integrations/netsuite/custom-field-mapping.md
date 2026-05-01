@@ -101,4 +101,4 @@ Last reviewed in early 2026. Mapping options expand as NetSuite ships new custom
 
 * [NetSuite overview](README.md) — install and high-level setup.
 * [QuickBooks reconciliation mapping](../quickbooks/reconciliation-mapping.md) — equivalent for QB customers.
-* [Settlement files](../../../products/payments/reconciliation/settlement-files.md) — the source data.
+* [Settlement files](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/settlement-files) — the source data.

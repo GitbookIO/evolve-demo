@@ -61,7 +61,7 @@ For interactive support work, a typical scoping:
 * **Write** on refunds (so the agent can issue them with your approval).
 * **No write** on anything else (no creating charges, no creating connected accounts, no rolling keys).
 
-Every tool call is logged to your [audit log](../../../products/identity/compliance/audit-logs.md) just like a regular API call, with a special `actor_type: mcp_session` so you can filter for agent activity.
+Every tool call is logged to your [audit log](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/compliance/audit-logs) just like a regular API call, with a special `actor_type: mcp_session` so you can filter for agent activity.
 
 ## Related
 

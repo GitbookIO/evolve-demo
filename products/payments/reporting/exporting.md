@@ -11,11 +11,11 @@ For most businesses, the dashboard is enough — you build reports, save the vie
 
 Three categories of pre-built integration:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-warehouse" style="color:$primary;">:warehouse:</i></h3></td><td><strong>Data warehouses</strong></td><td>Snowflake, BigQuery, Redshift, Databricks.</td><td></td></tr><tr><td><h3><i class="fa-chart-pie" style="color:$primary;">:chart-pie:</i></h3></td><td><strong>BI tools</strong></td><td>Looker, Tableau, Mode, Metabase.</td><td></td></tr><tr><td><h3><i class="fa-calculator" style="color:$primary;">:calculator:</i></h3></td><td><strong>Accounting</strong></td><td>QuickBooks, NetSuite, Xero.</td><td><a href="../../../guides/integrations/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-warehouse" style="color:$primary;">:warehouse:</i></h3></td><td><strong>Data warehouses</strong></td><td>Snowflake, BigQuery, Redshift, Databricks.</td><td></td></tr><tr><td><h3><i class="fa-chart-pie" style="color:$primary;">:chart-pie:</i></h3></td><td><strong>BI tools</strong></td><td>Looker, Tableau, Mode, Metabase.</td><td></td></tr><tr><td><h3><i class="fa-calculator" style="color:$primary;">:calculator:</i></h3></td><td><strong>Accounting</strong></td><td>QuickBooks, NetSuite, Xero.</td><td><a href="https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/">README.md</a></td></tr></tbody></table>
 
 If your tool isn't listed, you can also:
 
-* Pull data via the [reporting API](../../../developers/payments-api/reports.md) (requires engineering effort).
+* Pull data via the [reporting API](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/payments-api/reports) (requires engineering effort).
 * Use [scheduled CSV exports](sharing-exports.md) to SFTP or S3 and pick them up from there.
 
 ## Data warehouses
@@ -88,10 +88,10 @@ You're not locked in — once data is in the warehouse, you can build whatever y
 
 QuickBooks, NetSuite, and Xero integrations work differently — they push **journal entries**, not raw data. Each settlement file produces one journal entry per accounting period, with the right account codes for revenue, fees, refunds, and disputes.
 
-See [Guides / Integrations](../../../guides/integrations/README.md) for the per-tool setup.
+See [Guides / Integrations](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/) for the per-tool setup.
 
 ## Related
 
 * [Sharing and scheduled exports](sharing-exports.md) — CSV-based pushes, and email distributions.
-* [Reporting API](../../../developers/payments-api/reports.md) — pull data programmatically.
+* [Reporting API](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/payments-api/reports) — pull data programmatically.
 * [Settlement files](../reconciliation/settlement-files.md) — the daily CSV that finance imports.

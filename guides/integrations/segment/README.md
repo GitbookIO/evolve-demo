@@ -84,4 +84,4 @@ Last reviewed in early 2026. Segment's event spec is occasionally updated; submi
 ## Related
 
 * [Event mapping](event-mapping.md) — full Evolve→Segment event reference.
-* [Webhooks](../../../developers/v2/webhooks/README.md) — the underlying Evolve event source.
+* [Webhooks](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/) — the underlying Evolve event source.

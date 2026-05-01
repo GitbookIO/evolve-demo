@@ -29,7 +29,7 @@ A captured payment becomes available the moment it's captured. The available bal
 | Growth | T+2 business days |
 | Enterprise | T+1 (same-day available) |
 
-The full mechanic — including reserves, holds, and multi-currency — is on the [Money movement and settlement](../../products/payments/concepts/money-movement.md) page.
+The full mechanic — including reserves, holds, and multi-currency — is on the [Money movement and settlement](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/money-movement) page.
 
 ## Why is my payout pending?
 
@@ -45,7 +45,7 @@ For risk holds specifically, contact support if it's been over 14 days.
 
 From the charge page in the dashboard, click **Refund**. You can refund the full amount or a partial amount; multiple partial refunds are fine up to the original total.
 
-Via API, `POST /v2/refunds` with the charge ID. See the [Refunds tutorial](../tutorials/payment-flows/save-cards.md) for code samples.
+Via API, `POST /v2/refunds` with the charge ID. See the [Refunds tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/payment-flows/save-cards) for code samples.
 
 ## Why isn't my webhook firing?
 
@@ -57,7 +57,7 @@ Five things to check, in order:
 4. **Signature verification passing?** Most-cited cause: body parsed before verification.
 5. **Live vs test mode mismatch?** Test-mode events only fire to test-mode endpoints, and vice versa.
 
-The [Verifying signatures page](../../developers/v2/webhooks/verifying-signatures.md) has the full debugging checklist. Watch the [YouTube webhook-debugging walkthrough](https://gitbook.com) for the live-troubleshooting flow.
+The [Verifying signatures page](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/verifying-signatures) has the full debugging checklist. Watch the [YouTube webhook-debugging walkthrough](https://gitbook.com) for the live-troubleshooting flow.
 
 ## What's the difference between authorize and capture?
 
@@ -65,7 +65,7 @@ Authorize reserves the money on the customer's card without taking it. Capture f
 
 By default, charges authorize and capture in one step. Pass `capture: false` to split them — useful for pre-orders, hospitality, marketplaces. You then have up to 7 days (30 on v3) to capture before the authorization expires.
 
-Full mechanics on the [Payment lifecycle page](../../products/payments/concepts/payment-lifecycle.md).
+Full mechanics on the [Payment lifecycle page](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/payment-lifecycle).
 
 ## How do I handle disputes?
 
@@ -75,7 +75,7 @@ Disputes show up in **Reconciliation → Disputes**. For each dispute:
 2. Decide to fight or accept. For low-value disputes (under $50), accepting is often cheaper than the staff time to fight.
 3. If fighting, submit evidence within 20 calendar days. The form pre-populates the most-relevant fields.
 
-For systematic dispute reduction, the [chargeback-prevention tutorial](../tutorials/payment-flows/chargeback-prevention.md) is the highest-ROI thing you can do.
+For systematic dispute reduction, the [chargeback-prevention tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/payment-flows/chargeback-prevention) is the highest-ROI thing you can do.
 
 ## Why is my approval rate low?
 
@@ -85,7 +85,7 @@ Three common causes:
 * **Single acquirer** — you're missing the lift from Smart routing (Growth+). Check **Settings → Routing**.
 * **Card mix** — international cards typically have lower approval rates. The Routing report breaks it down per BIN country.
 
-For Growth and Enterprise, [Smart routing](../../products/payments/accept-payments/smart-routing.md) typically lifts approval rates 1–3% with no code changes.
+For Growth and Enterprise, [Smart routing](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/accept-payments/smart-routing) typically lifts approval rates 1–3% with no code changes.
 
 ## Can I do partial captures?
 
@@ -104,7 +104,7 @@ Useful for hospitality (you authorize $200 at check-in, capture $147 at check-ou
 
 Cards (Visa, Mastercard, Amex, Discover, JCB, UnionPay, Diners) on every plan. ACH debit on Growth and Enterprise. Wire, SEPA, BACS Direct Debit, and 100+ international rails on Enterprise.
 
-For the per-plan breakdown, see [Payment methods](../../products/payments/concepts/payment-methods.md).
+For the per-plan breakdown, see [Payment methods](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/payment-methods).
 
 ## How do I configure 3-D Secure?
 
@@ -114,11 +114,11 @@ In **Settings → Risk → 3-D Secure**, three presets:
 * **By rule** — your custom rules (e.g. amount > $500) on top of required cases.
 * **Always** — every charge goes through 3DS.
 
-For most teams, **By rule** with a high-value threshold is the right default. The [3-D Secure tutorial](../tutorials/payment-flows/3d-secure.md) walks through the setup.
+For most teams, **By rule** with a high-value threshold is the right default. The [3-D Secure tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/payment-flows/3d-secure) walks through the setup.
 
 ## Where can I find more answers?
 
 * [Community forum: Payments](https://gitbook.com)
 * [YouTube: Payments deep-dives](https://gitbook.com)
-* [Payments product space](../../products/payments/README.md)
-* [Tutorials: Build common payment flows](../tutorials/README.md#build-common-payment-flows)
+* [Payments product space](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/)
+* [Tutorials: Build common payment flows](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/#build-common-payment-flows)

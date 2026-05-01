@@ -100,4 +100,4 @@ Reviewed in early 2026. NetSuite bundle releases happen quarterly; release notes
 
 * [Custom field mapping](custom-field-mapping.md) — the deeper mapping options.
 * [QuickBooks integration](../quickbooks/README.md) — for non-NetSuite teams.
-* [Settlement files](../../../products/payments/reconciliation/settlement-files.md) — the source data.
+* [Settlement files](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/settlement-files) — the source data.

@@ -102,7 +102,7 @@ You build these rules in your own code at session creation — Evolve doesn't ha
 
 ## Pass-through fees
 
-By default, the **card processing fee** (the 2.9% + $0.30 from the [Payments fee structure](../../payments/concepts/fees-and-pricing.md)) comes off the platform's application fee. That means if you charge a 5% application fee on a $100 payment:
+By default, the **card processing fee** (the 2.9% + $0.30 from the [Payments fee structure](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/fees-and-pricing)) comes off the platform's application fee. That means if you charge a 5% application fee on a $100 payment:
 
 * Buyer pays $100.
 * Seller gets $95.
@@ -137,4 +137,4 @@ The application-fees report is the most-watched dashboard for most Connect platf
 * [Onboarding sellers](onboarding-sellers.md) — set per-seller defaults during onboarding.
 * [Payouts to sellers](payouts.md) — how the seller's balance becomes their payout.
 * [Refunds and disputes](refunds-and-disputes.md) — what happens to the split when a payment reverses.
-* [Fees and pricing (Payments)](../../payments/concepts/fees-and-pricing.md) — the underlying processing fees.
+* [Fees and pricing (Payments)](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/fees-and-pricing) — the underlying processing fees.

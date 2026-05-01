@@ -23,14 +23,14 @@ Growth or Enterprise. Starter doesn't include Connect.
 | Custom (white-label) onboarding | — | ✅ |
 | Per-seller dispute routing | ✅ | ✅ |
 
-For the full per-tier breakdown, see [Connect → Plan availability](../../products/connect/README.md#plan-availability).
+For the full per-tier breakdown, see [Connect → Plan availability](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/#plan-availability).
 
 ## How do I onboard a seller?
 
 Two integration shapes:
 
-* **Hosted** — Evolve generates an onboarding URL, you email it to the seller. Most platforms launch with this. The walkthrough is in the [Onboard your first sellers tutorial](../tutorials/marketplace/onboard-sellers.md).
-* **Custom** — Enterprise-only. You build your own forms; data is submitted programmatically to Evolve. See [Build a custom Connect onboarding flow](../tutorials/marketplace/custom-onboarding.md).
+* **Hosted** — Evolve generates an onboarding URL, you email it to the seller. Most platforms launch with this. The walkthrough is in the [Onboard your first sellers tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/marketplace/onboard-sellers).
+* **Custom** — Enterprise-only. You build your own forms; data is submitted programmatically to Evolve. See [Build a custom Connect onboarding flow](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/marketplace/custom-onboarding).
 
 Most teams should use hosted unless brand standards or specific UX requirements demand custom. Hosted updates automatically as KYC requirements change; custom requires you to keep up.
 
@@ -59,7 +59,7 @@ POST /v2/checkout_sessions
 }
 ```
 
-That's $100 to the buyer, $98 transferred to the seller, $2 to your platform. The [split-payments tutorial](../tutorials/marketplace/split-payments.md) covers conditional fee logic (per-seller-tier, per-product-category, etc.).
+That's $100 to the buyer, $98 transferred to the seller, $2 to your platform. The [split-payments tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/marketplace/split-payments) covers conditional fee logic (per-seller-tier, per-product-category, etc.).
 
 ## How are processing fees split between platform and seller?
 
@@ -71,7 +71,7 @@ Most marketplaces with thin take-rates pass through to sellers. Most marketplace
 
 Yes. The platform sets the default in **Connect → Settings → Default payout schedule**. Sellers can override their own (within the schedules you allow) from their seller portal.
 
-For on-demand payouts (seller taps "Pay me now" for instant cash), enable in **Connect → Settings → Instant payouts**. The 1% fee can be paid by seller, platform, or split. Available on Enterprise. See [payout-schedules tutorial](../tutorials/marketplace/payout-schedules.md).
+For on-demand payouts (seller taps "Pay me now" for instant cash), enable in **Connect → Settings → Instant payouts**. The 1% fee can be paid by seller, platform, or split. Available on Enterprise. See [payout-schedules tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/marketplace/payout-schedules).
 
 ## What happens to disputes on a Connect platform?
 
@@ -81,7 +81,7 @@ The **platform is the merchant of record** — disputes are filed against the pl
 * **Platform absorbs** — for premium-tier sellers as a perk.
 * **Split** — platform takes the fee, seller takes the disputed amount.
 
-Set the default in **Connect → Settings → Dispute policy**, override per-seller. For evidence collection, most platforms delegate to the seller — see [disputes-at-scale tutorial](../tutorials/marketplace/disputes-at-scale.md).
+Set the default in **Connect → Settings → Dispute policy**, override per-seller. For evidence collection, most platforms delegate to the seller — see [disputes-at-scale tutorial](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/marketplace/disputes-at-scale).
 
 ## Why is a seller's payout `failed`?
 
@@ -106,5 +106,5 @@ Most Connect platforms use destination charges — buyers see a consistent platf
 
 * [Community forum: Connect & marketplaces](https://gitbook.com)
 * [YouTube: Connect playlist](https://gitbook.com)
-* [Connect product space](../../products/connect/README.md)
-* [Tutorials: Run a marketplace with Connect](../tutorials/README.md#run-a-marketplace-with-connect)
+* [Connect product space](https://app.gitbook.com/s/Xtfxb7OHGyrdfIsObmnu/)
+* [Tutorials: Run a marketplace with Connect](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/#run-a-marketplace-with-connect)

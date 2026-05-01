@@ -67,7 +67,7 @@ Highest authorization rate, highest dispute exposure. Chargebacks can land up to
 
 <summary>ACH debit</summary>
 
-Lower fees, but reversal risk lasts 60 days for consumer accounts. Verify the account before charging large amounts — Evolve supports instant verification via Plaid (see [Identity / Bank verification](../../identity/verification-flows/bank-account.md)).
+Lower fees, but reversal risk lasts 60 days for consumer accounts. Verify the account before charging large amounts — Evolve supports instant verification via Plaid (see [Identity / Bank verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account)).
 
 </details>
 
@@ -83,4 +83,4 @@ Same-day finality, no reversals. Best for high-value B2B. Customer pushes funds 
 
 * [Money movement and settlement](money-movement.md) — when each method's funds arrive in your account.
 * [3-D Secure and SCA](../accept-payments/3d-secure.md) — when to require additional cardholder authentication.
-* [Identity / Bank verification](../../identity/verification-flows/bank-account.md) — verifying ACH accounts before debit.
+* [Identity / Bank verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account) — verifying ACH accounts before debit.

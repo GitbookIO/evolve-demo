@@ -130,7 +130,7 @@ For anything not in this list, the API is plain HTTPS + JSON — `curl` and your
 
 ## Mobile SDKs
 
-Mobile-specific SDKs (iOS, Android, React Native) are part of the [Payments → Embedded Elements](../../../products/payments/accept-payments/take-a-payment.md) story rather than the server SDK story. They're shipped from a separate repo:
+Mobile-specific SDKs (iOS, Android, React Native) are part of the [Payments → Embedded Elements](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/accept-payments/take-a-payment) story rather than the server SDK story. They're shipped from a separate repo:
 
 * [`evolve-pay/evolve-ios`](https://github.com/GitbookIO/evolve-demo) — Swift, supports iOS 15+.
 * [`evolve-pay/evolve-android`](https://github.com/GitbookIO/evolve-demo) — Kotlin, supports Android 8+.

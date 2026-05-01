@@ -26,7 +26,7 @@ This space demonstrates **Connections**: the Assistant uses external sources (a 
 <p><button type="button" class="button secondary" data-action="ask" data-query="How do I rotate an API key?" data-icon="key">API keys</button> <button type="button" class="button secondary" data-action="ask" data-query="How do I change my pricing plan?" data-icon="file-invoice-dollar">Plan changes</button> <button type="button" class="button secondary" data-action="ask" data-query="Why is my webhook not firing?" data-icon="bolt">Webhooks</button> <button type="button" class="button secondary" data-action="ask" data-query="Why was my customer's card declined?" data-icon="circle-xmark">Card declines</button></p>
 
 {% hint style="info" %}
-**Where the Assistant looks.** When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](../../products/payments/README.md), the [Developer docs](../../developers/v2/README.md), our [community forum](https://gitbook.com), and the [YouTube channel](https://gitbook.com). It cites whichever sources it pulled from in the answer.
+**Where the Assistant looks.** When you ask a question, the Assistant searches across this Help Center, the [Evolve product docs](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/), the [Developer docs](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/), our [community forum](https://gitbook.com), and the [YouTube channel](https://gitbook.com). It cites whichever sources it pulled from in the answer.
 {% endhint %}
 
 ## Browse by topic

@@ -35,7 +35,7 @@ If you're migrating from v1, the most consequential changes:
 * Webhook signatures use HMAC-SHA256 (v1 used HMAC-SHA1). See [Verifying signatures](../webhooks/verifying-signatures.md).
 * Idempotency keys are required on every write endpoint, not optional.
 
-The full migration walkthrough lives at [Guides → v1 → v2 migration](../../../guides/tutorials/migrate-payments-v1-to-v2.md). v1 sunset is **2026-12-31**.
+The full migration walkthrough lives at [Guides → v1 → v2 migration](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/migrate-payments-v1-to-v2). v1 sunset is **2026-12-31**.
 
 ## What's coming in v3
 
@@ -50,4 +50,4 @@ When v3 graduates to stable, we'll publish a migration tool. For now, treat v3 a
 
 ## Conceptual background
 
-For the product-side concepts behind these endpoints — what a charge actually does, how settlement timing works, when 3-D Secure applies — see the [Payments product space](../../../products/payments/). It's the right complement to the API reference.
+For the product-side concepts behind these endpoints — what a charge actually does, how settlement timing works, when 3-D Secure applies — see the [Payments product space](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/). It's the right complement to the API reference.

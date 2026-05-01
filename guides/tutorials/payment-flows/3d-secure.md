@@ -10,7 +10,7 @@ By the end of this tutorial you'll have a 3-D Secure rule set that requires auth
 The trade-off is real: 3DS adds 5–15 seconds and abandons 1–3% of customers. But on a $1,000 charge with a 50% chance of dispute, the math usually favors requiring it.
 
 {% hint style="info" %}
-**Prerequisites.** A working checkout integration ([Accept a one-time payment](accept-one-time-payment.md) is enough). Reading [Payments → 3-D Secure and SCA](../../../products/payments/accept-payments/3d-secure.md) first will help — this tutorial assumes the conceptual model.
+**Prerequisites.** A working checkout integration ([Accept a one-time payment](accept-one-time-payment.md) is enough). Reading [Payments → 3-D Secure and SCA](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/accept-payments/3d-secure) first will help — this tutorial assumes the conceptual model.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=55oOB-lsQKY" %}

@@ -9,10 +9,10 @@ description: Two separate environments — what changes between them, and how to
 
 ## What's different in live mode for Connect
 
-Connect has all the live-mode considerations of [Payments live mode](../../payments/quickstart/test-and-live-mode.md), plus several specific to platforms:
+Connect has all the live-mode considerations of [Payments live mode](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/quickstart/test-and-live-mode), plus several specific to platforms:
 
-* **Real seller onboarding.** Live connected accounts go through real [identity](../../identity/verification-flows/identity-verification/README.md) and [bank](../../identity/verification-flows/bank-account/README.md) verification. Onboarding can take from minutes (US individuals) to days (international businesses).
-* **Real KYC obligations.** Live mode triggers your platform's KYC obligations under the regimes you operate in. See [Identity / Regional requirements](../../identity/compliance/regional-requirements.md).
+* **Real seller onboarding.** Live connected accounts go through real [identity](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/identity-verification) and [bank](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account) verification. Onboarding can take from minutes (US individuals) to days (international businesses).
+* **Real KYC obligations.** Live mode triggers your platform's KYC obligations under the regimes you operate in. See [Identity / Regional requirements](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/compliance/regional-requirements).
 * **Real payouts.** Live payouts move real money to seller bank accounts on the schedule you've configured.
 * **Real disputes.** Disputes opened against your sellers' charges hit the platform's dispute queue and can affect both your platform's risk profile and the seller's account standing.
 
@@ -33,7 +33,7 @@ Your own platform account needs to be live-mode-eligible — business verificati
 
 ### Generate live keys
 
-Under **Developers → API keys**, generate live secret and publishable keys. Restricted keys for downstream services (BI tools, internal services) work the same as in [Payments](../../payments/quickstart/test-and-live-mode.md).
+Under **Developers → API keys**, generate live secret and publishable keys. Restricted keys for downstream services (BI tools, internal services) work the same as in [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/quickstart/test-and-live-mode).
 
 {% endstep %}
 

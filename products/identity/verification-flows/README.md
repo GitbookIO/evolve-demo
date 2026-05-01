@@ -75,7 +75,7 @@ Evolve groups these into a **verification bundle** so they appear as a single on
 
 Every verification — regardless of flow — lands in **Identity → All sessions**. The session row shows the flow, the subject (customer or business), the status, and the time. Click in to see the full timeline of checks, the documents collected, and the final decision with reasoning.
 
-The **All sessions** view filters by status, flow, and customer cohort, and exports to CSV the same way [Payments reports](../../payments/reporting/standard-reports.md) do.
+The **All sessions** view filters by status, flow, and customer cohort, and exports to CSV the same way [Payments reports](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reporting/standard-reports) do.
 
 ## Re-verification
 

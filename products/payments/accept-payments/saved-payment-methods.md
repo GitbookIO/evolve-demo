@@ -61,7 +61,7 @@ From the dashboard, open the customer and click **New payment** — the saved me
 
 ## Mandates and recurring rules
 
-For ACH, SEPA, and BACS, "saving" the method also means recording a **mandate** — the customer's authorization to debit them on a stated cadence. Evolve handles mandate text and signature capture on its hosted UIs. If you build your own UI, you must collect the mandate yourself; see the [Direct debit guide](../../../guides/tutorials/direct-debit-mandates.md).
+For ACH, SEPA, and BACS, "saving" the method also means recording a **mandate** — the customer's authorization to debit them on a stated cadence. Evolve handles mandate text and signature capture on its hosted UIs. If you build your own UI, you must collect the mandate yourself; see the [Direct debit guide](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/direct-debit-mandates).
 
 Cards don't require a formal mandate, but the network distinguishes between four types of subsequent charge:
 
@@ -72,7 +72,7 @@ Cards don't require a formal mandate, but the network distinguishes between four
 | **Merchant-initiated, unscheduled** | An e-commerce store charging a stored card after restock. |
 | **Customer-not-present, account top-up** | A wallet that auto-tops up when the balance falls below a threshold. |
 
-You set the type when you create the payment. The right value matters for approval rates and dispute outcomes — see the [recurring payments guide](../../../guides/tutorials/recurring-payments.md) for a deeper walkthrough.
+You set the type when you create the payment. The right value matters for approval rates and dispute outcomes — see the [recurring payments guide](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/recurring-payments) for a deeper walkthrough.
 
 ## Updating a card before it expires
 

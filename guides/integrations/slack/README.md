@@ -73,5 +73,5 @@ This page was last reviewed in early 2026. Doc updates flow through change reque
 ## Related
 
 * [Configuring alerts](configuring-alerts.md) — picking which events go where.
-* [Webhooks](../../../developers/v2/webhooks/README.md) — the underlying event source.
-* [Disputes at scale](../../tutorials/marketplace/disputes-at-scale.md) — the most-common dispute-routing pattern.
+* [Webhooks](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/) — the underlying event source.
+* [Disputes at scale](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/marketplace/disputes-at-scale) — the most-common dispute-routing pattern.
