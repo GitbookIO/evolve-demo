@@ -1,6 +1,6 @@
 ---
-icon: bolt
 description: One-tap, real-time bank account verification through Plaid.
+icon: bolt
 ---
 
 # Plaid instant
@@ -13,41 +13,33 @@ It's the right default for any product where customer experience matters — che
 
 {% stepper %}
 {% step %}
-
-### "Connect your bank"
+#### "Connect your bank"
 
 A button or link in your flow opens the Evolve hosted verification page. The customer picks their bank from a list of Plaid-supported institutions (or searches by name).
-
 {% endstep %}
 
 {% step %}
-
-### Sign in to the bank
+#### Sign in to the bank
 
 The customer signs in with their online banking credentials, on a Plaid-hosted page. Their credentials never touch Evolve or your servers — Plaid handles the bank session.
-
 {% endstep %}
 
 {% step %}
-
-### Pick an account
+#### Pick an account
 
 Most customers have multiple accounts at the same bank. They pick the one they want to use — checking vs savings, primary vs secondary.
-
 {% endstep %}
 
 {% step %}
-
-### Done
+#### Done
 
 The flow returns to your site. The verified account appears on the customer's record in **Identity → Customers** with a verified badge. From there it can be used immediately for ACH debits, payouts, or whatever your product needs.
-
 {% endstep %}
 {% endstepper %}
 
 ## Coverage
 
-Plaid covers ~12,000 US financial institutions, including all major retail banks and most credit unions. For a customer's specific bank, the [Plaid coverage checker](https://plaid.com/institutions) shows whether instant verification is supported.
+Plaid covers \~12,000 US financial institutions, including all major retail banks and most credit unions. For a customer's specific bank, the [Plaid coverage checker](https://plaid.com/institutions) shows whether instant verification is supported.
 
 For non-US accounts, Plaid's coverage is much narrower — currently only major banks in Canada, the UK, France, Spain, the Netherlands, and Ireland. Customers outside these countries fall back to micro-deposits or open banking flows specific to their region.
 
@@ -55,15 +47,15 @@ For non-US accounts, Plaid's coverage is much narrower — currently only major 
 
 Once verified, you have on the customer record:
 
-| Field | Example |
-| --- | --- |
-| Account number (masked) | `••••6789` |
-| Routing number | `021000021` |
-| Account type | `checking` / `savings` |
-| Bank name | `Chase` |
-| Account holder name (verified) | `Jordan Patel` |
-| Available balance (optional) | `$4,182.50` |
-| Currency | `USD` |
+| Field                          | Example                |
+| ------------------------------ | ---------------------- |
+| Account number (masked)        | `••••6789`             |
+| Routing number                 | `021000021`            |
+| Account type                   | `checking` / `savings` |
+| Bank name                      | `Chase`                |
+| Account holder name (verified) | `Jordan Patel`         |
+| Available balance (optional)   | `$4,182.50`            |
+| Currency                       | `USD`                  |
 
 The masked account number is what you should display to the customer in your UI. The full account and routing numbers are accessible via the API for ACH debit operations, but never displayed in the dashboard or on receipts.
 
@@ -80,12 +72,12 @@ These come back as a `risk_score` on the verification record, plus the individua
 
 ## Costs and limits
 
-| | |
-| --- | --- |
-| **Cost per verification** | $2.50 |
-| **Speed** | 30–60 seconds |
-| **Re-verification** | Free for 30 days after initial |
-| **Coverage** | ~12,000 US banks + select international |
+|                           |                                          |
+| ------------------------- | ---------------------------------------- |
+| **Cost per verification** | $2.50                                    |
+| **Speed**                 | 30–60 seconds                            |
+| **Re-verification**       | Free for 30 days after initial           |
+| **Coverage**              | \~12,000 US banks + select international |
 
 There's no monthly minimum or platform fee — you only pay per verification.
 
@@ -102,5 +94,5 @@ If you'd rather not offer the fallback (e.g. you can't wait 1–2 days), turn it
 ## Related
 
 * [Micro-deposits](micro-deposits.md) — fallback when Plaid isn't available.
-* [Bank account verification](README.md) — parent flow.
+* [Bank account verification](./) — parent flow.
 * [Payments / Money movement](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/concepts/money-movement) — using a verified account for ACH.

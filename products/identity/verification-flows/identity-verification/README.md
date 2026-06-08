@@ -1,6 +1,8 @@
 ---
+description: >-
+  Verify an individual customer with a government-issued document and a live
+  selfie.
 icon: id-card
-description: Verify an individual customer with a government-issued document and a live selfie.
 ---
 
 # Identity verification
@@ -15,51 +17,43 @@ The hosted flow takes 60–90 seconds end to end, on average:
 
 {% stepper %}
 {% step %}
-
-### Pick a country and document
+#### Pick a country and document
 
 The customer picks the country that issued their ID and the document type. Evolve supports passports, driver's licenses, and national ID cards in <code class="expression">space.vars.document_supported_countries</code> countries.
-
 {% endstep %}
 
 {% step %}
-
-### Capture the document
+#### Capture the document
 
 The flow opens the camera and walks the customer through capturing the front (and back, where required). Glare and blur detection give live feedback so the captures are usable.
-
 {% endstep %}
 
 {% step %}
-
-### Capture a selfie
+#### Capture a selfie
 
 A 3-second passive liveness capture. The customer holds the camera in front of them; no head turns or specific gestures required.
-
 {% endstep %}
 
 {% step %}
-
-### Decision
+#### Decision
 
 The result lands in your dashboard within seconds — Verified, Failed, or (in a small fraction of cases) Manual review.
-
 {% endstep %}
 {% endstepper %}
 
 ## The checks
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-file-magnifying-glass" style="color:$primary;">:file-magnifying-glass:</i></h3></td><td><strong>Document review</strong></td><td>Authenticity, expiry, tampering, and data extraction.</td><td><a href="document-review.md">document-review.md</a></td></tr><tr><td><h3><i class="fa-face-smile" style="color:$primary;">:face-smile:</i></h3></td><td><strong>Selfie and liveness</strong></td><td>Confirms the person matches the document.</td><td><a href="selfie-and-liveness.md">selfie-and-liveness.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-file-magnifying-glass" style="color:$primary;">:file-magnifying-glass:</i></h4></td><td><strong>Document review</strong></td><td>Authenticity, expiry, tampering, and data extraction.</td><td><a href="document-review.md">document-review.md</a></td></tr><tr><td><h4><i class="fa-face-smile" style="color:$primary;">:face-smile:</i></h4></td><td><strong>Selfie and liveness</strong></td><td>Confirms the person matches the document.</td><td><a href="selfie-and-liveness.md">selfie-and-liveness.md</a></td></tr></tbody></table>
 
 ## Decisions and reasons
 
 Every verification ends in one of three outcomes. The reason is on the timeline:
 
-| Outcome | What it means | Common reasons |
-| --- | --- | --- |
-| **Verified** | All checks passed; you can trust the identity. | — |
-| **Failed** | One or more checks failed; the identity is not trusted. | `document_expired`, `document_tampered`, `selfie_mismatch`, `liveness_failed` |
-| **Manual review** | An edge case Evolve isn't confident about. A human reviewer (yours or ours) gets a second look. | `low_confidence_match`, `document_partially_obscured` |
+| Outcome           | What it means                                                                                   | Common reasons                                                                |
+| ----------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Verified**      | All checks passed; you can trust the identity.                                                  | —                                                                             |
+| **Failed**        | One or more checks failed; the identity is not trusted.                                         | `document_expired`, `document_tampered`, `selfie_mismatch`, `liveness_failed` |
+| **Manual review** | An edge case Evolve isn't confident about. A human reviewer (yours or ours) gets a second look. | `low_confidence_match`, `document_partially_obscured`                         |
 
 Manual review typically resolves within an hour during business hours, longer overnight. You can configure who reviews — your team, Evolve's review team, or both — in **Settings → Identity → Manual review**.
 

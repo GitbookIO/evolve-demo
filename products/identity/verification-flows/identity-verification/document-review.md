@@ -1,6 +1,8 @@
 ---
+description: >-
+  How Evolve confirms a government-issued ID is genuine, valid, and matches the
+  customer.
 icon: file-magnifying-glass
-description: How Evolve confirms a government-issued ID is genuine, valid, and matches the customer.
 ---
 
 # Document review
@@ -11,24 +13,24 @@ The document-review check is the first half of an identity verification. It look
 
 Every document goes through five separate sub-checks:
 
-| Sub-check | What it does |
-| --- | --- |
-| **Authenticity** | Compares the document against a database of templates for that country and type. Flags photoshopped documents, fake templates, and known forgery patterns. |
-| **Expiry** | Reads the expiry date and rejects expired documents. |
-| **Tampering** | Pixel-level analysis for image manipulation — re-glued laminates, replaced photos, edited text. |
-| **MRZ / barcode parity** | For documents with machine-readable zones or PDF417 barcodes, confirms the printed data matches the encoded data. |
-| **Data extraction** | Pulls the name, date of birth, document number, and expiry. Returns this on the verification result. |
+| Sub-check                | What it does                                                                                                                                               |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Authenticity**         | Compares the document against a database of templates for that country and type. Flags photoshopped documents, fake templates, and known forgery patterns. |
+| **Expiry**               | Reads the expiry date and rejects expired documents.                                                                                                       |
+| **Tampering**            | Pixel-level analysis for image manipulation — re-glued laminates, replaced photos, edited text.                                                            |
+| **MRZ / barcode parity** | For documents with machine-readable zones or PDF417 barcodes, confirms the printed data matches the encoded data.                                          |
+| **Data extraction**      | Pulls the name, date of birth, document number, and expiry. Returns this on the verification result.                                                       |
 
-The result is a per-sub-check pass/fail, plus an overall confidence score. The overall decision uses your strictness setting (see [Identity verification](README.md#configurable-strictness)).
+The result is a per-sub-check pass/fail, plus an overall confidence score. The overall decision uses your strictness setting (see [Identity verification](./#configurable-strictness)).
 
 ## Supported documents
 
-| Document type | Coverage |
-| --- | --- |
-| **Passport** | Every country except the OFAC-blocked list (~190 countries). |
+| Document type        | Coverage                                                                                       |
+| -------------------- | ---------------------------------------------------------------------------------------------- |
+| **Passport**         | Every country except the OFAC-blocked list (\~190 countries).                                  |
 | **Driver's license** | All 50 US states + DC, all Canadian provinces, all EU/EEA countries, UK, Australia, NZ, Japan. |
-| **National ID card** | EU/EEA, UK, Singapore, Hong Kong, India (Aadhaar), and ~40 others. |
-| **Residence permit** | EU/EEA, UK, US, Canada — for non-citizen residents. |
+| **National ID card** | EU/EEA, UK, Singapore, Hong Kong, India (Aadhaar), and \~40 others.                            |
+| **Residence permit** | EU/EEA, UK, US, Canada — for non-citizen residents.                                            |
 
 The full list is in **Settings → Identity → Supported documents**, with a search by country.
 
@@ -38,27 +40,21 @@ The hosted flow walks them through the capture:
 
 {% stepper %}
 {% step %}
-
-### Pick country and type
+#### Pick country and type
 
 A dropdown of countries (defaulted to the customer's IP-inferred country), then a list of document types valid for that country. If they don't have any of the listed documents, they can pick "Other" and the verification will land in manual review.
-
 {% endstep %}
 
 {% step %}
-
-### Front capture
+#### Front capture
 
 The camera opens with an outline overlay. Real-time feedback tells them when the document is in frame, in focus, and well-lit. Glare and motion blur are detected before submission.
-
 {% endstep %}
 
 {% step %}
-
-### Back capture (if needed)
+#### Back capture (if needed)
 
 Driver's licenses and national ID cards typically have data on the back (barcode, magnetic stripe). Passports don't. Evolve only prompts for back capture when needed for the document type.
-
 {% endstep %}
 {% endstepper %}
 
@@ -111,5 +107,5 @@ Documents are encrypted at rest with per-tenant keys and retained per your [rete
 ## Related
 
 * [Selfie and liveness](selfie-and-liveness.md) — the second half of identity verification.
-* [Identity verification](README.md) — the parent flow.
+* [Identity verification](./) — the parent flow.
 * [Audit logs](../../compliance/audit-logs.md) — every document review is logged.

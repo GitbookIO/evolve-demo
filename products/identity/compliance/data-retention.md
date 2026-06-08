@@ -1,6 +1,6 @@
 ---
-icon: clock-rotate-left
 description: How long Evolve keeps verification PII, why, and how to change the policy.
+icon: clock-rotate-left
 ---
 
 # Data retention
@@ -13,15 +13,15 @@ The right retention window is a balance between the two, tuned to the regulatory
 
 Out of the box, Evolve retains verification PII as follows:
 
-| Data type | Default retention |
-| --- | --- |
-| Document images (front and back) | <code class="expression">space.vars.verification_ttl_days</code> days |
-| Selfie images | <code class="expression">space.vars.verification_ttl_days</code> days |
-| Extracted document data (name, DOB, document number) | 7 years |
-| Selfie liveness scores | 7 years |
-| Sanctions and PEP screening results | 7 years |
-| Bank account numbers (encrypted) | 7 years |
-| Audit log entries | 7 years (see [Audit logs](audit-logs.md)) |
+| Data type                                            | Default retention                                                     |
+| ---------------------------------------------------- | --------------------------------------------------------------------- |
+| Document images (front and back)                     | <code class="expression">space.vars.verification_ttl_days</code> days |
+| Selfie images                                        | <code class="expression">space.vars.verification_ttl_days</code> days |
+| Extracted document data (name, DOB, document number) | 7 years                                                               |
+| Selfie liveness scores                               | 7 years                                                               |
+| Sanctions and PEP screening results                  | 7 years                                                               |
+| Bank account numbers (encrypted)                     | 7 years                                                               |
+| Audit log entries                                    | 7 years (see [Audit logs](audit-logs.md))                             |
 
 The pattern: the **raw images** purge quickly (default 30 days), the **extracted data and decisions** stick around for the regulatory floor.
 
@@ -35,19 +35,17 @@ The pattern: the **raw images** purge quickly (default 30 days), the **extracted
 
 In **Settings → Identity → Retention**, you can set per-data-type retention windows:
 
-| Setting | Range | Default |
-| --- | --- | --- |
-| Document images | 1 day to 7 years | 30 days |
-| Selfie images | 1 day to 7 years | 30 days |
-| Extracted data | 1 year to 10 years | 7 years |
-| Audit logs | 7 years (locked) | 7 years |
+| Setting         | Range              | Default |
+| --------------- | ------------------ | ------- |
+| Document images | 1 day to 7 years   | 30 days |
+| Selfie images   | 1 day to 7 years   | 30 days |
+| Extracted data  | 1 year to 10 years | 7 years |
+| Audit logs      | 7 years (locked)   | 7 years |
 
 {% if visitor.claims.unsigned.plan === "enterprise" %}
-
 {% hint style="info" %}
 **Enterprise-specific:** you can also configure per-region retention to match local rules (e.g. shorter retention for EU residents under GDPR, longer for regulated US verticals). Set these under **Settings → Identity → Regional retention**.
 {% endhint %}
-
 {% endif %}
 
 Changes apply going forward; existing data is purged on its existing schedule unless you trigger a one-time backfill.
@@ -58,27 +56,21 @@ GDPR, CCPA, and most modern privacy regimes give individuals the right to reques
 
 {% stepper %}
 {% step %}
-
-### Customer requests deletion
+#### Customer requests deletion
 
 The customer asks you (via your support channel or a privacy portal you operate) to delete their data.
-
 {% endstep %}
 
 {% step %}
-
-### You issue the deletion
+#### You issue the deletion
 
 In the dashboard, find the verification or customer and click **Delete data**. You can also issue deletions in bulk via the API for privacy-portal automations.
-
 {% endstep %}
 
 {% step %}
-
-### Evolve purges within 30 days
+#### Evolve purges within 30 days
 
 PII is purged from active and backup systems within 30 days. The audit log retains the deletion event itself, but the PII it references becomes a placeholder.
-
 {% endstep %}
 {% endstepper %}
 
@@ -107,4 +99,4 @@ For Enterprise customers, you can supply your own KMS keys (BYOK) so encryption 
 
 * [Audit logs](audit-logs.md) — what's kept indefinitely (or near-indefinitely) for accountability.
 * [Regional requirements](regional-requirements.md) — region-specific retention floors and ceilings.
-* [Identity verification](../verification-flows/identity-verification/README.md) — the source of most retained data.
+* [Identity verification](../verification-flows/identity-verification/) — the source of most retained data.

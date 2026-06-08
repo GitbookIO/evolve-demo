@@ -1,6 +1,6 @@
 ---
-icon: building-columns
 description: Confirm a bank account belongs to the customer before debiting or paying out.
+icon: building-columns
 ---
 
 # Bank account verification
@@ -10,26 +10,24 @@ Bank account verification proves the customer owns the account they've handed yo
 Evolve supports two methods. **Plaid instant** is faster (one tap) but only works for banks Plaid covers. **Micro-deposits** work for any US bank account but take 1–2 business days.
 
 {% if visitor.claims.unsigned.plan === "starter" %}
-
 {% hint style="warning" icon="lock" %}
 **Bank account verification is a Growth and Enterprise feature.** Starter accounts can verify identities but not bank accounts.
 {% endhint %}
-
 {% endif %}
 
 ## Pick a method
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-bolt" style="color:$primary;">:bolt:</i></h3></td><td><strong>Plaid instant</strong></td><td>One-tap, real-time. Best customer experience.</td><td><a href="plaid-instant.md">plaid-instant.md</a></td></tr><tr><td><h3><i class="fa-coins" style="color:$primary;">:coins:</i></h3></td><td><strong>Micro-deposits</strong></td><td>Two small test deposits, customer confirms amounts. 1–2 business days.</td><td><a href="micro-deposits.md">micro-deposits.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-bolt" style="color:$primary;">:bolt:</i></h4></td><td><strong>Plaid instant</strong></td><td>One-tap, real-time. Best customer experience.</td><td><a href="plaid-instant.md">plaid-instant.md</a></td></tr><tr><td><h4><i class="fa-coins" style="color:$primary;">:coins:</i></h4></td><td><strong>Micro-deposits</strong></td><td>Two small test deposits, customer confirms amounts. 1–2 business days.</td><td><a href="micro-deposits.md">micro-deposits.md</a></td></tr></tbody></table>
 
 ## When to use which
 
-| Situation | Method |
-| --- | --- |
-| Customer's bank is on Plaid (most major US banks) | Plaid instant |
-| Customer's bank isn't on Plaid (small credit unions, foreign banks) | Micro-deposits |
-| You want every customer to have the same UX | Plaid first, fall back to micro-deposits |
-| Speed is critical (real-time onboarding) | Plaid instant only |
-| Cost is critical | Micro-deposits ($0.80 vs $2.50) |
+| Situation                                                           | Method                                   |
+| ------------------------------------------------------------------- | ---------------------------------------- |
+| Customer's bank is on Plaid (most major US banks)                   | Plaid instant                            |
+| Customer's bank isn't on Plaid (small credit unions, foreign banks) | Micro-deposits                           |
+| You want every customer to have the same UX                         | Plaid first, fall back to micro-deposits |
+| Speed is critical (real-time onboarding)                            | Plaid instant only                       |
+| Cost is critical                                                    | Micro-deposits ($0.80 vs $2.50)          |
 
 The default flow Evolve generates tries Plaid first and falls back to micro-deposits automatically when Plaid can't help. You can override this in **Settings → Identity → Bank verification**.
 

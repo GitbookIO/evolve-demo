@@ -1,9 +1,11 @@
 ---
+description: >-
+  The three verification flows in Evolve — when to use which, and how they fit
+  together.
 icon: list-check
-description: The three verification flows in Evolve — when to use which, and how they fit together.
 ---
 
-# Verification flows
+# Overview
 
 Evolve verifies three different things — individuals, bank accounts, and businesses. They're separate flows with separate UIs and (often) separate fees, but they share one dashboard, one customer record, and one decision API.
 
@@ -11,7 +13,7 @@ Most teams start with **identity verification**. Add **bank account verification
 
 ## Pick a flow
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-id-card" style="color:$primary;">:id-card:</i></h3></td><td><strong>Identity verification</strong></td><td>Document + selfie for individual customers.</td><td><a href="identity-verification/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-building-columns" style="color:$primary;">:building-columns:</i></h3></td><td><strong>Bank account verification</strong></td><td>Confirm a bank account belongs to the customer.</td><td><a href="bank-account/README.md">README.md</a></td></tr><tr><td><h3><i class="fa-briefcase" style="color:$primary;">:briefcase:</i></h3></td><td><strong>Business verification (KYB)</strong></td><td>Verify a business and its beneficial owners.</td><td><a href="business/README.md">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-id-card" style="color:$primary;">:id-card:</i></h4></td><td><strong>Identity verification</strong></td><td>Document + selfie for individual customers.</td><td><a href="identity-verification/">identity-verification</a></td></tr><tr><td><h4><i class="fa-building-columns" style="color:$primary;">:building-columns:</i></h4></td><td><strong>Bank account verification</strong></td><td>Confirm a bank account belongs to the customer.</td><td><a href="bank-account/">bank-account</a></td></tr><tr><td><h4><i class="fa-briefcase" style="color:$primary;">:briefcase:</i></h4></td><td><strong>Business verification (KYB)</strong></td><td>Verify a business and its beneficial owners.</td><td><a href="business/">business</a></td></tr></tbody></table>
 
 ## A decision tree
 
@@ -40,36 +42,30 @@ Evolve groups these into a **verification bundle** so they appear as a single on
 ## What's gated by plan
 
 {% if visitor.claims.unsigned.plan === "starter" %}
-
 {% hint style="info" icon="layer-group" %}
 **You're on Starter** — identity verification only. To add bank or business verification, [upgrade your plan](https://gitbook.com).
 {% endhint %}
-
 {% endif %}
 
 {% if visitor.claims.unsigned.plan === "growth" %}
-
 {% hint style="info" icon="layer-group" %}
 **You're on Growth** — identity and bank verification are enabled. Business verification is an Enterprise feature.
 {% endhint %}
-
 {% endif %}
 
 {% if visitor.claims.unsigned.plan === "enterprise" %}
-
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise** — all flows enabled, including watchlist and PEP screening on identity verification.
 {% endhint %}
-
 {% endif %}
 
-| Flow | Starter | Growth | Enterprise |
-| --- | :---: | :---: | :---: |
-| Identity (document + selfie) | ✅ | ✅ | ✅ |
-| Bank account (Plaid + micro-deposits) | — | ✅ | ✅ |
-| Business verification (KYB) | — | — | ✅ |
-| Watchlist + PEP screening | — | — | ✅ |
-| Volume cap | 100/mo | 1,000/mo | Custom |
+| Flow                                  | Starter |  Growth  | Enterprise |
+| ------------------------------------- | :-----: | :------: | :--------: |
+| Identity (document + selfie)          |    ✅    |     ✅    |      ✅     |
+| Bank account (Plaid + micro-deposits) |    —    |     ✅    |      ✅     |
+| Business verification (KYB)           |    —    |     —    |      ✅     |
+| Watchlist + PEP screening             |    —    |     —    |      ✅     |
+| Volume cap                            |  100/mo | 1,000/mo |   Custom   |
 
 ## How verifications appear in the dashboard
 

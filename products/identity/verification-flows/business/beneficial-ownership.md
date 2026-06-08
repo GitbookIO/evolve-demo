@@ -1,6 +1,8 @@
 ---
+description: >-
+  Identify and verify the people who actually own a business — typically anyone
+  with 25% or more.
 icon: people-roof
-description: Identify and verify the people who actually own a business — typically anyone with 25% or more.
 ---
 
 # Beneficial ownership
@@ -28,27 +30,21 @@ The hosted KYB form walks the operator through declaring ownership:
 
 {% stepper %}
 {% step %}
-
-### Add each owner
+#### Add each owner
 
 For each owner, the operator enters: legal name, date of birth, residential address, ownership percentage, and role (Owner, Officer, or both).
-
 {% endstep %}
 
 {% step %}
-
-### Confirm 100% accounted
+#### Confirm 100% accounted
 
 The form requires that declared ownership totals at least 75% (since anyone under 25% isn't a beneficial owner under the rule). If ownership is split among many small holders, the operator can declare "Ownership distributed below threshold" and Evolve only verifies the controllers.
-
 {% endstep %}
 
 {% step %}
+#### Each owner verifies separately
 
-### Each owner verifies separately
-
-For each declared owner, Evolve generates an [identity verification](../identity-verification/README.md) link. The owner clicks it (typically in an email Evolve sends) and completes a document + selfie verification on their own device. They don't need to be in the same place as the operator.
-
+For each declared owner, Evolve generates an [identity verification](../identity-verification/) link. The owner clicks it (typically in an email Evolve sends) and completes a document + selfie verification on their own device. They don't need to be in the same place as the operator.
 {% endstep %}
 {% endstepper %}
 
@@ -57,7 +53,7 @@ For each declared owner, Evolve generates an [identity verification](../identity
 For businesses owned in part by other entities — a holding company, a trust, a fund — Evolve walks down the chain:
 
 * If an entity owns ≥25% of your customer business, Evolve adds that entity as a sub-KYB.
-* The sub-KYB collects *its* beneficial owners.
+* The sub-KYB collects _its_ beneficial owners.
 * Each layer is verified independently.
 
 This can take weeks for genuinely complex structures. The dashboard shows the full ownership tree with per-node status, so you can see what's blocking completion.
@@ -90,7 +86,7 @@ Specifically, you can configure who on your team can see beneficial owners' PII 
 
 ## Related
 
-* [Business verification (KYB)](README.md) — the parent flow.
+* [Business verification (KYB)](./) — the parent flow.
 * [Sanctions screening](sanctions-screening.md) — runs against each owner.
-* [Identity verification](../identity-verification/README.md) — the per-owner check.
+* [Identity verification](../identity-verification/) — the per-owner check.
 * [Compliance → Regional requirements](../../compliance/regional-requirements.md) — country-specific ownership rules.
