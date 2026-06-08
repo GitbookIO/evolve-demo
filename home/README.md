@@ -5,7 +5,7 @@ description: >-
 icon: house
 cover:
   light: .gitbook/assets/Welcome.png
-  dark: .gitbook/assets/Welcome - dark.png
+  dark: .gitbook/assets/Welcome-dark.png
 coverY: 0
 layout:
   width: wide
