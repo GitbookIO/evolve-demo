@@ -4,8 +4,8 @@ description: >-
   scale.
 icon: house
 cover:
-  light: .gitbook/assets/Cover.jpg
-  dark: .gitbook/assets/Cover - dark.jpg
+  light: .gitbook/assets/Welcome.png
+  dark: .gitbook/assets/Welcome - dark.png
 coverY: 0
 layout:
   width: wide
