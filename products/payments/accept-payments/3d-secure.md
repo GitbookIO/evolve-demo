@@ -1,6 +1,8 @@
 ---
+description: >-
+  When 3-D Secure is required, when it's optional but worth it, and how Evolve
+  handles it.
 icon: shield-halved
-description: When 3-D Secure is required, when it's optional but worth it, and how Evolve handles it.
 ---
 
 # 3-D Secure and SCA
@@ -13,13 +15,13 @@ description: When 3-D Secure is required, when it's optional but worth it, and h
 
 You don't have to configure anything for required cases. Evolve detects them based on the card BIN and the transaction context:
 
-| Trigger | Result |
-| --- | --- |
-| Card issued in the EEA, UK, or India | 3DS challenge required |
-| Transaction over €30 with a European card | 3DS challenge required (with limited exemptions) |
-| Card flagged as high-risk by the issuer | 3DS challenge required |
-| Recurring payment using a saved card with a recorded mandate | Often exempt |
-| Low-value transaction (<€30) | Often exempt under low-value-payment rules |
+| Trigger                                                      | Result                                           |
+| ------------------------------------------------------------ | ------------------------------------------------ |
+| Card issued in the EEA, UK, or India                         | 3DS challenge required                           |
+| Transaction over €30 with a European card                    | 3DS challenge required (with limited exemptions) |
+| Card flagged as high-risk by the issuer                      | 3DS challenge required                           |
+| Recurring payment using a saved card with a recorded mandate | Often exempt                                     |
+| Low-value transaction (<€30)                                 | Often exempt under low-value-payment rules       |
 
 ## When you might want to require 3DS
 
@@ -27,23 +29,19 @@ Even where it's not required, some teams turn 3DS on for high-value payments or 
 
 {% columns %}
 {% column width="50%" %}
-
-#### Pros
+**Pros**
 
 * Liability shifts to the issuer for fraud chargebacks.
 * Approval rates often go up on cards the issuer was about to decline.
 * Strong signal to the network that you take fraud seriously.
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-#### Cons
+**Cons**
 
 * Adds 5–15 seconds to the checkout flow.
 * 1–3% of customers abandon during the challenge.
 * Costs $0.05 per attempt outside required cases.
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -91,12 +89,12 @@ The customer fails to authenticate (wrong code, timeout, declined the push). The
 
 Strong Customer Authentication (SCA) is the EU regulation behind 3DS. It allows a few exemptions where authentication can be skipped without losing the liability shift entirely:
 
-| Exemption | Used when |
-| --- | --- |
-| **Low-value** | Transaction under €30 (max 5 in a row, then forced auth) |
-| **Trusted beneficiary** | Customer has added you to their bank's trusted-merchants list |
-| **Merchant-initiated transaction** | Recurring charge against a previously authenticated card with a recorded mandate |
-| **Transaction risk analysis (TRA)** | Evolve's risk score is low enough that the issuer accepts a frictionless flow |
+| Exemption                           | Used when                                                                        |
+| ----------------------------------- | -------------------------------------------------------------------------------- |
+| **Low-value**                       | Transaction under €30 (max 5 in a row, then forced auth)                         |
+| **Trusted beneficiary**             | Customer has added you to their bank's trusted-merchants list                    |
+| **Merchant-initiated transaction**  | Recurring charge against a previously authenticated card with a recorded mandate |
+| **Transaction risk analysis (TRA)** | Evolve's risk score is low enough that the issuer accepts a frictionless flow    |
 
 Evolve applies exemptions automatically when they fit. You can see which exemption was used (if any) on the payment timeline.
 

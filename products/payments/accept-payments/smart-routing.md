@@ -1,6 +1,6 @@
 ---
-icon: route
 description: Pick the route most likely to approve each payment — automatically.
+icon: route
 ---
 
 # Smart routing
@@ -10,11 +10,9 @@ Most card payments can take more than one path to the issuer. Smart routing pick
 For most teams, smart routing recovers 1–3% of payments that would otherwise be declined — without any code changes on your end.
 
 {% if visitor.claims.unsigned.plan === "starter" %}
-
 {% hint style="warning" icon="lock" %}
 **Smart routing is a Growth and Enterprise feature.** Starter accounts use a single default acquirer per region. To enable smart routing, [upgrade your plan](https://gitbook.com).
 {% endhint %}
-
 {% endif %}
 
 ## What it does
@@ -37,11 +35,11 @@ In **Settings → Routing**, toggle **Smart routing** on. The defaults are sensi
 
 You can override the defaults with rules:
 
-| Condition | Action |
-| --- | --- |
-| Currency is `eur` and amount > €500 | Prefer acquirer A (lower interchange) |
-| Card is American Express | Always use Amex direct |
-| Customer is on a soft-decline retry | Allow up to 2 alternate acquirers |
+| Condition                           | Action                                                |
+| ----------------------------------- | ----------------------------------------------------- |
+| Currency is `eur` and amount > €500 | Prefer acquirer A (lower interchange)                 |
+| Card is American Express            | Always use Amex direct                                |
+| Customer is on a soft-decline retry | Allow up to 2 alternate acquirers                     |
 | Merchant category is `subscription` | Skip retry on `do_not_honor` (avoid issuer annoyance) |
 
 ## How approvals improve
@@ -60,7 +58,7 @@ Some acquirers have stronger relationships with certain issuers — they share m
 
 <summary>Network token usage</summary>
 
-When the card has a network token available (most US cards do), routing through an acquirer that supports network tokens lifts approval rates by ~1.5% on average. Smart routing takes this into account.
+When the card has a network token available (most US cards do), routing through an acquirer that supports network tokens lifts approval rates by \~1.5% on average. Smart routing takes this into account.
 
 </details>
 
@@ -76,8 +74,6 @@ About 0.4% of declines are "soft" — the issuer's auth system was momentarily u
 
 The dashboard shows the route Evolve picked for each payment on the timeline:
 
-<figure><img src="../.gitbook/assets/payment-routing-timeline.png" alt="A payment timeline showing Smart routing picked Acquirer A, with a backup retry on Acquirer B"><figcaption><p>The routing decision and any retries appear in the payment timeline.</p></figcaption></figure>
-
 For aggregate visibility, the **Routing report** under **Reports → Routing** shows per-acquirer approval rates over time, so you can see the lift from smart routing against your previous baseline.
 
 ## What it doesn't do
@@ -88,6 +84,6 @@ For aggregate visibility, the **Routing report** under **Reports → Routing** s
 
 ## Related
 
-* [Failover and retries](failover.md) — broader resilience to acquirer outages. *Enterprise.*
+* [Failover and retries](failover.md) — broader resilience to acquirer outages. _Enterprise._
 * [3-D Secure and SCA](3d-secure.md) — pairing 3DS with the most likely-to-approve route.
 * [Routing report](../reporting/standard-reports.md#routing-report) — measuring the lift.

@@ -1,6 +1,8 @@
 ---
+description: >-
+  Charge the same customer again later — for subscriptions, repeat orders, or
+  one-tap checkouts.
 icon: bookmark
-description: Charge the same customer again later — for subscriptions, repeat orders, or one-tap checkouts.
 ---
 
 # Saved payment methods
@@ -33,29 +35,23 @@ flowchart LR
 
 {% stepper %}
 {% step %}
-
-### Capture consent
+#### Capture consent
 
 On your first checkout, show the customer a checkbox or clear text — "Save this card for future purchases" — that they must opt into. The wording is yours; the consent is required.
-
 {% endstep %}
 
 {% step %}
-
-### Save the method
+#### Save the method
 
 In hosted Checkout and Elements, this is a `setup_future_usage` toggle on the session. Once the payment succeeds, the method is attached to the customer.
 
 In **Payments → Customers**, you'll see the saved method on the customer's profile — including the brand, last 4, expiry, and which currency it can be used for.
-
 {% endstep %}
 
 {% step %}
-
-### Charge it later
+#### Charge it later
 
 From the dashboard, open the customer and click **New payment** — the saved method is preselected. From your code, reference the method by id when creating the next payment.
-
 {% endstep %}
 {% endstepper %}
 
@@ -65,11 +61,11 @@ For ACH, SEPA, and BACS, "saving" the method also means recording a **mandate** 
 
 Cards don't require a formal mandate, but the network distinguishes between four types of subsequent charge:
 
-| Type | Example |
-| --- | --- |
-| **Customer-initiated** | The customer clicks "Re-order" on your site. |
-| **Merchant-initiated, scheduled** | A monthly subscription renewal. |
-| **Merchant-initiated, unscheduled** | An e-commerce store charging a stored card after restock. |
+| Type                                     | Example                                                              |
+| ---------------------------------------- | -------------------------------------------------------------------- |
+| **Customer-initiated**                   | The customer clicks "Re-order" on your site.                         |
+| **Merchant-initiated, scheduled**        | A monthly subscription renewal.                                      |
+| **Merchant-initiated, unscheduled**      | An e-commerce store charging a stored card after restock.            |
 | **Customer-not-present, account top-up** | A wallet that auto-tops up when the balance falls below a threshold. |
 
 You set the type when you create the payment. The right value matters for approval rates and dispute outcomes — see the [recurring payments guide](https://app.gitbook.com/s/Nankrp40VchJsUblU6h6/recurring-payments) for a deeper walkthrough.

@@ -1,6 +1,8 @@
 ---
+description: >-
+  Push reports and settlement files to email, Slack, SFTP, or cloud storage on a
+  schedule.
 icon: share-nodes
-description: Push reports and settlement files to email, Slack, SFTP, or cloud storage on a schedule.
 ---
 
 # Sharing and scheduled exports
@@ -9,56 +11,46 @@ Once you've built a report you check daily, the next step is to stop opening the
 
 ## Destinations
 
-| Destination | Format | Best for |
-| --- | --- | --- |
-| **Email** | CSV attachment + summary in body | Daily/weekly digest to a finance distribution list |
-| **Slack** | Summary message + CSV attachment | Ops channel notifications |
-| **SFTP** | CSV upload | Legacy finance systems and managed-service providers |
-| **AWS S3** | CSV upload | Most data-engineering setups |
-| **Google Cloud Storage** | CSV upload | GCP-first organizations |
-| **Webhook** | JSON POST with summary + signed download URL | Custom downstream automation |
+| Destination              | Format                                       | Best for                                             |
+| ------------------------ | -------------------------------------------- | ---------------------------------------------------- |
+| **Email**                | CSV attachment + summary in body             | Daily/weekly digest to a finance distribution list   |
+| **Slack**                | Summary message + CSV attachment             | Ops channel notifications                            |
+| **SFTP**                 | CSV upload                                   | Legacy finance systems and managed-service providers |
+| **AWS S3**               | CSV upload                                   | Most data-engineering setups                         |
+| **Google Cloud Storage** | CSV upload                                   | GCP-first organizations                              |
+| **Webhook**              | JSON POST with summary + signed download URL | Custom downstream automation                         |
 
 ## Setting up a scheduled export
 
 {% stepper %}
 {% step %}
-
-### Pick the report
+#### Pick the report
 
 From any standard or custom report, click **Schedule**. Or go to **Reports → Schedules → New** and pick a report from the list.
-
 {% endstep %}
 
 {% step %}
-
-### Pick the cadence
+#### Pick the cadence
 
 Daily, weekly (pick a day), monthly (pick a date), or after each settlement (recommended for finance flows).
-
 {% endstep %}
 
 {% step %}
-
-### Pick the destination
+#### Pick the destination
 
 Choose one of the destinations above and authenticate. For SFTP, S3, and GCS, Evolve gives you a service account or set of static IPs to allow-list.
-
 {% endstep %}
 
 {% step %}
-
-### Pick the format
+#### Pick the format
 
 CSV is the default. For some reports, JSON is also available. Choose whether to include a header row and which timezone date columns should use.
-
 {% endstep %}
 
 {% step %}
-
-### Save
+#### Save
 
 The first export runs on the next scheduled tick. You can also trigger an immediate test from the same screen.
-
 {% endstep %}
 {% endstepper %}
 

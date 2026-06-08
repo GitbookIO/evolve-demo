@@ -1,6 +1,6 @@
 ---
-icon: file-export
 description: Pipe Evolve data into your data warehouse, BI tool, or accounting system.
+icon: file-export
 ---
 
 # Exporting to BI tools
@@ -11,7 +11,7 @@ For most businesses, the dashboard is enough — you build reports, save the vie
 
 Three categories of pre-built integration:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-warehouse" style="color:$primary;">:warehouse:</i></h3></td><td><strong>Data warehouses</strong></td><td>Snowflake, BigQuery, Redshift, Databricks.</td><td></td></tr><tr><td><h3><i class="fa-chart-pie" style="color:$primary;">:chart-pie:</i></h3></td><td><strong>BI tools</strong></td><td>Looker, Tableau, Mode, Metabase.</td><td></td></tr><tr><td><h3><i class="fa-calculator" style="color:$primary;">:calculator:</i></h3></td><td><strong>Accounting</strong></td><td>QuickBooks, NetSuite, Xero.</td><td><a href="https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/">README.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-warehouse" style="color:$primary;">:warehouse:</i></h4></td><td><strong>Data warehouses</strong></td><td>Snowflake, BigQuery, Redshift, Databricks.</td><td></td></tr><tr><td><h4><i class="fa-chart-pie" style="color:$primary;">:chart-pie:</i></h4></td><td><strong>BI tools</strong></td><td>Looker, Tableau, Mode, Metabase.</td><td></td></tr><tr><td><h4><i class="fa-calculator" style="color:$primary;">:calculator:</i></h4></td><td><strong>Accounting</strong></td><td>QuickBooks, NetSuite, Xero.</td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/MBT3EDUK7DzXmR0k9cje/">Integrations</a></td></tr></tbody></table>
 
 If your tool isn't listed, you can also:
 
@@ -22,17 +22,17 @@ If your tool isn't listed, you can also:
 
 Evolve's warehouse connectors push a defined schema of tables on a schedule — typically every hour. The tables include:
 
-| Table | Contents |
-| --- | --- |
-| `payments` | One row per payment, current state |
-| `payment_events` | One row per state change, full history |
-| `refunds` | One row per refund |
-| `disputes` | One row per dispute, including evidence and outcome |
-| `customers` | One row per customer |
-| `payment_methods` | Saved methods linked to customers |
-| `settlements` | Daily settlement summaries |
+| Table                   | Contents                                                                                          |
+| ----------------------- | ------------------------------------------------------------------------------------------------- |
+| `payments`              | One row per payment, current state                                                                |
+| `payment_events`        | One row per state change, full history                                                            |
+| `refunds`               | One row per refund                                                                                |
+| `disputes`              | One row per dispute, including evidence and outcome                                               |
+| `customers`             | One row per customer                                                                              |
+| `payment_methods`       | Saved methods linked to customers                                                                 |
+| `settlements`           | Daily settlement summaries                                                                        |
 | `settlement_line_items` | One row per settlement line — equivalent to the [CSV file](../reconciliation/settlement-files.md) |
-| `acquirer_routes` | Per-payment routing decisions and outcomes |
+| `acquirer_routes`       | Per-payment routing decisions and outcomes                                                        |
 
 Joining these is straightforward — every table has a `payment_id` or `customer_id` column where applicable.
 
@@ -40,35 +40,27 @@ Joining these is straightforward — every table has a `payment_id` or `customer
 
 {% stepper %}
 {% step %}
-
-### Pick the warehouse
+#### Pick the warehouse
 
 In **Settings → Data → Warehouse connectors**, click the warehouse you want and follow the auth flow. We support OAuth where the warehouse offers it, otherwise it's a service-account credential.
-
 {% endstep %}
 
 {% step %}
-
-### Pick the dataset
+#### Pick the dataset
 
 Choose which database and schema Evolve should write to. We strongly recommend a dedicated schema — `evolve_raw` is a common choice — so the connector can manage its own tables without touching anything else.
-
 {% endstep %}
 
 {% step %}
-
-### Pick the schedule
+#### Pick the schedule
 
 Hourly is the default. You can go to every 15 minutes on Enterprise. Daily is fine if your reporting cadence is daily.
-
 {% endstep %}
 
 {% step %}
-
-### Trigger the first sync
+#### Trigger the first sync
 
 Click **Sync now** to backfill. The first sync pulls the last 24 months of data and can take a few hours for large accounts; we'll email you when it's done.
-
 {% endstep %}
 {% endstepper %}
 
@@ -88,7 +80,7 @@ You're not locked in — once data is in the warehouse, you can build whatever y
 
 QuickBooks, NetSuite, and Xero integrations work differently — they push **journal entries**, not raw data. Each settlement file produces one journal entry per accounting period, with the right account codes for revenue, fees, refunds, and disputes.
 
-See [Guides / Integrations](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/) for the per-tool setup.
+See [Guides / Integrations](https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/MBT3EDUK7DzXmR0k9cje/) for the per-tool setup.
 
 ## Related
 

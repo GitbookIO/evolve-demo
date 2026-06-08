@@ -1,6 +1,6 @@
 ---
-icon: gavel
 description: When a customer disputes a charge, what happens, and how to fight back.
+icon: gavel
 ---
 
 # Disputes and chargebacks
@@ -28,22 +28,20 @@ flowchart LR
 
 Not every dispute is a fraud claim. The reason code on the dispute matters — it tells you what evidence to gather:
 
-| Type | Reason code examples | What the cardholder is claiming |
-| --- | --- | --- |
-| **Fraud** | `fraudulent`, `unrecognized` | They didn't make the charge |
-| **Service** | `product_not_received`, `service_not_provided` | You didn't deliver |
-| **Quality** | `defective`, `not_as_described` | What you delivered wasn't right |
-| **Processing** | `duplicate`, `credit_not_processed` | Something went wrong with the transaction itself |
-| **Authorization** | `general` | A catch-all the bank uses when the cardholder's reason doesn't fit elsewhere |
+| Type              | Reason code examples                           | What the cardholder is claiming                                              |
+| ----------------- | ---------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Fraud**         | `fraudulent`, `unrecognized`                   | They didn't make the charge                                                  |
+| **Service**       | `product_not_received`, `service_not_provided` | You didn't deliver                                                           |
+| **Quality**       | `defective`, `not_as_described`                | What you delivered wasn't right                                              |
+| **Processing**    | `duplicate`, `credit_not_processed`            | Something went wrong with the transaction itself                             |
+| **Authorization** | `general`                                      | A catch-all the bank uses when the cardholder's reason doesn't fit elsewhere |
 
 ## Response window
 
 {% if visitor.claims.unsigned.plan === "enterprise" %}
-
 {% hint style="info" %}
 **Enterprise customers** can configure a dispute alerts integration with Verifi or Ethoca. When enabled, you can resolve a fraud claim by issuing a pre-emptive refund within 72 hours and avoid the chargeback entirely. Talk to your account team to set this up.
 {% endhint %}
-
 {% endif %}
 
 You have **20 calendar days** from the dispute notification to submit evidence. After that, the network closes the case in the cardholder's favor by default.
@@ -54,27 +52,22 @@ The dashboard shows the deadline prominently on every open dispute, and we'll se
 
 {% stepper %}
 {% step %}
-
-### Open the dispute
+#### Open the dispute
 
 Disputes appear in **Reconciliation → Disputes**. Open one to see the disputed payment, the reason code, the cardholder's stated complaint (if available), and the response form.
-
 {% endstep %}
 
 {% step %}
-
-### Decide: fight or accept
+#### Decide: fight or accept
 
 Two options:
 
 * **Submit evidence** — you believe the charge was legitimate and you can prove it.
 * **Accept the dispute** — you agree the cardholder is right (or it's not worth fighting). The funds stay with them, the fee stays with you. Often the right call for low-value disputes.
-
 {% endstep %}
 
 {% step %}
-
-### Gather evidence
+#### Gather evidence
 
 The form lists the evidence types most likely to win this reason code. For a `product_not_received` dispute on a physical product, that's typically:
 
@@ -84,15 +77,12 @@ The form lists the evidence types most likely to win this reason code. For a `pr
 * A copy of your refund and shipping policies.
 
 For a digital product or service, it's different — IP address logs, login history, communication records.
-
 {% endstep %}
 
 {% step %}
-
-### Submit
+#### Submit
 
 Once you submit, the response is locked. You can attach up to 10 files (PDF, PNG, JPG) and 5,000 characters of text. The network reviews in 30–75 days.
-
 {% endstep %}
 {% endstepper %}
 
@@ -100,14 +90,14 @@ Once you submit, the response is locked. You can attach up to 10 files (PDF, PNG
 
 These are rough Evolve-wide averages — your numbers will depend on your evidence quality and product type.
 
-| Reason code | Avg. win rate |
-| --- | --- |
-| `product_not_received` (with tracking) | 65% |
-| `defective` / `not_as_described` | 30% |
-| `duplicate` | 80% |
-| `fraudulent` (with 3DS) | 45% |
-| `fraudulent` (without 3DS) | 12% |
-| `general` | 25% |
+| Reason code                            | Avg. win rate |
+| -------------------------------------- | ------------- |
+| `product_not_received` (with tracking) | 65%           |
+| `defective` / `not_as_described`       | 30%           |
+| `duplicate`                            | 80%           |
+| `fraudulent` (with 3DS)                | 45%           |
+| `fraudulent` (without 3DS)             | 12%           |
+| `general`                              | 25%           |
 
 The biggest lever is [3-D Secure](../accept-payments/3d-secure.md) for fraud disputes — the liability shift means you almost always win when 3DS was used and the issuer authenticated the cardholder.
 
@@ -119,7 +109,7 @@ Most disputes are preventable. The single most effective preventions:
 
 <summary>Clear billing descriptors</summary>
 
-The descriptor that appears on the cardholder's statement should be the brand name they recognize. "EVOLVE*ACME-CO" is recognizable; "MERCH 84920" is not. Set yours in **Settings → Billing → Statement descriptor**.
+The descriptor that appears on the cardholder's statement should be the brand name they recognize. "EVOLVE\*ACME-CO" is recognizable; "MERCH 84920" is not. Set yours in **Settings → Billing → Statement descriptor**.
 
 </details>
 

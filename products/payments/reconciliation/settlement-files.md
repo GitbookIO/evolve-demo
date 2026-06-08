@@ -1,6 +1,6 @@
 ---
-icon: file-csv
 description: The daily CSV that explains every cent moving in and out of your account.
+icon: file-csv
 ---
 
 # Settlement files
@@ -25,33 +25,33 @@ Each row is one line item. Multiple rows can belong to the same payment — for 
 
 ## Columns
 
-| Column | Description | Example |
-| --- | --- | --- |
-| `settlement_date` | The settlement date this row belongs to | `2026-04-29` |
-| `id` | Unique line item ID | `stl_li_3KsM12pL9qXa7` |
-| `type` | The line type — see below | `payment` |
-| `source_id` | The originating object | `pay_3KsM12pL9qXa7` |
-| `description` | Free-text description from the original payment | `Order #1042` |
-| `gross_amount` | Amount before fees | `42.00` |
-| `fee` | Evolve fee for this line | `-1.52` |
-| `net_amount` | What hit your balance | `40.48` |
-| `currency` | ISO 4217 code | `USD` |
-| `customer_id` | If applicable | `cus_4n2P3qR5sT6uV` |
-| `metadata.*` | Custom metadata you attached at payment creation | varies |
+| Column            | Description                                      | Example                |
+| ----------------- | ------------------------------------------------ | ---------------------- |
+| `settlement_date` | The settlement date this row belongs to          | `2026-04-29`           |
+| `id`              | Unique line item ID                              | `stl_li_3KsM12pL9qXa7` |
+| `type`            | The line type — see below                        | `payment`              |
+| `source_id`       | The originating object                           | `pay_3KsM12pL9qXa7`    |
+| `description`     | Free-text description from the original payment  | `Order #1042`          |
+| `gross_amount`    | Amount before fees                               | `42.00`                |
+| `fee`             | Evolve fee for this line                         | `-1.52`                |
+| `net_amount`      | What hit your balance                            | `40.48`                |
+| `currency`        | ISO 4217 code                                    | `USD`                  |
+| `customer_id`     | If applicable                                    | `cus_4n2P3qR5sT6uV`    |
+| `metadata.*`      | Custom metadata you attached at payment creation | varies                 |
 
 The full column reference, including all `type` values, lives at the top of every file as a comment row — no need to memorize anything.
 
 ## Line types
 
-| Type | When you'll see it |
-| --- | --- |
-| `payment` | A captured payment on the settlement day |
-| `refund` | A refund issued on the settlement day |
-| `dispute_lost` | The disputed amount + dispute fee, deducted |
-| `dispute_won` | The disputed amount returned, fee not refunded |
-| `payout` | The net amount sent to your bank (one row per file) |
-| `adjustment` | A manual adjustment made by Evolve (rare) |
-| `reserve_release` | A previously held amount released to your balance |
+| Type              | When you'll see it                                  |
+| ----------------- | --------------------------------------------------- |
+| `payment`         | A captured payment on the settlement day            |
+| `refund`          | A refund issued on the settlement day               |
+| `dispute_lost`    | The disputed amount + dispute fee, deducted         |
+| `dispute_won`     | The disputed amount returned, fee not refunded      |
+| `payout`          | The net amount sent to your bank (one row per file) |
+| `adjustment`      | A manual adjustment made by Evolve (rare)           |
+| `reserve_release` | A previously held amount released to your balance   |
 
 ## A small example
 
@@ -73,35 +73,27 @@ A simple daily process:
 
 {% stepper %}
 {% step %}
-
-### Match the payout to the bank deposit
+#### Match the payout to the bank deposit
 
 The `payout` row's `net_amount` (as a positive number) should equal exactly one credit on your bank statement, dated per your plan's payout schedule.
-
 {% endstep %}
 
 {% step %}
-
-### Book each payment as revenue
+#### Book each payment as revenue
 
 Sum the `payment` rows' `gross_amount` — that's your revenue for the day. The corresponding `fee` rows are processing-fee expenses.
-
 {% endstep %}
 
 {% step %}
-
-### Book refunds and disputes
+#### Book refunds and disputes
 
 `refund` rows reduce revenue. `dispute_lost` rows reduce revenue and add a dispute-fee expense.
-
 {% endstep %}
 
 {% step %}
-
-### Verify the file balances
+#### Verify the file balances
 
 Sum the `net_amount` column. It should equal zero — every cent that came in either left in the payout, was netted by a refund/dispute, or moved into reserves.
-
 {% endstep %}
 {% endstepper %}
 
@@ -110,5 +102,5 @@ If the file doesn't balance to zero, something is off — open a support ticket 
 ## Going further
 
 * Push files automatically to your data warehouse — see [Sharing and scheduled exports](../reporting/sharing-exports.md).
-* Build reconciliation into QuickBooks or NetSuite — see [Guides / Integrations](https://app.gitbook.com/s/MBT3EDUK7DzXmR0k9cje/).
+* Build reconciliation into QuickBooks or NetSuite — see [Guides / Integrations](https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/MBT3EDUK7DzXmR0k9cje/).
 * For deeper analysis, the same data is available as queryable [Reports](../reporting/standard-reports.md).

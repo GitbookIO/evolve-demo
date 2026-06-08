@@ -1,6 +1,6 @@
 ---
-icon: arrows-rotate
 description: The states a payment moves through, and how the dashboard surfaces each one.
+icon: arrows-rotate
 ---
 
 # Payment lifecycle
@@ -22,15 +22,15 @@ flowchart LR
     Disputed -.-> Lost
 ```
 
-| State | What it means | Funds impact | Dashboard badge |
-| --- | --- | --- | --- |
-| Pending | Sent to the network, waiting on issuer response. | None yet. | Grey |
-| Authorized | Issuer approved; funds are held, not moved. | Customer's available balance is reduced. | Yellow |
-| Captured | The hold has been settled — funds are moving to you. | Counts toward your next [payout](money-movement.md). | Green |
-| Failed | Issuer declined. The decline reason is on the timeline. | None. | Red |
-| Voided | Authorization released before capture. | Hold reversed. | Grey |
-| Refunded | Captured funds returned to the customer. | Reduces your next payout. | Blue |
-| Disputed | Cardholder filed a chargeback. | Funds withheld pending outcome. | Orange |
+| State      | What it means                                           | Funds impact                                         | Dashboard badge |
+| ---------- | ------------------------------------------------------- | ---------------------------------------------------- | --------------- |
+| Pending    | Sent to the network, waiting on issuer response.        | None yet.                                            | Grey            |
+| Authorized | Issuer approved; funds are held, not moved.             | Customer's available balance is reduced.             | Yellow          |
+| Captured   | The hold has been settled — funds are moving to you.    | Counts toward your next [payout](money-movement.md). | Green           |
+| Failed     | Issuer declined. The decline reason is on the timeline. | None.                                                | Red             |
+| Voided     | Authorization released before capture.                  | Hold reversed.                                       | Grey            |
+| Refunded   | Captured funds returned to the customer.                | Reduces your next payout.                            | Blue            |
+| Disputed   | Cardholder filed a chargeback.                          | Funds withheld pending outcome.                      | Orange          |
 
 ## Authorize-then-capture
 
@@ -50,7 +50,7 @@ Authorizations expire silently. There's no email or webhook for an expired auth.
 
 Three places to track lifecycle events:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-list-timeline" style="color:$primary;">:list-timeline:</i></h3></td><td><strong>Dashboard timeline</strong></td><td>Visual history per payment.</td><td></td></tr><tr><td><h3><i class="fa-bolt" style="color:$primary;">:bolt:</i></h3></td><td><strong>Webhooks</strong></td><td>Push events to your own systems.</td><td><a href="https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks">README.md</a></td></tr><tr><td><h3><i class="fa-chart-bar" style="color:$primary;">:chart-bar:</i></h3></td><td><strong>Reports</strong></td><td>Aggregate state counts over time.</td><td><a href="../reporting/standard-reports.md">standard-reports.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-list-timeline" style="color:$primary;">:list-timeline:</i></h4></td><td><strong>Dashboard timeline</strong></td><td>Visual history per payment.</td><td></td></tr><tr><td><h4><i class="fa-bolt" style="color:$primary;">:bolt:</i></h4></td><td><strong>Webhooks</strong></td><td>Push events to your own systems.</td><td><a href="https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks">Webhooks</a></td></tr><tr><td><h4><i class="fa-chart-bar" style="color:$primary;">:chart-bar:</i></h4></td><td><strong>Reports</strong></td><td>Aggregate state counts over time.</td><td><a href="../reporting/standard-reports.md">standard-reports.md</a></td></tr></tbody></table>
 
 ## Related
 
