@@ -1,6 +1,8 @@
 ---
+description: >-
+  Application fees, flat fees, and conditional rules — how every payment gets
+  split between platform and seller.
 icon: percent
-description: Application fees, flat fees, and conditional rules — how every payment gets split between platform and seller.
 ---
 
 # Splitting payments
@@ -15,27 +17,21 @@ A single payment can have up to three platform-side line items:
 
 {% columns %}
 {% column width="33%" %}
-
-### <i class="fa-percent" style="color:$primary;">:percent:</i> Application fee
+#### <i class="fa-percent" style="color:$primary;">:percent:</i> Application fee
 
 A percentage of the gross amount. The most common revenue model for platforms.
-
 {% endcolumn %}
 
 {% column width="33%" %}
-
-### <i class="fa-dollar-sign" style="color:$primary;">:dollar-sign:</i> Flat fee
+#### <i class="fa-dollar-sign" style="color:$primary;">:dollar-sign:</i> Flat fee
 
 A fixed amount per transaction. Useful for covering processing costs.
-
 {% endcolumn %}
 
 {% column width="33%" %}
-
-### <i class="fa-coins" style="color:$primary;">:coins:</i> Pass-through fee
+#### <i class="fa-coins" style="color:$primary;">:coins:</i> Pass-through fee
 
 Where the seller pays the processing fee. Less common but supported.
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -45,15 +41,15 @@ The combination is fully flexible — you can have all three on a single payment
 
 A buyer pays $100 on a marketplace where the platform charges a 5% application fee plus a $0.50 flat fee:
 
-| Line item | Amount |
-| --- | --- |
-| Buyer's card charged | $100.00 |
-| Card processing fee (Evolve) | -$2.90 |
-| Application fee (platform) | -$5.00 |
-| Flat fee (platform) | -$0.50 |
-| Net to seller | $91.60 |
+| Line item                    | Amount  |
+| ---------------------------- | ------- |
+| Buyer's card charged         | $100.00 |
+| Card processing fee (Evolve) | -$2.90  |
+| Application fee (platform)   | -$5.00  |
+| Flat fee (platform)          | -$0.50  |
+| Net to seller                | $91.60  |
 
-The platform's balance goes up by $5.50 ($5.00 + $0.50). The seller's balance goes up by $91.60. The processing fee is netted from the platform's side by default — but you can configure it to net from the seller's side instead (see [Pass-through fees](#pass-through-fees) below).
+The platform's balance goes up by $5.50 ($5.00 + $0.50). The seller's balance goes up by $91.60. The processing fee is netted from the platform's side by default — but you can configure it to net from the seller's side instead (see [Pass-through fees](splitting-payments.md#pass-through-fees) below).
 
 ## Where you configure the split
 
@@ -90,13 +86,13 @@ This is the right place to put rules that depend on the specific transaction —
 
 Most platforms outgrow flat percentages. Common rules platforms add:
 
-| Rule | Example |
-| --- | --- |
-| **By seller tier** | Top sellers pay 3%, standard sellers pay 5%, new sellers pay 7% during their first 90 days. |
-| **By product category** | Digital goods 8%, physical goods 5%, services 12%. |
-| **By transaction size** | 5% under $1,000; 3% from $1,000 to $10,000; 1.5% above $10,000. |
-| **By currency** | 4% USD, 4.5% EUR, 5% other (covering FX margin). |
-| **By time** | Black Friday promo — 0% application fee on a single weekend. |
+| Rule                    | Example                                                                                     |
+| ----------------------- | ------------------------------------------------------------------------------------------- |
+| **By seller tier**      | Top sellers pay 3%, standard sellers pay 5%, new sellers pay 7% during their first 90 days. |
+| **By product category** | Digital goods 8%, physical goods 5%, services 12%.                                          |
+| **By transaction size** | 5% under $1,000; 3% from $1,000 to $10,000; 1.5% above $10,000.                             |
+| **By currency**         | 4% USD, 4.5% EUR, 5% other (covering FX margin).                                            |
+| **By time**             | Black Friday promo — 0% application fee on a single weekend.                                |
 
 You build these rules in your own code at session creation — Evolve doesn't have a built-in rules engine, since the right rules tend to be specific to the platform's business model. The rules are simple enough that platforms typically encode them as a function in their checkout-session-creation path.
 
@@ -106,12 +102,12 @@ By default, the **card processing fee** (the 2.9% + $0.30 from the [Payments fee
 
 * Buyer pays $100.
 * Seller gets $95.
-* Platform gets $5 - $2.90 = $2.10. *(Processing comes off your side.)*
+* Platform gets $5 - $2.90 = $2.10. _(Processing comes off your side.)_
 
 You can flip this so the seller absorbs the processing fee instead — `application_fee_includes_processing: false` on the session:
 
 * Buyer pays $100.
-* Seller gets $95 - $2.90 = $92.10. *(Processing comes off the seller's side.)*
+* Seller gets $95 - $2.90 = $92.10. _(Processing comes off the seller's side.)_
 * Platform gets $5.00.
 
 Marketplaces that compete on take-rate often pass processing through to sellers; platforms that compete on seller experience usually absorb it.

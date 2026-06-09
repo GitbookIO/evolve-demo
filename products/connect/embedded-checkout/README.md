@@ -1,9 +1,11 @@
 ---
+description: >-
+  The buyer-facing flow on a Connect platform — hosted, embedded, or fully
+  custom.
 icon: window-maximize
-description: The buyer-facing flow on a Connect platform — hosted, embedded, or fully custom.
 ---
 
-# Embedded checkout
+# Overview
 
 The checkout is where the buyer pays the seller. On a Connect platform, the checkout looks slightly different than on a single-merchant Payments site — the receipt mentions both the platform and the seller, the application fee may be disclosed, and refunds flow back through the platform.
 
@@ -11,7 +13,7 @@ You have three integration shapes to choose from. Most platforms start with **ho
 
 ## Three shapes
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-link" style="color:$primary;">:link:</i></h3></td><td><strong>Hosted</strong></td><td>Redirect to an Evolve-hosted page. Fastest setup, fewest knobs.</td><td><a href="hosted-vs-embedded.md">hosted-vs-embedded.md</a></td></tr><tr><td><h3><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h3></td><td><strong>Embedded</strong></td><td>Drop-in checkout inside your own site. URL stays yours.</td><td><a href="hosted-vs-embedded.md">hosted-vs-embedded.md</a></td></tr><tr><td><h3><i class="fa-paint-roller" style="color:$primary;">:paint-roller:</i></h3></td><td><strong>Customization</strong></td><td>Theme, fields, language, and the seller branding shown.</td><td><a href="customization.md">customization.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-link" style="color:$primary;">:link:</i></h4></td><td><strong>Hosted</strong></td><td>Redirect to an Evolve-hosted page. Fastest setup, fewest knobs.</td><td><a href="hosted-vs-embedded.md">hosted-vs-embedded.md</a></td></tr><tr><td><h4><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h4></td><td><strong>Embedded</strong></td><td>Drop-in checkout inside your own site. URL stays yours.</td><td><a href="hosted-vs-embedded.md">hosted-vs-embedded.md</a></td></tr><tr><td><h4><i class="fa-paint-roller" style="color:$primary;">:paint-roller:</i></h4></td><td><strong>Customization</strong></td><td>Theme, fields, language, and the seller branding shown.</td><td><a href="customization.md">customization.md</a></td></tr></tbody></table>
 
 ## What the buyer sees
 
@@ -28,37 +30,29 @@ A typical buyer experience takes 30–60 seconds. The moments worth thinking abo
 
 {% columns %}
 {% column width="50%" %}
-
-### <i class="fa-id-card" style="color:$primary;">:id-card:</i> Whose name is on the statement?
+#### <i class="fa-id-card" style="color:$primary;">:id-card:</i> Whose name is on the statement?
 
 The descriptor on the buyer's card statement can be either the platform's, the seller's, or a combination. Most platforms use `PLATFORM*SELLER` — your platform name first, then the seller's name. Configurable per-seller.
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### <i class="fa-receipt" style="color:$primary;">:receipt:</i> Whose receipt do they get?
+#### <i class="fa-receipt" style="color:$primary;">:receipt:</i> Whose receipt do they get?
 
 Receipts come from `receipts@evolve.com` on the platform's behalf, with the seller's name and your platform name as co-senders. Customers reply-to defaults to the seller's support address (configurable).
-
 {% endcolumn %}
 {% endcolumns %}
 
 {% columns %}
 {% column width="50%" %}
-
-### <i class="fa-rotate-left" style="color:$primary;">:rotate-left:</i> Where do refund requests go?
+#### <i class="fa-rotate-left" style="color:$primary;">:rotate-left:</i> Where do refund requests go?
 
 Most platforms surface a "Refund" button on the seller's storefront, not on the receipt. The customer asks the seller for a refund; the seller issues it from your platform's UI. See [Refunds and disputes](../platform-setup/refunds-and-disputes.md).
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### <i class="fa-shield-halved" style="color:$primary;">:shield-halved:</i> Who handles disputes?
+#### <i class="fa-shield-halved" style="color:$primary;">:shield-halved:</i> Who handles disputes?
 
 Disputes are filed against the platform's merchant ID (since you're the merchant of record), but the platform usually delegates them to the seller — with a deadline and a default outcome if the seller doesn't respond. Configurable in **Settings → Connect → Disputes**.
-
 {% endcolumn %}
 {% endcolumns %}
 

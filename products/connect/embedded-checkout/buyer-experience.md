@@ -1,6 +1,6 @@
 ---
-icon: cart-shopping
 description: What the buyer actually sees, from the storefront to the receipt.
+icon: cart-shopping
 ---
 
 # Buyer experience
@@ -61,27 +61,21 @@ Three customization layers, each with a different set of decisions:
 
 {% columns %}
 {% column width="33%" %}
-
-### <i class="fa-palette" style="color:$primary;">:palette:</i> Visual
+#### <i class="fa-palette" style="color:$primary;">:palette:</i> Visual
 
 Logo, brand colors, fonts. Can be platform-wide or per-seller. Most platforms use platform branding everywhere; some white-label per-seller.
-
 {% endcolumn %}
 
 {% column width="33%" %}
-
-### <i class="fa-language" style="color:$primary;">:language:</i> Localization
+#### <i class="fa-language" style="color:$primary;">:language:</i> Localization
 
 Receipt language is set by the buyer's locale, with the seller's locale as a fallback. Evolve translates the structural text; the seller's product description stays in whatever language they wrote it.
-
 {% endcolumn %}
 
 {% column width="33%" %}
-
-### <i class="fa-pen-to-square" style="color:$primary;">:pen-to-square:</i> Custom fields
+#### <i class="fa-pen-to-square" style="color:$primary;">:pen-to-square:</i> Custom fields
 
 Order numbers, fulfillment estimates, shipping addresses. Surface anything from your platform's data model on the receipt by configuring custom fields per charge.
-
 {% endcolumn %}
 {% endcolumns %}
 

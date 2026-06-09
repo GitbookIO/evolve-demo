@@ -1,6 +1,6 @@
 ---
-icon: paint-roller
 description: Brand the checkout — colors, fonts, logos, fields, and per-seller overrides.
+icon: paint-roller
 ---
 
 # Customization
@@ -13,15 +13,15 @@ This page covers what you can customize, where, and at which integration shape.
 
 What you control depends on the shape:
 
-| | Hosted | Embedded | Direct API |
-| --- | :---: | :---: | :---: |
-| Logo | ✅ | ✅ | ✅ |
-| Brand color (primary) | ✅ | ✅ | ✅ |
-| Brand color (secondary) | ✅ | ✅ | ✅ |
-| Custom font | — | ✅ | ✅ |
-| Field layout | — | ✅ | ✅ |
-| Custom CSS / classes | — | Limited | ✅ |
-| Background image | ✅ | ✅ | ✅ |
+|                         | Hosted | Embedded | Direct API |
+| ----------------------- | :----: | :------: | :--------: |
+| Logo                    |    ✅   |     ✅    |      ✅     |
+| Brand color (primary)   |    ✅   |     ✅    |      ✅     |
+| Brand color (secondary) |    ✅   |     ✅    |      ✅     |
+| Custom font             |    —   |     ✅    |      ✅     |
+| Field layout            |    —   |     ✅    |      ✅     |
+| Custom CSS / classes    |    —   |  Limited |      ✅     |
+| Background image        |    ✅   |     ✅    |      ✅     |
 
 Settings live in **Connect → Branding** in the dashboard. Changes apply immediately on hosted and embedded; for direct API integrations, they're hints — your code does the actual rendering.
 
@@ -30,29 +30,25 @@ Settings live in **Connect → Branding** in the dashboard. Changes apply immedi
 By default, all sellers on your platform use the platform's branding. For sellers with strong brands of their own — established stores on a marketplace, B2B sellers under enterprise contracts — you can let them override:
 
 {% if visitor.claims.unsigned.plan === "enterprise" %}
-
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise** — full per-seller branding (including custom domains and per-seller CSS) is available. Configure in **Connect → Branding → Per-seller overrides**.
 {% endhint %}
-
 {% endif %}
 
 {% if visitor.claims.unsigned.plan === "growth" %}
-
 {% hint style="info" icon="layer-group" %}
 **You're on Growth** — per-seller logo and brand color overrides are available. Custom fonts and CSS require Enterprise.
 {% endhint %}
-
 {% endif %}
 
-| Override | Growth | Enterprise |
-| --- | :---: | :---: |
-| Per-seller logo | ✅ | ✅ |
-| Per-seller brand colors | ✅ | ✅ |
-| Per-seller font | — | ✅ |
-| Per-seller CSS | — | ✅ |
-| Per-seller subdomain (`acme.checkout.evolve.com`) | — | ✅ |
-| Custom domain (`pay.acme.com`) | — | ✅ |
+| Override                                          | Growth | Enterprise |
+| ------------------------------------------------- | :----: | :--------: |
+| Per-seller logo                                   |    ✅   |      ✅     |
+| Per-seller brand colors                           |    ✅   |      ✅     |
+| Per-seller font                                   |    —   |      ✅     |
+| Per-seller CSS                                    |    —   |      ✅     |
+| Per-seller subdomain (`acme.checkout.evolve.com`) |    —   |      ✅     |
+| Custom domain (`pay.acme.com`)                    |    —   |      ✅     |
 
 ## Custom fields
 
@@ -66,37 +62,29 @@ You can add custom fields per session — order numbers, fulfillment dates, diet
 
 {% columns %}
 {% column width="50%" %}
-
-### <i class="fa-text-width" style="color:$primary;">:text-width:</i> Text fields
+#### <i class="fa-text-width" style="color:$primary;">:text-width:</i> Text fields
 
 Free-text input. Validation rules: required, min/max length, regex.
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### <i class="fa-list-check" style="color:$primary;">:list-check:</i> Dropdowns
+#### <i class="fa-list-check" style="color:$primary;">:list-check:</i> Dropdowns
 
 Predefined options. Useful for shipping methods, gift wrap, etc.
-
 {% endcolumn %}
 {% endcolumns %}
 
 {% columns %}
 {% column width="50%" %}
-
-### <i class="fa-square-check" style="color:$primary;">:square-check:</i> Checkboxes
+#### <i class="fa-square-check" style="color:$primary;">:square-check:</i> Checkboxes
 
 Single boolean. Common use: opt-in to marketing or terms acceptance.
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### <i class="fa-calendar" style="color:$primary;">:calendar:</i> Date pickers
+#### <i class="fa-calendar" style="color:$primary;">:calendar:</i> Date pickers
 
 For delivery dates, appointments, gift-card send dates.
-
 {% endcolumn %}
 {% endcolumns %}
 

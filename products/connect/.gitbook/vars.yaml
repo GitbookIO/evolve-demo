@@ -4,4 +4,4 @@ dashboard_live: https://dashboard.evolve.com
 dashboard_test: https://dashboard.test.evolve.com
 support_email: support@evolve.com
 status_page: https://status.evolve.com
-default_application_fee_pct: 2.0
+default_application_fee_pct: 2

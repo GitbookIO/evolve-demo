@@ -1,6 +1,8 @@
 ---
+description: >-
+  Who issues refunds, who responds to disputes, and how the money moves when a
+  payment reverses.
 icon: rotate-left
-description: Who issues refunds, who responds to disputes, and how the money moves when a payment reverses.
 ---
 
 # Refunds and disputes
@@ -76,13 +78,13 @@ A bad seller can drag down the platform's overall dispute rate, which is why mos
 
 Three policies for who absorbs the disputed amount and fee:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-store" style="color:$primary;">:store:</i></h3></td><td><strong>Pass to seller</strong></td><td>Seller's balance covers the disputed amount + fee. Most common.</td><td></td></tr><tr><td><h3><i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i></h3></td><td><strong>Platform absorbs</strong></td><td>Platform balance covers everything. Used for premium-tier sellers.</td><td></td></tr><tr><td><h3><i class="fa-scale-balanced" style="color:$primary;">:scale-balanced:</i></h3></td><td><strong>Split</strong></td><td>Platform takes the fee, seller takes the disputed amount. The "fair" default.</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-store" style="color:$primary;">:store:</i></h4></td><td><strong>Pass to seller</strong></td><td>Seller's balance covers the disputed amount + fee. Most common.</td><td></td></tr><tr><td><h4><i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i></h4></td><td><strong>Platform absorbs</strong></td><td>Platform balance covers everything. Used for premium-tier sellers.</td><td></td></tr><tr><td><h4><i class="fa-scale-balanced" style="color:$primary;">:scale-balanced:</i></h4></td><td><strong>Split</strong></td><td>Platform takes the fee, seller takes the disputed amount. The "fair" default.</td><td></td></tr></tbody></table>
 
 You can set the policy at the platform default and override per-seller.
 
 ### Who responds
 
-The platform always *can* respond to a dispute (since the dispute is technically against the platform). The question is whether you want to.
+The platform always _can_ respond to a dispute (since the dispute is technically against the platform). The question is whether you want to.
 
 Two patterns:
 

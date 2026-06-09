@@ -1,6 +1,6 @@
 ---
-icon: flask
 description: Two separate environments — what changes between them, and how to flip safely.
+icon: flask
 ---
 
 # Test mode and live mode
@@ -22,35 +22,27 @@ There is no merge or migration step — test connected accounts don't carry over
 
 {% stepper %}
 {% step %}
-
-### Complete platform onboarding
+#### Complete platform onboarding
 
 Your own platform account needs to be live-mode-eligible — business verification, banking, and a signed platform agreement. Most platforms do this once and then forget.
-
 {% endstep %}
 
 {% step %}
-
-### Generate live keys
+#### Generate live keys
 
 Under **Developers → API keys**, generate live secret and publishable keys. Restricted keys for downstream services (BI tools, internal services) work the same as in [Payments](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/quickstart/test-and-live-mode).
-
 {% endstep %}
 
 {% step %}
-
-### Update onboarding URLs
+#### Update onboarding URLs
 
 Hosted onboarding URLs are environment-specific. The links your platform sends to sellers must point at the live environment, not test. If you build a custom onboarding flow, this is the URL prefix to swap.
-
 {% endstep %}
 
 {% step %}
-
-### Update webhook endpoints
+#### Update webhook endpoints
 
 Live-mode webhooks are signed with a separate signing secret. Update your webhook handler to use the live secret before flipping the key.
-
 {% endstep %}
 {% endstepper %}
 
@@ -61,19 +53,15 @@ Live-mode webhooks are signed with a separate signing secret. Update your webhoo
 ## Volume limits
 
 {% if visitor.claims.unsigned.plan === "growth" %}
-
 {% hint style="info" icon="layer-group" %}
 **You're on Growth** — up to **100 connected accounts** in live mode. Test mode is unlimited. To go beyond 100, [upgrade to Enterprise](mailto:support@evolve.com).
 {% endhint %}
-
 {% endif %}
 
 {% if visitor.claims.unsigned.plan === "enterprise" %}
-
 {% hint style="success" icon="layer-group" %}
 **You're on Enterprise** — unlimited connected accounts in both environments.
 {% endhint %}
-
 {% endif %}
 
 ## Cutting over checklist

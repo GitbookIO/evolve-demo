@@ -1,6 +1,6 @@
 ---
-icon: route
 description: Three integration shapes for the Connect checkout — and how to pick.
+icon: route
 ---
 
 # Hosted vs embedded
@@ -11,8 +11,7 @@ There are three ways to put a Connect checkout in front of buyers. They share th
 
 {% columns %}
 {% column width="33%" %}
-
-### <i class="fa-link" style="color:$primary;">:link:</i> Hosted
+#### <i class="fa-link" style="color:$primary;">:link:</i> Hosted
 
 A URL you redirect the buyer to. Evolve hosts the page; you don't render anything.
 
@@ -20,12 +19,10 @@ A URL you redirect the buyer to. Evolve hosts the page; you don't render anythin
 * **PCI scope:** zero.
 * **Customization:** logo, colors, language.
 * **URL:** `checkout.evolve.com/c/...`
-
 {% endcolumn %}
 
 {% column width="33%" %}
-
-### <i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i> Embedded
+#### <i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i> Embedded
 
 Evolve's checkout rendered inside a div on your site, with your URL.
 
@@ -33,12 +30,10 @@ Evolve's checkout rendered inside a div on your site, with your URL.
 * **PCI scope:** SAQ A.
 * **Customization:** layout, fields, full theme control.
 * **URL:** stays yours.
-
 {% endcolumn %}
 
 {% column width="33%" %}
-
-### <i class="fa-code" style="color:$primary;">:code:</i> Direct API
+#### <i class="fa-code" style="color:$primary;">:code:</i> Direct API
 
 Build the checkout from scratch. You handle the card collection.
 
@@ -46,7 +41,6 @@ Build the checkout from scratch. You handle the card collection.
 * **PCI scope:** SAQ D (highest).
 * **Customization:** total.
 * **URL:** stays yours.
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -66,12 +60,12 @@ flowchart LR
 
 In our experience, the right starting choice for most platforms:
 
-| You are... | Start with |
-| --- | --- |
-| A new platform under 6 months old | Hosted |
-| An established platform under $10M GMV | Hosted or embedded |
-| An established platform $10M+ GMV with brand standards | Embedded |
-| A regulated platform that needs total control | Direct API |
+| You are...                                             | Start with         |
+| ------------------------------------------------------ | ------------------ |
+| A new platform under 6 months old                      | Hosted             |
+| An established platform under $10M GMV                 | Hosted or embedded |
+| An established platform $10M+ GMV with brand standards | Embedded           |
+| A regulated platform that needs total control          | Direct API         |
 
 You can migrate from hosted to embedded later without changing your seller onboarding or payout setup — they're independent layers.
 
@@ -81,27 +75,21 @@ Hosted is what you get on the [Connect Quickstart](../quickstart/onboard-your-fi
 
 {% stepper %}
 {% step %}
-
-### Your server creates a checkout session
+#### Your server creates a checkout session
 
 You call `POST /v1/checkout_sessions` with the seller's connected account, the amount, the application fee, and a `success_url` and `cancel_url` to redirect to.
-
 {% endstep %}
 
 {% step %}
-
-### You redirect the buyer
+#### You redirect the buyer
 
 The response gives you a URL like `https://checkout.evolve.com/c/cs_3KsM12pL9q`. Redirect the buyer there.
-
 {% endstep %}
 
 {% step %}
-
-### Evolve hosts the rest
+#### Evolve hosts the rest
 
 The buyer sees the checkout, pays, and is redirected to your `success_url` (or `cancel_url`). The session ID is appended so your server can confirm what happened.
-
 {% endstep %}
 {% endstepper %}
 

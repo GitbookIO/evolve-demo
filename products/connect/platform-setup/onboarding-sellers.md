@@ -1,6 +1,8 @@
 ---
+description: >-
+  How a seller goes from "signed up to your platform" to "ready to take
+  payments."
 icon: user-plus
-description: How a seller goes from "signed up to your platform" to "ready to take payments."
 ---
 
 # Onboarding sellers
@@ -15,8 +17,7 @@ Every connected account requires:
 
 {% columns %}
 {% column width="50%" %}
-
-### <i class="fa-id-card" style="color:$primary;">:id-card:</i> Legal identity
+#### <i class="fa-id-card" style="color:$primary;">:id-card:</i> Legal identity
 
 * Legal name (individual or business).
 * Date of birth (individuals) or formation date (businesses).
@@ -24,19 +25,16 @@ Every connected account requires:
 * Address.
 
 For businesses, plus [beneficial ownership](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/business/beneficial-ownership) for owners ≥25%.
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### <i class="fa-building-columns" style="color:$primary;">:building-columns:</i> Banking
+#### <i class="fa-building-columns" style="color:$primary;">:building-columns:</i> Banking
 
 * Bank account for payouts.
 * Account holder name (must match the legal entity).
 * Verification — Plaid instant or micro-deposits ([details](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account)).
 
 For non-US banks, plus tax forms (W-9 for US, W-8 for non-US).
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -46,7 +44,7 @@ For some seller types and regions, additional fields are required — you'll see
 
 Pick one based on how much control you want:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3><i class="fa-link" style="color:$primary;">:link:</i></h3></td><td><strong>Hosted</strong></td><td>Seller fills in everything on an Evolve-hosted page. Fastest to launch.</td><td></td></tr><tr><td><h3><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h3></td><td><strong>Embedded</strong></td><td>Same fields, rendered inside your site. Your URL.</td><td></td></tr><tr><td><h3><i class="fa-code" style="color:$primary;">:code:</i></h3></td><td><strong>Programmatic</strong></td><td>Your code submits the data — for sellers who've already given it to you elsewhere.</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-link" style="color:$primary;">:link:</i></h4></td><td><strong>Hosted</strong></td><td>Seller fills in everything on an Evolve-hosted page. Fastest to launch.</td><td></td></tr><tr><td><h4><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h4></td><td><strong>Embedded</strong></td><td>Same fields, rendered inside your site. Your URL.</td><td></td></tr><tr><td><h4><i class="fa-code" style="color:$primary;">:code:</i></h4></td><td><strong>Programmatic</strong></td><td>Your code submits the data — for sellers who've already given it to you elsewhere.</td><td></td></tr></tbody></table>
 
 Most platforms launch with hosted, then move to embedded once they're confident in their seller-onboarding UX.
 
@@ -62,13 +60,13 @@ flowchart LR
 
 Typical timing:
 
-| Step | How long |
-| --- | --- |
-| Form (legal info, address) | 3–5 min |
-| Identity verification (document + selfie) | 1–2 min |
-| Bank verification (Plaid) | 1 min |
-| Bank verification (micro-deposits) | 1–2 days |
-| Manual review (if triggered) | 1 hour to 1 business day |
+| Step                                      | How long                 |
+| ----------------------------------------- | ------------------------ |
+| Form (legal info, address)                | 3–5 min                  |
+| Identity verification (document + selfie) | 1–2 min                  |
+| Bank verification (Plaid)                 | 1 min                    |
+| Bank verification (micro-deposits)        | 1–2 days                 |
+| Manual review (if triggered)              | 1 hour to 1 business day |
 
 Most US individuals complete in under 10 minutes end to end if they pass everything on the first try.
 
