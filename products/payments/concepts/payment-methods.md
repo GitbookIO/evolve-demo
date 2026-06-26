@@ -29,17 +29,7 @@ Evolve supports cards, bank rails, and direct-debit schemes. The methods availab
 {% endhint %}
 {% endif %}
 
-| Method                                  | Starter | Growth | Enterprise | Settlement                    |
-| --------------------------------------- | :-----: | :----: | :--------: | ----------------------------- |
-| Card (Visa, Mastercard, Amex, Discover) |    ✅    |    ✅   |      ✅     | T+1–3                         |
-| Card (JCB, UnionPay, Diners)            |    —    |    ✅   |      ✅     | T+2–3                         |
-| ACH debit (US)                          |    —    |    ✅   |      ✅     | T+3 (initial), T+1 (verified) |
-| Debit card (US)                         |    ✅    |    ✅   |      ✅     | T+1–2                         |
-| Wire transfer (US)                      |    —    |    —   |      ✅     | Same day                      |
-| SEPA (EU)                               |    —    |    —   |      ✅     | T+1                           |
-| BACS Direct Debit (UK)                  |    —    |    —   |      ✅     | T+3                           |
-| Multi-currency (USD, CAD, GBP, EUR)     |    —    |    ✅   |      ✅     | Per-currency payout           |
-| Multi-currency (135 currencies)         |    —    |    —   |      ✅     | Per-currency payout           |
+<table><thead><tr><th>Method</th><th data-type="checkbox">Starter</th><th data-type="checkbox">Growth</th><th data-type="checkbox">Enterprise</th><th>Settlement</th></tr></thead><tbody><tr><td>Card (Visa, Mastercard, Amex, Discover)</td><td>true</td><td>true</td><td>true</td><td>T+1–3</td></tr><tr><td>Card (JCB, UnionPay, Diners)</td><td>false</td><td>true</td><td>true</td><td>T+2–3</td></tr><tr><td>ACH debit (US)</td><td>false</td><td>true</td><td>true</td><td>T+3 (initial), T+1 (verified)</td></tr><tr><td>Debit card (US)</td><td>true</td><td>true</td><td>true</td><td>T+1–2</td></tr><tr><td>Wire transfer (US)</td><td>false</td><td>false</td><td>true</td><td>Same day</td></tr><tr><td>SEPA (EU)</td><td>false</td><td>false</td><td>true</td><td>T+1</td></tr><tr><td>BACS Direct Debit (UK)</td><td>false</td><td>false</td><td>true</td><td>T+3</td></tr><tr><td>Multi-currency (USD, CAD, GBP, EUR)</td><td>false</td><td>true</td><td>true</td><td>Per-currency payout</td></tr><tr><td>Multi-currency (135 currencies)</td><td>false</td><td>false</td><td>true</td><td>Per-currency payout</td></tr></tbody></table>
 
 ## Choosing which methods to offer
 
