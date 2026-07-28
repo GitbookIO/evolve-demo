@@ -62,5 +62,5 @@ The payment shows up as **Captured** on your dashboard within seconds, and is co
 ## Related
 
 * [Payment lifecycle](../concepts/payment-lifecycle.md) — every state a charge can be in.
-* [Errors and retries](../concepts/errors-and-retries.md) — what to do when a charge fails.
+* [Errors and retries](https://github.com/GitbookIO/evolve-demo/blob/main/products/payments/concepts/errors-and-retries.md) — what to do when a charge fails.
 * [Webhooks](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks) — events emitted by every charge.
