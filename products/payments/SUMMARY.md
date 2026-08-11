@@ -6,9 +6,6 @@
 
 * [Accept your first payment](quickstart/accept-your-first-payment.md)
 * [Test mode and live mode](quickstart/test-and-live-mode.md)
-* [Page 1](quickstart/page-1.md)
-
-## Group 1
 
 ## Concepts
 

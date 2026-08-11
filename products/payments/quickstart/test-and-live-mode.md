@@ -9,8 +9,6 @@ icon: flask
 
 ## What's different in live mode
 
-<figure><img src="../.gitbook/assets/failover-retries-dark.png" alt=""><figcaption></figcaption></figure>
-
 * **Real money moves.** Successful charges debit the cardholder and are scheduled for payout to your bank account. See [Money movement](../concepts/money-movement.md) for payout timing.
 * **Real cards only.** Test card numbers (`4242 4242 4242 4242` and friends) are rejected with `card_declined` in live mode.
 * **Webhooks fire to your live endpoint.** Make sure your verification logic is using the live signing secret (it's a separate value, prefixed `whsec_live_`).
