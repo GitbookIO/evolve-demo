@@ -217,3 +217,7 @@ Our biggest recent releases
 ## Get help
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h4><i class="fa-headset" style="color:$primary;">:headset:</i> <strong>Talk to support</strong></h4></td><td>For account-specific questions, integration help, or production incidents, open a ticket by starting a chat below.</td><td><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">How can we help?</button></td></tr><tr><td><h4><i class="fa-circle-check" style="color:$primary;">:circle-check:</i> <strong>Platform status</strong></h4></td><td>Real-time status of every Evolve service. Subscribe via email or RSS for incident updates.</td><td><a href="https://gitbook.com" class="button secondary">View status</a></td></tr><tr><td><h4><i class="fa-comments" style="color:$primary;">:comments:</i> <strong>Community</strong></h4></td><td>Real-time discussion with other Evolve customers and our team. Most product questions have a thread.</td><td><a href="https://gitbook.com" class="button secondary">Join the forum</a></td></tr></tbody></table>
+
+## More resources
+
+Want to learn more about GitBook? Head to our [docs](https://gitbook.com/docs) to get started.
