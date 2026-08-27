@@ -46,7 +46,7 @@ Take a payments, verify customers, and run a marketplace — all on one platform
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
-This site is a demo of GitBook's enterprise features applied to a fictional fintech, **Evolve**. It shows what a real customer-facing docs site looks like end-to-end — adaptive content, OpenAPI variants, the AI Assistant with Connections, change-request workflows, hidden pages with public/authenticated flips, and more.
+This site is a demo of GitBook's enterprise features applied to a fictional fintech, **Evolve**. It shows what a real customer-facing docs site looks like end-to-end — adaptive content, OpenAPI variants, the AI Assistant with Connections, change-request workflows, hidden pages with public/authenticated flips, and more. Hello World!
 
 {% if !visitor.claims.unsigned.persona %}
 Try a persona to see adaptive content in action across the site:
