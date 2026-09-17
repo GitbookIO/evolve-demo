@@ -10,6 +10,7 @@ layout:
   cover:
     visible: true
     size: hero
+    mask: none
   title:
     visible: true
   description:
@@ -26,9 +27,15 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Payments
+
+{% hint style="info" %}
+THIS IS A NEW HINT
+{% endhint %}
 
 {% columns %}
 {% column %}
