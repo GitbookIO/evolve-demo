@@ -1,6 +1,8 @@
 ---
+description: >-
+  How AI agents and code copilots can navigate the Evolve docs and call the API
+  directly.
 icon: robot
-description: How AI agents and code copilots can navigate the Evolve docs and call the API directly.
 ---
 
 # For AI agents
@@ -11,10 +13,10 @@ Evolve publishes structured indexes and a hosted MCP server so AI assistants can
 
 We follow the [llms.txt convention](https://llmstxt.org). Two files at the docs root:
 
-| File | Contents | Best for |
-| --- | --- | --- |
-| [https://docs.evolve.com/llms.txt](https://gitbook.com) | Title, description, and a curated list of links to every section of the docs. | Agents that need a map of the docs to navigate by. |
-| [https://docs.evolve.com/llms-full.txt](https://gitbook.com) | The complete content of every public page concatenated into one file. | Agents that want the full docs in their context window. |
+| File                                                         | Contents                                                                      | Best for                                                |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------------------- |
+| [https://docs.evolve.com/llms.txt](https://gitbook.com)      | Title, description, and a curated list of links to every section of the docs. | Agents that need a map of the docs to navigate by.      |
+| [https://docs.evolve.com/llms-full.txt](https://gitbook.com) | The complete content of every public page concatenated into one file.         | Agents that want the full docs in their context window. |
 
 Both are auto-generated from the same content as the rendered docs site, and refreshed on every publish. Cache for at most an hour.
 
@@ -36,11 +38,11 @@ The structured Markdown lets an agent decide what to fetch in detail without loa
 
 ### Using llms-full.txt
 
-For a single full-context dump, `llms-full.txt` concatenates every public page in the docs into one file (~2 MB plain text). Useful when an agent has the context budget to read everything, or for offline reference materials.
+For a single full-context dump, `llms-full.txt` concatenates every public page in the docs into one file (\~2 MB plain text). Useful when an agent has the context budget to read everything, or for offline reference materials.
 
 ## MCP — call the Evolve API as an agent
 
-The structured-text indexes above are about *reading* the docs. If you want an agent to *call the API* directly during a session — query a charge, refund a payment, look up a customer — Evolve runs an [MCP server](../mcp/README.md) that exposes the API as agent tools.
+The structured-text indexes above are about _reading_ the docs. If you want an agent to _call the API_ directly during a session — query a charge, refund a payment, look up a customer — Evolve runs an [MCP server](../mcp/mcp.md) that exposes the API as agent tools.
 
 Connecting takes about a minute and works with Claude Desktop, Cursor, Continue, Cline, and any other MCP-aware client. See [MCP → Connecting an agent](../mcp/connecting-an-agent.md).
 
@@ -95,6 +97,6 @@ All four are kept in sync with the live API on every release.
 
 ## Related
 
-* [MCP overview](../mcp/README.md) — the agent-callable side of Evolve.
+* [MCP overview](../mcp/mcp.md) — the agent-callable side of Evolve.
 * [Authentication](authentication.md) — restricted keys for scoped agent access.
-* [API references](../payments-api/README.md) — for the agent to read.
+* [API references](../payments-api/payments-api.md) — for the agent to read.

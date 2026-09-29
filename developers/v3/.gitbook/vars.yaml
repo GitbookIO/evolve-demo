@@ -9,7 +9,7 @@ api_version: 2026-04-01-preview
 variant: v3
 variant_status: preview
 default_rate_limit: 500
-node_pkg: "@evolve/node"
+node_pkg: '@evolve/node'
 python_pkg: evolve
 go_pkg: github.com/evolve-pay/evolve-go
 ruby_pkg: evolve

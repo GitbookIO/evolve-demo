@@ -1,6 +1,8 @@
 ---
+description: >-
+  How Evolve retries failed deliveries, and how to replay events your handler
+  missed.
 icon: rotate
-description: How Evolve retries failed deliveries, and how to replay events your handler missed.
 ---
 
 # Retries and replay
@@ -11,18 +13,18 @@ Webhook delivery isn't perfect. Your server will go down, your handler will thro
 
 If your endpoint returns anything other than `2xx`, or doesn't respond within 30 seconds, Evolve retries:
 
-| Attempt | After |
-| --- | --- |
-| 1 | Immediately |
-| 2 | 1 minute |
-| 3 | 5 minutes |
-| 4 | 15 minutes |
-| 5 | 1 hour |
-| 6 | 4 hours |
-| 7 | 16 hours |
-| 8 | 1 day |
-| 9 | 2 days |
-| 10 (final) | 3 days |
+| Attempt    | After       |
+| ---------- | ----------- |
+| 1          | Immediately |
+| 2          | 1 minute    |
+| 3          | 5 minutes   |
+| 4          | 15 minutes  |
+| 5          | 1 hour      |
+| 6          | 4 hours     |
+| 7          | 16 hours    |
+| 8          | 1 day       |
+| 9          | 2 days      |
+| 10 (final) | 3 days      |
 
 After the final attempt, the event is marked **failed** and stays in the dashboard's webhook log for 90 days. You can replay it manually any time within that window.
 
@@ -38,27 +40,21 @@ The webhook log shows every delivery attempt for every endpoint:
 
 {% stepper %}
 {% step %}
+#### Find the event
 
-### Find the event
-
-**Developers → Webhooks → [endpoint] → Events**. Filter by event type, status, or time range. Each row shows the delivery attempts and the response code Evolve got.
-
+**Developers → Webhooks → \[endpoint] → Events**. Filter by event type, status, or time range. Each row shows the delivery attempts and the response code Evolve got.
 {% endstep %}
 
 {% step %}
-
-### Replay it
+#### Replay it
 
 Click an event and hit **Replay**. Evolve sends a fresh delivery to the same endpoint, with a current timestamp on the signature so it passes a strict freshness check.
-
 {% endstep %}
 
 {% step %}
-
-### Watch the new attempt
+#### Watch the new attempt
 
 The dashboard shows the new delivery attempt and your response within seconds.
-
 {% endstep %}
 {% endstepper %}
 
