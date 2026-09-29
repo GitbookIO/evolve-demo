@@ -17,6 +17,10 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
 ---
 
 # Changelog
@@ -86,7 +90,7 @@ A preview of the next major version of the Payments API. Highlights:
 
 v3-beta is preview-only. Don't run production traffic on it without coordinating with your account team. v2 stays the stable default; v3-beta will graduate when we've completed the beta-customer cohort.
 
-The variant dropdown in [Developers](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/payments-api/) lets you flip between v1, v2, and v3 to compare.
+The variant dropdown in [Developers](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/payments-api) lets you flip between v1, v2, and v3 to compare.
 {% endupdate %}
 
 {% update date="2026-03-26" tags="connect" %}
