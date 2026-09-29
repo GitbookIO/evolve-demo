@@ -1,6 +1,8 @@
 ---
+description: >-
+  Map Evolve metadata to NetSuite custom segments — departments, classes,
+  locations, and custom-defined.
 icon: arrows-up-down-left-right
-description: Map Evolve metadata to NetSuite custom segments — departments, classes, locations, and custom-defined.
 ---
 
 # Custom field mapping
@@ -9,13 +11,13 @@ NetSuite's custom segments are how multi-divisional, multi-region, and project-t
 
 ## NetSuite segments supported
 
-| NetSuite segment | What it represents | Common Evolve metadata source |
-| --- | --- | --- |
-| **Department** | Organizational unit (Sales, Engineering) | `metadata.department` |
-| **Class** | Cross-cutting category (Subscriptions, Hardware) | `metadata.product_line` |
-| **Location** | Physical site (Store 42, Warehouse East) | `metadata.location_id` or `metadata.store_id` |
-| **Subsidiary** | Legal entity in a OneWorld account | Evolve account, or `metadata.subsidiary_id` |
-| **Custom segments** | Anything you've defined (Project, Region, Cohort) | Per your mapping |
+| NetSuite segment    | What it represents                                | Common Evolve metadata source                 |
+| ------------------- | ------------------------------------------------- | --------------------------------------------- |
+| **Department**      | Organizational unit (Sales, Engineering)          | `metadata.department`                         |
+| **Class**           | Cross-cutting category (Subscriptions, Hardware)  | `metadata.product_line`                       |
+| **Location**        | Physical site (Store 42, Warehouse East)          | `metadata.location_id` or `metadata.store_id` |
+| **Subsidiary**      | Legal entity in a OneWorld account                | Evolve account, or `metadata.subsidiary_id`   |
+| **Custom segments** | Anything you've defined (Project, Region, Cohort) | Per your mapping                              |
 
 ## Setting up a mapping
 
@@ -32,11 +34,11 @@ Save. From the next sync onward, journal entries are tagged correctly.
 
 When the Evolve metadata value doesn't match the NetSuite segment value verbatim, use a mapping table:
 
-| Evolve metadata value | NetSuite segment internal ID |
-| --- | --- |
-| `subscriptions` | 12 (Class: Subscriptions) |
-| `commerce` | 14 (Class: E-commerce) |
-| `services` | 18 (Class: Professional Services) |
+| Evolve metadata value | NetSuite segment internal ID      |
+| --------------------- | --------------------------------- |
+| `subscriptions`       | 12 (Class: Subscriptions)         |
+| `commerce`            | 14 (Class: E-commerce)            |
+| `services`            | 18 (Class: Professional Services) |
 
 The bundle keeps the mapping table cached; updating it requires no resync — future entries just use the new mapping.
 
@@ -99,6 +101,6 @@ Last reviewed in early 2026. Mapping options expand as NetSuite ships new custom
 
 ## Related
 
-* [NetSuite overview](README.md) — install and high-level setup.
+* [NetSuite overview](netsuite.md) — install and high-level setup.
 * [QuickBooks reconciliation mapping](../quickbooks/reconciliation-mapping.md) — equivalent for QB customers.
 * [Settlement files](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/settlement-files) — the source data.

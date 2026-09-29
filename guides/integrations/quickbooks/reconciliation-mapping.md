@@ -1,6 +1,6 @@
 ---
-icon: file-invoice
 description: Map every Evolve settlement line item to the right QuickBooks account.
+icon: file-invoice
 ---
 
 # Reconciliation mapping
@@ -11,18 +11,18 @@ The default account mapping covers most teams. For more nuanced setups — multi
 
 Out of the box, Evolve maps settlement-file line types to QuickBooks accounts:
 
-| Evolve line type | Default QuickBooks account | Account category |
-| --- | --- | --- |
-| `payment` (gross) | Sales Income | Income |
-| `payment.fee` | Bank Charges | Expense |
-| `refund` | Returns and Allowances | Income (contra) |
-| `refund.fee_unrecovered` | Bank Charges | Expense |
-| `dispute_lost` | Bad Debt Expense | Expense |
-| `dispute_lost.fee` | Bank Charges | Expense |
-| `dispute_won` | Other Income | Income |
-| `payout` | Bank Account | Asset |
-| `reserve_held` | Restricted Cash | Asset |
-| `reserve_released` | Bank Account | Asset |
+| Evolve line type         | Default QuickBooks account | Account category |
+| ------------------------ | -------------------------- | ---------------- |
+| `payment` (gross)        | Sales Income               | Income           |
+| `payment.fee`            | Bank Charges               | Expense          |
+| `refund`                 | Returns and Allowances     | Income (contra)  |
+| `refund.fee_unrecovered` | Bank Charges               | Expense          |
+| `dispute_lost`           | Bad Debt Expense           | Expense          |
+| `dispute_lost.fee`       | Bank Charges               | Expense          |
+| `dispute_won`            | Other Income               | Income           |
+| `payout`                 | Bank Account               | Asset            |
+| `reserve_held`           | Restricted Cash            | Asset            |
+| `reserve_released`       | Bank Account               | Asset            |
 
 You override any of these in the mapping view.
 
@@ -89,6 +89,6 @@ Reviewed in early 2026. Mapping options expand occasionally with new QuickBooks 
 
 ## Related
 
-* [QuickBooks overview](README.md) — install and concepts.
+* [QuickBooks overview](quickbooks.md) — install and concepts.
 * [Settlement files](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reconciliation/settlement-files) — the source data this writes against.
 * [NetSuite custom field mapping](../netsuite/custom-field-mapping.md) — equivalent for NetSuite customers.

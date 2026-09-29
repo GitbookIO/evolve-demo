@@ -1,6 +1,6 @@
 ---
-icon: bell
 description: Decide which Evolve events fire alerts, where they go, and at what threshold.
+icon: bell
 ---
 
 # Configuring alerts
@@ -9,16 +9,16 @@ In **Settings → Integrations → Slack → Alerts**, you'll find the alert con
 
 ## Alert types
 
-| Alert | Default channel | Threshold |
-| --- | --- | --- |
-| **Dispute opened** | `#evolve-alerts` | Always |
-| **Large refund** | `#evolve-alerts` | Over $1,000 |
-| **Payout failed** | `#evolve-alerts` | Always |
-| **Risk hold placed** | `#evolve-alerts` | Always |
-| **Account verification required** | `#evolve-alerts` | Always |
-| **Connect: seller restricted** | `#evolve-alerts` | Always |
-| **Daily summary** | (off) | n/a |
-| **Weekly summary** | (off) | n/a |
+| Alert                             | Default channel  | Threshold   |
+| --------------------------------- | ---------------- | ----------- |
+| **Dispute opened**                | `#evolve-alerts` | Always      |
+| **Large refund**                  | `#evolve-alerts` | Over $1,000 |
+| **Payout failed**                 | `#evolve-alerts` | Always      |
+| **Risk hold placed**              | `#evolve-alerts` | Always      |
+| **Account verification required** | `#evolve-alerts` | Always      |
+| **Connect: seller restricted**    | `#evolve-alerts` | Always      |
+| **Daily summary**                 | (off)            | n/a         |
+| **Weekly summary**                | (off)            | n/a         |
 
 Each alert can be:
 
@@ -32,37 +32,29 @@ A few patterns most teams use:
 
 {% columns %}
 {% column width="50%" %}
-
-### <i class="fa-bell" style="color:$primary;">:bell:</i> Single channel
+#### <i class="fa-bell" style="color:$primary;">:bell:</i> Single channel
 
 All Evolve alerts to one channel. Simplest. Fine for teams under 10 people.
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### <i class="fa-route" style="color:$primary;">:route:</i> By function
+#### <i class="fa-route" style="color:$primary;">:route:</i> By function
 
 `#finance-alerts` for payouts and disputes; `#support-alerts` for verifications and seller issues; `#eng-alerts` for webhook delivery failures.
-
 {% endcolumn %}
 {% endcolumns %}
 
 {% columns %}
 {% column width="50%" %}
-
-### <i class="fa-globe" style="color:$primary;">:globe:</i> By region
+#### <i class="fa-globe" style="color:$primary;">:globe:</i> By region
 
 Multi-region operations route alerts to per-region channels — `#evolve-us-alerts`, `#evolve-eu-alerts`, etc. Filter rules use the country on each event.
-
 {% endcolumn %}
 
 {% column width="50%" %}
-
-### <i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i> Per-seller (Connect)
+#### <i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i> Per-seller (Connect)
 
 For platforms running Connect, route per-seller alerts to a channel shared with that seller (via Slack Connect). The seller sees their own disputes and payouts; you see all of them.
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -102,5 +94,5 @@ Reviewed in early 2026, with quarterly updates as new alert types ship. Suggest 
 
 ## Related
 
-* [Slack overview](README.md) — install and slash commands.
+* [Slack overview](slack.md) — install and slash commands.
 * [Webhooks event catalog](https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/webhooks/event-catalog) — the underlying event types these alerts surface.
