@@ -1,0 +1,670 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Evolve
+  structure:
+    - type: section
+      key: section-1
+      title: Home
+      localizedTitle:
+        de: Startseite
+        en: Home
+        es: Inicio
+        fr: Accueil
+        zh: 首页
+      path: home
+      description: ""
+      icon: house
+      default: true
+      children:
+        - type: space
+          key: space-1
+          title: English
+          path: docs
+          default: true
+          content:
+            directory: ./home
+            language: en
+        - type: space
+          key: space-13
+          title: Français
+          path: fr
+          content:
+            directory: ./home/fr
+            language: fr
+        - type: space
+          key: space-25
+          title: Deutsch
+          path: de
+          content:
+            directory: ./home/de
+            language: de
+        - type: space
+          key: space-14
+          title: Español
+          path: es
+          content:
+            directory: ./home/es
+            language: es
+        - type: space
+          key: space-15
+          title: 中文
+          path: zh
+          content:
+            directory: ./home/zh
+            language: zh
+    - type: section-group
+      key: section-group-1
+      title: Products
+      localizedTitle:
+        ar: المنتجات
+        de: Produkte
+        en: Products
+        es: Productos
+        fr: Produits
+        zh: 产品
+      icon: angles-up
+      children:
+        - type: section
+          key: section-2
+          title: Payments
+          localizedTitle:
+            ar: الصفحة الرئيسية
+            de: Zahlungen
+            en: Payments
+            es: Pagos
+            fr: Paiements
+            zh: 支付
+          path: payments
+          description: Route, reconcile, and report
+          localizedDescription:
+            de: Weiterleiten, abstimmen und berichten
+            en: Route, reconcile, and report
+            es: Enrutar, conciliar e informar
+            fr: Acheminer, réconcilier et rapporter
+            zh: 路由、对账和报告
+          icon: credit-card
+          children:
+            - type: space
+              key: space-2
+              title: English
+              path: en
+              default: true
+              content:
+                directory: ./products/payments
+                language: en
+            - type: space
+              key: space-16
+              title: Français
+              path: fr
+              content:
+                directory: ./payments/fr
+                language: fr
+            - type: space
+              key: space-26
+              title: Deutsch
+              path: de
+              content:
+                directory: ./payments/de
+                language: de
+            - type: space
+              key: space-17
+              title: Español
+              path: es
+              content:
+                directory: ./payments/es
+                language: es
+            - type: space
+              key: space-18
+              title: 中文
+              path: zh
+              content:
+                directory: ./payments/zh
+                language: zh
+            - type: space
+              key: space-61
+              title: Arabic
+              path: arabic
+              content:
+                directory: ./payments/arabic
+                language: ar
+        - type: section
+          key: section-3
+          title: Identity
+          localizedTitle:
+            de: Identität
+            en: Identity
+            es: Identidad
+            fr: Identité
+            zh: 身份
+          path: identity
+          description: Verify customers and partners
+          localizedDescription:
+            de: Kunden und Partner verifizieren
+            en: Verify customers and partners
+            es: Verificar clientes y socios
+            fr: Vérifier les clients et les partenaires
+            zh: 验证客户和合作伙伴
+          icon: id-card
+          children:
+            - type: space
+              key: space-3
+              title: English
+              path: en
+              default: true
+              content:
+                directory: ./products/identity
+                language: en
+            - type: space
+              key: space-19
+              title: Français
+              path: fr
+              content:
+                directory: ./identity/fr
+                language: fr
+            - type: space
+              key: space-27
+              title: Deutsch
+              path: de
+              content:
+                directory: ./identity/de
+                language: de
+            - type: space
+              key: space-20
+              title: Español
+              path: es
+              content:
+                directory: ./identity/es
+                language: es
+            - type: space
+              key: space-21
+              title: 中文
+              path: zh
+              content:
+                directory: ./identity/zh
+                language: zh
+        - type: section
+          key: section-4
+          title: Connect
+          localizedTitle:
+            de: Verbinden
+            en: Connect
+            es: Conectar
+            fr: Connexion
+            zh: 连接
+          path: connect
+          description: Embed payments in your platform
+          localizedDescription:
+            de: Zahlungen in Ihre Plattform einbetten
+            en: Embed payments in your platform
+            es: Integrar pagos en tu plataforma
+            fr: Intégrer les paiements dans votre plateforme
+            zh: 将支付嵌入您的平台
+          icon: circles-overlap
+          children:
+            - type: space
+              key: space-4
+              title: English
+              path: en
+              default: true
+              content:
+                directory: ./products/connect
+                language: en
+            - type: space
+              key: space-22
+              title: Français
+              path: fr
+              content:
+                directory: null
+                language: fr
+            - type: space
+              key: space-28
+              title: Deutsch
+              path: de
+              content:
+                directory: null
+                language: de
+            - type: space
+              key: space-23
+              title: Español
+              path: es
+              content:
+                directory: null
+                language: es
+            - type: space
+              key: space-24
+              title: 中文
+              path: zh
+              content:
+                directory: null
+                language: zh
+    - type: section
+      key: section-5
+      title: Developers
+      localizedTitle:
+        de: Entwickler
+        en: Developers
+        es: Desarrolladores
+        fr: Développeurs
+        zh: "开发者 "
+      path: developers
+      description: ""
+      icon: code
+      children:
+        - type: space
+          key: space-11
+          title: Version 3 (Beta)
+          path: v3-beta
+          content:
+            directory: ./developers/v3
+            language: en
+        - type: space
+          key: space-57
+          title: Version 3 (Bêta)
+          path: v3-fr
+          content:
+            directory: ./developers/v3-fr
+            language: fr
+        - type: space
+          key: space-58
+          title: Version 3 (Beta)
+          path: v3-de
+          content:
+            directory: ./developers/v3-de
+            language: de
+        - type: space
+          key: space-59
+          title: Versión 3 (Beta)
+          path: v3-es
+          content:
+            directory: ./developers/v3-es
+            language: es
+        - type: space
+          key: space-60
+          title: 版本 3 (测试版)
+          path: v3-zh
+          content:
+            directory: ./developers/v3-zh
+            language: zh
+        - type: space
+          key: space-12
+          title: Version 2
+          path: v2
+          default: true
+          content:
+            directory: ./developers/v2
+            language: en
+        - type: space
+          key: space-49
+          title: Version 2
+          path: v2-fr
+          content:
+            directory: ./developers/v2-fr
+            language: fr
+        - type: space
+          key: space-50
+          title: Version 2
+          path: v2-de
+          content:
+            directory: ./developers/v2-de
+            language: de
+        - type: space
+          key: space-51
+          title: Versión 2
+          path: v2-es
+          content:
+            directory: ./developers/v2-es
+            language: es
+        - type: space
+          key: space-52
+          title: 版本 2
+          path: v2-zh
+          content:
+            directory: ./developers/v2-zh
+            language: zh
+        - type: space
+          key: space-10
+          title: Version 1
+          path: v1
+          content:
+            directory: ./developers/v1
+            language: en
+        - type: space
+          key: space-53
+          title: Version 1
+          path: v1-fr
+          content:
+            directory: ./developers/v1-fr
+            language: fr
+        - type: space
+          key: space-54
+          title: Version 1
+          path: v1-de
+          content:
+            directory: ./developers/v1-de
+            language: de
+        - type: space
+          key: space-55
+          title: Versión 1
+          path: v1-es
+          content:
+            directory: ./developers/v1-es
+            language: es
+        - type: space
+          key: space-56
+          title: 版本 1
+          path: v1-zh
+          content:
+            directory: ./developers/v1-zh
+            language: zh
+    - type: section-group
+      key: section-group-2
+      title: Guides
+      localizedTitle:
+        de: Anleitungen
+        en: Guides
+        es: Guías
+        zh: 指南
+      icon: compass
+      children:
+        - type: section
+          key: section-6
+          title: Tutorials
+          localizedTitle:
+            en: Tutorials
+            es: Tutoriales
+            fr: Tutoriels
+            zh: 教程
+          path: tutorials
+          description: Build it, step by step
+          localizedDescription:
+            de: Schritt für Schritt aufbauen
+            en: Build it, step by step
+            es: Constrúyelo, paso a paso
+            fr: Construisez-le, étape par étape
+            zh: 一步一步地构建
+          icon: graduation-cap
+          children:
+            - type: space
+              key: space-5
+              title: English
+              path: en
+              default: true
+              content:
+                directory: ./guides/tutorials
+                language: en
+            - type: space
+              key: space-29
+              title: Français
+              path: fr
+              content:
+                directory: ./tutorials/fr
+                language: fr
+            - type: space
+              key: space-30
+              title: Deutsch
+              path: de
+              content:
+                directory: ./tutorials/de
+                language: de
+            - type: space
+              key: space-31
+              title: Español
+              path: es
+              content:
+                directory: ./tutorials/es
+                language: es
+            - type: space
+              key: space-32
+              title: 中文
+              path: zh
+              content:
+                directory: ./tutorials/zh
+                language: zh
+        - type: section
+          key: section-7
+          title: Help Center
+          localizedTitle:
+            de: Hilfecenter
+            en: Help Center
+            es: Centro de ayuda
+            fr: Centre d'aide
+            zh: 帮助中心
+          path: help-center
+          description: Answers to common questions
+          localizedDescription:
+            de: Antworten auf häufige Fragen
+            en: Answers to common questions
+            es: Respuestas a preguntas frecuentes
+            fr: Réponses aux questions fréquentes
+            zh: "常见问题解答 "
+          icon: life-ring
+          children:
+            - type: space
+              key: space-6
+              title: English
+              path: en
+              default: true
+              content:
+                directory: ./guides/help-center
+                language: en
+            - type: space
+              key: space-33
+              title: Français
+              path: fr
+              content:
+                directory: ./help-center/fr
+                language: fr
+            - type: space
+              key: space-34
+              title: Deutsch
+              path: de
+              content:
+                directory: ./help-center/de
+                language: de
+            - type: space
+              key: space-35
+              title: Español
+              path: es
+              content:
+                directory: ./help-center/es
+                language: es
+            - type: space
+              key: space-36
+              title: 中文
+              path: zh
+              content:
+                directory: ./help-center/zh
+                language: zh
+        - type: section
+          key: section-8
+          title: Integrations
+          localizedTitle:
+            de: Integrationen
+            en: Integrations
+            es: Integraciones
+            fr: Intégrations
+            zh: 集成
+          path: integrations
+          description: Bring your existing tools
+          localizedDescription:
+            de: Bringen Sie Ihre vorhandenen Tools mit
+            en: Bring your existing tools
+            es: Trae tus herramientas existentes
+            fr: Intégrez vos outils existants
+            zh: "集成您现有的工具 "
+          icon: puzzle-piece
+          children:
+            - type: space
+              key: space-7
+              title: English
+              path: en
+              default: true
+              content:
+                directory: ./guides/integrations
+                language: en
+            - type: space
+              key: space-37
+              title: Français
+              path: fr
+              content:
+                directory: ./integrations/fr
+                language: fr
+            - type: space
+              key: space-38
+              title: Deutsch
+              path: de
+              content:
+                directory: ./integrations/de
+                language: de
+            - type: space
+              key: space-39
+              title: Español
+              path: es
+              content:
+                directory: ./integrations/es
+                language: es
+            - type: space
+              key: space-40
+              title: 中文
+              path: zh
+              content:
+                directory: ./integrations/zh
+                language: zh
+    - type: section
+      key: section-9
+      title: Changelog
+      localizedTitle:
+        de: Änderungsprotokoll
+        en: Changelog
+        es: Registro de cambios
+        fr: Journal des modifications
+        zh: 更新日志
+      path: changelog
+      description: ""
+      icon: clock-rotate-left
+      children:
+        - type: space
+          key: space-8
+          title: English
+          path: en
+          default: true
+          content:
+            directory: ./changelog
+            language: en
+        - type: space
+          key: space-41
+          title: Français
+          path: fr
+          content:
+            directory: null
+            language: fr
+        - type: space
+          key: space-42
+          title: Deutsch
+          path: de
+          content:
+            directory: null
+            language: de
+        - type: space
+          key: space-43
+          title: Español
+          path: es
+          content:
+            directory: null
+            language: es
+        - type: space
+          key: space-44
+          title: 中文
+          path: zh
+          content:
+            directory: null
+            language: zh
+    - type: section
+      key: section-10
+      title: Partners
+      localizedTitle:
+        de: Partner
+        en: Partners
+        es: Socios
+        fr: Partenaires
+        zh: 合作伙伴
+      path: partners
+      description: ""
+      icon: handshake-angle
+      children:
+        - type: space
+          key: space-9
+          title: English
+          path: en
+          default: true
+          content:
+            directory: ./partners
+            language: en
+        - type: space
+          key: space-45
+          title: Français
+          path: fr
+          content:
+            directory: ./partners/fr
+            language: fr
+        - type: space
+          key: space-46
+          title: Deutsch
+          path: de
+          content:
+            directory: ./partners/de
+            language: de
+        - type: space
+          key: space-47
+          title: Español
+          path: es
+          content:
+            directory: ./partners/es
+            language: es
+        - type: space
+          key: space-48
+          title: 中文
+          path: zh
+          content:
+            directory: ./partners/zh
+            language: zh
+    - type: section
+      key: section-11
+      title: Product 3
+      path: product-3
+      children:
+        - type: space
+          key: space-62
+          title: Product 3
+          path: product-3
+          default: true
+          content:
+            directory: ./product-3
+        - type: space
+          key: space-63
+          title: Product 3.1
+          path: copy-of-product-3
+          draft: true
+          content:
+            directory: ./product-3/copy-of-product-3
+        - type: space
+          key: space-64
+          title: Copy of Product 3
+          path: copy-of-product-3-1
+          draft: true
+          content:
+            directory: ./product-3/copy-of-product-3
+        - type: space
+          key: space-65
+          title: Copy of Product 3
+          path: copy-of-product-3-2
+          draft: true
+          content:
+            directory: ./product-3/copy-of-product-3
+        - type: space
+          key: space-66
+          title: Product 3
+          path: product-3-1
+          draft: true
+          content:
+            directory: ./product-3
