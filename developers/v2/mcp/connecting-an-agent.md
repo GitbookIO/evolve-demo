@@ -1,6 +1,8 @@
 ---
+description: >-
+  Step-by-step setup for Claude Desktop, Cursor, Continue, Cline, and any
+  MCP-aware client.
 icon: plug-circle-bolt
-description: Step-by-step setup for Claude Desktop, Cursor, Continue, Cline, and any MCP-aware client.
 ---
 
 # Connecting an agent
@@ -13,7 +15,7 @@ Setup is the same for every MCP client — point it at Evolve's MCP server URL a
 https://mcp.evolve.com
 ```
 
-The server speaks the Streamable HTTP transport (the standard MCP HTTP transport since spec version 2025-03-26). Use a restricted API key for the agent — see [Security](README.md#security-and-permissions).
+The server speaks the Streamable HTTP transport (the standard MCP HTTP transport since spec version 2025-03-26). Use a restricted API key for the agent — see [Security](mcp.md#security-and-permissions).
 
 {% hint style="info" %}
 **Test mode:** point at `https://mcp.test.evolve.com` and use an `sk_test_` key. The set of available tools is identical; the data they return is from your test environment.
@@ -107,29 +109,29 @@ A non-exhaustive list of what the server exposes today. Each tool has typed para
 
 ### Read tools
 
-| Tool | Description |
-| --- | --- |
-| `evolve_search_customers` | Find a customer by id, email, or metadata key/value. |
-| `evolve_get_customer` | Retrieve a customer by id, including saved payment methods. |
-| `evolve_search_charges` | Search charges by customer, amount range, status, or time. |
-| `evolve_get_charge` | Retrieve a charge by id with the full event timeline. |
-| `evolve_search_refunds` | Search refunds. |
-| `evolve_get_payout` | Retrieve a payout including its line items. |
-| `evolve_get_balance` | Current available, pending, and reserved balance per currency. |
+| Tool                              | Description                                                      |
+| --------------------------------- | ---------------------------------------------------------------- |
+| `evolve_search_customers`         | Find a customer by id, email, or metadata key/value.             |
+| `evolve_get_customer`             | Retrieve a customer by id, including saved payment methods.      |
+| `evolve_search_charges`           | Search charges by customer, amount range, status, or time.       |
+| `evolve_get_charge`               | Retrieve a charge by id with the full event timeline.            |
+| `evolve_search_refunds`           | Search refunds.                                                  |
+| `evolve_get_payout`               | Retrieve a payout including its line items.                      |
+| `evolve_get_balance`              | Current available, pending, and reserved balance per currency.   |
 | `evolve_get_verification_session` | Retrieve an Identity verification session and its check results. |
-| `evolve_get_connected_account` | Retrieve a Connect connected account. |
-| `evolve_search_docs` | Query the public docs and return ranked text snippets. |
-| `evolve_get_event` | Retrieve a webhook event by id, with delivery history. |
+| `evolve_get_connected_account`    | Retrieve a Connect connected account.                            |
+| `evolve_search_docs`              | Query the public docs and return ranked text snippets.           |
+| `evolve_get_event`                | Retrieve a webhook event by id, with delivery history.           |
 
 ### Write tools (gated by key permissions)
 
-| Tool | Description |
-| --- | --- |
-| `evolve_create_refund` | Issue a refund (full or partial) against a charge. |
-| `evolve_capture_charge` | Capture an authorized charge. |
-| `evolve_void_charge` | Void an authorized charge before capture. |
-| `evolve_replay_webhook_event` | Replay a webhook event to its endpoint. |
-| `evolve_pause_webhook_endpoint` | Pause a webhook endpoint. |
+| Tool                            | Description                                        |
+| ------------------------------- | -------------------------------------------------- |
+| `evolve_create_refund`          | Issue a refund (full or partial) against a charge. |
+| `evolve_capture_charge`         | Capture an authorized charge.                      |
+| `evolve_void_charge`            | Void an authorized charge before capture.          |
+| `evolve_replay_webhook_event`   | Replay a webhook event to its endpoint.            |
+| `evolve_pause_webhook_endpoint` | Pause a webhook endpoint.                          |
 
 If a tool isn't in your key's scope, it shows up in the list with a `[restricted]` tag and the agent can see it exists but gets a permission error if it tries to call it.
 
@@ -184,6 +186,6 @@ Use a restricted API key scoped to just the resources you want accessible. The M
 
 ## Related
 
-* [MCP overview](README.md) — what MCP gives you.
+* [MCP overview](mcp.md) — what MCP gives you.
 * [Authentication → Restricted keys](../getting-started/authentication.md#restricted-keys) — scoping the key.
 * [For AI agents](../getting-started/for-ai-agents.md) — the docs-reading companion.

@@ -95,7 +95,7 @@ Evolve uses **dated versioning** via the `Evolve-Version` header. The default ve
 Evolve-Version: 2026-01-15
 ```
 
-Major shape changes (resources renamed, fields removed) ship as **variants** rather than new dates — see [Payments API → Overview](../payments-api/) for `v1`, `v2`, and `v3`.
+Major shape changes (resources renamed, fields removed) ship as **variants** rather than new dates — see [Payments API → Overview](../payments-api/payments-api.md) for `v1`, `v2`, and `v3`.
 
 If you don't send the header, your account-default version is used. We recommend pinning explicitly in production code.
 

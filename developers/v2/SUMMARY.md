@@ -12,12 +12,12 @@
 
 ## Payments API
 
-* [Overview](payments-api/README.md)
+* [Overview](payments-api/payments-api.md)
 * ```yaml
-  type: builtin:openapi
   props:
     models: false
     downloadLink: true
+  type: builtin:openapi
   dependencies:
     spec:
       ref:
@@ -27,12 +27,12 @@
 
 ## Identity API
 
-* [Overview](identity-api/README.md)
+* [Overview](identity-api/identity-api.md)
 * ```yaml
-  type: builtin:openapi
   props:
     models: false
     downloadLink: true
+  type: builtin:openapi
   dependencies:
     spec:
       ref:
@@ -42,12 +42,12 @@
 
 ## Connect API
 
-* [Overview](connect-api/README.md)
+* [Overview](connect-api/connect-api.md)
 * ```yaml
-  type: builtin:openapi
   props:
     models: false
     downloadLink: true
+  type: builtin:openapi
   dependencies:
     spec:
       ref:
@@ -57,12 +57,12 @@
 
 ## Webhooks
 
-* [Overview](webhooks/README.md)
+* [Overview](webhooks/webhooks.md)
 * [Verifying signatures](webhooks/verifying-signatures.md)
 * [Event catalog](webhooks/event-catalog.md)
 * [Retries and replay](webhooks/retries-and-replay.md)
 
 ## MCP
 
-* [Overview](mcp/README.md)
+* [Overview](mcp/mcp.md)
 * [Connecting an agent](mcp/connecting-an-agent.md)
