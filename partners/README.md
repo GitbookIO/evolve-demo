@@ -54,7 +54,7 @@ This space demonstrates the public/authenticated **flip**: anonymous visitors se
 {% if visitor.claims.unsigned.persona !== "partner" %}
 ## Partner with Evolve
 
-Whether you build software for businesses, implement payments for clients, or operate a marketplace platform, Evolve has a partner program that fits — with revenue share, co-marketing, and dedicated support. hello world
+Whether you build software for businesses, implement payments for clients, or operate a marketplace platform, Evolve has a partner program that fits — with revenue share, co-marketing, and dedicated support.
 
 <a href="https://gitbook.com" class="button primary">Apply to become a partner</a> <a href="https://gitbook.com" class="button secondary">Sign in to the partner portal</a>
 
