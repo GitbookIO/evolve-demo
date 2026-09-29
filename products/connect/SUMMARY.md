@@ -9,14 +9,14 @@
 
 ## Embedded checkout
 
-* [Overview](embedded-checkout/README.md)
+* [Overview](embedded-checkout/embedded-checkout.md)
 * [Buyer experience](embedded-checkout/buyer-experience.md)
 * [Hosted vs embedded](embedded-checkout/hosted-vs-embedded.md)
 * [Customization](embedded-checkout/customization.md)
 
 ## Platform setup
 
-* [Overview](platform-setup/README.md)
+* [Overview](platform-setup/platform-setup.md)
 * [Onboarding sellers](platform-setup/onboarding-sellers.md)
 * [Splitting payments](platform-setup/splitting-payments.md)
 * [Payouts to sellers](platform-setup/payouts.md)

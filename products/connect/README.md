@@ -12,6 +12,7 @@ layout:
   cover:
     visible: true
     size: hero
+    mask: none
   title:
     visible: true
   description:
@@ -27,6 +28,8 @@ layout:
   tags:
     visible: true
   actions:
+    visible: true
+  anchors:
     visible: true
 ---
 
@@ -120,7 +123,7 @@ Try a persona to see adaptive content in action across the site:
 ### Get started
 {% endif %}
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-rocket" style="color:$primary;">:rocket:</i></h4></td><td><strong>Quickstart</strong></td><td>Onboard your first seller in five minutes.</td><td><a href="quickstart/onboard-your-first-seller.md">onboard-your-first-seller.md</a></td></tr><tr><td><h4><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h4></td><td><strong>Embedded checkout</strong></td><td>The buyer-facing flow — hosted, embedded, or fully custom.</td><td><a href="embedded-checkout/">embedded-checkout</a></td></tr><tr><td><h4><i class="fa-sliders" style="color:$primary;">:sliders:</i></h4></td><td><strong>Platform setup</strong></td><td>Onboarding, splitting, payouts, and dispute handling.</td><td><a href="platform-setup/">platform-setup</a></td></tr><tr><td><h4><i class="fa-code" style="color:$primary;">:code:</i></h4></td><td><strong>API reference</strong></td><td>Endpoints, SDKs, and try-it.</td><td><a href="https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/connect-api">Connect API</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4><i class="fa-rocket" style="color:$primary;">:rocket:</i></h4></td><td><strong>Quickstart</strong></td><td>Onboard your first seller in five minutes.</td><td><a href="quickstart/onboard-your-first-seller.md">onboard-your-first-seller.md</a></td></tr><tr><td><h4><i class="fa-window-maximize" style="color:$primary;">:window-maximize:</i></h4></td><td><strong>Embedded checkout</strong></td><td>The buyer-facing flow — hosted, embedded, or fully custom.</td><td><a href="embedded-checkout/embedded-checkout.md">embedded-checkout.md</a></td></tr><tr><td><h4><i class="fa-sliders" style="color:$primary;">:sliders:</i></h4></td><td><strong>Platform setup</strong></td><td>Onboarding, splitting, payouts, and dispute handling.</td><td><a href="platform-setup/platform-setup.md">platform-setup.md</a></td></tr><tr><td><h4><i class="fa-code" style="color:$primary;">:code:</i></h4></td><td><strong>API reference</strong></td><td>Endpoints, SDKs, and try-it.</td><td><a href="https://app.gitbook.com/s/Si95BtOt1VRLWjT7A67V/connect-api">Connect API</a></td></tr></tbody></table>
 
 ## Where Connect fits
 
