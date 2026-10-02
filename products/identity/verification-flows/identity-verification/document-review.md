@@ -108,4 +108,4 @@ Documents are encrypted at rest with per-tenant keys and retained per your [rete
 
 * [Selfie and liveness](selfie-and-liveness.md) — the second half of identity verification.
 * [Identity verification](./) — the parent flow.
-* [Audit logs](../../compliance/audit-logs/) — every document review is logged.
+* [Audit logs](../../compliance/audit-logs.md) — every document review is logged.

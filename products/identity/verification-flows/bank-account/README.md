@@ -51,7 +51,7 @@ Once verified, the bank account is attached to a Customer record (see [Saved pay
 
 ## What's logged
 
-Every bank account verification creates an entry in the [audit log](../../compliance/audit-logs/) with the method used, the verification status, and which member of your team initiated it (if it was triggered from the dashboard rather than the API).
+Every bank account verification creates an entry in the [audit log](../../compliance/audit-logs.md) with the method used, the verification status, and which member of your team initiated it (if it was triggered from the dashboard rather than the API).
 
 ## Related
 

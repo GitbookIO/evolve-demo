@@ -32,7 +32,7 @@ OFAC (Office of Foreign Assets Control) maintains the SDN list and other US sanc
 ### State-level
 
 * **California** — CCPA and CPRA give consumers privacy rights including deletion. Evolve supports per-customer deletion (see [Data retention](data-retention.md#customer-deletion-requests)).
-* **New York** — NY DFS Part 500 (cybersecurity rules) requires logged, audit-able access to PII. Evolve's [audit logs](audit-logs/) cover this.
+* **New York** — NY DFS Part 500 (cybersecurity rules) requires logged, audit-able access to PII. Evolve's [audit logs](audit-logs.md) cover this.
 
 ## European Union and EEA
 
@@ -132,11 +132,11 @@ Most regimes don't require re-verification on a fixed cadence, but several recom
 | UK (HMRC)        | Every 1–3 years; risk-based.                                                       |
 | Canada (PCMLTFA) | Every 2 years for high-risk; on trigger event.                                     |
 
-Evolve's re-verification API lets you trigger a fresh flow against an existing customer at any time. Combined with [audit logs](audit-logs/), this gives you the cadence your regime requires plus the documented record of having done it.
+Evolve's re-verification API lets you trigger a fresh flow against an existing customer at any time. Combined with [audit logs](audit-logs.md), this gives you the cadence your regime requires plus the documented record of having done it.
 
 ## Related
 
-* [Audit logs](audit-logs/) — the trail your auditor needs.
+* [Audit logs](audit-logs.md) — the trail your auditor needs.
 * [Data retention](data-retention.md) — region-specific retention configuration.
 * [Beneficial ownership](../verification-flows/business/beneficial-ownership.md) — the 25% rule under FinCEN, EU AMLD6, and UK MLRs.
 * [Watchlist screening](../verification-flows/identity-verification/watchlist-screening.md) — OFAC, UN, EU, UK lists.

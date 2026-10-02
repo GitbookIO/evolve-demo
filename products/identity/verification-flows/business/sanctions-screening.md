@@ -61,7 +61,7 @@ flowchart LR
 
 For high-confidence matches, the right default is to refuse the onboarding and document the reason. For medium-confidence matches that turn out to be false positives — there are a lot of John Smiths in the world — your compliance team can override the match with a documented reason and proceed.
 
-Every override is permanently logged in the [audit log](../../compliance/audit-logs/), with the operator's identity, the match details, and the stated reason. This is the trail your auditor will want.
+Every override is permanently logged in the [audit log](../../compliance/audit-logs.md), with the operator's identity, the match details, and the stated reason. This is the trail your auditor will want.
 
 ## Ongoing monitoring
 
@@ -104,5 +104,5 @@ You can turn off specific categories in **Settings → Identity → Adverse medi
 
 * [Beneficial ownership](beneficial-ownership.md) — owners are screened individually.
 * [Watchlist screening](../identity-verification/watchlist-screening.md) — the equivalent for individual identity verifications.
-* [Audit logs](../../compliance/audit-logs/) — every screening decision is logged.
+* [Audit logs](../../compliance/audit-logs.md) — every screening decision is logged.
 * [Regional requirements](../../compliance/regional-requirements.md) — country-by-country sanctions obligations.

@@ -79,7 +79,7 @@ Evolve's liveness model is hardened against the common attack patterns:
 * **Mask attacks** (silicone or printed masks) — detected via micro-movement and depth cues.
 * **Deepfakes** (real-time face-swap models) — detected via specific artifacts that differ from real cameras.
 
-Detected spoofs land on the verification timeline as `spoof_detected` with the attack type. They're also surfaced in the [audit log](../../compliance/audit-logs/) and can be alerted on via webhook.
+Detected spoofs land on the verification timeline as `spoof_detected` with the attack type. They're also surfaced in the [audit log](../../compliance/audit-logs.md) and can be alerted on via webhook.
 
 ## When liveness isn't required
 

@@ -75,7 +75,7 @@ Because adverse media draws from open-source news, it produces more false positi
 
 ## What's logged
 
-Every screening result is a permanent entry in your [audit log](../../compliance/audit-logs/), including:
+Every screening result is a permanent entry in your [audit log](../../compliance/audit-logs.md), including:
 
 * The lists checked, with version timestamps.
 * The matches found (or absence thereof).
@@ -87,5 +87,5 @@ This is the audit trail your auditor and your bank will want to see.
 
 * [Identity verification](./) — screening sits on top of identity verification.
 * [Business verification → Sanctions screening](../business/sanctions-screening.md) — the equivalent check for businesses.
-* [Audit logs](../../compliance/audit-logs/) — the screening audit trail.
+* [Audit logs](../../compliance/audit-logs.md) — the screening audit trail.
 * [Regional requirements](../../compliance/regional-requirements.md) — when screening is mandatory.
