@@ -11,7 +11,7 @@ Every action Evolve takes on your behalf — and every action your team takes in
 
 Logs are append-only. You can't edit or delete an entry; even Evolve's own staff can't.
 
-<figure><img src="../.gitbook/assets/identity.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://2706021885-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fw7NRnYZuokE4h1mm2pJB%2Fuploads%2FkMcq73pHDvddWjAyFmz6%2Fidentity.png?alt=media&#x26;token=93f99dce-c47f-4f6e-bfb2-8412a72ed152" alt="identity image"><figcaption></figcaption></figure>
 
 ## What's logged
 
