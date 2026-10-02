@@ -1,6 +1,8 @@
 ---
+description: >-
+  Every verification, decision, and override is logged — searchable, exportable,
+  immutable.
 icon: clipboard-list
-description: Every verification, decision, and override is logged — searchable, exportable, immutable.
 ---
 
 # Audit logs
@@ -9,20 +11,22 @@ Every action Evolve takes on your behalf — and every action your team takes in
 
 Logs are append-only. You can't edit or delete an entry; even Evolve's own staff can't.
 
+<figure><img src="../.gitbook/assets/identity.png" alt=""><figcaption></figcaption></figure>
+
 ## What's logged
 
 Every entry includes the **what**, the **who**, the **when**, and the **why**. The full schema:
 
-| Field | Description | Example |
-| --- | --- | --- |
-| `event` | The action taken | `verification.completed` |
-| `actor_type` | What kind of entity acted | `evolve_system`, `team_member`, `customer`, `api_client` |
-| `actor_id` | Who exactly | `user_3K2pL9q`, `cust_a8N3mF` |
-| `subject_type` | What was acted on | `verification_session`, `customer`, `business` |
-| `subject_id` | Specifically | `vs_3KsM12pL9qXa7` |
-| `timestamp` | When | `2026-04-30T14:22:01.341Z` |
-| `metadata` | Action-specific details | `{ "reason": "manual_override", "note": "false positive..." }` |
-| `request_id` | The request that triggered the entry | `req_8h2nF6m4Lp` |
+| Field          | Description                          | Example                                                        |
+| -------------- | ------------------------------------ | -------------------------------------------------------------- |
+| `event`        | The action taken                     | `verification.completed`                                       |
+| `actor_type`   | What kind of entity acted            | `evolve_system`, `team_member`, `customer`, `api_client`       |
+| `actor_id`     | Who exactly                          | `user_3K2pL9q`, `cust_a8N3mF`                                  |
+| `subject_type` | What was acted on                    | `verification_session`, `customer`, `business`                 |
+| `subject_id`   | Specifically                         | `vs_3KsM12pL9qXa7`                                             |
+| `timestamp`    | When                                 | `2026-04-30T14:22:01.341Z`                                     |
+| `metadata`     | Action-specific details              | `{ "reason": "manual_override", "note": "false positive..." }` |
+| `request_id`   | The request that triggered the entry | `req_8h2nF6m4Lp`                                               |
 
 ## Categories of event
 
@@ -122,11 +126,11 @@ For Enterprise customers, the daily root hash is published to a public timestamp
 
 Audit log access is gated by role:
 
-| Role | Can see |
-| --- | --- |
-| Viewer | Aggregate counts only |
-| Compliance | Full log, including PII access events |
-| Admin | Full log, plus permission to schedule exports |
+| Role       | Can see                                       |
+| ---------- | --------------------------------------------- |
+| Viewer     | Aggregate counts only                         |
+| Compliance | Full log, including PII access events         |
+| Admin      | Full log, plus permission to schedule exports |
 
 The dashboard surfaces "who looked at what" — every PII view is itself an audit log entry, visible to your compliance team.
 
