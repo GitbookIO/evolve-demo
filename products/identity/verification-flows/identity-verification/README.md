@@ -78,4 +78,4 @@ A separate **re-verification** API lets you re-run the full flow against an exis
 * [Document review](document-review.md) — how Evolve authenticates the document.
 * [Selfie and liveness](selfie-and-liveness.md) — the biometric match.
 * [Watchlist screening](watchlist-screening.md) — optional Enterprise screening layer.
-* [Compliance → Audit logs](../../compliance/audit-logs.md) — every decision is logged.
+* [Compliance → Audit logs](../../compliance/audit-logs/) — every decision is logged.

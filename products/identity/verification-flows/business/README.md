@@ -78,5 +78,5 @@ Ongoing monitoring is included with every KYB at no extra fee, for as long as th
 
 * [Beneficial ownership](beneficial-ownership.md) — collecting and verifying the owners.
 * [Sanctions screening](sanctions-screening.md) — what lists Evolve checks against.
-* [Audit logs](../../compliance/audit-logs.md) — every KYB action is logged.
+* [Audit logs](../../compliance/audit-logs/) — every KYB action is logged.
 * [Regional requirements](../../compliance/regional-requirements.md) — country-by-country obligations.

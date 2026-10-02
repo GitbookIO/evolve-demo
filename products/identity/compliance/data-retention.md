@@ -21,7 +21,7 @@ Out of the box, Evolve retains verification PII as follows:
 | Selfie liveness scores                               | 7 years                                                               |
 | Sanctions and PEP screening results                  | 7 years                                                               |
 | Bank account numbers (encrypted)                     | 7 years                                                               |
-| Audit log entries                                    | 7 years (see [Audit logs](audit-logs.md))                             |
+| Audit log entries                                    | 7 years (see [Audit logs](audit-logs/))                               |
 
 The pattern: the **raw images** purge quickly (default 30 days), the **extracted data and decisions** stick around for the regulatory floor.
 
@@ -97,6 +97,6 @@ For Enterprise customers, you can supply your own KMS keys (BYOK) so encryption 
 
 ## Related
 
-* [Audit logs](audit-logs.md) — what's kept indefinitely (or near-indefinitely) for accountability.
+* [Audit logs](audit-logs/) — what's kept indefinitely (or near-indefinitely) for accountability.
 * [Regional requirements](regional-requirements.md) — region-specific retention floors and ceilings.
 * [Identity verification](../verification-flows/identity-verification/) — the source of most retained data.

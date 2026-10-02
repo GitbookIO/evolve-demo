@@ -23,6 +23,7 @@
 
 ## Compliance
 
-* [Audit logs](compliance/audit-logs.md)
+* [Audit logs](compliance/audit-logs/README.md)
+  * [this is a test](compliance/audit-logs/this-is-a-test.md)
 * [Data retention](compliance/data-retention.md)
 * [Regional requirements](compliance/regional-requirements.md)

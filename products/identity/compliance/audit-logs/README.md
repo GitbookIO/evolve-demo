@@ -11,7 +11,7 @@ Every action Evolve takes on your behalf — and every action your team takes in
 
 Logs are append-only. You can't edit or delete an entry; even Evolve's own staff can't.
 
-<figure><img src="../.gitbook/assets/identity-dark.png" alt="identity image"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/identity-dark.png" alt="hello world!!!"><figcaption></figcaption></figure>
 
 ## What's logged
 
@@ -114,7 +114,7 @@ For SOC 2 and ISO 27001 audit support, the standard scheduled export — full lo
 
 Audit log entries are retained for **7 years by default** — long enough for most regulatory regimes (BSA/AML in the US is 5 years; many EU regimes are 5–10 years). You can configure a longer retention if you need it; you can't configure a shorter one for the action log itself, since that would defeat the audit trail's purpose.
 
-PII referenced in the log (specific document images, selfie images) follows your [data retention policy](data-retention.md), separately from the log entry itself. After PII is purged, log entries that referenced it remain — they just point to a "purged per retention policy" placeholder instead of the original data.
+PII referenced in the log (specific document images, selfie images) follows your [data retention policy](../data-retention.md), separately from the log entry itself. After PII is purged, log entries that referenced it remain — they just point to a "purged per retention policy" placeholder instead of the original data.
 
 ## Tamper-evidence
 
@@ -136,6 +136,6 @@ The dashboard surfaces "who looked at what" — every PII view is itself an audi
 
 ## Related
 
-* [Data retention](data-retention.md) — how long PII is kept; logs persist longer.
-* [Regional requirements](regional-requirements.md) — what regulators require to be in the log.
+* [Data retention](../data-retention.md) — how long PII is kept; logs persist longer.
+* [Regional requirements](../regional-requirements.md) — what regulators require to be in the log.
 * [Payments / Reporting](https://app.gitbook.com/s/w3LlITSOQye8o4wjsQXV/reporting/sharing-exports) — schedule the same kind of export.

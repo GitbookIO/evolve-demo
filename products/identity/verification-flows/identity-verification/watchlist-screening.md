@@ -1,7 +1,9 @@
 ---
-icon: shield-halved
+description: >-
+  Screen verified identities against sanctions, PEP, and adverse media lists.
+  Enterprise only.
 hidden: true
-description: Screen verified identities against sanctions, PEP, and adverse media lists. Enterprise only.
+icon: shield-halved
 ---
 
 # Watchlist screening
@@ -12,7 +14,7 @@ description: Screen verified identities against sanctions, PEP, and adverse medi
 
 Watchlist screening checks an identity against four kinds of list:
 
-* **Government sanctions lists** — OFAC SDN, UN, EU, UK HMT, and ~40 country-specific lists.
+* **Government sanctions lists** — OFAC SDN, UN, EU, UK HMT, and \~40 country-specific lists.
 * **Politically exposed persons (PEPs)** — current and former senior public officials, their family, and close associates.
 * **Adverse media** — recent news mentions tying the person to financial crime, terrorism, or other reputational risks.
 * **Internal blocklists** — names you've added yourself, e.g. customers you've terminated for fraud.
@@ -20,11 +22,9 @@ Watchlist screening checks an identity against four kinds of list:
 It's run on top of an identity verification — the document and selfie checks confirm the person is who they say, and the watchlist check decides whether you're allowed to do business with them.
 
 {% if visitor.claims.unsigned.plan !== "enterprise" %}
-
 {% hint style="warning" icon="lock" %}
 **Watchlist screening is Enterprise-only.** It requires the data partnerships and ongoing-monitoring infrastructure available only on the Enterprise plan. [Talk to your account team](mailto:support@evolve.com).
 {% endhint %}
-
 {% endif %}
 
 ## When you need it
@@ -43,11 +43,11 @@ Watchlist matching is a fuzzy-name match, not an exact-string lookup. Names on l
 
 For each identity verified, the matcher returns:
 
-| Result | What it means |
-| --- | --- |
-| **Clear** | No matches above the configured threshold. |
-| **Match** | One or more names matched at high confidence. Verification status becomes `failed` and the customer cannot proceed without manual override. |
-| **Possible match** | Match at moderate confidence. Verification goes to manual review. |
+| Result             | What it means                                                                                                                               |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Clear**          | No matches above the configured threshold.                                                                                                  |
+| **Match**          | One or more names matched at high confidence. Verification status becomes `failed` and the customer cannot proceed without manual override. |
+| **Possible match** | Match at moderate confidence. Verification goes to manual review.                                                                           |
 
 The threshold is configurable in **Settings → Identity → Screening sensitivity**. Most teams keep the default — it's calibrated to balance false-positive rate against the consequences of missing a true match.
 
@@ -75,7 +75,7 @@ Because adverse media draws from open-source news, it produces more false positi
 
 ## What's logged
 
-Every screening result is a permanent entry in your [audit log](../../compliance/audit-logs.md), including:
+Every screening result is a permanent entry in your [audit log](../../compliance/audit-logs/), including:
 
 * The lists checked, with version timestamps.
 * The matches found (or absence thereof).
@@ -85,7 +85,7 @@ This is the audit trail your auditor and your bank will want to see.
 
 ## Related
 
-* [Identity verification](README.md) — screening sits on top of identity verification.
+* [Identity verification](./) — screening sits on top of identity verification.
 * [Business verification → Sanctions screening](../business/sanctions-screening.md) — the equivalent check for businesses.
-* [Audit logs](../../compliance/audit-logs.md) — the screening audit trail.
+* [Audit logs](../../compliance/audit-logs/) — the screening audit trail.
 * [Regional requirements](../../compliance/regional-requirements.md) — when screening is mandatory.

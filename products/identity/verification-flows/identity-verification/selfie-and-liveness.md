@@ -1,6 +1,8 @@
 ---
+description: >-
+  A short, passive selfie that confirms the live person matches the document
+  photo.
 icon: face-smile
-description: A short, passive selfie that confirms the live person matches the document photo.
 ---
 
 # Selfie and liveness
@@ -13,10 +15,10 @@ Evolve's current implementation is **passive liveness 2.0** — no head turns, n
 
 The check produces two scores:
 
-| Score | What it means | Threshold (Standard preset) |
-| --- | --- | --- |
-| **Match score** | Similarity between the selfie and the photo on the document. 0.0 (no match) to 1.0 (identical). | ≥ 0.85 to pass |
-| **Liveness score** | Confidence the selfie is from a live human. 0.0 to 1.0. | ≥ 0.95 to pass |
+| Score              | What it means                                                                                   | Threshold (Standard preset) |
+| ------------------ | ----------------------------------------------------------------------------------------------- | --------------------------- |
+| **Match score**    | Similarity between the selfie and the photo on the document. 0.0 (no match) to 1.0 (identical). | ≥ 0.85 to pass              |
+| **Liveness score** | Confidence the selfie is from a live human. 0.0 to 1.0.                                         | ≥ 0.95 to pass              |
 
 Both scores are visible on the verification timeline. You can see at a glance whether a manual review is borderline (e.g. match score 0.83) or clearly fraudulent (match score 0.41).
 
@@ -77,7 +79,7 @@ Evolve's liveness model is hardened against the common attack patterns:
 * **Mask attacks** (silicone or printed masks) — detected via micro-movement and depth cues.
 * **Deepfakes** (real-time face-swap models) — detected via specific artifacts that differ from real cameras.
 
-Detected spoofs land on the verification timeline as `spoof_detected` with the attack type. They're also surfaced in the [audit log](../../compliance/audit-logs.md) and can be alerted on via webhook.
+Detected spoofs land on the verification timeline as `spoof_detected` with the attack type. They're also surfaced in the [audit log](../../compliance/audit-logs/) and can be alerted on via webhook.
 
 ## When liveness isn't required
 
@@ -99,5 +101,5 @@ The selfie flow has been designed for accessibility:
 ## Related
 
 * [Document review](document-review.md) — the first half of identity verification.
-* [Identity verification](README.md) — the parent flow.
+* [Identity verification](./) — the parent flow.
 * [Watchlist screening](watchlist-screening.md) — optional Enterprise screening layer.
