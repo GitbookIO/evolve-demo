@@ -628,16 +628,3 @@ site:
           content:
             directory: ./partners/zh
             language: zh
-    - type: section
-      key: section-11
-      title: new space
-      path: new-space
-      children:
-        - type: space
-          key: space-62
-          title: new space
-          path: new-space
-          default: true
-          draft: true
-          content:
-            directory: ./new-space
