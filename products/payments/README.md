@@ -34,7 +34,7 @@ layout:
 # Payments
 
 {% hint style="info" %}
-THIS IS A NEW HINT
+THIS IS A BETTER HINT
 {% endhint %}
 
 {% columns %}
