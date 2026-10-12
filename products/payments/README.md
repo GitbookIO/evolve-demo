@@ -33,10 +33,6 @@ layout:
 
 # Payments
 
-{% hint style="info" %}
-THIS IS A BETTER HINT
-{% endhint %}
-
 {% columns %}
 {% column %}
 Evolve Payments handles the work between a customer's "pay" click and the money landing in your account — card and bank-rail processing, network routing, 3-D Secure, settlement, and reporting. This space covers everything from the first test charge to enterprise routing rules.
