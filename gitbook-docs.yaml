@@ -237,6 +237,19 @@ site:
               content:
                 directory: null
                 language: zh
+        - type: section
+          key: section-11
+          title: SingPass
+          path: singpass
+          icon: glasses-round
+          children:
+            - type: space
+              key: space-62
+              title: Product Docs
+              path: product-docs
+              default: true
+              content:
+                directory: ./singpass/product-docs
     - type: section
       key: section-5
       title: Developers
@@ -628,16 +641,3 @@ site:
           content:
             directory: ./partners/zh
             language: zh
-    - type: section
-      key: section-11
-      title: SingPass
-      path: singpass
-      icon: glasses-round
-      children:
-        - type: space
-          key: space-62
-          title: Product Docs
-          path: product-docs
-          default: true
-          content:
-            directory: ./singpass/product-docs
