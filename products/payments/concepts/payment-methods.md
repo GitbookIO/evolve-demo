@@ -7,43 +7,47 @@ icon: wallet
 
 # Payment methods
 
-Evolve supports cards, bank rails, and direct-debit schemes. The methods available to you depend on your plan and on the destination currency.
+Evolve supports cards, bank transfers, and direct debits. Your available methods depend on your plan and settlement currency.
 
 ## Methods by plan
 
 {% if visitor.claims.unsigned.plan === "starter" %}
 {% hint style="info" icon="layer-group" %}
-**You're on Starter.** Card payments only, in USD. To accept ACH, debit, or international rails, [upgrade to Growth](https://gitbook.com).
+**Starter plan.** Accept card payments in USD. Upgrade to [Growth](https://gitbook.com) to accept ACH, debit, or international payment methods.
 {% endhint %}
 {% endif %}
 
 {% if visitor.claims.unsigned.plan === "growth" %}
 {% hint style="info" icon="layer-group" %}
-**You're on Growth.** Cards, ACH, and debit are enabled. Wires, SEPA, and BACS are Enterprise features — talk to your account team if you need them.
+**Growth plan.** Accept cards, ACH, and debit. Wire transfers, SEPA, and BACS require Enterprise. Contact your account team to enable them.
 {% endhint %}
 {% endif %}
 
 {% if visitor.claims.unsigned.plan === "enterprise" %}
 {% hint style="success" icon="layer-group" %}
-**You're on Enterprise.** All methods listed below are enabled, including international rails. Multi-currency settlement is on by default.
+**Enterprise plan.** All listed methods are available, including international payment methods. Multi-currency settlement is enabled by default.
 {% endhint %}
 {% endif %}
 
 <table><thead><tr><th>Method</th><th data-type="checkbox">Starter</th><th data-type="checkbox">Growth</th><th data-type="checkbox">Enterprise</th><th>Settlement</th></tr></thead><tbody><tr><td>Card (Visa, Mastercard, Amex, Discover)</td><td>true</td><td>true</td><td>true</td><td>T+1–3</td></tr><tr><td>Card (JCB, UnionPay, Diners)</td><td>false</td><td>true</td><td>true</td><td>T+2–3</td></tr><tr><td>ACH debit (US)</td><td>false</td><td>true</td><td>true</td><td>T+3 (initial), T+1 (verified)</td></tr><tr><td>Debit card (US)</td><td>true</td><td>true</td><td>true</td><td>T+1–2</td></tr><tr><td>Wire transfer (US)</td><td>false</td><td>false</td><td>true</td><td>Same day</td></tr><tr><td>SEPA (EU)</td><td>false</td><td>false</td><td>true</td><td>T+1</td></tr><tr><td>BACS Direct Debit (UK)</td><td>false</td><td>false</td><td>true</td><td>T+3</td></tr><tr><td>Multi-currency (USD, CAD, GBP, EUR)</td><td>false</td><td>true</td><td>true</td><td>Per-currency payout</td></tr><tr><td>Multi-currency (135 currencies)</td><td>false</td><td>false</td><td>true</td><td>Per-currency payout</td></tr></tbody></table>
 
-## Choosing which methods to offer
+## Choose payment methods
 
-You decide which methods to offer on each payment. In the dashboard, **Settings → Payment methods** sets the default set for new payment links and Checkout sessions. You can override per session — for example, if you want a B2B invoice to accept wire only.
+Choose the methods available for each payment. In the dashboard, **Settings → Payment methods** sets defaults for new payment links and Checkout sessions.
 
-## Risk considerations
+Override those defaults for an individual session. For example, offer only wire transfers for a B2B invoice.
 
-Different methods carry different risk profiles:
+## Consider risk
+
+Each payment method has a different risk profile.
 
 <details>
 
 <summary>Cards</summary>
 
-Highest authorization rate, highest dispute exposure. Chargebacks can land up to 120 days after the charge. Use [3-D Secure](../accept-payments/3d-secure.md) on high-value transactions to shift liability.
+Cards usually have the highest authorization rate. They also have the greatest dispute exposure. Chargebacks can arrive up to 120 days after payment.
+
+Use [3-D Secure](../accept-payments/3d-secure.md) for high-value transactions to shift liability.
 
 </details>
 
@@ -51,7 +55,9 @@ Highest authorization rate, highest dispute exposure. Chargebacks can land up to
 
 <summary>ACH debit</summary>
 
-Lower fees, but reversal risk lasts 60 days for consumer accounts. Verify the account before charging large amounts — Evolve supports instant verification via Plaid (see [Identity / Bank verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account)).
+ACH debit has lower fees. However, consumer-account payments can be reversed for up to 60 days.
+
+Verify accounts before large charges. Evolve supports instant verification through Plaid. See [Identity / Bank verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account).
 
 </details>
 
@@ -59,12 +65,14 @@ Lower fees, but reversal risk lasts 60 days for consumer accounts. Verify the ac
 
 <summary>Wire transfer</summary>
 
-Same-day finality, no reversals. Best for high-value B2B. Customer pushes funds to a unique virtual account number; Evolve matches them to your charge by reference code.
+Wire transfers are final on the same day and cannot be reversed. They work well for high-value B2B payments.
+
+Customers send funds to a unique virtual account number. Evolve matches each transfer to its charge using the reference code.
 
 </details>
 
 ## Related
 
-* [Money movement and settlement](money-movement.md) — when each method's funds arrive in your account.
-* [3-D Secure and SCA](../accept-payments/3d-secure.md) — when to require additional cardholder authentication.
-* [Identity / Bank verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account) — verifying ACH accounts before debit.
+* [Money movement and settlement](money-movement.md) — learn when funds from each method arrive.
+* [3-D Secure and SCA](../accept-payments/3d-secure.md) — learn when cardholder authentication is required.
+* [Identity / Bank verification](https://app.gitbook.com/s/w7NRnYZuokE4h1mm2pJB/verification-flows/bank-account) — verify ACH accounts before you debit them.
