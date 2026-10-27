@@ -36,7 +36,7 @@ layout:
 {% hint style="success" icon="gitbook" %}
 **A note from GitBook**
 
-This space demonstrates the public/authenticated **flip**: anonymous visitors see the partner pitch below; authenticated partners see a portal home in the same place. The flip is driven by adaptive content on `visitor.claims.unsigned.persona`. Once you flip into partner mode, the linked portal pages (deal registration, marketing resources, etc.) become accessible — they're **hidden pages**, not in the public sidebar nav, but reachable via direct link or from the portal home.
+This space demonstrates a public/authenticated **flip**: anonymous visitors see the partner pitch below, while authenticated partners land on a portal home in that same spot — the switch is driven by adaptive content keyed on `visitor.claims.unsigned.persona`. Flipping into partner mode also unlocks the linked portal pages (deal registration, marketing resources, etc.); these are **hidden pages** that don't appear in the public sidebar nav, but are reachable directly via link or from the portal home.
 
 {% if visitor.claims.unsigned.persona === "partner" %}
 <i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are currently signed in as a partner<code class="expression">visitor.claims.unsigned.plan ? " on the " + visitor.claims.unsigned.plan.charAt(0).toUpperCase() + visitor.claims.unsigned.plan.slice(1) + " plan" : ""</code>. [<mark style="color:$primary;">Reset</mark>](https://enterprise-demos.gitbook.io/evolve-docs/partners?visitor.persona=)
