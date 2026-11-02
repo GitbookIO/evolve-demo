@@ -31,11 +31,15 @@ layout:
     visible: true
 ---
 
-# Welcome to Evolve
+# Welcome to Evolve Payments
 
 {% columns %}
 {% column width="50%" %}
 Take payments, verify customers, and run a marketplace — all on one platform. Evolve is the financial infrastructure for modern businesses, used by thousands of teams from early-stage startups to global enterprises.
+
+Whether you're accepting your first card payment, onboarding sellers across multiple countries, or verifying identities at scale, these docs walk you through every step. You'll find product guides, step-by-step tutorials, and a complete API reference, so you can go from test mode to production with confidence.
+
+Every Evolve account starts in test mode, so you can build and try your full integration without moving real money. When you're ready, switch to live mode with the same code. Only your API keys change. If you get stuck, the Evolve Assistant can answer questions using these docs, our Help Center, and community discussions.
 
 <button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
 
@@ -119,17 +123,19 @@ Try a persona to see adaptive content in action across the site:
 
 ## Three products, one platform
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover-dark data-type="image">Cover image (dark)</th></tr></thead><tbody><tr><td><h4><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h4></td><td><h4><strong>Payments</strong></h4></td><td>Accept card and bank-rail payments. Smart routing, 3-D Secure, settlement, reporting.</td><td><a href=".gitbook/assets/payments.png">payments.png</a></td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/w3LlITSOQye8o4wjsQXV/">Payments</a></td><td><a href=".gitbook/assets/payments-dark.png">payments-dark.png</a></td></tr><tr><td><h4><i class="fa-id-card" style="color:$primary;">:id-card:</i></h4></td><td><h4><strong>Identity</strong></h4></td><td>Verify customers and businesses. Document review, selfie liveness, bank verification, KYB.</td><td><a href=".gitbook/assets/identity.png">identity.png</a></td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/w7NRnYZuokE4h1mm2pJB/">Identity</a></td><td><a href=".gitbook/assets/identity-dark.png">identity-dark.png</a></td></tr><tr><td><h4><i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i></h4></td><td><h4><strong>Connect</strong></h4></td><td>Embed payments in your platform. Onboard sellers, split payments, run a marketplace.</td><td><a href=".gitbook/assets/connect.png">connect.png</a></td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Xtfxb7OHGyrdfIsObmnu/">Connect</a></td><td><a href=".gitbook/assets/connect-dark.png">connect-dark.png</a></td></tr></tbody></table>
+Evolve is built as three products that work alone or together. All three share one account, one dashboard, and one API, so the customers you verify with Identity can pay you with Payments. With Connect, the sellers on your platform are onboarded and paid through the same system.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover-dark data-type="image">Cover image (dark)</th></tr></thead><tbody><tr><td><h4><i class="fa-credit-card" style="color:$primary;">:credit-card:</i></h4></td><td><h4><strong>Payments</strong></h4></td><td>Accept card and bank-rail payments online and in person. Smart routing sends each transaction down the path most likely to succeed. 3-D Secure, settlement, and built-in reporting keep you compliant and reconciled.</td><td><a href=".gitbook/assets/payments.png">payments.png</a></td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/w3LlITSOQye8o4wjsQXV/">Payments</a></td><td><a href=".gitbook/assets/payments-dark.png">payments-dark.png</a></td></tr><tr><td><h4><i class="fa-id-card" style="color:$primary;">:id-card:</i></h4></td><td><h4><strong>Identity</strong></h4></td><td>Verify customers and businesses before they transact. Combine document review, selfie liveness, bank account verification, and KYB checks to stop fraud and meet regulatory requirements.</td><td><a href=".gitbook/assets/identity.png">identity.png</a></td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/w7NRnYZuokE4h1mm2pJB/">Identity</a></td><td><a href=".gitbook/assets/identity-dark.png">identity-dark.png</a></td></tr><tr><td><h4><i class="fa-circles-overlap" style="color:$primary;">:circles-overlap:</i></h4></td><td><h4><strong>Connect</strong></h4></td><td>Embed payments in your software platform or marketplace. Onboard sellers, split payments between parties, and manage payouts. Evolve handles the compliance work behind the scenes.</td><td><a href=".gitbook/assets/connect.png">connect.png</a></td><td><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Xtfxb7OHGyrdfIsObmnu/">Connect</a></td><td><a href=".gitbook/assets/connect-dark.png">connect-dark.png</a></td></tr></tbody></table>
 
 ## For developers
 
-API references, SDKs, and the agent integrations across all three products. Pick where to dive in:
+API references, SDKs, and the agent integrations across all three products. Every Evolve product uses the same REST API conventions, authentication model, and webhook format. Once you've integrated one product, adding the others is straightforward. Pick where to dive in:
 
 {% columns %}
 {% column width="25%" %}
 <i class="fa-rocket" style="color:$primary;">:rocket:</i> **Quickstart**
 
-Make your first API call in five minutes.
+Make your first API call in five minutes. Create a test key, send a request, and see the result in your dashboard.
 
 <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Si95BtOt1VRLWjT7A67V/" class="button primary">Quickstart</a>
 {% endcolumn %}
@@ -137,7 +143,7 @@ Make your first API call in five minutes.
 {% column width="25%" %}
 <i class="fa-key" style="color:$primary;">:key:</i> **Authentication**
 
-Keys, restricted scopes, signature verification.
+Manage API keys, limit access with restricted scopes, and verify webhook signatures to make sure events come from Evolve.
 
 <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Si95BtOt1VRLWjT7A67V/" class="button secondary">Authenticated</a>
 {% endcolumn %}
@@ -145,7 +151,7 @@ Keys, restricted scopes, signature verification.
 {% column width="25%" %}
 <i class="fa-cubes" style="color:$primary;">:cubes:</i> **SDKs**
 
-Node, Python, Go, Ruby — official and idiomatic.
+Official, idiomatic libraries for Node, Python, Go, and Ruby, with typed models, automatic retries, and pagination helpers.
 
 <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Si95BtOt1VRLWjT7A67V/" class="button secondary">SDKs</a>
 {% endcolumn %}
@@ -153,7 +159,7 @@ Node, Python, Go, Ruby — official and idiomatic.
 {% column width="25%" %}
 <i class="fa-robot" style="color:$primary;">:robot:</i> **AI agents**
 
-llms.txt, MCP server, agent best practices.
+Connect AI tools to Evolve with llms.txt and our MCP server. Follow best practices for building agents that take payments safely.
 
 <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Si95BtOt1VRLWjT7A67V/" class="button secondary">For AI agents</a>
 {% endcolumn %}
@@ -161,17 +167,19 @@ llms.txt, MCP server, agent best practices.
 
 ## Learn and explore
 
+Beyond the product docs, these resources help you build common workflows, troubleshoot issues, and connect Evolve to the tools your team already uses.
+
 {% columns %}
 {% column width="66.66666666666666%" %}
 <i class="fa-compass" style="color:$primary;">:compass:</i> **Guides**
 
-Everything you need to get the most out of the Evolve platform.
+Everything you need to get the most out of the Evolve platform, from your first integration to running at scale.
 
 <details open>
 
 <summary><i class="fa-graduation-cap" style="color:$primary;">:graduation-cap:</i> <strong>Tutorials</strong></summary>
 
-Step-by-step builds for common workflows. 15 tutorials with video walkthroughs.
+Step-by-step builds for common workflows, such as checkout pages, subscriptions, and marketplace payouts. There are 15 tutorials, each with a video walkthrough and sample code you can copy.
 
 <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/Nankrp40VchJsUblU6h6/" class="button secondary">Start building</a>
 
@@ -181,7 +189,7 @@ Step-by-step builds for common workflows. 15 tutorials with video walkthroughs.
 
 <summary><i class="fa-graduation-cap" style="color:$primary;">:graduation-cap:</i> <strong>Help Center</strong></summary>
 
-Focused answers to common questions. The Assistant pulls from here, the forum, and YouTube.
+Focused answers to common questions about accounts, pricing, payouts, and going live. The Assistant draws on the Help Center, the community forum, and our YouTube channel to answer your questions.
 
 <button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">How can we help?</button><a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/NA4Ikc8fQtsXC5U53xJu/" class="button secondary">View all</a>
 
@@ -191,7 +199,7 @@ Focused answers to common questions. The Assistant pulls from here, the forum, a
 
 <summary><i class="fa-puzzle-piece" style="color:$primary;">:puzzle-piece:</i> <strong>Integration guides</strong></summary>
 
-Slack, Zapier, Segment, QuickBooks, NetSuite — and more in active development.
+Connect Evolve to Slack, Zapier, Segment, QuickBooks, NetSuite, and more. Sync payment data to your accounting system, send alerts to your team, and automate workflows. More integrations are in active development.
 
 <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/MBT3EDUK7DzXmR0k9cje/" class="button secondary">Browse integrations</a>
 
@@ -213,8 +221,12 @@ Our biggest recent releases
 
 ## Partner with Evolve
 
+Agencies, consultancies, and software vendors can grow with Evolve through the partner program. Partners help businesses launch and scale on Evolve, and receive tools, training, and revenue opportunities in return.
+
 <table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-type="image">Cover image (dark)</th><th data-hidden data-type="image">Cover image (dark)</th><th data-hidden data-card-cover-dark data-type="image">Cover image (dark)</th></tr></thead><tbody><tr><td><h4><i class="fa-handshake" style="color:$primary;">:handshake:</i> <strong>Become a partner</strong></h4></td><td>Solution, implementation, and technology partners earn revenue share, get co-marketing support, and a direct line to your partner success manager.</td><td><a href="https://gitbook.com/enterprise" class="button primary">Apply to the program</a> <a href="https://app.gitbook.com/o/2DnmWBpytIOUKeXExonU/s/R0VawBV5xcQ4exP2PlWS/" class="button secondary">Learn more</a></td><td><a href=".gitbook/assets/become-partner.png">become-partner.png</a></td><td><a href="/broken/files/3vW10FmnAdGqz6POjQ6e">Broken link</a></td><td><a href="/broken/files/QmLAQ0YDcM4IG0WcmMRA">Broken link</a></td><td><a href=".gitbook/assets/become-partner-dark.png">become-partner-dark.png</a></td></tr><tr><td><h4><i class="fa-key" style="color:$primary;">:key:</i> <strong>Already a partner?</strong></h4></td><td>Sign in to the partner portal for deal registration, marketing resources, training, and support.</td><td><a href="https://enterprise-demos.gitbook.io/evolve-docs?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button primary">Sign in</a> <a href="https://enterprise-demos.gitbook.io/evolve-docs/partners?visitor.persona=partner&#x26;visitor.plan=enterprise" class="button secondary">Open the portal</a></td><td><a href=".gitbook/assets/already-partner.png">already-partner.png</a></td><td><a href="/broken/files/E9QPCdC59HhCmDFkc9GA">Broken link</a></td><td><a href="/broken/files/1UxnEY5n3pZcvxwMhMfh">Broken link</a></td><td><a href=".gitbook/assets/already-partner-dark.png">already-partner-dark.png</a></td></tr></tbody></table>
 
 ## Get help
+
+Can't find what you need in the docs? Our support team, status page, and community are here to help, whether you're debugging an integration or responding to a production issue.
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><h4><i class="fa-headset" style="color:$primary;">:headset:</i> <strong>Talk to support</strong></h4></td><td>For account-specific questions, integration help, or production incidents, open a ticket by starting a chat below.</td><td><button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">How can we help?</button></td></tr><tr><td><h4><i class="fa-circle-check" style="color:$primary;">:circle-check:</i> <strong>Platform status</strong></h4></td><td>Real-time status of every Evolve service. Subscribe via email or RSS for incident updates.</td><td><a href="https://gitbook.com" class="button secondary">View status</a></td></tr><tr><td><h4><i class="fa-comments" style="color:$primary;">:comments:</i> <strong>Community</strong></h4></td><td>Real-time discussion with other Evolve customers and our team. Most product questions have a thread.</td><td><a href="https://gitbook.com" class="button secondary">Join the forum</a></td></tr></tbody></table>
