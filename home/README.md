@@ -31,11 +31,13 @@ layout:
     visible: true
 ---
 
-# Welcome to Evolve
+# Welcome to Evolve Payments
 
 {% columns %}
 {% column width="50%" %}
 Take payments, verify customers, and run a marketplace — all on one platform. Evolve is the financial infrastructure for modern businesses, used by thousands of teams from early-stage startups to global enterprises.
+
+Whether you're accepting your first card payment, onboarding sellers across multiple countries, or verifying identities at scale, these docs walk you through every step. You'll find product guides, step-by-step tutorials, and a complete API reference, so you can go from test mode to production with confidence.
 
 <button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask the Evolve docs</button>
 
